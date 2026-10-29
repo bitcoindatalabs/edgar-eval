@@ -13,13 +13,14 @@ we don't ask it to. We change the workflow around it instead:
 - **Code does the rest.** It runs the arithmetic, checks every input and quote against the filing,
   checks the period, and sends a failed answer back once with the reason.
 
-The result: on answering questions about S-1 prospectuses with citations, an open 27B model matched
-the frontier model's 47/47 on Anthropic's S-1 at about 1/50th of the cost, and answered every
-question on two held-out S-1s it was never tuned on. Two other open models did the same.
+The result: on answering questions about S-1 prospectuses with citations, an open 27B model is at
+parity with frontier models on all three filings we scored. It matched Claude Opus 5.5's 47/47 on
+Anthropic's S-1 at about 1/50th of the cost, and scored 22/22 on each of two held-out S-1s it was
+never tuned on. That is the maximum, so no model could do better. Two other open models did the same.
 
 | Questions answered correctly | Anthropic S-1 (built on) | Klaviyo S-1 (held out) | Instacart S-1 (held out) |
 |---|---|---|---|
-| Frontier model reading the whole filing (Claude Opus 5.5) | 47/47 · $1.99 | not run | not run |
+| Frontier model reading the whole filing (Claude Opus 5.5) | 47/47 · $1.99 | at most 22/22 (not run) | at most 22/22 (not run) |
 | Open 27B model, naive retrieval (Qwen3.8 27B) | 42/47 | 22/22 | 19/22 |
 | **Open 27B model + `filing-factsheet` skill** | **47/47 · $0.04** | **22/22** | **22/22** |
 
@@ -191,7 +192,9 @@ runs is in each `results/raw/`, so `score.py` reproduces the tables without API 
 - **One run per setup**, temperature 0. Differences of one or two questions are within noise.
 - **Gold answers are validated by code but written by one author per filing**, and text questions
   are scored by keywords, which has known false negatives (above).
-- **Frontier models were not run on the held-out filings**; we assume they would score at the ceiling.
+- **Frontier models were not run on the held-out filings.** The skill's 22/22 is the maximum, so they
+  cannot score higher; parity there holds whatever they would score. The held-out questions were
+  easier than Anthropic's, so they leave little room between setups.
 
 ## Layout
 
