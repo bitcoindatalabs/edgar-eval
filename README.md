@@ -33,7 +33,8 @@ open-ended analysis or judgment.
 
 Leaderboard and answer explorer (Anthropic's S-1): **https://bitcoindatalabs.github.io/edgar-eval/**
 Presented at AI Startup Rodeo, Austin, 2026-10-30 (*Inside Anthropic's IPO Filing: AI-Powered
-Financial Analysis*).
+Financial Analysis*): [slides](https://bitcoindatalabs.github.io/edgar-eval/talks/ai-startup-rodeo-2026.html)
+(one HTML file; press P for the presenter view).
 
 ## The skills
 
@@ -205,7 +206,7 @@ bench/                     Anthropic S-1: questions.yaml (gold), meta.yaml (docu
 filings/<company>/         dev and held-out S-1s, each with bench/, data/processed/, results/
 filings/FREEZE.txt         hashes of the frozen pipeline used for the held-out test
 models.yaml                models to run          results/   cached answers, summary.json
-docs/                      leaderboard + ask page (GitHub Pages)   stage/   live stage view
+docs/                      leaderboard, ask page, talks/ slides (GitHub Pages)   stage/   live stage view
 ```
 
 ## Author and citation

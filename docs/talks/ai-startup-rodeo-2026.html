@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside Anthropic’s IPO Filing | AI Startup Rodeo 2026</title>
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<!--
+  AI Startup Rodeo 2026 talk deck (Austin, Oct 30). Same engine as the TABConf deck: one
+  self-contained file, no framework, no build, no network needed (fonts fall back offline).
+  Numbers come from this repo (results/ and filings/*/results/).
+
+  Keys:  → / Space / PageDown  next      ← / PageUp  back      Home / End
+         P  presenter window (notes, timer, pace; stays in sync)
+         N  notes on this screen        F  fullscreen        B or .  black screen
+         digits  jump to slide          ?  help
+-->
+<style>
+:root {
+  --bg: #FAF8F5; --bg2: #F3EFEA; --surface: #FFFFFF;
+  --ink: #242D38; --ink2: #5E6977; --ink3: #8893A0; --line: #E5DFD5;
+  --accent: #D47355; --accent-d: #A95137; --accent-l: #FBF2ED; --accent-b: #ECCDC1;
+  --sage: #2E7559; --sage-l: #EDF5F0; --madder: #A93E3B; --madder-l: #FBEFEF;
+  --grey: #C3BBB0;
+  --lnd: #2a78d6; --cln: #D4603A; --eclair: #1a9e6e; --ldk: #4a3aa7;
+  --sans: Inter, system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+#viewport { position: fixed; inset: 0; }
+#stage { position: absolute; left: 50%; top: 50%; width: 1600px; height: 900px; transform-origin: center; background: var(--bg); overflow: hidden; cursor: pointer; }
+
+/* ── slides ── */
+.slide { position: absolute; inset: 0; padding: 64px 110px 96px; display: none; flex-direction: column; }
+.slide.on { display: flex; animation: enter .35s ease-out; }
+@keyframes enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.slide.center { justify-content: center; }
+.notes { display: none; }
+
+.kicker { font: 700 22px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0 0 22px; }
+h1 { font-size: 104px; line-height: 1.02; font-weight: 800; letter-spacing: -.035em; margin: 0; }
+h2 { font-size: 60px; line-height: 1.1; font-weight: 750; letter-spacing: -.02em; margin: 0 0 36px; }
+.lead { font-size: 34px; line-height: 1.4; color: var(--ink2); margin: 0; }
+.hl { color: var(--accent); }
+.muted { color: var(--ink3); }
+.mono { font-family: var(--mono); }
+.say { font-size: 34px; line-height: 1.35; margin: 0; }
+.say b { color: var(--accent-d); }
+.src { position: absolute; left: 110px; bottom: 52px; font: 500 17px var(--mono); color: var(--ink3); }
+
+/* ── reveal steps ── */
+.step { opacity: 0; transform: translateY(16px); transition: opacity .45s, transform .45s; }
+.step.in { opacity: 1; transform: none; }
+svg .step { transform: none; }
+
+/* ── quiz ── */
+.quiz { display: grid; gap: 22px; grid-template-columns: repeat(4, 1fr); margin: 0 0 40px; }
+.quiz.two { grid-template-columns: 1fr 1fr; }
+.opt { display: flex; align-items: center; gap: 22px; padding: 22px 30px; border: 2px solid var(--line); border-radius: 18px; background: var(--surface); font-size: 46px; font-weight: 700; transition: all .5s; }
+.quiz.two .opt { font-size: 38px; line-height: 1.2; padding: 30px 34px; }
+.opt b { flex: none; width: 58px; height: 58px; border-radius: 50%; background: var(--bg2); display: grid; place-items: center; font: 700 28px var(--mono); color: var(--ink2); transition: all .5s; }
+.quiz.in .opt { opacity: .25; transform: scale(.97); }
+.quiz.in .opt.ok { opacity: 1; transform: scale(1.04); border-color: var(--accent); background: var(--accent-l); box-shadow: 0 10px 30px rgba(212,115,85,.2); }
+.quiz.in .opt.ok b { background: var(--accent); color: #fff; }
+.vote { font: 600 24px var(--mono); color: var(--ink3); margin: -18px 0 28px; }
+.vote::before { content: "✋ "; }
+
+/* ── horizontal bars ── */
+.hbars { display: flex; flex-direction: column; gap: 20px; }
+.hb { display: grid; grid-template-columns: 470px 1fr; align-items: center; gap: 28px; font-size: 30px; }
+.hb .lab small { display: block; font-size: 21px; color: var(--ink3); margin-top: 2px; }
+.hb .track { display: flex; align-items: center; gap: 18px; height: 60px; }
+.hb .fill { height: 100%; width: 0; border-radius: 0 10px 10px 0; background: var(--grey); transition: width 1.1s cubic-bezier(.2,.8,.2,1); }
+.hb.hot .fill { background: var(--accent); }
+.hb .val { font-size: 38px; font-weight: 800; white-space: nowrap; }
+.hb.hot .val { color: var(--accent-d); }
+.in .hb .fill, .hb.in .fill { width: var(--w); }
+.hb .val { opacity: 0; transition: opacity .4s .5s; }
+.in .hb .val, .hb.in .val { opacity: 1; }
+
+/* ── stacked share bar ── */
+.stack { display: flex; height: 92px; border-radius: 14px; overflow: hidden; width: 100%; }
+.stack i { display: block; height: 100%; width: 0; transition: width 1.2s cubic-bezier(.2,.8,.2,1); }
+.in .stack i { width: var(--w); }
+.chips { display: flex; gap: 34px; margin-top: 22px; font-size: 30px; flex-wrap: wrap; }
+.chips span::before { content: ""; display: inline-block; width: 22px; height: 22px; border-radius: 6px; background: var(--c); margin-right: 10px; vertical-align: -2px; }
+
+/* ── cards & tiles ── */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 30px 32px; }
+.card h3 { margin: 0 0 12px; font-size: 32px; font-weight: 750; }
+.card p { margin: 0; font-size: 26px; line-height: 1.4; color: var(--ink2); }
+.card .num { font-size: 72px; font-weight: 800; letter-spacing: -.03em; color: var(--accent); line-height: 1; margin-bottom: 14px; }
+.card.good h3 { color: var(--sage); } .card.bad h3 { color: var(--madder); }
+
+/* ── timeline ── */
+.tl { display: flex; flex-direction: column; gap: 14px; }
+.tl div { display: grid; grid-template-columns: 170px 150px 1fr; align-items: center; gap: 20px; font-size: 29px; padding: 10px 18px; border-radius: 12px; }
+.tl .d { font: 700 26px var(--mono); color: var(--ink2); }
+.tl .t { font: 700 19px var(--mono); text-align: center; padding: 6px 0; border-radius: 8px; color: #fff; background: var(--c); }
+.tl .big { background: var(--accent-l); border: 2px solid var(--accent-b); font-weight: 650; }
+.tl.tight { gap: 6px; }
+.tl.tight div { padding: 7px 18px; }
+
+/* ── takeaways ── */
+.take { display: flex; flex-direction: column; gap: 30px; }
+.take > div { display: grid; grid-template-columns: 84px 1fr; gap: 26px; align-items: start; }
+.take .n { width: 72px; height: 72px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font: 800 34px var(--mono); }
+.take h3 { margin: 4px 0 6px; font-size: 44px; font-weight: 800; letter-spacing: -.01em; }
+.take p { margin: 0; font-size: 28px; color: var(--ink2); line-height: 1.4; }
+
+/* ── charts ── */
+svg text { font-family: var(--sans); }
+svg .grid { stroke: var(--line); stroke-width: 1.5; }
+svg .tick { font-size: 22px; fill: var(--ink3); }
+svg .mark { stroke: var(--ink3); stroke-width: 2; stroke-dasharray: 6 6; }
+svg .mlab { font-size: 21px; fill: var(--ink2); }
+svg .org { fill: var(--grey); }
+svg .mass { fill: var(--grey); transition: fill .7s; }
+.slide[data-k]:not([data-k="0"]) svg .mass { fill: var(--accent); }
+svg .clab { font-size: 23px; font-weight: 800; fill: var(--ink); }
+svg .csub { font-size: 20px; fill: var(--accent-d); font-weight: 600; }
+
+.g100 { display: grid; grid-template-columns: repeat(20, 1fr); gap: 9px; width: 760px; }
+.g100 i { aspect-ratio: 1; border-radius: 6px; background: var(--ink2); transition: background .5s, box-shadow .5s; }
+.in .g100 i.gone { background: transparent; box-shadow: inset 0 0 0 2px var(--accent); }
+
+.stat { border-left: 6px solid var(--accent); padding: 4px 0 4px 24px; }
+.stat .v { font-size: 64px; font-weight: 800; letter-spacing: -.02em; line-height: 1.05; }
+.stat .k { font-size: 25px; color: var(--ink2); line-height: 1.35; }
+
+/* ── chrome ── */
+#foot { position: absolute; left: 110px; right: 110px; bottom: 26px; display: flex; justify-content: space-between; font: 500 17px var(--mono); color: var(--ink3); pointer-events: none; }
+#prog { position: absolute; left: 0; bottom: 0; height: 6px; background: var(--accent); transition: width .3s; }
+#black { position: fixed; inset: 0; background: #000; display: none; z-index: 50; }
+body.black #black { display: block; }
+#notesbar, #help { position: fixed; left: 0; right: 0; bottom: 0; max-height: 40vh; overflow: auto; background: rgba(36,45,56,.96); color: #F3EFEA; font: 18px/1.55 var(--sans); padding: 18px 28px; display: none; z-index: 40; }
+#notesbar p { margin: 0 0 8px; }
+body.shownotes #notesbar, body.showhelp #help { display: block; }
+#help { top: 0; bottom: auto; max-height: none; font: 17px/1.8 var(--mono); }
+
+/* ── presenter window (?presenter) ── */
+#panel { display: none; }
+body.presenter { background: #1d232b; }
+body.presenter #viewport { inset: 16px auto auto 16px; width: calc(58vw - 24px); height: calc(58vw * 9 / 16); border-radius: 10px; overflow: hidden; box-shadow: 0 0 0 1px #3a4350; }
+body.presenter #panel { display: flex; flex-direction: column; gap: 14px; position: fixed; top: 16px; right: 16px; bottom: 16px; width: calc(42vw - 24px); color: #F3EFEA; font-family: var(--sans); }
+body.presenter #nextwrap { position: fixed; left: 16px; top: calc(58vw * 9 / 16 + 30px); width: calc(58vw - 24px); color: #AEB6C1; font: 20px/1.5 var(--sans); }
+#ptime { font: 700 64px/1 var(--mono); }
+#ppace { font: 600 20px var(--mono); color: #AEB6C1; }
+#ppace.behind { color: #F0A58C; } #ppace.ahead { color: #8FD0B0; }
+#ptitle { font-size: 22px; font-weight: 700; } #ptitle span { color: #AEB6C1; font-weight: 500; }
+#pnotes { flex: 1; overflow: auto; background: #262e38; border-radius: 10px; padding: 18px 22px; font-size: 21px; line-height: 1.55; }
+#pnotes p { margin: 0 0 12px; } #pnotes b { color: #F6C3AF; }
+.pbtns { display: flex; gap: 10px; }
+.pbtns button { flex: 1; font: 600 18px var(--sans); padding: 12px; border: 0; border-radius: 8px; background: #3a4350; color: #fff; cursor: pointer; }
+#pblack { display: none; color: #F0A58C; font: 700 18px var(--mono); }
+body.black.presenter #black { display: none; }
+body.black.presenter #pblack { display: block; }
+
+/* ── AI Startup Rodeo additions ── */
+.tbl { width: 100%; border-collapse: collapse; font-size: 28px; }
+.tbl th { text-align: left; font: 700 18px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink3); padding: 0 16px 12px; border-bottom: 2px solid var(--line); }
+.tbl td { padding: 14px 16px; border-bottom: 1px solid var(--line); color: var(--ink2); }
+.tbl td b { color: var(--ink); }
+.tbl .r { text-align: right; font-variant-numeric: tabular-nums; }
+.tbl tr.hot td { background: var(--accent-l); }
+.card.bad .num { color: var(--madder); } .card.good .num { color: var(--sage); }
+.tricks .card { padding: 24px 28px; }
+.tricks .card h3 { display: flex; align-items: center; gap: 14px; font-size: 30px; }
+.tricks .card p { font-size: 24px; }
+.tn { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font: 800 22px var(--mono); }
+.tn.c { background: var(--lnd); } .tn.s { background: var(--sage); }
+.loop { display: flex; align-items: stretch; gap: 14px; }
+.loop div { flex: 1; display: flex; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px 20px; font-size: 26px; font-weight: 650; line-height: 1.3; }
+.loop div.last { border: 2px solid var(--sage); background: var(--sage-l); }
+.loop span { align-self: center; font: 800 34px var(--sans); color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="viewport"><div id="stage">
+
+<!-- 1 · Title -->
+<section class="slide center" data-title="Title" data-min="0.4">
+  <p class="kicker">AI Startup Rodeo 2026 · AI × financial analysis</p>
+  <h1>Inside Anthropic’s<br><span class="hl">IPO Filing</span></h1>
+  <p class="lead" style="margin-top:34px">Can a model that runs on one GPU read a 422-page S-1 as well as a frontier model?</p>
+  <p class="lead" style="margin-top:56px;font-size:28px;color:var(--ink)"><b>Saurabh “Soru” Kumar</b> · Bitcoin Data Labs</p>
+  <p class="lead" style="margin-top:8px;font-size:24px">10+ years leading data at PayPal. Now measuring Bitcoin, and AI.</p>
+  <aside class="notes">
+    <p>One breath: "I'm Saurabh, most people call me Soru. Ten-plus years leading data at PayPal. Now I run Bitcoin Data Labs."</p>
+    <p>"Anthropic filed its S-1 on Monday: 422 pages. Frontier AI can read it. I wanted to know whether a model you can run yourself can read it just as well."</p>
+  </aside>
+</section>
+
+<!-- 2 · Bitcoin Data Labs -->
+<section class="slide" data-title="Bitcoin Data Labs" data-min="0.6">
+  <p class="kicker">Bitcoin Data Labs</p>
+  <h2 style="margin-bottom:30px">Understanding Bitcoin through data</h2>
+  <div class="cards">
+    <div class="card"><h3>⚡ Lightning operations</h3><p>Measured from our own nodes: the public map every day and every channel close on-chain. Clients, hubs, fees.</p></div>
+    <div class="card"><h3>🧑‍💻 Bitcoin open source</h3><p><b style="color:var(--ink)">~1,000 repos, 55,000 developers.</b> Who builds what, how code gets reviewed, which libraries and wallets get used.</p></div>
+    <div class="card step"><h3>🧪 Open by default</h3><p>Free reports and data, open code, and benchmarks you can rerun. Today’s work is on GitHub.</p></div>
+  </div>
+  <p class="say step" style="margin-top:40px">Free reports and data: <b>bitcoindatalabs.org</b>. <span class="muted">Today: the same measurement habit, pointed at AI reading a financial filing.</span></p>
+  <aside class="notes">
+    <p>30–40 seconds. "Bitcoin Data Labs tries to understand the Bitcoin ecosystem through data, not opinions."</p>
+    <p>Click: "Everything is open: reports, code, data." Click: "Today, the same habit: measure before you believe, pointed at AI reading an IPO filing."</p>
+  </aside>
+</section>
+
+<!-- 3 · Hands up -->
+<section class="slide center" data-title="Hands up" data-min="0.6">
+  <p class="kicker">Before we start</p>
+  <h2>Raise your hand if you…</h2>
+  <div style="display:flex;flex-direction:column;gap:30px">
+    <p class="say step">✋ &nbsp;have asked an LLM about a long document: a contract, a 10-K, a paper</p>
+    <p class="say step">✋ &nbsp;have caught it making up a <b>number</b></p>
+    <p class="say step">✋ &nbsp;run a model on your own machine: Ollama, LM Studio, llama.cpp</p>
+  </div>
+  <aside class="notes">
+    <p>One click per question. Count hands out loud: "most of the room", "a few".</p>
+    <p>On the second: "Keep that in mind. Today's surprise is that the small model did not make numbers up. It failed differently."</p>
+    <p>On the third: "Good. This talk is for you: what it takes for your local model to match the frontier on a real task."</p>
+  </aside>
+</section>
+
+<!-- 4 · Hook -->
+<section class="slide" data-title="Same filing, both true" data-min="1">
+  <p class="kicker">Anthropic’s S-1 · filed Oct 26, 2026</p>
+  <h2>Same filing. Both true.</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:10px">
+    <div class="stat"><div class="v" style="font-size:96px;color:var(--madder)">−$80.7B</div><div class="k">Net loss, six months ended June 30, 2026 (p. 147)</div></div>
+    <div class="stat step" style="border-left-color:var(--sage)"><div class="v" style="font-size:96px;color:var(--sage)">+$974M</div><div class="k">Operating income, three months ended June 30, 2026 (p. 157)</div></div>
+  </div>
+  <p class="say step" style="margin-top:60px">Read the wrong column and you get the <b>sign</b> wrong. That’s the job: 422 pages, no mixing up a quarter and a half-year.</p>
+  <p class="src">$72.4B of the six-month loss is a non-cash change in the fair value of convertible notes (pp. 64, 147)</p>
+  <aside class="notes">
+    <p>Let the first number land. "Anthropic lost 80.7 billion dollars in six months." Click. "Last quarter it made 974 million in operating income. Same filing. Both true."</p>
+    <p>Why: $72.4B of the half-year loss is a non-cash charge, the change in fair value of convertible notes, driven by the rising valuation. Operating loss for the half was $693M; Q2 alone was +$974M.</p>
+    <p>Click: "That's what makes filings hard for AI: the right number sits next to a plausible wrong one." Don't editorialize on the IPO. Not investment advice.</p>
+  </aside>
+</section>
+
+<!-- 5 · Quiz 1: frontier -->
+<section class="slide" data-title="Quiz: frontier score" data-min="1">
+  <p class="kicker">Quiz 1</p>
+  <h2>Frontier models read all 422 pages and answer 47 questions. <span class="hl">How many right?</span></h2>
+  <p class="vote">vote with your hands</p>
+  <div class="quiz key">
+    <div class="opt"><b>A</b>35</div>
+    <div class="opt"><b>B</b>41</div>
+    <div class="opt"><b>C</b>44</div>
+    <div class="opt ok"><b>D</b>47</div>
+  </div>
+  <div class="hbars step">
+    <div class="hb hot"><div class="lab">Claude Opus 5.5</div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
+    <div class="hb hot"><div class="lab">Sonnet 5.5 · GPT-6.1 Sol · Grok 4.7<small>each</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
+    <div class="hb"><div class="lab">Claude Haiku 5.5<small>fast tier</small></div><div class="track"><div class="fill" style="--w:93.6%"></div><span class="val">44</span></div></div>
+  </div>
+  <p class="src">Whole filing in one prompt: 300k–460k tokens · $1.00–1.99 per 47-question run</p>
+  <aside class="notes">
+    <p>"Hands up for A… B… C… D." Click to reveal: <b>47 of 47.</b> Opus, Sonnet, GPT-6.1 and Grok all perfect.</p>
+    <p>"So the frontier is solved on this task. The interesting questions are cost, privacy, and whether you can do it yourself."</p>
+    <p>Haiku, the fast tier, missed 3: all gross margin. Hold that thought; we'll see why.</p>
+  </aside>
+</section>
+
+<!-- 6 · Quiz 2 teaser -->
+<section class="slide center" data-title="Quiz 2 (vote only)" data-min="0.5">
+  <p class="kicker">Quiz 2 · answer at the end</p>
+  <h2>Our local 27B model gets to 100%. Which change mattered most?</h2>
+  <p class="vote">vote now, I’ll tell you at the end</p>
+  <div class="quiz two">
+    <div class="opt"><b>A</b>A bigger model</div>
+    <div class="opt"><b>B</b>A cleverer prompt</div>
+    <div class="opt"><b>C</b>Letting code do the math</div>
+    <div class="opt"><b>D</b>Handing it the right table</div>
+  </div>
+  <aside class="notes">
+    <p>Quick vote, no reveal. "Remember your answer." Most rooms pick B or C.</p>
+  </aside>
+</section>
+
+<!-- 7 · The setups -->
+<section class="slide" data-title="Three ways to read it" data-min="0.75">
+  <p class="kicker">The setup</p>
+  <h2>Same 47 questions, three ways to read the filing</h2>
+  <div class="cards">
+    <div class="card"><h3>Frontier: read it all</h3><p>Claude, GPT and Grok get the whole S-1 in one prompt: <b style="color:var(--ink)">300k–460k tokens.</b></p></div>
+    <div class="card"><h3>Local 27B: keyword search</h3><p>Qwen3.8 27B, small enough for one GPU, gets the 8 pages that best match the question: <b style="color:var(--ink)">~7k tokens.</b></p></div>
+    <div class="card good step"><h3>Local 27B + our skills</h3><p>Same model. Parsed tables with page citations, short passages, and code that does the math and checks: <b style="color:var(--ink)">~13k tokens.</b></p></div>
+  </div>
+  <aside class="notes">
+    <p>"Keyword search is what most RAG demos do: find the pages that look relevant and hope the answer is there." Click for the third.</p>
+    <p>"Skills are packaged instructions plus scripts an agent can run. Ours are open source."</p>
+  </aside>
+</section>
+
+<!-- 8 · How I measured -->
+<section class="slide" data-title="How I measured" data-min="1">
+  <p class="kicker">How I measured</p>
+  <h2>47 questions an analyst would ask, each tied to an exact quote</h2>
+  <table class="tbl">
+    <tr><th style="width:20%">Type</th><th style="width:7%" class="r">Qs</th><th style="width:30%">Example</th><th>The trap</th></tr>
+    <tr><td>Facts</td><td class="r">23</td><td>Revenue, H1 2026</td><td>Straight lookup, with a citation</td></tr>
+    <tr><td>Governance, risk</td><td class="r">10</td><td>Ticker, Fluidstack deal</td><td>One sentence in 422 pages</td></tr>
+    <tr><td>Blanks</td><td class="r">6</td><td>IPO price range</td><td>Filing says “between $ and $”</td></tr>
+    <tr><td>Derived</td><td class="r">6</td><td>Gross margin, H1 2026</td><td>85.4% from cost of revenue, not ~45%</td></tr>
+    <tr><td>Period traps</td><td class="r">2</td><td>Operating income, Q2 2026</td><td>+$974M quarter vs −$693M half</td></tr>
+  </table>
+  <p class="say step" style="margin-top:28px;font-size:30px">Code checks every gold answer: the quote is in the filing, the number is in the quote, derived numbers recompute.</p>
+  <p class="src">Two more S-1s (Klaviyo, Instacart): 22 questions each, written by agents that never saw our code</p>
+  <aside class="notes">
+    <p>The credibility slide. "I wrote these the way an analyst preps for an IPO: revenue, margins, cash, governance, risk. Then I added traps from how models actually fail: blanks, the wrong period, the wrong line item."</p>
+    <p>Point at Blanks: "The preliminary S-1 literally prints 'between $ and $' for the price range. The right answer is 'not disclosed'."</p>
+    <p>Click: "And code, not me, checks every gold answer against the filing."</p>
+    <p>If asked about the evals-skills pack: our filing-evals skill hands off to it for error analysis and judge validation; here, the error analysis was reading every miss by hand.</p>
+  </aside>
+</section>
+
+<!-- 9 · Quiz 3 + result -->
+<section class="slide" data-title="Quiz: local score + result" data-min="1.25">
+  <p class="kicker">Quiz 3</p>
+  <h2>A 27B open model with keyword search. <span class="hl">How many of the 47?</span></h2>
+  <div class="quiz key" style="margin-bottom:34px">
+    <div class="opt"><b>A</b>21</div>
+    <div class="opt"><b>B</b>33</div>
+    <div class="opt ok"><b>C</b>42</div>
+    <div class="opt"><b>D</b>47</div>
+  </div>
+  <div class="hbars">
+    <div class="hb step"><div class="lab">Frontier, whole filing<small>Opus · $1.99 per run</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
+    <div class="hb step"><div class="lab">Local 27B, keyword search<small>Qwen3.8 27B · $0.05</small></div><div class="track"><div class="fill" style="--w:89.4%"></div><span class="val">42</span></div></div>
+    <div class="hb hot step"><div class="lab">Local 27B + our skills<small>Qwen3.8 27B · $0.04 · parity</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
+  </div>
+  <p class="src">Across all four S-1s and three open models: keyword search 89–90%, with skills 100%</p>
+  <aside class="notes">
+    <p>Vote, click to reveal: <b>42 of 47, about 90%.</b> "Not bad! But 5 wrong answers in a financial filing is 5 too many."</p>
+    <p>Click through the bars. Last click: "Same model, with our skills: 47 of 47. Parity with the frontier, at about a fiftieth of the cost."</p>
+    <p>If asked: against Sonnet ($1.00, also 47/47) it's ~25×, not 50×. The $0.04 is the API price for the open weights.</p>
+  </aside>
+</section>
+
+<!-- 10 · Gross margin -->
+<section class="slide" data-title="Gross margin: three answers" data-min="1.25">
+  <p class="kicker">Where it broke</p>
+  <h2>Gross margin, H1 2026: three answers</h2>
+  <div class="cards">
+    <div class="card bad"><div class="num">45%</div><h3>Haiku, whole filing</h3><p>Used “compute and infrastructure” as cost of revenue. Confident, cites a real row, wrong.</p></div>
+    <div class="card bad"><div class="num" style="font-size:52px;line-height:1.35">“Not disclosed”</div><h3>Local 27B, keyword search</h3><p>Found the sentence saying cost of revenue is no longer on the income statement, and stopped.</p></div>
+    <div class="card good step"><div class="num">85.4%</div><h3>Local 27B + our skills</h3><p>Read cost of revenue from the note on p. F-39. Code did the division.</p></div>
+  </div>
+  <p class="say step" style="margin-top:34px">Four of keyword search’s five misses came from one note table. The filing never says “gross margin”, so search never finds that page.</p>
+  <p class="src">Gold: (16,286 − 2,380) ÷ 16,286 = 85.4% · revenue and cost of revenue, $M, S-1 p. F-39</p>
+  <aside class="notes">
+    <p>The strongest example. Read the question, then left to right.</p>
+    <p>Haiku, with the WHOLE filing: 45%. It used the compute line ($8,945M), which includes training compute, not just serving customers. "Having the document isn't the same as reading it right."</p>
+    <p>Keyword search: "not disclosed". It found a real sentence (p. F-14) and gave up. The number IS in the filing, in a note.</p>
+    <p>Click: the skill reads the F-39 row; the model writes the expression; code computes 85.4%.</p>
+  </aside>
+</section>
+
+<!-- 11 · Quiz 4: how small models fail -->
+<section class="slide" data-title="Quiz: how it fails" data-min="1">
+  <p class="kicker">Quiz 4</p>
+  <h2>When the local model got it wrong, what did it usually do?</h2>
+  <div class="quiz two key">
+    <div class="opt"><b>A</b>Made up a number</div>
+    <div class="opt ok"><b>B</b>Said it’s not in the filing</div>
+    <div class="opt"><b>C</b>Used the wrong period</div>
+    <div class="opt"><b>D</b>Returned garbage</div>
+  </div>
+  <p class="say step"><b>27 of 33 misses:</b> “not disclosed”, when the answer was right there. It never invented a blank figure.</p>
+  <p class="say step" style="margin-top:18px">Small models fail by <b>omission</b>. The confident wrong answer came from a fast model reading everything.</p>
+  <p class="src">Keyword-search misses, 4 S-1s × 3 open models: 27 not in filing · 3 rounding · 2 malformed · 1 scoring false negative</p>
+  <aside class="notes">
+    <p>Remind them of the hands-up: "Many of you caught an LLM making up a number. Here, the small model almost never did."</p>
+    <p>Reveal B. "27 of its 33 misses were 'not in the filing'. The other 6: 3 growth rates rounded in its head (21% for 20.6%), 2 malformed answers, and 1 correct answer our keyword scorer marked wrong."</p>
+    <p>"So the fix isn't 'stop it hallucinating'. It's 'put the right table in front of it'." That sets up the next slide.</p>
+  </aside>
+</section>
+
+<!-- 12 · Tricks -->
+<section class="slide" data-title="The tricks" data-min="1.5">
+  <p class="kicker">How we closed the gap</p>
+  <h2 style="margin-bottom:28px">The model decides. Code does the rest.</h2>
+  <div class="cards tricks">
+    <div class="card"><h3><span class="tn">1</span>Parse the tables</h3><p>Read straight from the filing’s HTML, every row with its page.</p></div>
+    <div class="card"><h3><span class="tn">2</span>Pick by line item</h3><p>Revenue, cost of revenue, cash… one fixed list, no per-filing config.</p></div>
+    <div class="card"><h3><span class="tn">3</span>List every blank</h3><p>“Not disclosed” becomes a lookup, not a guess.</p></div>
+  </div>
+  <div class="cards tricks step" style="margin-top:24px">
+    <div class="card"><h3><span class="tn c">4</span>Code does the math</h3><p>The model writes (1250 − 400) / 1250 × 100; code computes it.</p></div>
+    <div class="card"><h3><span class="tn c">5</span>Code checks the answer</h3><p>Inputs and quote must be in the context, the period must match. Else one retry.</p></div>
+    <div class="card"><h3><span class="tn s">6</span>Search prose smarter</h3><p>Short passages and stemmed keywords for risk and governance facts.</p></div>
+  </div>
+  <p class="src">~13k tokens per question instead of 300k–460k</p>
+  <aside class="notes">
+    <p>"None of these is clever alone. Together they turn 'read 400 pages' into 'look up a cited row'."</p>
+    <p>Row 1 (tricks 1–3) shrinks the filing to what questions need. Tables are chosen by a fixed list of standard line items, so nothing is tuned to my questions.</p>
+    <p>Click. Row 2: the model writes the arithmetic, code computes it. Code checks every input and the quote appear in the context and the period matches; a failed answer goes back once with the reason. Trick 6 handles prose questions.</p>
+    <p>What each bought us: 1–2 fixed the gross-margin misses; 4 removes rounding; 5's retry fixed four malformed answers on new filings; 6 found the Claude Code incident on p. 45.</p>
+  </aside>
+</section>
+
+<!-- 13 · Isn't this tool calling? -->
+<section class="slide" data-title="Isn't this just tool calling?" data-min="0.75">
+  <p class="kicker">Fair question</p>
+  <h2>“Isn’t this just tool calling?”</h2>
+  <div class="cards" style="grid-template-columns:1fr 1fr">
+    <div class="card"><h3>A frontier agent with tools</h3><p>The model decides when to search, what to compute, whether to check. Every step is a judgment call, at frontier prices.</p></div>
+    <div class="card good step"><h3>Our workflow</h3><p>The steps are fixed in code: extract, look up, compute, verify. The model fills narrow slots in one call. A 27B model can do that reliably.</p></div>
+  </div>
+  <p class="say step" style="margin-top:34px">Same ingredients. The difference is <b>who owns the workflow</b>, and that we measured it on filings we never tuned on.</p>
+  <aside class="notes">
+    <p>Say yes first: "Yes, in spirit. Code execution and retrieval are tools, and frontier agents use them too."</p>
+    <p>"The difference: an agent decides its own plan, which takes a big model. We decide the plan once, in code, so a small model only has to look up and decide. And checking isn't optional: code verifies every answer."</p>
+    <p>"A frontier model with these tools would also do well, but you'd still pay frontier prices and send the filing out. The point is that the workflow, not the model size, carries the task."</p>
+  </aside>
+</section>
+
+<!-- 14 · Held-out -->
+<section class="slide" data-title="Held-out test" data-min="1.25">
+  <p class="kicker">Did it only work on Anthropic?</p>
+  <h2>Freeze the code. Test on S-1s I never opened.</h2>
+  <table class="tbl">
+    <tr><th style="width:30%">S-1 filing</th><th style="width:20%">Role</th><th class="r" style="width:25%">Keyword search</th><th class="r">With our skills</th></tr>
+    <tr><td>Anthropic (2026)</td><td>built on</td><td class="r">41–42 / 47</td><td class="r"><b>47 / 47</b></td></tr>
+    <tr><td>Reddit (2024)</td><td>dev</td><td class="r">7–8 / 10</td><td class="r"><b>10 / 10</b></td></tr>
+    <tr class="hot"><td><b>Klaviyo (2023)</b></td><td><b>held out</b></td><td class="r">21–22 / 22</td><td class="r"><b>22 / 22</b></td></tr>
+    <tr class="hot"><td><b>Instacart (2023)</b></td><td><b>held out</b></td><td class="r">19 / 22</td><td class="r"><b>22 / 22</b></td></tr>
+  </table>
+  <p class="say step" style="margin-top:30px">Three open models, every question, all four filings. <b>22/22 is the ceiling</b>: no model can beat it.</p>
+  <p class="src">Code frozen (sha256) before the held-out questions were written · Klaviyo filed via Workiva, Instacart via Donnelley</p>
+  <aside class="notes">
+    <p>"Fair worry: did I just tune this to Anthropic? So I froze the code, recorded a hash of every script, and only then had questions written for two S-1s I had never opened, by agents that never saw my code."</p>
+    <p>Why these two: different filing agents, different HTML. The frozen parser handled both unseen.</p>
+    <p>Read the Instacart row: keyword search missed quarterly figures it couldn't find. The skill got them from tables it parsed and cited.</p>
+    <p>Honest: these questions were easier (keyword search 91–93%), 44 questions, one run each. Frontier wasn't run on them, but can't beat 22/22.</p>
+  </aside>
+</section>
+
+<!-- 15 · Live -->
+<section class="slide center" data-title="Live: stump the model" data-min="3.5">
+  <p class="kicker">Live · Stump the model</p>
+  <h1 style="font-size:96px">Ask the S-1 <span class="hl">anything.</span></h1>
+  <p class="lead" style="margin-top:34px">Claude, GPT and Grok each read all 422 pages. Every quote they cite is checked against the filing.</p>
+  <p class="say" style="margin-top:44px"><b>Raise your hand.</b> I’ll type your question in.</p>
+  <aside class="notes">
+    <p><b>HARD STOP at 3:30 on this slide.</b> Two questions max, one if the first runs long.</p>
+    <p>Switch to the stage tab (http://127.0.0.1:8800). Take a hand, repeat the question into the mic, type it. While models read: "Each is reading all 422 pages right now; every quote gets checked as it comes back."</p>
+    <p>If a quote is flagged "not in filing": don't call it fabrication. Ctrl-F a few words in the filing tab first.</p>
+    <p>If the room is quiet, use a backup question from the prep doc. If the network dies: "Live demos, right?" and move on.</p>
+  </aside>
+</section>
+
+<!-- 16 · Limits -->
+<section class="slide" data-title="Limits" data-min="0.5">
+  <p class="kicker">Limits</p>
+  <h2>Where this stops working</h2>
+  <div class="cards" style="grid-template-columns:1fr 1fr">
+    <div class="card"><h3>Each document type needs its own extraction</h3><p>Page breaks, tables and blanks differ by filing agent. 10-Ks carry XBRL; transcripts and contracts need other tricks.</p></div>
+    <div class="card"><h3>Parity on factual, cited questions</h3><p>Not open-ended analysis or judgment calls.</p></div>
+    <div class="card"><h3>Four S-1s; easier held-out questions</h3><p>Keyword search scored 91–93% there. Harder sets, 10-Qs and 10-Ks come next.</p></div>
+    <div class="card"><h3>“Local” ran through an API</h3><p>Same open weights; not yet measured on a 24GB card.</p></div>
+  </div>
+  <aside class="notes">
+    <p>30 seconds; it makes the parity claim stronger. The real limitation is the first card: tricks 1–3 depend on document layout. Tricks 4–6 (code does math, code checks, retry) carry over to anything.</p>
+  </aside>
+</section>
+
+<!-- 17 · Automate -->
+<section class="slide" data-title="Can an LLM find the tricks?" data-min="0.75">
+  <p class="kicker">What’s next</p>
+  <h2>Can an LLM find the tricks for us?</h2>
+  <div class="loop">
+    <div>Measure on a benchmark</div><span>→</span>
+    <div>Read every failure</div><span>→</span>
+    <div>Propose a trick, in code</div><span>→</span>
+    <div>Re-test on dev documents</div><span>→</span>
+    <div class="last">Freeze, test held-out</div>
+  </div>
+  <div class="cards step" style="grid-template-columns:1fr 1fr;margin-top:34px">
+    <div class="card"><h3>A frontier model designs the workflow</h3><p>Reads the failures, proposes a trick, writes it as code. Once per task.</p></div>
+    <div class="card good"><h3>A local model runs it</h3><p>On every new document, at local cost, with code checking each answer.</p></div>
+  </div>
+  <p class="say step" style="margin-top:30px"><b>The goal isn’t a smarter small model. It’s parity on a task, by design.</b></p>
+  <aside class="notes">
+    <p>"I ran this loop by hand. Every step can be handed to an LLM: a frontier model is a good workflow designer, and the local model runs the result on every document."</p>
+    <p>"People already automate parts of this, like prompt and program optimizers such as DSPy. What finance needs on top is an eval you can trust, plus a held-out test, so an automated loop can't fool itself."</p>
+  </aside>
+</section>
+
+<!-- 18 · Back to Quiz 2 -->
+<section class="slide" data-title="Quiz 2 answer" data-min="0.75">
+  <p class="kicker">Back to Quiz 2</p>
+  <h2>Which change mattered most?</h2>
+  <div class="quiz two key">
+    <div class="opt"><b>A</b>A bigger model</div>
+    <div class="opt"><b>B</b>A cleverer prompt</div>
+    <div class="opt"><b>C</b>Letting code do the math</div>
+    <div class="opt ok"><b>D</b>Handing it the right table</div>
+  </div>
+  <p class="say step">Most misses were tables keyword search never found: the gross-margin note, quarterly results. Code doing the math mattered too. A bigger model didn’t.</p>
+  <aside class="notes">
+    <p>"Who voted D?" Reveal. "Four of the five misses on Anthropic and every quarterly miss on Instacart were tables keyword search never retrieved."</p>
+    <p>"C helped too: it fixed rounding. And A: same 27B model throughout."</p>
+  </aside>
+</section>
+
+<!-- 19 · Takeaways -->
+<section class="slide" data-title="Takeaways" data-min="0.75">
+  <p class="kicker">Three things to take home</p>
+  <div class="take">
+    <div class="step"><span class="n">1</span><div><h3>Small models fail by omission</h3><p>Keyword search said “not in the filing” 27 of 33 times. Give the model the right table and it answers.</p></div></div>
+    <div class="step"><span class="n">2</span><div><h3>Workflow beats size on narrow tasks</h3><p>Code prepares, the model decides, code checks: a 27B model matched the frontier at 1/50th of the cost.</p></div></div>
+    <div class="step"><span class="n">3</span><div><h3>Prove it on documents you didn’t tune on</h3><p>Freeze the code, then test held-out. That’s what makes 100% believable.</p></div></div>
+  </div>
+  <aside class="notes">
+    <p>Slow down. One sentence per point, then pause. If time allows: "Which of these will you try on your own documents?"</p>
+  </aside>
+</section>
+
+<!-- 20 · Your turn / Q&A -->
+<section class="slide center" data-title="Your turn / Q&A" data-min="2">
+  <div style="display:flex;gap:90px;align-items:center">
+    <div style="flex:1">
+      <p class="kicker">Your turn</p>
+      <h2>What should a local model read next?</h2>
+      <p class="lead">The skills, benchmark and every answer are open source:</p>
+      <p class="mono" style="font-size:40px;font-weight:700;margin:18px 0 12px;color:var(--accent-d)">github.com/bitcoindatalabs/edgar-eval</p>
+      <p class="mono" style="font-size:20px;margin:0 0 40px;color:var(--ink3)">Slides and leaderboard: bitcoindatalabs.github.io/edgar-eval · bitcoindatalabs.org</p>
+      <p class="lead" style="font-size:28px;color:var(--ink)"><b>Saurabh “Soru” Kumar</b> · Bitcoin Data Labs</p>
+      <p class="lead" style="font-size:20px;margin-top:14px">Not affiliated with Anthropic or the SEC. Figures from a preliminary prospectus. Not investment advice.</p>
+    </div>
+    <div style="width:330px;flex:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px">
+      <svg viewBox="0 0 37 37" width="294" height="294" aria-label="QR code for github.com/bitcoindatalabs/edgar-eval"><path stroke="#242d38" d="M2 2.5h7m3 0h1m1 0h2m2 0h2m1 0h2m2 0h1m2 0h7m-33 1h1m5 0h1m2 0h7m1 0h1m2 0h3m3 0h1m5 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h1m1 0h4m2 0h1m4 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m2 0h3m2 0h1m1 0h1m1 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h2m2 0h1m2 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-33 1h1m5 0h1m1 0h1m6 0h2m3 0h1m5 0h1m5 0h1m-33 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-25 1h2m4 0h2m2 0h1m2 0h1m2 0h1m-25 1h1m1 0h5m5 0h6m8 0h5m-31 1h1m1 0h2m4 0h2m6 0h1m1 0h4m1 0h1m2 0h2m1 0h4m-33 1h4m1 0h5m5 0h2m1 0h1m2 0h1m2 0h1m3 0h1m1 0h2m-32 1h1m2 0h2m2 0h2m3 0h1m1 0h2m3 0h1m1 0h1m2 0h2m2 0h3m1 0h1m-33 1h1m2 0h5m3 0h1m3 0h1m2 0h1m2 0h1m1 0h3m1 0h3m-30 1h5m2 0h1m1 0h2m1 0h5m3 0h1m2 0h1m1 0h2m3 0h3m-33 1h3m1 0h1m1 0h3m8 0h3m2 0h1m1 0h3m1 0h2m1 0h1m-30 1h1m1 0h1m5 0h2m2 0h1m1 0h1m2 0h3m1 0h1m1 0h2m3 0h1m-31 1h1m2 0h8m1 0h1m4 0h1m1 0h1m2 0h1m1 0h2m1 0h2m3 0h1m-33 1h6m1 0h1m2 0h1m2 0h2m1 0h5m2 0h1m2 0h2m1 0h2m1 0h1m-33 1h3m2 0h3m4 0h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h2m-31 1h1m1 0h1m3 0h3m2 0h2m1 0h6m5 0h6m-31 1h2m3 0h3m1 0h3m2 0h2m2 0h4m4 0h3m-30 1h1m4 0h1m2 0h3m3 0h2m1 0h2m2 0h1m1 0h1m2 0h1m2 0h1m2 0h1m-33 1h1m1 0h5m2 0h3m1 0h1m1 0h3m2 0h1m4 0h1m1 0h1m1 0h1m1 0h1m-32 1h1m1 0h2m1 0h1m6 0h1m2 0h1m5 0h2m2 0h2m2 0h3m-32 1h1m5 0h1m1 0h1m2 0h2m2 0h1m1 0h1m4 0h1m1 0h5m2 0h2m-25 1h1m1 0h2m1 0h1m2 0h1m1 0h2m1 0h1m1 0h2m3 0h1m1 0h1m1 0h1m-33 1h7m4 0h1m3 0h1m2 0h1m1 0h2m1 0h2m1 0h1m1 0h1m1 0h2m-32 1h1m5 0h1m1 0h1m4 0h1m2 0h1m3 0h5m3 0h3m-31 1h1m1 0h3m1 0h1m1 0h3m2 0h1m4 0h2m1 0h1m2 0h6m1 0h2m-33 1h1m1 0h3m1 0h1m1 0h5m1 0h4m2 0h1m1 0h4m2 0h3m1 0h1m-33 1h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h1m3 0h2m2 0h1m3 0h2m1 0h2m-31 1h1m5 0h1m2 0h1m1 0h1m4 0h1m2 0h4m2 0h2m1 0h3m-31 1h7m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h4m1 0h1m3 0h1"/></svg>
+    </div>
+  </div>
+  <aside class="notes">
+    <p>Don't end on "any questions?" Ask the slide's question: "What should a local model read next?" Seed it if quiet: "10-Qs? Earnings call transcripts? Your own contracts?"</p>
+    <p>Use digit keys to jump back to a slide during Q&amp;A (e.g. 1 then 4 for slide 14, the held-out table).</p>
+  </aside>
+</section>
+
+<div id="foot"><span>Bitcoin Data Labs · AI Startup Rodeo 2026</span><span id="snum"></span></div>
+<div id="prog"></div>
+</div></div>
+
+<div id="black"></div>
+<div id="notesbar"></div>
+<div id="help">
+→ Space PageDown: next &nbsp;·&nbsp; ← PageUp: back &nbsp;·&nbsp; Home/End &nbsp;·&nbsp; digits: jump to slide<br>
+P: presenter window (notes, timer, pace) &nbsp;·&nbsp; N: notes here &nbsp;·&nbsp; F: fullscreen &nbsp;·&nbsp; B or .: black screen &nbsp;·&nbsp; ?: close help
+</div>
+<div id="panel">
+  <div style="display:flex;align-items:baseline;justify-content:space-between">
+    <div id="ptime" title="Click to restart the timer">00:00</div><div id="ppace"></div>
+  </div>
+  <div id="pblack">■ SCREEN IS BLACK (press B)</div>
+  <div id="ptitle"></div>
+  <div id="pnotes"></div>
+  <div class="pbtns"><button data-a="prev">◀ Back</button><button data-a="next">Next ▶</button><button data-a="reset">Restart timer</button></div>
+</div>
+<div id="nextwrap"></div>
+
+<script>
+(() => {
+  // ── deck engine ──
+  const slides = [...document.querySelectorAll(".slide")];
+  const N = slides.length;
+  const presenter = new URLSearchParams(location.search).has("presenter");
+  const stage = document.getElementById("stage"), viewport = document.getElementById("viewport");
+  const stepsOf = s => [...s.querySelectorAll(".step, .key")];
+  let cur = 0, k = 0;
+
+  function fit() {
+    const r = viewport.getBoundingClientRect();
+    const s = Math.min(r.width / 1600, r.height / 900);
+    stage.style.transform = `translate(-50%, -50%) scale(${s})`;
+  }
+
+  function render() {
+    slides.forEach((s, i) => s.classList.toggle("on", i === cur));
+    const s = slides[cur];
+    stepsOf(s).forEach((e, i) => e.classList.toggle("in", i < k));
+    s.dataset.k = k;
+    document.getElementById("snum").textContent = `${cur + 1} / ${N}`;
+    document.getElementById("prog").style.width = `${(cur + 1) / N * 100}%`;
+    document.getElementById("notesbar").innerHTML = notesOf(s);
+    try { history.replaceState(null, "", location.pathname + location.search + "#" + (cur + 1)); } catch (e) {}
+    if (presenter) panel();
+  }
+  const notesOf = s => (s.querySelector(".notes") || { innerHTML: "" }).innerHTML;
+
+  function go(i, step) {
+    cur = Math.max(0, Math.min(N - 1, i));
+    const n = stepsOf(slides[cur]).length;
+    k = step === "end" ? n : Math.max(0, Math.min(step || 0, n));
+    render(); send();
+  }
+  function next() {
+    if (k < stepsOf(slides[cur]).length) { k++; render(); send(); }
+    else if (cur < N - 1) go(cur + 1, 0);
+  }
+  function prev() {
+    if (k > 0) { k--; render(); send(); }
+    else if (cur > 0) go(cur - 1, "end");
+  }
+
+  // keep the audience window and the presenter window in sync
+  let bc = null;
+  try { bc = new BroadcastChannel("bdl-deck-rodeo"); } catch (e) {}
+  function send(extra) { if (bc) bc.postMessage(Object.assign({ t: "state", cur, k, black: document.body.classList.contains("black") }, extra)); }
+  if (bc) bc.onmessage = ({ data: m }) => {
+    if (m.t === "hello") return send();
+    if (m.t === "state") {
+      document.body.classList.toggle("black", !!m.black);
+      if (m.cur !== cur || m.k !== k) { cur = m.cur; k = m.k; render(); } else if (presenter) panel();
+    }
+  };
+
+  function toggleBlack() { document.body.classList.toggle("black"); send(); if (presenter) panel(); }
+  function toggleFS() {
+    if (document.fullscreenElement) document.exitFullscreen();
+    else document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+  }
+  function openPresenter() {
+    window.open(location.pathname + "?presenter#" + (cur + 1), "bdl-presenter", "width=1280,height=800");
+  }
+
+  let digits = "", digitTimer = null;
+  addEventListener("keydown", e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const key = e.key;
+    if (["ArrowRight", "ArrowDown", " ", "PageDown", "Enter"].includes(key)) {
+      e.preventDefault();
+      if (digits) { clearTimeout(digitTimer); go(parseInt(digits, 10) - 1, "end"); digits = ""; } else next();
+    }
+    else if (["ArrowLeft", "ArrowUp", "PageUp", "Backspace"].includes(key)) { e.preventDefault(); prev(); }
+    else if (key === "Home") go(0, 0);
+    else if (key === "End") go(N - 1, "end");
+    else if (key === "f" || key === "F") toggleFS();
+    else if (key === "p" || key === "P") openPresenter();
+    else if (key === "b" || key === "B" || key === ".") toggleBlack();
+    else if (key === "n" || key === "N") document.body.classList.toggle("shownotes");
+    else if (key === "?") document.body.classList.toggle("showhelp");
+    else if (/^[0-9]$/.test(key)) {
+      digits += key; clearTimeout(digitTimer);
+      digitTimer = setTimeout(() => { go(parseInt(digits, 10) - 1, "end"); digits = ""; }, 900);
+    }
+  });
+  stage.addEventListener("click", e => { if (!presenter && !e.target.closest("a")) next(); });
+  let tx = null;
+  addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, { passive: true });
+  addEventListener("touchend", e => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 40) (dx < 0 ? next : prev)();
+    tx = null;
+  });
+
+  // ── presenter panel: notes, timer, pace against each slide's data-min budget ──
+  const budget = slides.map(s => parseFloat(s.dataset.min || "1") * 60);
+  const endAt = budget.map((_, i) => budget.slice(0, i + 1).reduce((a, b) => a + b, 0));
+  let t0 = Date.now();
+  const mmss = sec => { const s = Math.round(Math.abs(sec)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
+  function panel() {
+    const s = slides[cur], n = stepsOf(s).length;
+    document.getElementById("ptitle").innerHTML =
+      `${cur + 1}/${N} · ${s.dataset.title} <span>· click ${k}/${n} · budget ${mmss(budget[cur])}, end by ${mmss(endAt[cur])}</span>`;
+    document.getElementById("pnotes").innerHTML = notesOf(s);
+    const nx = slides[cur + 1];
+    document.getElementById("nextwrap").innerHTML = k < n
+      ? `<b>Next:</b> click ${k + 1} of ${n} on this slide`
+      : (nx ? `<b>Next slide:</b> ${nx.dataset.title}` : "<b>Last slide</b>");
+    tick();
+  }
+  function tick() {
+    const el = (Date.now() - t0) / 1000;
+    document.getElementById("ptime").textContent = mmss(el);
+    const startOfSlide = endAt[cur] - budget[cur], diff = el - startOfSlide;
+    const p = document.getElementById("ppace");
+    if (diff > budget[cur]) { p.textContent = `${mmss(el - endAt[cur])} behind`; p.className = "behind"; }
+    else if (diff < -20) { p.textContent = `${mmss(-diff)} ahead`; p.className = "ahead"; }
+    else { p.textContent = "on time · 20:00 talk"; p.className = ""; }
+  }
+
+  if (presenter) {
+    document.body.classList.add("presenter");
+    document.title = "Presenter · " + document.title;
+    setInterval(tick, 1000);
+    document.getElementById("ptime").onclick = () => { t0 = Date.now(); tick(); };
+    document.querySelector(".pbtns").onclick = e => {
+      const a = e.target.dataset.a;
+      if (a === "next") next(); else if (a === "prev") prev(); else if (a === "reset") { t0 = Date.now(); tick(); }
+    };
+  }
+
+  addEventListener("hashchange", () => {
+    const h = parseInt(location.hash.slice(1), 10);
+    if (Number.isFinite(h) && h - 1 !== cur) go(h - 1, 0);
+  });
+  addEventListener("resize", fit);
+  fit();
+  const h = parseInt(location.hash.slice(1), 10);
+  cur = Number.isFinite(h) ? Math.max(0, Math.min(N - 1, h - 1)) : 0;
+  render();
+  if (presenter && bc) bc.postMessage({ t: "hello" });
+})();
+</script>
+</body>
+</html>
