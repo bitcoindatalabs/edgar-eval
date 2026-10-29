@@ -1,12 +1,21 @@
 # edgar-eval
 
-**An open benchmark and agent skills for verifiable AI analysis of SEC filings.**
+**Can a local open model match a frontier model on SEC filing analysis? On this task, with the right
+skills and scaffolding, yes.**
 By Saurabh (Soru) Kumar, [Bitcoin Data Labs](https://bitcoindatalabs.org).
 
-On four S-1 prospectuses, two of them held out from development, three open-weight models using
-these skills answered all 101 benchmark questions correctly. Every figure is computed in code, and
-every quote is checked against the filing. The approach: don't make a small model read 400 pages.
-Give it the filing's tables with page citations, let code do the arithmetic, and check every answer.
+A frontier model can read a 400-page filing whole. A 27B open model that fits on one GPU can't, so
+we don't ask it to. We change the workflow around it instead:
+
+- **Code prepares the context.** It parses the filing's financial tables, with page citations, and
+  lists every figure the filing leaves blank. The model gets ~13k tokens, not the filing's 300k-460k.
+- **The model does what models are good at.** It finds the figure and decides what to compute.
+- **Code does the rest.** It runs the arithmetic, checks every input and quote against the filing,
+  checks the period, and sends a failed answer back once with the reason.
+
+The result: on answering questions about S-1 prospectuses with citations, an open 27B model matched
+the frontier model's 47/47 on Anthropic's S-1 at about 1/50th of the cost, and answered every
+question on two held-out S-1s it was never tuned on. Two other open models did the same.
 
 | Questions answered correctly | Anthropic S-1 (built on) | Klaviyo S-1 (held out) | Instacart S-1 (held out) |
 |---|---|---|---|
@@ -16,7 +25,10 @@ Give it the filing's tables with page citations, let code do the arithmetic, and
 
 DeepSeek V4.1 Flash and GLM-5.3 with the skill also answered every question on all three filings.
 "Held out" means the skill was frozen before anyone wrote those questions, and nothing changed
-afterwards ([how](#held-out-test)). Cost is the API price of one full question set.
+afterwards ([how](#held-out-test)). Cost is the API price of one full question set. "Local" means
+open weights small enough for one GPU; our runs used the same weights through an API
+([limitations](#limitations)). Parity is for this task: factual, cited answers about filings, not
+open-ended analysis or judgment.
 
 Leaderboard and answer explorer (Anthropic's S-1): **https://bitcoindatalabs.github.io/edgar-eval/**
 Presented at AI Startup Rodeo, Austin, 2026-10-30 (*Inside Anthropic's IPO Filing: AI-Powered

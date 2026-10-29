@@ -1,7 +1,7 @@
 {
   "name": "filing-evals",
   "version": "0.2.0",
-  "description": "Make small open models answer questions about SEC filings with page citations and code-checked arithmetic, and prove it with quote-anchored evals and held-out filings. Tested on four S-1s.",
+  "description": "Skills and scaffolding that let local open LLMs match frontier models on SEC filing Q&A: page-cited fact sheets, code-computed figures, answer checks, and held-out evals.",
   "author": {
     "name": "Soru Kumar (Bitcoin Data Labs)"
   },
