@@ -1,0 +1,23 @@
+# Fact sheet config for Anthropic, PBC's Form S-1 (filed 2026-10-26).
+# anchor: regex matching the text right before each table's first row.
+title: Anthropic, PBC Form S-1
+cover_starts_with: The information in this preliminary prospectus
+tables:
+  - name: Statement of operations (annual and six-month)
+    anchor: "statements of operations data for the periods indicated: Year Ended December 31, Six Months Ended June 30,"
+    columns: [FY2023, FY2024, FY2025, H1 2025, H1 2026]
+  - name: Quarterly statement of operations
+    anchor: "Quarterly Consolidated Statements of Operations Three Months Ended"
+    columns: [Q1 2025, Q2 2025, Q3 2025, Q4 2025, Q1 2026, Q2 2026]
+  - name: Operating expenses by function (cost of revenue, R&D, S&M, G&A)
+    anchor: "operating expenses grouped by function"
+    columns: [FY2023, FY2024, FY2025, H1 2025, H1 2026]
+  - name: Quarterly adjusted operating income reconciliation
+    anchor: "Operating Margin Three Months Ended"
+    columns: [Q1 2025, Q2 2025, Q3 2025, Q4 2025, Q1 2026, Q2 2026]
+  - name: Cash flows
+    anchor: "2023 2024 2025 2025 2026 Net cash provided by \\(used in\\)"
+    columns: [FY2023, FY2024, FY2025, H1 2025, H1 2026]
+  - name: Balance sheet
+    anchor: "As of December 31, As of June 30, 2024 2025 2026 \\(unaudited\\) Assets"
+    columns: [Dec 31 2024, Dec 31 2025, Jun 30 2026]

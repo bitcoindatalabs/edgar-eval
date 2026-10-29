@@ -1,0 +1,12 @@
+{
+  "name": "bitcoindatalabs",
+  "owner": { "name": "Soru Kumar (Bitcoin Data Labs)" },
+  "metadata": { "description": "Data and eval skills from Bitcoin Data Labs" },
+  "plugins": [
+    {
+      "name": "filing-evals",
+      "source": "./",
+      "description": "filing-factsheet: compact, page-cited fact sheets so local models can answer filing questions. filing-evals: quote-anchored, self-validating evals to prove it."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use edgar-eval or S-1 Bench, please cite it as below."
+title: "edgar-eval: S-1 Bench and skills for verifiable AI analysis of SEC filings"
+abstract: >-
+  A self-validating benchmark of 47 quote-anchored questions over Anthropic, PBC's Form S-1,
+  and two agent skills: filing-factsheet, which builds a compact page-cited fact sheet so a
+  model that fits a 24GB GPU can answer filing questions, and filing-evals, which builds,
+  validates, and scores such benchmarks with code-based checks including quote grounding.
+type: software
+authors:
+  - given-names: Saurabh
+    family-names: Kumar
+    alias: Soru Kumar
+    orcid: "https://orcid.org/0009-0004-7944-3492"
+    affiliation: Bitcoin Data Labs
+repository-code: "https://github.com/bitcoindatalabs/edgar-eval"
+url: "https://bitcoindatalabs.github.io/edgar-eval/"
+license: Apache-2.0
+version: 0.1.0
+date-released: "2026-10-30"
+keywords:
+  - evaluation
+  - large language models
+  - SEC EDGAR
+  - financial disclosure
+  - retrieval-augmented generation
+  - grounding

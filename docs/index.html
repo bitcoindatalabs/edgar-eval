@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S-1 Bench</title>
+<meta name="description" content="Can your AI read a prospectus? 47 verified questions over Anthropic's S-1, run against frontier, fast, and open models.">
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f6f5f2; --surface-1: #fcfcfb; --surface-2: #f0efec; --border: #e2e0da;
+  --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #7a7974;
+  --grid: #e8e6e1;
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a;
+  --seq-0: #f0efec; --seq-1: #cde2fb; --seq-2: #9ec5f4; --seq-3: #5598e7; --seq-4: #256abf; --seq-5: #104281;
+  --good: #0ca30c; --critical: #d03b3b; --warning: #b97f00;
+  --accent: #eb6834;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    color-scheme: dark;
+    --bg: #121211; --surface-1: #1a1a19; --surface-2: #232321; --border: #33332f;
+    --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #8f8e86;
+    --grid: #2c2c29;
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+    --seq-0: #383835; --seq-1: #0d366b; --seq-2: #184f95; --seq-3: #256abf; --seq-4: #5598e7; --seq-5: #9ec5f4;
+    --good: #0ca30c; --critical: #e66767; --warning: #fab219;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --surface-1: #1a1a19; --surface-2: #232321; --border: #33332f;
+  --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #8f8e86;
+  --grid: #2c2c29;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70;
+  --seq-0: #383835; --seq-1: #0d366b; --seq-2: #184f95; --seq-3: #256abf; --seq-4: #5598e7; --seq-5: #9ec5f4;
+  --good: #0ca30c; --critical: #e66767; --warning: #fab219;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text-primary);
+  font: 15px/1.5 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+a { color: inherit; }
+h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 20px; margin: 0 0 4px; }
+.lede { color: var(--text-secondary); max-width: 720px; margin: 0 0 24px; font-size: 17px; }
+.eyebrow { color: var(--accent); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+.sub { color: var(--text-secondary); margin: 0 0 16px; font-size: 14px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+.tile b { display: block; font-size: 28px; font-variant-numeric: tabular-nums; }
+.tile span { color: var(--text-secondary); font-size: 13px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 16px; }
+.seg { display: inline-flex; background: var(--surface-2); border-radius: 8px; padding: 3px; }
+.seg button { border: 0; background: none; color: var(--text-secondary); padding: 6px 12px; border-radius: 6px; font: inherit; font-size: 14px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface-1); color: var(--text-primary); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+.theme { margin-left: auto; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--text-secondary); margin-bottom: 8px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+svg text { fill: var(--text-secondary); font-size: 12px; }
+svg .val { fill: var(--text-primary); font-variant-numeric: tabular-nums; }
+.grid line { stroke: var(--grid); }
+.tip { position: fixed; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,.15); opacity: 0; transition: opacity .1s; max-width: 280px; z-index: 10; }
+.tip b { display: block; }
+.tip .m { color: var(--text-secondary); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { color: var(--text-secondary); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.scroll { overflow-x: auto; }
+.heat td.cell { text-align: center; font-variant-numeric: tabular-nums; min-width: 64px; }
+.pill { display: inline-block; padding: 1px 8px; border-radius: 99px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.ok { color: var(--good); } .bad { color: var(--critical); }
+.flag { font-weight: 600; }
+select { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); max-width: 100%; }
+.q { font-size: 17px; font-weight: 600; margin: 12px 0 4px; }
+.gold { background: var(--surface-2); border-radius: 8px; padding: 10px 12px; font-size: 14px; margin: 8px 0 12px; }
+.gold code { white-space: normal; }
+.trap { color: var(--warning); font-size: 14px; margin: 4px 0; }
+blockquote { margin: 4px 0 0; padding-left: 10px; border-left: 3px solid var(--border); color: var(--text-secondary); font-size: 13px; }
+footer { color: var(--text-muted); font-size: 13px; margin-top: 32px; }
+.empty { color: var(--text-muted); padding: 24px; text-align: center; }
+@media (max-width: 640px) { .theme { margin-left: 0; } td, th { padding: 6px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">AI Startup Rodeo · Austin · Oct 30, 2026</div>
+  <h1>S-1 Bench: can your AI read a prospectus?</h1>
+  <p class="lede">Frontier models can read Anthropic's 420-page S-1 and answer correctly. Can a 27B model
+    that fits on one 24GB GPU? 47 questions, each tied to an exact quote from the filing.</p>
+
+  <section class="card">
+    <h2>The result</h2>
+    <p class="sub">Same 47 questions, same scoring. The skill builds a page-cited fact sheet and lets code do the arithmetic.</p>
+    <div class="legend" id="story-legend"></div>
+    <div id="story-bars"></div>
+    <div class="scroll" style="margin-top:12px"><table id="story-table"></table></div>
+  </section>
+
+  <h2 style="margin:28px 0 12px">All runs</h2>
+  <div class="tiles" id="tiles"></div>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Mode" id="modes"></div>
+    <div class="seg theme" role="group" aria-label="Theme" id="theme">
+      <button data-t="auto">Auto</button><button data-t="light">Light</button><button data-t="dark">Dark</button>
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>Accuracy</h2>
+    <p class="sub" id="mode-note"></p>
+    <div class="legend" id="legend"></div>
+    <div id="bars"></div>
+  </section>
+
+  <section class="card">
+    <h2>Leaderboard</h2>
+    <p class="sub"><b>Invented</b>: numbers given for blank figures. <b>Grounded</b>: share of cited quotes that actually exist in the filing.</p>
+    <div class="scroll"><table id="board"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Where models fail</h2>
+    <p class="sub">Accuracy by question type. Darker is better.</p>
+    <div class="scroll"><table class="heat" id="heat"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Look at the answers</h2>
+    <p class="sub">Pick a question to see what every model said and whether its quote is real.</p>
+    <select id="qpick" aria-label="Question"></select>
+    <div id="qview"></div>
+  </section>
+
+  <footer>
+    Source: <a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic, PBC Form S-1</a>, filed 2026-10-26 ·
+    Code, skills &amp; gold set: <a href="https://github.com/bitcoindatalabs/edgar-eval">bitcoindatalabs/edgar-eval</a> ·
+    Soru Kumar · <a href="https://bitcoindatalabs.org">Bitcoin Data Labs</a> / OrangeMetrics
+  </footer>
+</main>
+<div class="tip" id="tip"></div>
+
+<script>
+const GROUPS = { frontier: ["Frontier", "--series-1"], fast: ["Fast / cheap", "--series-2"], open: ["Open-weight (fits 24GB)", "--series-3"] };
+const MODE_LABEL = { full: "Full filing", rag: "Naive retrieval", skill: "With skill" };
+const STORY = [
+  { mode: "full", model: "anthropic/claude-opus-5.5", label: "Frontier · full filing", sub: "Claude Opus 5.5 · 310k-token context", color: "--series-1" },
+  { mode: "rag", model: "qwen/qwen3.8-27b", label: "Local 27B · naive retrieval", sub: "Qwen3.8 27B · top 8 pages, ~7k tokens", color: "--series-2" },
+  { mode: "skill", model: "qwen/qwen3.8-27b", label: "Local 27B · with skill", sub: "Qwen3.8 27B · fact sheet + passages, ~8k tokens", color: "--series-3" },
+];
+const MODE_NOTE = {
+  full: "Each model gets all 420 pages plus every question in one call.",
+  closed: "No document at all. What does the model know, and what does it invent?",
+  rag: "Keyword search picks 8 pages per question. Misses here are often retrieval, not reasoning.",
+  skill: "Fact sheet (tables + 32 blank figures, each cited) plus 12 short passages. Arithmetic is done by code.",
+};
+const CAT_LABEL = { fact: "Facts", "period-trap": "Period traps", blank: "Blanks", derived: "Derived", governance: "Governance", risk: "Risk" };
+const pct = v => v == null ? "–" : Math.round(v * 100) + "%";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+
+let S, Q, mode;
+
+// ---------- theme toggle (per-viewer convenience only)
+function setTheme(t) {
+  if (t === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", t);
+  document.querySelectorAll("#theme button").forEach(b => b.setAttribute("aria-pressed", b.dataset.t === t));
+  try { localStorage.setItem("s1b-theme", t); } catch (e) {}
+  if (S) render();
+}
+document.querySelectorAll("#theme button").forEach(b => b.onclick = () => setTheme(b.dataset.t));
+let saved = "auto"; try { saved = localStorage.getItem("s1b-theme") || "auto"; } catch (e) {}
+setTheme(saved);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => S && render());
+
+// ---------- tooltip
+const tip = document.getElementById("tip");
+function showTip(e, html) {
+  tip.innerHTML = html; tip.style.opacity = 1;
+  const x = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8);
+  const y = Math.min(e.clientY + 14, innerHeight - tip.offsetHeight - 8);
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+const hideTip = () => tip.style.opacity = 0;
+
+// ---------- sections
+function tiles(rows) {
+  const best = rows[0];
+  const inventors = rows.filter(r => r.invented_blanks > 0).length;
+  const cost = rows.reduce((a, r) => a + (r.cost_usd || 0), 0);
+  document.getElementById("tiles").innerHTML = [
+    [Q.length, "verified questions"],
+    [rows.length, "models tested"],
+    [best ? pct(best.accuracy) : "–", best ? "top score · " + esc(best.label) : "top score"],
+    [`${inventors}/${rows.length}`, "models invented a blank figure"],
+    ["$" + cost.toFixed(2), "total API cost, this mode"],
+  ].map(([b, s]) => `<div class="tile"><b>${b}</b><span>${s}</span></div>`).join("");
+}
+
+function legend(rows) {
+  const present = [...new Set(rows.map(r => r.group))];
+  document.getElementById("legend").innerHTML = Object.entries(GROUPS).filter(([g]) => present.includes(g))
+    .map(([, [name, v]]) => `<span><i style="background:var(${v})"></i>${name}</span>`).join("");
+}
+
+function bars(rows) {
+  const el = document.getElementById("bars");
+  const W = Math.max(320, el.clientWidth), rowH = 30, labelW = Math.min(170, W * 0.38), padR = 48;
+  const H = rows.length * rowH + 24, plotW = W - labelW - padR;
+  const x = v => labelW + v * plotW;
+  let s = `<svg width="${W}" height="${H}" role="img" aria-label="Accuracy by model"><g class="grid">`;
+  for (const t of [0, .25, .5, .75, 1]) s += `<line x1="${x(t)}" x2="${x(t)}" y1="0" y2="${H - 20}"/><text x="${x(t)}" y="${H - 4}" text-anchor="middle">${t * 100}%</text>`;
+  s += `</g>`;
+  rows.forEach((r, i) => {
+    const y = i * rowH + 4, h = rowH - 10, w = Math.max(2, r.accuracy * plotW);
+    const col = css((GROUPS[r.group] || GROUPS.frontier)[1]);
+    s += `<text x="${labelW - 10}" y="${y + h / 2 + 4}" text-anchor="end">${esc(r.label)}</text>`;
+    // square at the baseline, 4px rounded at the data end
+    s += `<path d="M${labelW},${y} h${w - 4} q4,0 4,4 v${h - 8} q0,4 -4,4 h${-(w - 4)} z" fill="${col}"/>`;
+    s += `<text class="val" x="${labelW + w + 6}" y="${y + h / 2 + 4}">${pct(r.accuracy)}</text>`;
+    s += `<rect data-i="${i}" x="0" y="${y - 3}" width="${W}" height="${rowH}" fill="transparent"/>`;
+  });
+  el.innerHTML = s + `</svg>`;
+  el.querySelectorAll("rect[data-i]").forEach(rc => {
+    const r = rows[+rc.dataset.i];
+    rc.onmousemove = e => showTip(e, `<b>${esc(r.label)}</b>${pct(r.accuracy)} correct of ${r.answered}
+      <div class="m">Invented blanks: ${r.invented_blanks}/${r.blanks_asked} · grounded: ${pct(r.grounded_rate)}</div>`);
+    rc.onmouseleave = hideTip;
+  });
+}
+
+function board(rows) {
+  document.getElementById("board").innerHTML =
+    `<thead><tr><th>#</th><th>Model</th><th class="num">Accuracy</th><th class="num">Invented</th><th class="num">Grounded</th><th class="num">Cost</th></tr></thead><tbody>` +
+    rows.map((r, i) => `<tr><td>${i + 1}</td>
+      <td><i style="display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:8px;background:var(${(GROUPS[r.group] || GROUPS.frontier)[1]})"></i>${esc(r.label)}
+        <div style="color:var(--text-muted);font-size:12px;margin-left:18px">${(GROUPS[r.group] || ["Other"])[0]}</div></td>
+      <td class="num">${pct(r.accuracy)}${r.answered < Q.length ? `<div style="color:var(--text-muted);font-size:12px">${r.answered}/${Q.length} answered</div>` : ""}</td>
+      <td class="num ${r.invented_blanks ? "bad flag" : "ok"}">${r.invented_blanks ? "⚠ " : "✓ "}${r.invented_blanks}/${r.blanks_asked}</td>
+      <td class="num">${pct(r.grounded_rate)}</td>
+      <td class="num">$${(r.cost_usd || 0).toFixed(3)}</td></tr>`).join("") + `</tbody>`;
+}
+
+function heat(rows) {
+  const cats = Object.keys(CAT_LABEL).filter(c => rows.some(r => c in r.by_category));
+  const step = v => v == null ? "--seq-0" : `--seq-${Math.min(5, Math.max(1, Math.ceil(v * 5)))}`;
+  const ink = v => {  // pick text color from the cell's actual luminance
+    const [r, g, b] = css(step(v)).match(/\w\w/g).map(h => parseInt(h, 16) / 255);
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.5 ? "#0b0b0b" : "#ffffff";
+  };
+  document.getElementById("heat").innerHTML =
+    `<thead><tr><th>Model</th>${cats.map(c => `<th class="num">${CAT_LABEL[c]}</th>`).join("")}</tr></thead><tbody>` +
+    rows.map(r => `<tr><td>${esc(r.label)}</td>${cats.map(c => {
+      const v = r.by_category[c];
+      return `<td class="cell" style="background:var(${step(v)});color:${ink(v)}">${pct(v)}</td>`;
+    }).join("")}</tr>`).join("") + `</tbody>`;
+}
+
+function picker() {
+  const sel = document.getElementById("qpick");
+  const byCat = {};
+  Q.forEach(q => (byCat[q.category] ||= []).push(q));
+  sel.innerHTML = Object.keys(CAT_LABEL).filter(c => byCat[c]).map(c =>
+    `<optgroup label="${CAT_LABEL[c]}">${byCat[c].map(q => `<option value="${q.id}">${esc(q.question)}</option>`).join("")}</optgroup>`).join("");
+  sel.value = "blank-price-range";
+  sel.onchange = () => qview();
+}
+
+function goldText(q) {
+  if (q.kind === "not_disclosed") return "Not disclosed. The filing leaves this blank.";
+  if (q.kind === "number") return `${q.value.toLocaleString()} ${q.unit}${q.inputs ? ` <span style="color:var(--text-muted)">= ${esc(q.inputs)}</span>` : ""}`;
+  return "Must mention: " + q.must_include.map(esc).join(", ");
+}
+
+function qview() {
+  const q = Q.find(x => x.id === document.getElementById("qpick").value);
+  const rows = complete(mode);
+  const ans = rows.map(r => ({ r, a: r.per_question[q.id] })).filter(x => x.a);
+  document.getElementById("qview").innerHTML = `
+    <div class="q">${esc(q.question)}</div>
+    ${q.trap ? `<div class="trap">⚠ Trap: ${esc(q.trap)}</div>` : ""}
+    <div class="gold"><b>Gold answer:</b> ${goldText(q)}<blockquote>"${esc(q.quote)}" (${String(q.page).startsWith("#") ? "cover p. " + q.page.slice(1) : "p. " + esc(q.page)})</blockquote></div>
+    <div class="scroll"><table><thead><tr><th>Model</th><th>Verdict</th><th>Answer</th><th>Quote cited</th></tr></thead><tbody>
+    ${ans.length ? ans.map(({ r, a }) => {
+      const p = a.answer || {};
+      const g = a.grounded == null ? `<span style="color:var(--text-muted)">none</span>`
+        : a.grounded ? `<span class="ok">✓ real</span>` : `<span class="bad flag">✗ not in filing</span>`;
+      return `<tr><td>${esc(r.label)}</td>
+        <td>${a.correct ? `<span class="ok flag">✓ Pass</span>` : `<span class="bad flag">✗ Fail</span>`}${a.invented ? `<div class="bad" style="font-size:12px">invented a number</div>` : ""}</td>
+        <td>${esc(p.answer)}${p.value != null ? `<div style="color:var(--text-muted);font-size:12px">value: ${esc(p.value)} ${esc(p.unit)}</div>` : ""}</td>
+        <td>${g}${p.quote ? `<blockquote>${esc(String(p.quote).slice(0, 220))}${String(p.quote).length > 220 ? "…" : ""}</blockquote>` : ""}</td></tr>`;
+    }).join("") : `<tr><td colspan="4" class="empty">No answers in this mode yet.</td></tr>`}
+    </tbody></table></div>`;
+}
+
+// Only runs that answered every question; partial runs would mislead.
+const complete = m => (S.modes[m] || []).filter(r => r.answered === Q.length);
+
+function story() {
+  const rows = STORY.map(s => ({ ...s, r: (S.modes[s.mode] || []).find(x => x.model === s.model) })).filter(s => s.r);
+  document.getElementById("story-legend").innerHTML = rows.map(s => `<span><i style="background:var(${s.color})"></i>${esc(s.label)}</span>`).join("");
+  const el = document.getElementById("story-bars");
+  const W = Math.max(320, el.clientWidth), rowH = 44, labelW = Math.min(230, W * 0.42), padR = 52;
+  const H = rows.length * rowH + 24, plotW = W - labelW - padR, x = v => labelW + v * plotW;
+  let s = `<svg width="${W}" height="${H}" role="img" aria-label="Accuracy by setup"><g class="grid">`;
+  for (const t of [0, .25, .5, .75, 1]) s += `<line x1="${x(t)}" x2="${x(t)}" y1="0" y2="${H - 20}"/><text x="${x(t)}" y="${H - 4}" text-anchor="middle">${t * 100}%</text>`;
+  s += `</g>`;
+  rows.forEach(({ r, label, sub, color }, i) => {
+    const y = i * rowH + 6, h = 24, w = Math.max(2, r.accuracy * plotW);
+    s += `<text x="${labelW - 10}" y="${y + 10}" text-anchor="end" class="val">${esc(label)}</text>`;
+    s += `<text x="${labelW - 10}" y="${y + 25}" text-anchor="end" style="font-size:11px">${esc(sub.split(" · ")[0])}</text>`;
+    s += `<path d="M${labelW},${y} h${w - 4} q4,0 4,4 v${h - 8} q0,4 -4,4 h${-(w - 4)} z" fill="${css(color)}"/>`;
+    s += `<text class="val" x="${labelW + w + 6}" y="${y + h / 2 + 4}" style="font-weight:600">${pct(r.accuracy)}</text>`;
+  });
+  el.innerHTML = s + `</svg>`;
+  document.getElementById("story-table").innerHTML =
+    `<thead><tr><th>Setup</th><th class="num">Accuracy</th><th class="num">Quotes real</th><th class="num">Invented blanks</th><th class="num">Cost per run</th></tr></thead><tbody>` +
+    rows.map(({ r, label, sub }) => `<tr><td><b>${esc(label)}</b><div style="color:var(--text-muted);font-size:12px">${esc(sub)}</div></td>
+      <td class="num">${pct(r.accuracy)}</td><td class="num">${pct(r.grounded_rate)}</td>
+      <td class="num">${r.invented_blanks}/${r.blanks_asked}</td><td class="num">$${(r.cost_usd || 0).toFixed(2)}</td></tr>`).join("") +
+    `</tbody>`;
+}
+
+function modes() {
+  const avail = ["full", "rag", "skill"].filter(m => complete(m).length);
+  mode = avail.includes(mode) ? mode : avail[0];
+  document.getElementById("modes").innerHTML = avail.map(m =>
+    `<button data-m="${m}" aria-pressed="${m === mode}">${MODE_LABEL[m]}</button>`).join("");
+  document.querySelectorAll("#modes button").forEach(b => b.onclick = () => { mode = b.dataset.m; render(); });
+}
+
+function render() {
+  story();
+  modes();
+  const rows = complete(mode);
+  document.getElementById("mode-note").textContent = MODE_NOTE[mode] || "";
+  tiles(rows); legend(rows); bars(rows); board(rows); heat(rows); qview();
+}
+
+Promise.all([fetch("data/summary.json").then(r => r.json()), fetch("data/questions.json").then(r => r.json())])
+  .then(([s, q]) => { S = s; Q = q; picker(); render(); addEventListener("resize", () => { story(); bars(complete(mode)); }); })
+  .catch(e => document.querySelector("main").insertAdjacentHTML("beforeend", `<p class="empty">Could not load results: ${esc(e)}</p>`));
+</script>
+</body>
+</html>

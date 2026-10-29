@@ -1,0 +1,1285 @@
+{
+ "tables": [
+  {
+   "name": "Statement of operations (annual and six-month)",
+   "anchor": "statements of operations data for the periods indicated: Year Ended December 31, Six Months Ended June 30,",
+   "columns": [
+    "FY2023",
+    "FY2024",
+    "FY2025",
+    "H1 2025",
+    "H1 2026"
+   ],
+   "page": "147",
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      41.0,
+      386.0,
+      4585.0,
+      1163.0,
+      16286.0
+     ],
+     "raw": [
+      "41",
+      "386",
+      "4,585",
+      "1,163",
+      "16,286"
+     ]
+    },
+    {
+     "label": "Compute and infrastructure",
+     "values": [
+      433.0,
+      2522.0,
+      7326.0,
+      2334.0,
+      8945.0
+     ],
+     "raw": [
+      "433",
+      "2,522",
+      "7,326",
+      "2,334",
+      "8,945"
+     ]
+    },
+    {
+     "label": "Personnel",
+     "values": [
+      95.0,
+      454.0,
+      1839.0,
+      538.0,
+      3152.0
+     ],
+     "raw": [
+      "95",
+      "454",
+      "1,839",
+      "538",
+      "3,152"
+     ]
+    },
+    {
+     "label": "Bartz settlement",
+     "values": [
+      0.0,
+      0.0,
+      1500.0,
+      0.0,
+      0.0
+     ],
+     "raw": [
+      "\u2014",
+      "\u2014",
+      "1,500",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Sales, marketing, and partnerships",
+     "values": [
+      2.0,
+      43.0,
+      568.0,
+      120.0,
+      3168.0
+     ],
+     "raw": [
+      "2",
+      "43",
+      "568",
+      "120",
+      "3,168"
+     ]
+    },
+    {
+     "label": "Other operating and administrative",
+     "values": [
+      62.0,
+      347.0,
+      1412.0,
+      306.0,
+      1714.0
+     ],
+     "raw": [
+      "62",
+      "347",
+      "1,412",
+      "306",
+      "1,714"
+     ]
+    },
+    {
+     "label": "Total operating expenses",
+     "values": [
+      592.0,
+      3366.0,
+      12645.0,
+      3298.0,
+      16979.0
+     ],
+     "raw": [
+      "592",
+      "3,366",
+      "12,645",
+      "3,298",
+      "16,979"
+     ]
+    },
+    {
+     "label": "Operating loss",
+     "values": [
+      -551.0,
+      -2980.0,
+      -8060.0,
+      -2135.0,
+      -693.0
+     ],
+     "raw": [
+      "(551)",
+      "(2,980)",
+      "(8,060)",
+      "(2,135)",
+      "(693)"
+     ]
+    },
+    {
+     "label": "Interest income",
+     "values": [
+      69.0,
+      106.0,
+      431.0,
+      115.0,
+      1111.0
+     ],
+     "raw": [
+      "69",
+      "106",
+      "431",
+      "115",
+      "1,111"
+     ]
+    },
+    {
+     "label": "Change in fair value of convertible notes, derivative liabilities, and SAFEs",
+     "values": [
+      -1045.0,
+      -5434.0,
+      -34308.0,
+      -10942.0,
+      -72388.0
+     ],
+     "raw": [
+      "(1,045)",
+      "(5,434)",
+      "(34,308)",
+      "(10,942)",
+      "(72,388)"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      -2.0,
+      0.0,
+      -8.0,
+      0.0,
+      -8757.0
+     ],
+     "raw": [
+      "(2)",
+      "\u2014",
+      "(8)",
+      "\u2014",
+      "(8,757)"
+     ]
+    },
+    {
+     "label": "Total other income (expense), net",
+     "values": [
+      -978.0,
+      -5328.0,
+      -33885.0,
+      -10827.0,
+      -80034.0
+     ],
+     "raw": [
+      "(978)",
+      "(5,328)",
+      "(33,885)",
+      "(10,827)",
+      "(80,034)"
+     ]
+    },
+    {
+     "label": "Loss before provision for income taxes",
+     "values": [
+      -1529.0,
+      -8308.0,
+      -41945.0,
+      -12962.0,
+      -80727.0
+     ],
+     "raw": [
+      "(1,529)",
+      "(8,308)",
+      "(41,945)",
+      "(12,962)",
+      "(80,727)"
+     ]
+    },
+    {
+     "label": "Provision for income taxes",
+     "values": [
+      2.0,
+      1.0,
+      20.0,
+      7.0,
+      21.0
+     ],
+     "raw": [
+      "2",
+      "1",
+      "20",
+      "7",
+      "21"
+     ]
+    },
+    {
+     "label": "Net loss",
+     "values": [
+      -1531.0,
+      -8309.0,
+      -41965.0,
+      -12969.0,
+      -80748.0
+     ],
+     "raw": [
+      "(1,531)",
+      "(8,309)",
+      "(41,965)",
+      "(12,969)",
+      "(80,748)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Quarterly statement of operations",
+   "anchor": "Quarterly Consolidated Statements of Operations Three Months Ended",
+   "columns": [
+    "Q1 2025",
+    "Q2 2025",
+    "Q3 2025",
+    "Q4 2025",
+    "Q1 2026",
+    "Q2 2026"
+   ],
+   "page": "157",
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      376.0,
+      787.0,
+      1382.0,
+      2040.0,
+      4731.0,
+      11555.0
+     ],
+     "raw": [
+      "376",
+      "787",
+      "1,382",
+      "2,040",
+      "4,731",
+      "11,555"
+     ]
+    },
+    {
+     "label": "Compute and infrastructure",
+     "values": [
+      944.0,
+      1390.0,
+      2047.0,
+      2945.0,
+      3387.0,
+      5558.0
+     ],
+     "raw": [
+      "944",
+      "1,390",
+      "2,047",
+      "2,945",
+      "3,387",
+      "5,558"
+     ]
+    },
+    {
+     "label": "Personnel",
+     "values": [
+      218.0,
+      320.0,
+      489.0,
+      812.0,
+      1295.0,
+      1857.0
+     ],
+     "raw": [
+      "218",
+      "320",
+      "489",
+      "812",
+      "1,295",
+      "1,857"
+     ]
+    },
+    {
+     "label": "Bartz settlement",
+     "values": [
+      0.0,
+      0.0,
+      1500.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "raw": [
+      "\u2014",
+      "\u2014",
+      "1,500",
+      "\u2014",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Sales, marketing, and partnerships",
+     "values": [
+      24.0,
+      96.0,
+      202.0,
+      246.0,
+      1033.0,
+      2135.0
+     ],
+     "raw": [
+      "24",
+      "96",
+      "202",
+      "246",
+      "1,033",
+      "2,135"
+     ]
+    },
+    {
+     "label": "Other operating and administrative",
+     "values": [
+      125.0,
+      181.0,
+      233.0,
+      873.0,
+      683.0,
+      1031.0
+     ],
+     "raw": [
+      "125",
+      "181",
+      "233",
+      "873",
+      "683",
+      "1,031"
+     ]
+    },
+    {
+     "label": "Total operating expenses",
+     "values": [
+      1311.0,
+      1987.0,
+      4471.0,
+      4876.0,
+      6398.0,
+      10581.0
+     ],
+     "raw": [
+      "1,311",
+      "1,987",
+      "4,471",
+      "4,876",
+      "6,398",
+      "10,581"
+     ]
+    },
+    {
+     "label": "Operating income (loss)",
+     "values": [
+      -935.0,
+      -1200.0,
+      -3089.0,
+      -2836.0,
+      -1667.0,
+      974.0
+     ],
+     "raw": [
+      "(935)",
+      "(1,200)",
+      "(3,089)",
+      "(2,836)",
+      "(1,667)",
+      "974"
+     ]
+    },
+    {
+     "label": "Interest income",
+     "values": [
+      51.0,
+      64.0,
+      124.0,
+      192.0,
+      349.0,
+      762.0
+     ],
+     "raw": [
+      "51",
+      "64",
+      "124",
+      "192",
+      "349",
+      "762"
+     ]
+    },
+    {
+     "label": "Change in fair value of convertible notes, derivative liabilities, and SAFEs",
+     "values": [
+      -5701.0,
+      -5241.0,
+      -9165.0,
+      -14201.0,
+      -12791.0,
+      -59597.0
+     ],
+     "raw": [
+      "(5,701)",
+      "(5,241)",
+      "(9,165)",
+      "(14,201)",
+      "(12,791)",
+      "(59,597)"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      0.0,
+      0.0,
+      -3.0,
+      -5.0,
+      -309.0,
+      -8448.0
+     ],
+     "raw": [
+      "\u2014",
+      "\u2014",
+      "(3)",
+      "(5)",
+      "(309)",
+      "(8,448)"
+     ]
+    },
+    {
+     "label": "Total other income (expense), net",
+     "values": [
+      -5650.0,
+      -5177.0,
+      -9044.0,
+      -14014.0,
+      -12751.0,
+      -67283.0
+     ],
+     "raw": [
+      "(5,650)",
+      "(5,177)",
+      "(9,044)",
+      "(14,014)",
+      "(12,751)",
+      "(67,283)"
+     ]
+    },
+    {
+     "label": "Loss before provision for income taxes",
+     "values": [
+      -6585.0,
+      -6377.0,
+      -12133.0,
+      -16850.0,
+      -14418.0,
+      -66309.0
+     ],
+     "raw": [
+      "(6,585)",
+      "(6,377)",
+      "(12,133)",
+      "(16,850)",
+      "(14,418)",
+      "(66,309)"
+     ]
+    },
+    {
+     "label": "Provision for income taxes",
+     "values": [
+      7.0,
+      0.0,
+      5.0,
+      8.0,
+      21.0,
+      0.0
+     ],
+     "raw": [
+      "7",
+      "\u2014",
+      "5",
+      "8",
+      "21",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Net loss",
+     "values": [
+      -6592.0,
+      -6377.0,
+      -12138.0,
+      -16858.0,
+      -14439.0,
+      -66309.0
+     ],
+     "raw": [
+      "(6,592)",
+      "(6,377)",
+      "(12,138)",
+      "(16,858)",
+      "(14,439)",
+      "(66,309)"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Operating expenses by function (cost of revenue, R&D, S&M, G&A)",
+   "anchor": "operating expenses grouped by function",
+   "columns": [
+    "FY2023",
+    "FY2024",
+    "FY2025",
+    "H1 2025",
+    "H1 2026"
+   ],
+   "page": "F-39",
+   "rows": [
+    {
+     "label": "Cost of revenue",
+     "values": [
+      26.0,
+      752.0,
+      2773.0,
+      1019.0,
+      2380.0
+     ],
+     "raw": [
+      "26",
+      "752",
+      "2,773",
+      "1,019",
+      "2,380"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      422.0,
+      2275.0,
+      6338.0,
+      1850.0,
+      9741.0
+     ],
+     "raw": [
+      "422",
+      "2,275",
+      "6,338",
+      "1,850",
+      "9,741"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      76.0,
+      163.0,
+      911.0,
+      239.0,
+      3808.0
+     ],
+     "raw": [
+      "76",
+      "163",
+      "911",
+      "239",
+      "3,808"
+     ]
+    },
+    {
+     "label": "Bartz settlement",
+     "values": [
+      0.0,
+      0.0,
+      1500.0,
+      0.0,
+      0.0
+     ],
+     "raw": [
+      "\u2014",
+      "\u2014",
+      "1,500",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      68.0,
+      176.0,
+      1123.0,
+      190.0,
+      1050.0
+     ],
+     "raw": [
+      "68",
+      "176",
+      "1,123",
+      "190",
+      "1,050"
+     ]
+    },
+    {
+     "label": "Total operating expenses",
+     "values": [
+      592.0,
+      3366.0,
+      12645.0,
+      3298.0,
+      16979.0
+     ],
+     "raw": [
+      "592",
+      "3,366",
+      "12,645",
+      "3,298",
+      "16,979"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Quarterly adjusted operating income reconciliation",
+   "anchor": "Operating Margin Three Months Ended",
+   "columns": [
+    "Q1 2025",
+    "Q2 2025",
+    "Q3 2025",
+    "Q4 2025",
+    "Q1 2026",
+    "Q2 2026"
+   ],
+   "page": "160",
+   "rows": [
+    {
+     "label": "Operating income (loss)",
+     "values": [
+      -935.0,
+      -1200.0,
+      -3089.0,
+      -2836.0,
+      -1667.0,
+      974.0
+     ],
+     "raw": [
+      "(935)",
+      "(1,200)",
+      "(3,089)",
+      "(2,836)",
+      "(1,667)",
+      "974"
+     ]
+    },
+    {
+     "label": "Stock-based compensation expense",
+     "values": [
+      105.0,
+      181.0,
+      305.0,
+      574.0,
+      924.0,
+      1261.0
+     ],
+     "raw": [
+      "105",
+      "181",
+      "305",
+      "574",
+      "924",
+      "1,261"
+     ]
+    },
+    {
+     "label": "Non-cash charitable contributions",
+     "values": [
+      0.0,
+      0.0,
+      0.0,
+      541.0,
+      126.0,
+      0.0
+     ],
+     "raw": [
+      "\u2014",
+      "\u2014",
+      "\u2014",
+      "541",
+      "126",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Bartz settlement",
+     "values": [
+      0.0,
+      0.0,
+      1500.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "raw": [
+      "\u2014",
+      "\u2014",
+      "1,500",
+      "\u2014",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Adjusted Operating Income (Loss)",
+     "values": [
+      -830.0,
+      -1019.0,
+      -1284.0,
+      -1721.0,
+      -617.0,
+      2235.0
+     ],
+     "raw": [
+      "(830)",
+      "(1,019)",
+      "(1,284)",
+      "(1,721)",
+      "(617)",
+      "2,235"
+     ]
+    },
+    {
+     "label": "Revenue",
+     "values": [
+      376.0,
+      787.0,
+      1382.0,
+      2040.0,
+      4731.0,
+      11555.0
+     ],
+     "raw": [
+      "376",
+      "787",
+      "1,382",
+      "2,040",
+      "4,731",
+      "11,555"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cash flows",
+   "anchor": "2023 2024 2025 2025 2026 Net cash provided by \\(used in\\)",
+   "columns": [
+    "FY2023",
+    "FY2024",
+    "FY2025",
+    "H1 2025",
+    "H1 2026"
+   ],
+   "page": "168",
+   "rows": [
+    {
+     "label": "Operating activities",
+     "values": [
+      -1627.0,
+      -5692.0,
+      -2637.0,
+      -1513.0,
+      3929.0
+     ],
+     "raw": [
+      "(1,627)",
+      "(5,692)",
+      "(2,637)",
+      "(1,513)",
+      "3,929"
+     ]
+    },
+    {
+     "label": "Investing activities",
+     "values": [
+      -2.0,
+      -22.0,
+      -3077.0,
+      -49.0,
+      -17181.0
+     ],
+     "raw": [
+      "(2)",
+      "(22)",
+      "(3,077)",
+      "(49)",
+      "(17,181)"
+     ]
+    },
+    {
+     "label": "Financing activities",
+     "values": [
+      2320.0,
+      7248.0,
+      19960.0,
+      4749.0,
+      110774.0
+     ],
+     "raw": [
+      "2,320",
+      "7,248",
+      "19,960",
+      "4,749",
+      "110,774"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Balance sheet",
+   "anchor": "As of December 31, As of June 30, 2024 2025 2026 \\(unaudited\\) Assets",
+   "columns": [
+    "Dec 31 2024",
+    "Dec 31 2025",
+    "Jun 30 2026"
+   ],
+   "page": "F-5",
+   "rows": [
+    {
+     "label": "Cash and cash equivalents",
+     "values": [
+      3141.0,
+      17388.0,
+      112389.0
+     ],
+     "raw": [
+      "3,141",
+      "17,388",
+      "112,389"
+     ]
+    },
+    {
+     "label": "Short-term investments",
+     "values": [
+      0.0,
+      2889.0,
+      19262.0
+     ],
+     "raw": [
+      "\u2014",
+      "2,889",
+      "19,262"
+     ]
+    },
+    {
+     "label": "Accounts receivable, net",
+     "values": [
+      95.0,
+      909.0,
+      5833.0
+     ],
+     "raw": [
+      "95",
+      "909",
+      "5,833"
+     ]
+    },
+    {
+     "label": "Prepaid expenses and other current assets",
+     "values": [
+      2076.0,
+      2560.0,
+      496.0
+     ],
+     "raw": [
+      "2,076",
+      "2,560",
+      "496"
+     ]
+    },
+    {
+     "label": "Total current assets",
+     "values": [
+      5312.0,
+      23746.0,
+      137980.0
+     ],
+     "raw": [
+      "5,312",
+      "23,746",
+      "137,980"
+     ]
+    },
+    {
+     "label": "Restricted cash",
+     "values": [
+      13.0,
+      13.0,
+      2529.0
+     ],
+     "raw": [
+      "13",
+      "13",
+      "2,529"
+     ]
+    },
+    {
+     "label": "Property and equipment, net",
+     "values": [
+      19.0,
+      146.0,
+      1187.0
+     ],
+     "raw": [
+      "19",
+      "146",
+      "1,187"
+     ]
+    },
+    {
+     "label": "Operating lease right-of-use assets",
+     "values": [
+      35.0,
+      126.0,
+      1157.0
+     ],
+     "raw": [
+      "35",
+      "126",
+      "1,157"
+     ]
+    },
+    {
+     "label": "Goodwill",
+     "values": [
+      0.0,
+      154.0,
+      576.0
+     ],
+     "raw": [
+      "\u2014",
+      "154",
+      "576"
+     ]
+    },
+    {
+     "label": "Other assets, noncurrent",
+     "values": [
+      2373.0,
+      476.0,
+      3929.0
+     ],
+     "raw": [
+      "2,373",
+      "476",
+      "3,929"
+     ]
+    },
+    {
+     "label": "Total assets",
+     "values": [
+      7752.0,
+      24661.0,
+      147358.0
+     ],
+     "raw": [
+      "7,752",
+      "24,661",
+      "147,358"
+     ]
+    },
+    {
+     "label": "Accounts payable, accrued expenses, and other current liabilities",
+     "values": [
+      333.0,
+      2511.0,
+      5422.0
+     ],
+     "raw": [
+      "333",
+      "2,511",
+      "5,422"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities, current",
+     "values": [
+      13.0,
+      37.0,
+      148.0
+     ],
+     "raw": [
+      "13",
+      "37",
+      "148"
+     ]
+    },
+    {
+     "label": "Deferred revenue",
+     "values": [
+      28.0,
+      269.0,
+      1650.0
+     ],
+     "raw": [
+      "28",
+      "269",
+      "1,650"
+     ]
+    },
+    {
+     "label": "Total current liabilities",
+     "values": [
+      374.0,
+      2817.0,
+      7220.0
+     ],
+     "raw": [
+      "374",
+      "2,817",
+      "7,220"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities, noncurrent",
+     "values": [
+      39.0,
+      80.0,
+      931.0
+     ],
+     "raw": [
+      "39",
+      "80",
+      "931"
+     ]
+    },
+    {
+     "label": "Convertible notes payable",
+     "values": [
+      14116.0,
+      41677.0,
+      108566.0
+     ],
+     "raw": [
+      "14,116",
+      "41,677",
+      "108,566"
+     ]
+    },
+    {
+     "label": "Other noncurrent liabilities",
+     "values": [
+      150.0,
+      823.0,
+      750.0
+     ],
+     "raw": [
+      "150",
+      "823",
+      "750"
+     ]
+    },
+    {
+     "label": "Total liabilities",
+     "values": [
+      14679.0,
+      45397.0,
+      117467.0
+     ],
+     "raw": [
+      "14,679",
+      "45,397",
+      "117,467"
+     ]
+    },
+    {
+     "label": ", respectively",
+     "values": [
+      2874.0,
+      29769.0,
+      157510.0
+     ],
+     "raw": [
+      "2,874",
+      "29,769",
+      "157,510"
+     ]
+    }
+   ]
+  }
+ ],
+ "blanks": [
+  {
+   "page": "cover-2",
+   "sentence": "It is currently estimated that the initial public offering price per share will be between $ and $ ."
+  },
+  {
+   "page": "32",
+   "sentence": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
+  },
+  {
+   "page": "32",
+   "sentence": "Approximately $ of these commitments are due in the next 12 months."
+  },
+  {
+   "page": "63",
+   "sentence": "For example, the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026, and our revenue increased from $197 million for the three months ended December 31, 2024 to $ for the three months ended September 30, 2026 ."
+  },
+  {
+   "page": "64",
+   "sentence": "For example, as of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , which may substantially increase our operating expenses and cash requirements."
+  },
+  {
+   "page": "124",
+   "sentence": "24 Table of Contents Use of Proceeds We estimate that the net proceeds to us from the sale of shares of our Class A common stock in this offering will be approximately $ , based upon the assumed initial public offering price of $ per share, which is the midpoint of the estimated offering price range set forth on the cover page of this prospectus, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us, or approximately $ if the underwriters\u2019 option to purchase additional shares of our Class A common stock from us is exercised in full."
+  },
+  {
+   "page": "124",
+   "sentence": "Each $1.00 increase or decrease in the assumed initial public offering price of $ per share, which is the midpoint of the estimated offering price range set forth on the cover page of this prospectus, would increase or decrease, as applicable, the net proceeds that we receive from this offering by approximately $ , assuming that the number of shares offered by us, as set forth on the cover page of this prospectus, remains the same and after deducting the estimated underwriting discounts and commissions and estimated offering expenses payable by us."
+  },
+  {
+   "page": "124",
+   "sentence": "Similarly, each increase or decrease of 1.0 million in the number of shares of our Class A common stock offered by us would increase or decrease, as applicable, the net proceeds that we receive from this offering by approximately $ , assuming the assumed initial public offering price remains the same and after deducting the estimated underwriting discounts and commissions and estimated offering expenses payable by us."
+  },
+  {
+   "page": "127",
+   "sentence": "An increase or decrease of 1.0 million shares in the number of shares offered by us would increase or decrease, as applicable, the amount of our pro forma as adjusted cash, cash equivalents, and short-term investments, additional paid-in capital, total stockholders\u2019 equity (deficit), and total capitalization by $ , assuming the assumed initial public offering price remains the same, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us."
+  },
+  {
+   "page": "128",
+   "sentence": "28 Table of Contents If the underwriters\u2019 option to purchase additional shares of our Class A common stock from us were exercised in full, pro forma as adjusted cash, cash equivalents, and short-term investments; additional paid-in capital; total stockholders\u2019 equity (deficit); total capitalization; and shares of Class A common stock outstanding as of September 30, 2026 would be $ , $ , $ , $ and shares of Class A common stock, respectively."
+  },
+  {
+   "page": "129",
+   "sentence": "Our historical net tangible book value as of September 30, 2026 was $ , or $ per share ."
+  },
+  {
+   "page": "129",
+   "sentence": "Our pro forma net tangible book value as of September 30, 2026 was $ , or $ per share, based on the total number of shares of our Class A common stock and Class N common stock outstanding as of September 30, 2026, after giving effect to the Preferred Stock Conversion, Convertible Notes Conversion, Initial Public Benefit Issuance, and RSU Settlement."
+  },
+  {
+   "page": "133",
+   "sentence": "Claude has experienced the fastest enterprise adoption of any technology in history, as demonstrated by revenue growing from $0 at commercial launch in the first quarter of 2023 to $ for the three months ended September 30, 2026."
+  },
+  {
+   "page": "138",
+   "sentence": "As of September 30, 2026 , and prior to taking into account the net proceeds to us from this offering, we had $ of liquidity, comprised of $ of cash and cash equivalents, $ of short-term investments, and $ of availability under our A&R Credit Facility (as defined below)."
+  },
+  {
+   "page": "138",
+   "sentence": "In addition, w e estimate that the net proceeds to us from this offering will be approximately $ , based upon the assumed initial public offering price of $ per share, which is the midpoint of the estimated offering price range set forth on the cover page of this prospectus, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us, or approximately $ if the underwriters\u2019 option to purchase additional shares of our Class A common stock from us is exercised in full."
+  },
+  {
+   "page": "142",
+   "sentence": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+  },
+  {
+   "page": "142",
+   "sentence": "The remaining % of total revenue for the trailing twelve months ended September 30, 2026 was generated by approximately 40 million customers, each with less than $100,000 of revenue on a TTM basis ."
+  },
+  {
+   "page": "169",
+   "sentence": "Contractual Obligations In aggregate, the contractual obligations in the table below plus the short-term and subsequent commitments, as well as leases not yet commenced, each described in the paragraphs below are approximately $ , substantially all of which is related to compute and infrastructure."
+  },
+  {
+   "page": "170",
+   "sentence": "W e may issue up to an additional $ of convertible promissory notes, subject to applicable conditions."
+  },
+  {
+   "page": "170",
+   "sentence": "Because these factors are not yet determinable, the total amount of payments under these agreements is uncertain, but we currently estimate such payments to be approximately $ to $ ."
+  },
+  {
+   "page": "170",
+   "sentence": "Minimum payments under such contracts were approximately $ as of ."
+  },
+  {
+   "page": "170",
+   "sentence": "Further, the table above does not include leases executed and not yet commenced as of , with total estimated future undiscounted lease obligations of approximately $ ."
+  },
+  {
+   "page": "170",
+   "sentence": "In addition, the table above does not reflect commitments entered into after , with aggregate future minimum payment obligations of approximately $ ."
+  },
+  {
+   "page": "170",
+   "sentence": "Minimum payments under such contracts are approximately $ ."
+  },
+  {
+   "page": "170",
+   "sentence": "Approximately $ of our contractual obligations are expected to be paid in the next 12 months."
+  },
+  {
+   "page": "cover-210",
+   "sentence": "Additionally, o ur Run-Rate Revenue was $ as of October 31, 2026."
+  },
+  {
+   "page": "285",
+   "sentence": "Karnofsky received total cash compensation, including base salary, bonus, and other compensation, of $430,213 and $ , respectively."
+  },
+  {
+   "page": "286",
+   "sentence": "86 Table of Contents Reimbursement of Legal Fees In connection with the structuring and negotiation of our governance structure prior to this offering, we have paid or reimbursed, or will pay or reimburse, legal fees incurred by the Founder LLC, which we expect to be approximately $ ."
+  },
+  {
+   "page": "307",
+   "sentence": "Up to shares of Class A common stock, representing % of the shares subject to the 180-day lock-up and market standoff period and % of the shares subject to the extended 365-day lock-up period."
+  },
+  {
+   "page": "307",
+   "sentence": "Up to shares of Class A common stock, representing all remaining shares subject to the 180-day lock-up and market standoff period and % of the shares subject to the extended 365-day lock-up period."
+  },
+  {
+   "page": "324",
+   "sentence": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+  },
+  {
+   "page": "324",
+   "sentence": "We will agree to reimburse the underwriters for certain Financial Industry Regulatory Authority-related expenses incurred by them in connection with the offering in an amount up to $ ."
+  }
+ ]
+}

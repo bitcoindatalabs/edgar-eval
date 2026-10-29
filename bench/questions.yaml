@@ -1,0 +1,404 @@
+# S-1 Bench: golden questions over Anthropic, PBC's Form S-1 (filed 2026-10-26).
+#
+# Every item carries an exact `quote` from the filing. scripts/validate_bench.py
+# checks each quote exists, resolves its page, and checks gold numbers appear in it,
+# so the benchmark validates itself.
+#
+# kind:
+#   number        -> gold `value` in `unit`; scored within `tol` (relative, default 0.01)
+#   not_disclosed -> the filing leaves this blank; correct answer is "not disclosed"
+#   text          -> scored by `must_include` keywords (all, case-insensitive)
+#
+# trap: the failure we expect a careless model to make.
+
+- id: rev-h1-2026
+  category: fact
+  question: What was Anthropic's revenue for the six months ended June 30, 2026?
+  kind: number
+  value: 16286
+  unit: USD millions
+  quote: "2023 2024 2025 2025 2026 Revenue $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
+
+- id: rev-fy-2025
+  category: fact
+  question: What was Anthropic's total revenue for fiscal year 2025?
+  kind: number
+  value: 4585
+  unit: USD millions
+  quote: "2023 2024 2025 2025 2026 Revenue $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
+
+- id: rev-fy-2023
+  category: fact
+  question: What was Anthropic's revenue for fiscal year 2023?
+  kind: number
+  value: 41
+  unit: USD millions
+  quote: "2023 2024 2025 2025 2026 Revenue $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
+
+- id: oploss-h1-2026
+  category: period-trap
+  question: What was Anthropic's operating loss for the six months ended June 30, 2026?
+  kind: number
+  value: -693
+  unit: USD millions
+  trap: Confusing operating loss ($693M) with net loss ($80.7B).
+  quote: "Total operating expenses 592 3,366 12,645 3,298 16,979 Operating loss (551) (2,980) (8,060) (2,135) (693)"
+
+- id: netloss-h1-2026
+  category: fact
+  question: What was Anthropic's net loss for the six months ended June 30, 2026?
+  kind: number
+  value: -80748
+  unit: USD millions
+  quote: "Net loss (2) $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+
+- id: fv-charge-h1-2026
+  category: fact
+  question: How much of Anthropic's H1 2026 loss came from the change in fair value of convertible notes, derivative liabilities, and SAFEs?
+  kind: number
+  value: -72388
+  unit: USD millions
+  quote: "Change in fair value of convertible notes, derivative liabilities, and SAFEs (1,045) (5,434) (34,308) (10,942) (72,388)"
+
+- id: opinc-q2-2026
+  category: period-trap
+  question: What was Anthropic's operating income (loss) for the three months ended June 30, 2026?
+  kind: number
+  value: 974
+  unit: USD millions
+  trap: Reporting the six-month operating loss (-$693M) instead of the Q2 operating profit.
+  quote: "Operating income (loss) (935) (1,200) (3,089) (2,836) (1,667) 974"
+
+- id: rev-q2-2026
+  category: fact
+  question: What was Anthropic's revenue for the three months ended June 30, 2026?
+  kind: number
+  value: 11555
+  unit: USD millions
+  quote: "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
+
+- id: rev-q1-2026
+  category: fact
+  question: What was Anthropic's revenue for the three months ended March 31, 2026?
+  kind: number
+  value: 4731
+  unit: USD millions
+  quote: "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
+
+- id: netloss-q2-2026
+  category: fact
+  question: What was Anthropic's net loss for the three months ended June 30, 2026?
+  kind: number
+  value: -66309
+  unit: USD millions
+  quote: "Net loss $ (6,592) $ (6,377) $ (12,138) $ (16,858) $ (14,439) $ (66,309)"
+
+- id: netloss-fy-2025
+  category: fact
+  question: What was Anthropic's net loss for fiscal year 2025?
+  kind: number
+  value: -41965
+  unit: USD millions
+  quote: "Net loss (2) $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+
+- id: oploss-fy-2025
+  category: fact
+  question: What was Anthropic's operating loss for fiscal year 2025?
+  kind: number
+  value: -8060
+  unit: USD millions
+  quote: "Total operating expenses 592 3,366 12,645 3,298 16,979 Operating loss (551) (2,980) (8,060) (2,135) (693)"
+
+- id: compute-h1-2026
+  category: fact
+  question: How much did Anthropic spend on compute and infrastructure (operating expense line) in the six months ended June 30, 2026?
+  kind: number
+  value: 8945
+  unit: USD millions
+  quote: "Compute and infrastructure 433 2,522 7,326 2,334 8,945"
+
+- id: cor-h1-2026
+  category: fact
+  question: What was Anthropic's cost of revenue for the six months ended June 30, 2026?
+  kind: number
+  value: 2380
+  unit: USD millions
+  trap: Using the compute and infrastructure line ($8.9B) as cost of revenue.
+  quote: "Cost of revenue (1) $ 26 $ 752 $ 2,773 $ 1,019 $ 2,380"
+
+- id: bartz
+  category: fact
+  question: For how much did Anthropic agree to settle the Bartz copyright class action?
+  kind: number
+  value: 1500
+  unit: USD millions
+  quote: "captioned Bartz, et al. v. Anthropic PBC (“Bartz”), for $1.5 billion"
+
+- id: ocf-h1-2026
+  category: fact
+  question: What was Anthropic's net cash provided by (used in) operating activities for the six months ended June 30, 2026?
+  kind: number
+  value: 3929
+  unit: USD millions
+  quote: "Operating activities $ (1,627) $ (5,692) $ (2,637) $ (1,513) $ 3,929"
+
+- id: cash-jun-2026
+  category: fact
+  question: How much cash and cash equivalents did Anthropic hold as of June 30, 2026?
+  kind: number
+  value: 112400
+  unit: USD millions
+  quote: "As of June 30, 2026, we had cash and cash equivalents of $112.4 billion"
+
+- id: capital-raised
+  category: fact
+  question: How much capital had Anthropic raised in aggregate as of June 30, 2026?
+  kind: number
+  value: 141100
+  unit: USD millions
+  quote: "we had raised an aggregate of $141.1 billion of capital"
+
+- id: sbc-q2-2026
+  category: fact
+  question: What was Anthropic's stock-based compensation expense included in personnel for the three months ended June 30, 2026?
+  kind: number
+  value: 1261
+  unit: USD millions
+  # Gold was first set to $1.3B from a rounded footnote; every model answered 1,261, which is
+  # the exact figure on p.160. Kept as a reminder: when all models "fail", check the gold first.
+  quote: "Stock-based compensation expense 105 181 305 574 924 1,261"
+
+- id: employees
+  category: fact
+  question: Approximately how many employees did Anthropic have as of September 30, 2026?
+  kind: number
+  value: 5300
+  unit: employees
+  quote: "As of September 30, 2026, we had approximately 5,300 employees worldwide"
+
+- id: cust-100k
+  category: fact
+  question: How many customers contributed $100,000 or more of revenue on a TTM basis as of September 30, 2026?
+  kind: number
+  value: 11900
+  unit: customers
+  quote: "and to more than 11,900 as of September 30, 2026"
+
+- id: cust-1m
+  category: fact
+  question: How many customers contributed $1 million or more of revenue on a TTM basis as of September 30, 2026?
+  kind: number
+  value: 1900
+  unit: customers
+  quote: "we had more than 1,900 customers with $1 million or more of revenue on a TTM basis"
+
+- id: cust-small
+  category: fact
+  question: Approximately how many customers each contributed less than $100,000 of TTM revenue as of September 30, 2026?
+  kind: number
+  value: 40000000
+  unit: customers
+  quote: "was generated by approximately 40 million customers, each with less than $100,000 of revenue"
+
+# ---------------------------------------------------------------- blanks
+# A preliminary S-1 leaves key figures blank until pricing. A model that
+# answers these with a number is hallucinating (or quoting the press).
+
+- id: blank-price-range
+  category: blank
+  question: What is the expected price range per share for Anthropic's IPO?
+  kind: not_disclosed
+  trap: Inventing a price range or quoting press speculation.
+  quote: "currently estimated that the initial public offering price per share will be between $ and $ ."
+
+- id: blank-commitments
+  category: blank
+  question: What is the aggregate committed spend under Anthropic's purchase commitments and lease agreements as of September 30, 2026?
+  kind: not_disclosed
+  trap: Inventing a total compute commitment figure.
+  quote: "with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure"
+
+- id: blank-commitments-12m
+  category: blank
+  question: How much of Anthropic's purchase commitments are due in the next 12 months?
+  kind: not_disclosed
+  quote: "Approximately $ of these commitments are due in the next 12 months."
+
+- id: blank-run-rate
+  category: blank
+  question: What was Anthropic's Run-Rate Revenue as of October 31, 2026?
+  kind: not_disclosed
+  trap: Quoting a run-rate figure from news coverage.
+  quote: "Run-Rate Revenue was $ as of October 31, 2026."
+
+- id: blank-rev-q3-2026
+  category: blank
+  question: What was Anthropic's revenue for the three months ended September 30, 2026?
+  kind: not_disclosed
+  trap: Extrapolating Q3 from the Q1/Q2 trend.
+  quote: "from $197 million for the three months ended December 31, 2024 to $ for the three months ended"
+
+- id: blank-ttm-concentration
+  category: blank
+  question: What percentage of Anthropic's revenue for the trailing twelve months ended September 30, 2026 came from customers with $100,000 or more of TTM revenue?
+  kind: not_disclosed
+  trap: Reusing the 2025 figure (76%).
+  quote: "represented 90%, 57%, 76%, and % of total revenue"
+
+# ---------------------------------------------------------------- derived
+# Require combining two numbers. `inputs` documents the arithmetic.
+
+- id: gm-h1-2026
+  category: derived
+  question: What was Anthropic's gross margin for the six months ended June 30, 2026?
+  kind: number
+  value: 85.4
+  unit: percent
+  tol: 0.02
+  inputs: (16,286 - 2,380) / 16,286
+  trap: Using compute and infrastructure ($8,945M) as cost of revenue, giving ~45%.
+  quote: "Cost of revenue (1) $ 26 $ 752 $ 2,773 $ 1,019 $ 2,380"
+
+- id: gm-fy-2025
+  category: derived
+  question: What was Anthropic's gross margin for fiscal year 2025?
+  kind: number
+  value: 39.5
+  unit: percent
+  tol: 0.03
+  inputs: (4,585 - 2,773) / 4,585
+  quote: "Cost of revenue (1) $ 26 $ 752 $ 2,773 $ 1,019 $ 2,380"
+
+- id: gm-fy-2024
+  category: derived
+  question: What was Anthropic's gross margin for fiscal year 2024?
+  kind: number
+  value: -94.8
+  unit: percent
+  tol: 0.03
+  inputs: (386 - 752) / 386
+  trap: Assuming a software-like positive margin; cost of revenue exceeded revenue.
+  quote: "Cost of revenue (1) $ 26 $ 752 $ 2,773 $ 1,019 $ 2,380"
+
+- id: compute-pct-h1-2026
+  category: derived
+  question: Compute and infrastructure expense was what percent of revenue in the six months ended June 30, 2026?
+  kind: number
+  value: 54.9
+  unit: percent
+  tol: 0.02
+  inputs: 8,945 / 16,286
+  quote: "Compute and infrastructure 433 2,522 7,326 2,334 8,945"
+
+- id: growth-h1
+  category: derived
+  question: By what multiple did Anthropic's revenue grow from the six months ended June 30, 2025 to the six months ended June 30, 2026?
+  kind: number
+  value: 14.0
+  unit: x
+  tol: 0.02
+  inputs: 16,286 / 1,163
+  quote: "2023 2024 2025 2025 2026 Revenue $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
+
+- id: concentration-2025
+  category: derived
+  question: What percentage of Anthropic's fiscal 2025 revenue came from customers with $100,000 or more of TTM revenue?
+  kind: number
+  value: 76
+  unit: percent
+  tol: 0.02
+  quote: "represented 90%, 57%, 76%, and % of total revenue"
+
+# ---------------------------------------------------------------- governance
+
+- id: ticker
+  category: governance
+  question: Under what ticker symbol and on which exchange does Anthropic propose to list its Class A common stock?
+  kind: text
+  must_include: [ANT, Nasdaq]
+  quote: "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”"
+
+- id: ltbt-class-t
+  category: governance
+  question: Who elects Anthropic's Class T directors, and what share of the board do they constitute?
+  kind: text
+  must_include: [Long-Term Benefit Trust, majority]
+  accept_alias: {Long-Term Benefit Trust: [LTBT]}
+  quote: "the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors"
+
+- id: class-f
+  category: governance
+  question: To whom will Anthropic's single share of Class F common stock be issued?
+  kind: text
+  must_include: [co-founders]
+  accept_alias: {co-founders: [cofounders, founders, Founder LLC]}
+  quote: "we will also issue a single share of Class F common stock, a special class of our common stock, to a limited liability company organized by our co-founders"
+
+- id: class-e
+  category: governance
+  question: Who receives Anthropic's Class E common stock, and does it carry economic rights?
+  kind: text
+  must_include: [employees, no economic rights]
+  accept_alias: {no economic rights: [without economic rights, not have any economic rights, no economic]}
+  quote: "Class E common stock, which will be issued to our employees, excluding our co-founders. Our Class E common stock will be entitled to vote only on certain limited matters and will not have any economic rights."
+
+- id: dividends
+  category: governance
+  question: Has Anthropic ever declared or paid cash dividends?
+  kind: text
+  must_include: ["no"]
+  accept_alias: {"no": [never, has not, have not]}
+  quote: "We have never declared or paid any cash dividends on our capital stock."
+
+- id: lead-underwriter
+  category: governance
+  question: Which underwriter is listed first on the cover of Anthropic's prospectus?
+  kind: text
+  must_include: [Goldman Sachs]
+  quote: "Goldman Sachs & Co. LLC Morgan Stanley J.P. Morgan"
+
+# ---------------------------------------------------------------- risk / compute
+
+- id: texas-curtailment
+  category: risk
+  question: Which U.S. state does the S-1 cite as subjecting large electricity loads to curtailment or disconnection during grid emergencies?
+  kind: text
+  must_include: [Texas]
+  quote: "or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has"
+
+- id: power-competitors
+  category: risk
+  question: Besides cloud service providers, what kind of operation does the S-1 name as a competitor for electrical supply and powered data center locations?
+  kind: text
+  must_include: [cryptocurrency mining]
+  accept_alias: {cryptocurrency mining: [crypto mining, bitcoin mining]}
+  quote: "some of which produce and develop competing AI models, cryptocurrency mining operations, and other large-scale electricity consumers"
+
+- id: fluidstack
+  category: risk
+  question: Which company does the S-1 name as providing data center development and operations services to Anthropic under a colocation agreement?
+  kind: text
+  must_include: [Fluidstack]
+  quote: "we have entered into a colocation and services agreement with Fluidstack USA I Inc. (“Fluidstack”)"
+
+- id: claude-code-misuse
+  category: risk
+  question: According to the S-1, what did Anthropic detect in September 2025 involving Claude Code?
+  kind: text
+  must_include: [state-sponsored, "30"]
+  quote: "a Chinese state-sponsored hacking group manipulated our Claude Code tool into attempting infiltration into roughly 30 global targets"
+
+- id: clouds
+  category: fact
+  question: On which three major cloud platforms is Claude accessible, per the S-1?
+  kind: text
+  must_include: [AWS, Google, Azure]
+  accept_alias: {AWS: [Amazon Web Services], Google: [GCP], Azure: [Microsoft]}
+  quote: "Claude is accessible on all three major cloud platforms, AWS, GCP, and Azure"
+
+- id: chips
+  category: fact
+  question: Which chip families make up Anthropic's multi-chip compute architecture?
+  kind: text
+  must_include: [Trainium, TPU, NVIDIA, AMD]
+  quote: "our multi-chip compute architecture across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs"

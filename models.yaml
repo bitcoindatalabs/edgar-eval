@@ -1,0 +1,15 @@
+# Models to evaluate. `provider` is openrouter (OPENROUTER_API_KEY) or gemini (GEMINI_API_KEY).
+# `group` drives leaderboard colors: frontier | fast | open (open-weight families, the "sovereign" option).
+# IDs checked against https://openrouter.ai/api/v1/models on 2026-10-28; verify the `open`
+# labels against each vendor's license before saying so on stage.
+
+- {id: anthropic/claude-opus-5.5,      label: Claude Opus 5.5,    provider: openrouter, group: frontier}
+- {id: anthropic/claude-sonnet-5.5,    label: Claude Sonnet 5.5,  provider: openrouter, group: frontier}
+- {id: x-ai/grok-4.7,                  label: Grok 4.7,           provider: openrouter, group: frontier}
+- {id: openai/gpt-6.1-sol,             label: GPT-6.1 Sol,        provider: openrouter, group: frontier}
+- {id: google/gemini-4-argon,          label: Gemini 4 Argon,     provider: openrouter, group: frontier}
+- {id: anthropic/claude-haiku-5.5,     label: Claude Haiku 5.5,   provider: openrouter, group: fast}
+- {id: google/gemini-3.8-flash,        label: Gemini 3.8 Flash,   provider: openrouter, group: fast}
+- {id: deepseek/deepseek-v4.1-flash,   label: DeepSeek V4.1 Flash, provider: openrouter, group: open}
+- {id: qwen/qwen3.8-27b,               label: Qwen3.8 27B,        provider: openrouter, group: open}
+- {id: z-ai/glm-5.3,                   label: GLM-5.3,            provider: openrouter, group: open}
