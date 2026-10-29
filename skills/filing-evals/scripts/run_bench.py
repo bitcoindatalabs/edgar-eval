@@ -18,6 +18,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
+import snowballstemmer
 import yaml
 
 ROOT = Path.cwd()  # run from the project folder
@@ -59,9 +60,27 @@ def load_env() -> None:
 TOKEN = re.compile(r"[a-z0-9$%]+")
 
 
+def plain_tokens(text: str) -> list[str]:
+    return TOKEN.findall(text.lower())
+
+
+# Standard IR hygiene for the skill's passage search: drop question words, and fold
+# inflections so "detect" finds "detected". The naive baseline keeps plain tokens.
+STOPWORDS = set("a an and are as at be by did do does for from had has have how in is it its of on or "
+                "s that the their this to was were what when which who will with according".split())
+
+
+STEM = snowballstemmer.stemmer("english")
+
+
+def search_tokens(text: str) -> list[str]:
+    return STEM.stemWords([t for t in TOKEN.findall(text.lower()) if t not in STOPWORDS])
+
+
 class BM25:
-    def __init__(self, docs: list[str], k1: float = 1.4, b: float = 0.75):
-        self.tfs = [Counter(TOKEN.findall(d.lower())) for d in docs]
+    def __init__(self, docs: list[str], k1: float = 1.4, b: float = 0.75, tokens=plain_tokens):
+        self.tokens = tokens
+        self.tfs = [Counter(tokens(d)) for d in docs]
         self.lens = [sum(tf.values()) for tf in self.tfs]
         self.avg = sum(self.lens) / len(self.lens)
         df = Counter(t for tf in self.tfs for t in tf)
@@ -70,7 +89,7 @@ class BM25:
         self.k1, self.b = k1, b
 
     def top(self, query: str, k: int) -> list[int]:
-        q = set(TOKEN.findall(query.lower()))
+        q = set(self.tokens(query))
         scores = []
         for i, tf in enumerate(self.tfs):
             s = 0.0
@@ -98,28 +117,91 @@ FACTSHEET = ROOT / "data/processed/factsheet.md"
 def make_passages(words_per: int = 180, overlap: int = 40) -> list[dict]:
     out = []
     for p in PAGES:
-        w = p["text"].split()
+        w = re.sub(r"^(?:\S+\s+)?T\s?able of Contents\s*", "", p["text"]).split()  # drop a running header
         for s in range(0, max(1, len(w) - overlap), words_per - overlap):
             out.append({"page": p["page"] or f"cover-{p['idx']}", "text": " ".join(w[s:s + words_per])})
     return out
 
 
 PASSAGES = make_passages()
-PINDEX = BM25([p["text"] for p in PASSAGES])
+PINDEX = BM25([p["text"] for p in PASSAGES], tokens=search_tokens)
 
+# Rules are written for any filing; examples use made-up numbers, never the benchmark's.
 SYSTEM_SKILL = """You are a careful financial analyst answering questions about \
-{DOC}, using only the FACT SHEET and PASSAGES \
-below. Rules:
-1. Look up figures in the fact sheet tables first; they are exact and cite their page.
-2. If the question asks for a figure listed under "Figures the filing leaves BLANK", or the \
-figure is blank ("$ " with no number), answer not disclosed: disclosed=false, value=null.
-3. Never do arithmetic in your head. For any ratio, margin, growth multiple, or sum, put a Python \
-arithmetic expression using the exact table numbers in "calc", e.g. "(16286 - 2380) / 16286 * 100". \
-The system computes it and uses the result as the value.
-4. Quote a sentence or table row exactly as it appears."""
+{DOC}, using only the FACT SHEET and PASSAGES below. Rules:
+1. Find the figure first. Fact-sheet tables are parsed from the filing and cite their page: use \
+them for any number they contain, and the passages for everything else.
+2. Match the period exactly. Three months, six months, nine months, a fiscal year, and a balance \
+"as of" a date are different columns. Put the column header you used in "column".
+3. Use the line item the question names. For a metric that is not a line item, use its standard \
+definition: gross margin = (revenue - cost of revenue) / revenue; operating margin = operating \
+income (loss) / revenue; growth = (current - prior) / prior; share = part / total. Never \
+substitute a different line item for one the definition needs. If a needed line item is not in \
+the fact sheet or passages, answer not disclosed.
+4. Never do arithmetic in your head, including unit conversions. Put a Python expression with \
+the exact numbers in "calc", e.g. "(1250 - 400) / 1250 * 100" for a margin, or "48500 / 1000" to \
+turn thousands into millions. The system computes it and uses the result as the value.
+5. If the figure is listed under "Figures the filing leaves BLANK", or appears as "$" with no \
+number, answer not disclosed: disclosed=false, value=null.
+6. Losses and outflows are negative; parentheses in the filing mean negative. Give the value in \
+the unit the question asks for.
+7. Quote one sentence or one table row exactly as it appears. Do not join rows or skip words."""
 SYSTEM_DOC, SYSTEM_CLOSED, SYSTEM_SKILL = (s.replace("{DOC}", DOC) for s in (SYSTEM_DOC, SYSTEM_CLOSED, SYSTEM_SKILL))
 
-SKILL_FORMAT = FORMAT.replace('"quote":', '"calc": "<arithmetic expression or null>",\n "quote":')
+SKILL_FORMAT = FORMAT.replace(
+    '"quote":', '"column": "<table column header you used, or null>",\n "calc": "<arithmetic expression or null>",\n "quote":')
+
+# ------------------------------------------------------------------ skill checks
+# Externalized verification: code checks what it can, and the model gets one retry with the reason.
+
+CONSTANTS = {"1", "2", "3", "4", "10", "12", "100", "1000", "1000000", "1000000000"}
+
+
+def squash(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", s.lower().replace("’", "'"))
+
+
+def period_kind(s: str) -> str | None:
+    s = s.lower()
+    for kind, rx in [("three-month", r"three months|\bquarter\b|\bq[1-4]\b"),
+                     ("six-month", r"six months|first half|\bh[12]\b"),
+                     ("nine-month", r"nine months"),
+                     ("twelve-month", r"twelve months|trailing"),
+                     ("annual", r"year ended|years ended|fiscal year|\bfy ?\d|full year"),
+                     ("point-in-time", r"\bas of\b")]:
+        if re.search(rx, s):
+            return kind
+    return None
+
+
+def skill_checks(q: dict, parsed: dict, context: str) -> list[str]:
+    issues = []
+    calc = parsed.get("calc")
+    if isinstance(calc, str) and calc.strip():
+        if safe_calc(calc) is None:
+            issues.append('"calc" must use only digits and + - * / ( ).')
+        ctx_nums = {n.replace(",", "").lstrip("0") or "0" for n in re.findall(r"\d[\d,]*(?:\.\d+)?", context)}
+        missing = [n for n in re.findall(r"\d+(?:\.\d+)?", calc.replace(",", ""))
+                   if n not in CONSTANTS and (n.lstrip("0") or "0") not in ctx_nums]
+        if missing:
+            issues.append(f'"calc" uses numbers that are not in the fact sheet or passages: {", ".join(missing)}.')
+    quote = parsed.get("quote")
+    if isinstance(quote, str) and quote.strip():
+        ctx = squash(context)
+        parts = [squash(p) for p in re.split(r"\n|; |\.\.\.|…|\[\.\.\.\]", quote)]
+        if any(len(p) >= 12 and p not in ctx for p in parts):
+            issues.append('"quote" is not copied exactly from the fact sheet or passages.')
+    question = q["question"].lower()
+    comparative = re.search(r"\bvs\.?\b|compared|growth|grew|increase|decrease|change|from .+ to ", question)
+    col = parsed.get("column")
+    if isinstance(col, str) and col and not comparative:
+        want, got = period_kind(question), period_kind(col)
+        if want and got and want != got:
+            issues.append(f'The column you used ("{col}") is a {got} period, but the question asks about a {want} period.')
+        years_q, years_c = set(re.findall(r"\b20\d\d\b", question)), set(re.findall(r"\b20\d\d\b", col))
+        if len(years_q) == 1 and years_c and not years_q & years_c:
+            issues.append(f'The column you used ("{col}") is not for {years_q.pop()}.')
+    return issues
 
 
 def safe_calc(expr) -> float | None:
@@ -213,28 +295,46 @@ def parse_json(text: str) -> dict | None:
         return None
 
 
-def ask(model: dict, q: dict, mode: str, k: int) -> dict:
-    system, user = build_prompt(q, mode, k)
-    t0 = time.time()
+def call(model: dict, system: str, user: str) -> dict:
     for attempt in range(3):
         try:
-            out = PROVIDERS[model["provider"]](model["id"], system, user)
-            break
+            return PROVIDERS[model["provider"]](model["id"], system, user)
         except requests.RequestException as e:
             err = str(e)
             time.sleep(2 ** attempt * 3)
-    else:
-        return {"qid": q["id"], "error": err}
+    return {"error": err}
+
+
+def ask(model: dict, q: dict, mode: str, k: int) -> dict:
+    system, user = build_prompt(q, mode, k)
+    t0 = time.time()
+    out = call(model, system, user)
+    if "error" in out:
+        return {"qid": q["id"], "error": out["error"]}
     text = out.pop("text")
     parsed = parse_json(text)
-    if parsed and mode == "skill" and parsed.get("calc"):
-        v = safe_calc(parsed["calc"])  # code does the arithmetic, not the model
-        if v is not None:
-            parsed["model_value"], parsed["value"] = parsed.get("value"), v
+    extra = {}
+    if mode == "skill":
+        # One retry when a code check fails, with the reason. Only answers that fail a check
+        # cost a second call.
+        issues = skill_checks(q, parsed, user) if parsed else ["Respond with only the JSON object."]
+        if issues:
+            again = call(model, system, f"{user}\n\nYour previous answer was:\n{text.strip()[-1500:]}\n\n"
+                                        f"An automatic check found: {' '.join(issues)} Fix this and answer again.")
+            if "error" not in again:
+                text = again.pop("text")
+                parsed = parse_json(text) or parsed
+                for key in ("in_tokens", "out_tokens", "cost_usd"):
+                    out[key] = (out.get(key) or 0) + (again.get(key) or 0)
+            extra = {"checks": issues, "retried": True}
+        if parsed and parsed.get("calc"):
+            v = safe_calc(parsed["calc"])  # code does the arithmetic, not the model
+            if v is not None:
+                parsed["model_value"], parsed["value"] = parsed.get("value"), v
     if not parsed:
         out["raw"] = text[-2000:]  # keep for error analysis
     return {"qid": q["id"], "parsed": parsed,
-            "latency_s": round(time.time() - t0, 2), **out}
+            "latency_s": round(time.time() - t0, 2), **out, **extra}
 
 
 BATCH_FORMAT = """Answer every question. Respond with only a JSON array, one object per question:

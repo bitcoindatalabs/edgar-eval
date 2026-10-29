@@ -8930,7 +8930,7 @@
     "accuracy": 1.0,
     "invented_blanks": 0,
     "blanks_asked": 6,
-    "grounded_rate": 0.979,
+    "grounded_rate": 1.0,
     "by_category": {
      "fact": 1.0,
      "period-trap": 1.0,
@@ -9020,7 +9020,7 @@
      "fv-charge-h1-2026": {
       "correct": true,
       "invented": false,
-      "grounded": false,
+      "grounded": true,
       "note": "",
       "answer": {
        "id": "fv-charge-h1-2026",
@@ -10497,8 +10497,8 @@
      "governance": 1.0,
      "risk": 0.75
     },
-    "cost_usd": 0.0551,
-    "input_tokens": 330638,
+    "cost_usd": 0.0524,
+    "input_tokens": 328033,
     "per_question": {
      "rev-h1-2026": {
       "correct": true,
@@ -10566,8 +10566,8 @@
        "value": 80748,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "F-57",
-       "quote": "Net loss $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+       "page": "22",
+       "quote": "Net loss (2) $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
       }
      },
      "fv-charge-h1-2026": {
@@ -10576,11 +10576,11 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The change in fair value of convertible notes, derivative liabilities, and SAFEs accounted for $72,388 million of Anthropic's H1 2026 net loss.",
+       "answer": "The change in fair value of convertible notes, derivative liabilities, and SAFEs accounted for $72,388 million of Anthropic's H1 2026 net loss of $80,748 million.",
        "value": 72388,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
        "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs (1,045) (5,434) (34,308) (10,942) (72,388)"
       }
      },
@@ -10622,7 +10622,7 @@
        "value": 4731,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "160",
+       "page": "157",
        "quote": "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
       }
      },
@@ -10650,7 +10650,7 @@
        "value": 41965,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "F-8",
+       "page": "F-57",
        "quote": "Net loss $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
       }
      },
@@ -10660,12 +10660,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's operating loss for fiscal year 2025 was $8,060 million, derived by summing the four quarterly operating losses disclosed in the filing.",
+       "answer": "Anthropic's operating loss for fiscal year 2025 was $8,060 million.",
        "value": 8060,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "160",
-       "quote": "Operating income (loss) $ (935) $ (1,200) $ (3,089) $ (2,836) $ (1,667) $ 974"
+       "page": "F-7",
+       "quote": "Operating loss (551) (2,980) (8,060) (2,135) (693)"
       }
      },
      "compute-h1-2026": {
@@ -10748,7 +10748,7 @@
        "value": 141100,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "182",
+       "page": "10",
        "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital and had cash and cash equivalents of $112.4 billion and short- term investments of $19.3 billion."
       }
      },
@@ -10842,11 +10842,11 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The aggregate committed spend under Anthropic's purchase commitments and lease agreements as of and subsequent to September 30, 2026 is not disclosed, as the dollar figure is left blank in the preliminary prospectus.",
+       "answer": "The aggregate committed spend under Anthropic's purchase commitments and lease agreements as of and subsequent to September 30, 2026 is not disclosed; the filing states it is 'more than $' but leaves the dollar amount blank.",
        "value": null,
        "unit": "USD",
        "disclosed": false,
-       "page": "32",
+       "page": "6",
        "quote": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
       }
      },
@@ -10856,11 +10856,11 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The filing states that approximately $ of these commitments are due in the next 12 months, but the specific dollar amount is left blank in this preliminary prospectus.",
+       "answer": "The specific dollar amount of purchase commitments due in the next 12 months is left blank in the preliminary prospectus.",
        "value": null,
        "unit": "dollars",
        "disclosed": false,
-       "page": "32",
+       "page": "6",
        "quote": "Approximately $ of these commitments are due in the next 12 months."
       }
      },
@@ -10870,11 +10870,11 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's Run-Rate Revenue as of October 31, 2026 is not disclosed in this preliminary prospectus; the figure is left blank.",
+       "answer": "Anthropic's Run-Rate Revenue as of October 31, 2026 is not disclosed; the figure is left blank in the preliminary prospectus.",
        "value": null,
        "unit": "dollars",
        "disclosed": false,
-       "page": "210",
+       "page": "193",
        "quote": "Additionally, our Run-Rate Revenue was $ as of October 31, 2026."
       }
      },
@@ -10884,7 +10884,7 @@
       "grounded": null,
       "note": "",
       "answer": {
-       "answer": "The specific revenue figure for the three months ended September 30, 2026 is not explicitly stated in the provided filing text.",
+       "answer": "The specific revenue figure for the three months ended September 30, 2026 is not disclosed in the provided pages of the filing.",
        "value": null,
        "unit": "dollars",
        "disclosed": false,
@@ -10898,7 +10898,7 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The percentage of revenue from customers with $100,000 or more of TTM revenue for the trailing twelve months ended September 30, 2026 is left blank in this preliminary prospectus.",
+       "answer": "The percentage of revenue from customers with $100,000 or more of TTM revenue for the trailing twelve months ended September 30, 2026 is not disclosed in the filing.",
        "value": null,
        "unit": "percent",
        "disclosed": false,
@@ -10912,7 +10912,7 @@
       "grounded": true,
       "note": "said None percent vs 85.4",
       "answer": {
-       "answer": "Gross margin for the six months ended June 30, 2026 is not disclosed, as the company changed its presentation to no longer report cost of revenue or gross profit (loss) as separate line items.",
+       "answer": "Gross margin is not disclosed because the company changed its presentation of operating expenses from a functional classification to a nature-of-expense classification, and no longer presents cost of revenue or gross profit (loss) as separate line items.",
        "value": null,
        "unit": "percent",
        "disclosed": false,
@@ -10926,7 +10926,7 @@
       "grounded": true,
       "note": "said None percent vs 39.5",
       "answer": {
-       "answer": "Gross margin for fiscal year 2025 is not disclosed because the Company changed its presentation of operating expenses from a functional classification to a nature-of-expense classification, and cost of revenue and gross profit (loss) are no longer presented as separate line items in the consolidated statements of operations.",
+       "answer": "Gross margin for fiscal year 2025 is not disclosed in the provided filing text; the company changed its presentation during 2025 so that cost of revenue and gross profit (loss) are no longer presented as separate line items.",
        "value": null,
        "unit": "percent",
        "disclosed": false,
@@ -10940,7 +10940,7 @@
       "grounded": null,
       "note": "said None percent vs -94.8",
       "answer": {
-       "answer": "Gross margin for fiscal year 2024 is not disclosed in the provided pages of the filing.",
+       "answer": "Anthropic's gross margin for fiscal year 2024 is not disclosed in the provided filing text.",
        "value": null,
        "unit": "percent",
        "disclosed": false,
@@ -10958,8 +10958,8 @@
        "value": 55,
        "unit": "percent",
        "disclosed": true,
-       "page": "148",
-       "quote": "Compute and infrastructure 1,056 653 160 201 55"
+       "page": "149",
+       "quote": "Percentage of revenue 201 % 55 %"
       }
      },
      "growth-h1": {
@@ -10982,7 +10982,7 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Customers with $100,000 or more of revenue on a TTM basis represented approximately 76% of Anthropic's total revenue for the year ended December 31, 2025.",
+       "answer": "Customers with $100,000 or more of TTM revenue represented approximately 76% of Anthropic's total revenue for the year ended December 31, 2025.",
        "value": 76,
        "unit": "percent",
        "disclosed": true,
@@ -11012,7 +11012,7 @@
       "answer": {
        "answer": "The Long-Term Benefit Trust (LTBT), as the sole holder of Class T common stock, generally has the authority to elect and remove the Class T directors, who together constitute a majority of the authorized members of the board of directors.",
        "value": null,
-       "unit": "share of board (majority)",
+       "unit": "majority of authorized board members",
        "disclosed": true,
        "page": "244",
        "quote": "Through a special class of common stock, Class T common stock, the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors."
@@ -11028,8 +11028,8 @@
        "value": null,
        "unit": null,
        "disclosed": true,
-       "page": "247",
-       "quote": "Immediately prior to the completion of this offering, we will issue a single share of Class F common stock, a special class of our common stock, to the Founder LLC, a limited liability company of which our seven co-founders will initially be the sole members and that will be managed by its members."
+       "page": "2",
+       "quote": "Immediately prior to the completion of this offering, we will also issue a single share of Class F common stock, a special class of our common stock, to a limited liability company organized by our co-founders (the \"Founder LLC\")."
       }
      },
      "class-e": {
@@ -11066,12 +11066,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Goldman Sachs & Co. LLC is listed first among the underwriters.",
+       "answer": "Goldman Sachs & Co. LLC is listed first among the underwriters in the underwriting table, which reflects the order on the cover.",
        "value": null,
        "unit": null,
        "disclosed": true,
        "page": "316",
-       "quote": "Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are the representatives of the underwriters (\"representatives\")."
+       "quote": "Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are the representatives of the underwriters (\"representatives\"). Underwriters Number of Shares of Class A Common Stock Goldman Sachs & Co. LLC Morgan Stanley & Co. LLC"
       }
      },
      "texas-curtailment": {
@@ -11080,11 +11080,11 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The S-1 cites Texas as the state that has moved to subject large electricity loads to curtailment or disconnection during grid emergencies.",
+       "answer": "Texas is the U.S. state cited as subjecting large electricity loads to curtailment or disconnection during grid emergencies.",
        "value": null,
        "unit": null,
        "disclosed": true,
-       "page": "37",
+       "page": "36",
        "quote": "For example, states such as New York and Texas have recently moved to regulate large-scale data centers, whether by pausing state permitting for new large facilities, as New York has, or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has."
       }
      },
@@ -11094,7 +11094,7 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Besides well-capitalized CSPs, the S-1 names cryptocurrency mining operations (and other large-scale electricity consumers) as competitors for access to electrical supply and data center locations with adequate power availability.",
+       "answer": "Cryptocurrency mining operations are named as a competitor for electrical supply and data center locations with adequate power availability.",
        "value": null,
        "unit": null,
        "disclosed": true,
@@ -11108,7 +11108,7 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The S-1 names Fluidstack USA I Inc. (referred to as \"Fluidstack\") as providing data center development and operations services to Anthropic under a colocation and services agreement.",
+       "answer": "Fluidstack USA I Inc. (referred to as \"Fluidstack\") is named as providing data center development and operations services to Anthropic under a colocation and services agreement.",
        "value": null,
        "unit": null,
        "disclosed": true,
@@ -11122,7 +11122,7 @@
       "grounded": null,
       "note": "missing ['state-sponsored', '30']",
       "answer": {
-       "answer": "The provided filing text does not contain any statement about Anthropic detecting something in September 2025 involving Claude Code.",
+       "answer": "The provided filing text does not contain any reference to something Anthropic detected in September 2025 involving Claude Code.",
        "value": null,
        "unit": null,
        "disclosed": false,
@@ -11136,12 +11136,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Claude is accessible on all three major cloud platforms: AWS, GCP, and Azure.",
+       "answer": "Claude is accessible on all three major cloud platforms: Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure (Azure).",
        "value": null,
        "unit": null,
        "disclosed": true,
-       "page": "140",
-       "quote": "Claude is accessible on all three major cloud platforms, AWS, GCP, and Azure, allowing enterprises to deploy Claude within the infrastructure, security perimeters, and commitment structures they already operate."
+       "page": "9",
+       "quote": "Claude is accessible on all three major cloud platforms—Amazon Web Services (\"AWS\"), Google Cloud Platform (\"GCP\"), and Microsoft Azure (\"Azure\")."
       }
      },
      "chips": {
@@ -11150,7 +11150,1367 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's multi-chip compute architecture spans four major chip families: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
+       "answer": "Anthropic's multi-chip compute architecture consists of four major chip families: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "135",
+       "quote": "We train and serve Claude natively across four major chip families (AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs) using a proprietary orchestration layer that enables us to optimize workloads for price and performance."
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 47,
+    "accuracy": 0.894,
+    "invented_blanks": 0,
+    "blanks_asked": 6,
+    "grounded_rate": 0.932,
+    "by_category": {
+     "fact": 0.957,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "derived": 0.5,
+     "governance": 1.0,
+     "risk": 0.75
+    },
+    "cost_usd": 0.0297,
+    "input_tokens": 304784,
+    "per_question": {
+     "rev-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the six months ended June 30, 2026 was $16,286 million.",
+       "value": 16286,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "148",
+       "quote": "Revenue $ 1,163 $ 16,286 $ 15,123 1,300 %"
+      }
+     },
+     "rev-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's total revenue for fiscal year 2025 was $4,585 million, up from $386 million in 2024.",
+       "value": 4585,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-26",
+       "quote": "United States $ 34 $ 263 $ 3,362 $ 820 $ 11,763 International 7 123 1,223 343 4,523 Total $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
+      }
+     },
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for fiscal year 2023 was $41 million.",
+       "value": 41,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-26",
+       "quote": "United States $ 34 $ 263 ... International 7 123 ... Total $ 41 $ 386 (table presenting revenue for the years ended December 31, 2023 and 2024)"
+      }
+     },
+     "oploss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss was $693 million for the six months ended June 30, 2026, down from $2.1 billion for the six months ended June 30, 2025.",
+       "value": 693,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "136",
+       "quote": "Our operating loss was $693 million for the six months ended June 30, 2026, down from $2.1 billion for the six months ended June 30, 2025."
+      }
+     },
+     "netloss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the six months ended June 30, 2026 was $80,748 million (approximately $80.7 billion).",
+       "value": 80748,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22 (also F-57)",
+       "quote": "Net loss (2) $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+      }
+     },
+     "fv-charge-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The change in fair value of convertible notes, derivative liabilities, and SAFEs accounted for $72,388 million of Anthropic's $80,748 million net loss for the six months ended June 30, 2026.",
+       "value": 72388,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs (1,045) (5,434) (34,308) (10,942) (72,388)"
+      }
+     },
+     "opinc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating income for the three months ended June 30, 2026 was $974 million.",
+       "value": 974,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "quote": "Operating income (loss) ... June 30, 2026 ... $ 974"
+      }
+     },
+     "rev-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended June 30, 2026 was $11.6 billion (approximately $11,555 million).",
+       "value": 11555,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "quote": "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
+      }
+     },
+     "rev-q1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended March 31, 2026 was $4,731 million.",
+       "value": 4731,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "quote": "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
+      }
+     },
+     "netloss-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the three months ended June 30, 2026 was $66,309 million (~$66.3 billion).",
+       "value": 66309,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "quote": "Net loss (1) $ (6,592) $ (6,377) $ (12,138) $ (16,858) $ (14,439) $ (66,309)"
+      }
+     },
+     "netloss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the year ended December 31, 2025 was $41,965 million.",
+       "value": -41965,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-57",
+       "quote": "Numerator: Net loss $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+      }
+     },
+     "oploss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for fiscal year 2025 was $8,060 million.",
+       "value": -8060,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-7",
+       "quote": "Operating loss (551) (2,980) (8,060) (2,135) (693)"
+      }
+     },
+     "compute-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic spent $8,945 million on compute and infrastructure in the six months ended June 30, 2026.",
+       "value": 8945,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "149",
+       "quote": "Compute and infrastructure $ 2,334 $ 8,945 $ 6,611 283 %"
+      }
+     },
+     "cor-h1-2026": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None USD millions vs 2380",
+      "answer": {
+       "answer": "Anthropic no longer presents cost of revenue as a separate line item; beginning in 2025 it changed to a nature-based expense presentation (compute and infrastructure; personnel; etc.), so cost of revenue for the six months ended June 30, 2026 is not separately disclosed.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": "F-14",
+       "quote": "During the year ended December 31, 2025, the Company changed its presentation of operating expenses from a functional classification under which cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative were presented as separate line items, to a classification based on the nature of expenses... cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative are no longer presented as separate line items in the consolidated statements of operations."
+      }
+     },
+     "bartz": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic agreed to settle the Bartz copyright infringement class action for $1.5 billion.",
+       "value": 1500,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "92",
+       "quote": "in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (“Bartz”), for $1.5 billion, which was approved by the district court in July 2026."
+      }
+     },
+     "ocf-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "Net cash provided by operating activities was $3,929 million for the six months ended June 30, 2026.",
+       "value": 3929,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-12 (also discussed on page 168)",
+       "quote": "Net cash provided by (used in) Operating activities ... $ (1,627) $ (5,692) $ (2,637) $ (1,513) $ 3,929 [six months ended June 30, 2026]; 'Cash provided by operating activities was $3.9 billion for the six months ended June 30, 2026'"
+      }
+     },
+     "cash-jun-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic held $112,389 million in cash and cash equivalents as of June 30, 2026.",
+       "value": 112389,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-5 (also page 24 and F-36)",
+       "quote": "Cash and cash equivalents $ 3,141 $ 17,388 $ 112,389"
+      }
+     },
+     "capital-raised": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of June 30, 2026, Anthropic had raised an aggregate of $141.1 billion of capital.",
+       "value": 141100,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "10",
+       "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital and had cash and cash equivalents of $112.4 billion and short-term investments of $19.3 billion."
+      }
+     },
+     "sbc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Stock-based compensation expense included in personnel for the three months ended June 30, 2026 was approximately $1.3 billion ($1,261 million per the adjusted operating income table).",
+       "value": 1261,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157/160",
+       "quote": "Includes stock-based compensation expense of $105 million, $181 million, $305 million, $574 million, $924 million, and $1.3 billion for the three months ended March 31, 2025, June 30, 2025, September 30, 2025, December 31, 2025, March 31, 2026, and June 30, 2026, respectively."
+      }
+     },
+     "employees": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic had approximately 5,300 employees as of September 30, 2026.",
+       "value": 5300,
+       "unit": "employees",
+       "disclosed": true,
+       "page": "195",
+       "quote": "As of September 30, 2026, with approximately 5,300 employees, our TTM revenue per employee was over $6.6 million"
+      }
+     },
+     "cust-100k": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "More than 11,900 customers had $100,000 or more of revenue on a TTM basis as of September 30, 2026.",
+       "value": 11900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "134",
+       "quote": "We had more than 11,900 customers with $100,000 or more of revenue on a TTM basis as of September 30, 2026, up from more than 950 as of September 30, 2025."
+      }
+     },
+     "cust-1m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "More than 1,900 customers contributed $1 million or more of revenue on a TTM basis as of September 30, 2026.",
+       "value": 1900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "134",
+       "quote": "As of September 30, 2026, we had more than 1,900 customers with $1 million or more of revenue on a TTM basis and approximately 250 customers with $10 million or more of revenue on a TTM basis."
+      }
+     },
+     "cust-small": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Approximately 40 million customers each contributed less than $100,000 of TTM revenue as of September 30, 2026.",
+       "value": 40000000,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "142",
+       "quote": "The remaining % of total revenue for the trailing twelve months ended September 30, 2026 was generated by approximately 40 million customers, each with less than $100,000 of revenue on a TTM basis."
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus excerpt does not state the estimated IPO price range; it refers only to a midpoint price that is blank.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "124",
+       "quote": "based upon the assumed initial public offering price of $ per share, which is the midpoint of the estimated offering price range set forth on the cover page of this prospectus"
+      }
+     },
+     "blank-commitments": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The aggregate committed spend figure is left blank in the preliminary prospectus (shown as \"more than $ \"), so it is not disclosed.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "6",
+       "quote": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
+      }
+     },
+     "blank-commitments-12m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 does not disclose the dollar amount of purchase commitments due in the next 12 months; the figure is left blank in the preliminary prospectus.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "6, 32, 137, 180, 196",
+       "quote": "Approximately $ of these commitments are due in the next 12 months."
+      }
+     },
+     "blank-run-rate": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the Run-Rate Revenue figure blank (\"$\" with no number) as of October 31, 2026.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "193",
+       "quote": "our Run-Rate Revenue was $ as of October 31, 2026."
+      }
+     },
+     "blank-rev-q3-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": null,
+      "note": "",
+      "answer": {
+       "answer": "The filing does not disclose Anthropic's revenue for the three months ended September 30, 2026.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "blank-ttm-concentration": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The percentage of total revenue from customers with $100,000 or more of TTM revenue for the trailing twelve months ended September 30, 2026 is left blank in the preliminary prospectus.",
+       "value": null,
+       "unit": "%",
+       "disclosed": false,
+       "page": "142",
+       "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+      }
+     },
+     "gm-h1-2026": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None % vs 85.4",
+      "answer": {
+       "answer": "Anthropic's gross margin for the six months ended June 30, 2026 is not disclosed, as the Company changed its expense presentation from a functional classification (including cost of revenue and gross profit/loss) to a nature-based classification in 2025.",
+       "value": null,
+       "unit": "%",
+       "disclosed": false,
+       "page": "F-14",
+       "quote": "During the year ended December 31, 2025, the Company changed its presentation of operating expenses from a functional classification under which cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative were presented as separate line items, to a classification based on the nature of expenses... As a result of this change in presentation, cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative are no longer presented as separate line items in the consolidated statements of operations."
+      }
+     },
+     "gm-fy-2025": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None % vs 39.5",
+      "answer": {
+       "answer": "Anthropic's gross margin for fiscal year 2025 is not disclosed; the company changed its presentation in 2025 to a nature-based expense classification and no longer presents cost of revenue or gross profit (loss) as separate line items.",
+       "value": null,
+       "unit": "%",
+       "disclosed": false,
+       "page": "F-14",
+       "quote": "As a result of this change in presentation, cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative are no longer presented as separate line items in the consolidated statements of operations."
+      }
+     },
+     "gm-fy-2024": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None percent vs -94.8",
+      "answer": {
+       "answer": "The filing excerpt does not disclose Anthropic's revenue and cost of revenue (or gross profit) for fiscal year 2024, so its FY2024 gross margin cannot be determined from the provided text.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "compute-pct-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "Compute and infrastructure expense was 55% of revenue for the six months ended June 30, 2026.",
+       "value": 55,
+       "unit": "%",
+       "disclosed": true,
+       "page": "149",
+       "quote": "Compute and infrastructure $ 8,945 ... Percentage of revenue 201 % 55 %"
+      }
+     },
+     "growth-h1": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Revenue grew approximately 14x (a 1,300% increase), from $1,163 million to $16,286 million.",
+       "value": 14.0,
+       "unit": "x",
+       "disclosed": true,
+       "page": "148",
+       "quote": "Revenue $ 1,163 $ 16,286 $ 15,123 1,300 %"
+      }
+     },
+     "concentration-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Customers with $100,000 or more of TTM revenue generated approximately 76% of Anthropic's total revenue for the year ended December 31, 2025.",
+       "value": 76,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "142",
+       "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic has applied to list its Class A common stock on the Nasdaq Global Select Market under the ticker symbol \"ANT.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol \"ANT.\""
+      }
+     },
+     "ltbt-class-t": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The Long-Term Benefit Trust (LTBT), as sole holder of the Class T common stock, elects and removes the Class T directors, who together constitute a majority of the authorized members of the board of directors.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "244",
+       "quote": "As the sole holder of Class T common stock, the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors."
+      }
+     },
+     "class-f": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The single share of Class F common stock will be issued to the Founder LLC, the limited liability company whose sole members are Anthropic's seven co-founders.",
+       "value": 1,
+       "unit": "share",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Immediately prior to the completion of this offering, we will also issue a single share of Class F common stock, a special class of our common stock, to a limited liability company organized by our co-founders (the \"Founder LLC\")."
+      }
+     },
+     "class-e": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Class E common stock will be issued to Anthropic's employees (excluding its co-founders), and it will not have any economic rights—it is entitled to vote only on certain limited matters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "Upon the completion of this offering, we will also authorize a special class of our common stock, Class E common stock, which will be issued to our employees, excluding our co-founders. Our Class E common stock will be entitled to vote only on certain limited matters and will not have any economic rights."
+      }
+     },
+     "dividends": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "No, Anthropic has never declared or paid any cash dividends on its capital stock and does not expect to pay any in the foreseeable future.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "125",
+       "quote": "We have never declared or paid any cash dividends on our capital stock. We currently intend to retain all available funds and any future earnings to finance the operation and expansion of our business and do not expect to pay any dividends in the foreseeable future."
+      }
+     },
+     "lead-underwriter": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC is listed first among the underwriters (alongside Morgan Stanley & Co. LLC as representatives).",
+       "value": null,
+       "unit": "n/a",
+       "disclosed": true,
+       "page": "316",
+       "quote": "Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC are the representatives of the underwriters (“representatives”). Underwriters Number of Shares of Class A Common Stock Goldman Sachs & Co. LLC Morgan Stanley & Co. LLC"
+      }
+     },
+     "texas-curtailment": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 cites Texas as a state subjecting large electricity loads to curtailment or disconnection during grid emergencies.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "36",
+       "quote": "...or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has."
+      }
+     },
+     "power-competitors": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names cryptocurrency mining operations (as well as other large-scale electricity consumers) as competitors for access to electrical supply and data center locations with adequate power availability.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "35",
+       "quote": "Competition for access to electrical supply and data center locations with adequate power availability is intense, and we compete for such access with well-capitalized CSPs, some of which produce and develop competing AI models, cryptocurrency mining operations, and other large-scale electricity consumers."
+      }
+     },
+     "fluidstack": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names Fluidstack (Fluidstack USA I Inc.) as providing data center development and operations services to Anthropic under a colocation and services agreement.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "205",
+       "quote": "For example, we have entered into a colocation and services agreement with Fluidstack USA I Inc. (“Fluidstack”), under which Fluidstack provides data center development and operations services to us."
+      }
+     },
+     "claude-code-misuse": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "missing ['state-sponsored', '30']",
+      "answer": {
+       "answer": "The filing does not describe any detection event in September 2025 involving Claude Code.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "clouds": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Claude is accessible on the three major cloud platforms AWS (Amazon Web Services), Google Cloud Platform, and Microsoft Azure.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "9",
+       "quote": "For example, Claude is accessible on all three major cloud platforms—Amazon Web Services (“AWS”), Google Cloud Platform (“GCP”), and Microsoft Azure (“Azure”)."
+      }
+     },
+     "chips": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's multi-chip compute architecture spans four chip families: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
+       "value": 4,
+       "unit": "chip families",
+       "disclosed": true,
+       "page": "6",
+       "quote": "We have achieved this through our research breakthroughs and our multi-chip compute architecture across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs, enabling us to orchestrate workloads to optimize for price and performance."
+      }
+     }
+    }
+   },
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 47,
+    "accuracy": 0.872,
+    "invented_blanks": 0,
+    "blanks_asked": 6,
+    "grounded_rate": 0.977,
+    "by_category": {
+     "fact": 0.957,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "derived": 0.5,
+     "governance": 0.833,
+     "risk": 0.75
+    },
+    "cost_usd": 0.011,
+    "input_tokens": 302690,
+    "per_question": {
+     "rev-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the six months ended June 30, 2026 was $16,286 million.",
+       "value": 16286,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "148",
+       "quote": "Revenue $ 1,163 $ 16,286 $ 15,123 1,300 %"
+      }
+     },
+     "rev-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's total revenue for fiscal year 2025 was $4,585 million.",
+       "value": 4585,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-26",
+       "quote": "Total $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
+      }
+     },
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for fiscal year 2023 was $41 million.",
+       "value": 41,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "153",
+       "quote": "Revenue $ 41 $ 386 $ 345 841 %"
+      }
+     },
+     "oploss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for the six months ended June 30, 2026 was $693 million.",
+       "value": 693,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "136",
+       "quote": "Our operating loss was $693 million for the six months ended June 30, 2026 , down from $2.1 billion for the six months ended June 30, 2025."
+      }
+     },
+     "netloss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the six months ended June 30, 2026 was $80,748 million (i.e., $80.7 billion).",
+       "value": -80748,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "quote": "Net loss (2) $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+      }
+     },
+     "fv-charge-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2026, the change in fair value of convertible notes, derivative liabilities, and SAFEs was a $72,388 million expense.",
+       "value": 72388,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs (1,045) (5,434) (34,308) (10,942) (72,388)"
+      }
+     },
+     "opinc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic reported operating income of $974 million for the three months ended June 30, 2026.",
+       "value": 974,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "quote": "Operating income (loss) (935) (1,200) (3,089) (2,836) (1,667) 974"
+      }
+     },
+     "rev-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended June 30, 2026 was $11,555 million.",
+       "value": 11555,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "quote": "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
+      }
+     },
+     "rev-q1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended March 31, 2026 was $4,731 million.",
+       "value": 4731,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "quote": "Revenue $ 376 $ 787 $ 1,382 $ 2,040 $ 4,731 $ 11,555"
+      }
+     },
+     "netloss-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the three months ended June 30, 2026 was $66,309 million.",
+       "value": -66309,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "quote": "Net loss (1) $ (6,592) $ (6,377) $ (12,138) $ (16,858) $ (14,439) $ (66,309)"
+      }
+     },
+     "netloss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for fiscal year 2025 was $41,965 million.",
+       "value": -41965,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-57",
+       "quote": "Net loss $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+      }
+     },
+     "oploss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for fiscal year 2025 was $8,060 million.",
+       "value": -8060,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-7",
+       "quote": "Operating loss (551) (2,980) (8,060) (2,135) (693)"
+      }
+     },
+     "compute-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's compute and infrastructure operating expense was $8,945 million for the six months ended June 30, 2026.",
+       "value": 8945,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "149",
+       "quote": "Compute and infrastructure $ 2,334 $ 8,945 $ 6,611 283 %"
+      }
+     },
+     "cor-h1-2026": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None USD millions vs 2380",
+      "answer": {
+       "answer": "Cost of revenue is not disclosed for the six months ended June 30, 2026, because the filing states that cost of revenue is no longer presented as a separate line item under its current expense presentation.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": "F-14",
+       "quote": "As a result of this change in presentation, cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative are no longer presented as separate line items in the consolidated statements of operations."
+      }
+     },
+     "bartz": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic agreed to settle the Bartz copyright infringement class action for $1.5 billion.",
+       "value": 1500,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "92",
+       "quote": "For example, in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (“Bartz”), for $1.5 billion, which was approved by the district court in July 2026."
+      }
+     },
+     "ocf-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net cash provided by operating activities for the six months ended June 30, 2026 was $3,929 million.",
+       "value": 3929,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-12",
+       "quote": "Net cash provided by (used in) operating activities (1,627) (5,692) (2,637) (1,513) 3,929"
+      }
+     },
+     "cash-jun-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic held $112,389 million in cash and cash equivalents as of June 30, 2026.",
+       "value": 112389,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-5",
+       "quote": "Cash and cash equivalents $ 3,141 $ 17,388 $ 112,389"
+      }
+     },
+     "capital-raised": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of June 30, 2026, Anthropic had raised an aggregate of $141.1 billion of capital.",
+       "value": 141100,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "10",
+       "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital and had cash and cash equivalents of $112.4 billion and short- term investments of $19.3 billion ."
+      }
+     },
+     "sbc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Stock-based compensation expense included in personnel for the three months ended June 30, 2026 was $1,261 million.",
+       "value": 1261,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "quote": "Stock-based compensation expense 105 181 305 574 924 1,261"
+      }
+     },
+     "employees": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic had approximately 5,300 employees as of September 30, 2026.",
+       "value": 5300,
+       "unit": "employees",
+       "disclosed": true,
+       "page": "195",
+       "quote": "As of September 30, 2026, with approximately 5,300 employees, our TTM revenue per employee was over $6.6 million —a reflection of what we believe is the deepest concentration of AI research talent in the world."
+      }
+     },
+     "cust-100k": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of September 30, 2026, there were more than 11,900 customers with $100,000 or more of revenue on a TTM basis.",
+       "value": 11900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "134",
+       "quote": "We had more than 11,900 customers with $100,000 or more of revenue on a TTM basis as of September 30, 2026, up from more than 950 as of September 30, 2025."
+      }
+     },
+     "cust-1m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of September 30, 2026, more than 1,900 customers contributed $1 million or more of revenue on a TTM basis.",
+       "value": 1900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "134",
+       "quote": "As of September 30, 2026, we had more than 1,900 customers with $1 million or more of revenue on a TTM basis and approximately 250 customers with $10 million or more of reve nue on a TT M b asis ."
+      }
+     },
+     "cust-small": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of September 30, 2026, approximately 40 million customers each had less than $100,000 of revenue on a TTM basis.",
+       "value": 40000000,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "142",
+       "quote": "The remaining % of total revenue for the trailing twelve months ended September 30, 2026 was generated by approximately 40 million customers, each with less than $100,000 of revenue on a TTM basis ."
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing references an estimated offering price range on the cover page, but no actual price range figures are stated in the provided text (the dollar amounts are blank in this preliminary prospectus).",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "124",
+       "quote": "We estimate that the net proceeds to us from the sale of shares of our Class A common stock in this offering will be approximately $ , based upon the assumed initial public offering price of $ per share, which is the midpoint of the estimated offering price range set forth on the cover page of this prospectus..."
+      }
+     },
+     "blank-commitments": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The aggregate committed spend figure is left blank in the preliminary prospectus (stated only as \"more than $\"), so it is not disclosed.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "6",
+       "quote": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
+      }
+     },
+     "blank-commitments-12m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The figure is left blank in the preliminary prospectus, which states only that 'Approximately $ of these commitments are due in the next 12 months' without a number.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "137",
+       "quote": "Approximately $ of these commitments are due in the next 12 months."
+      }
+     },
+     "blank-run-rate": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's Run-Rate Revenue as of October 31, 2026 is not disclosed; the figure is left blank in the preliminary prospectus.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "193",
+       "quote": "Additionally, o ur our Run-Rate Revenue was $ as of October 31, 2026."
+      }
+     },
+     "blank-rev-q3-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing does not state an absolute dollar figure for revenue in the three months ended September 30, 2026; it only says that revenue for that quarter was 86 times revenue for the three months ended December 31, 2024.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "183",
+       "quote": "From December 31, 2024 to September 30, 2026, our headcount grew over five times, while our revenue for the three months ended September 30, 2026 was 86 times our revenue for the three months ended December 31, 2024 ."
+      }
+     },
+     "blank-ttm-concentration": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The percentage is left blank in the filing: revenue from customers with $100,000 or more of TTM revenue 'represented 90%, 57%, 76%, and %' of total revenue for 2023, 2024, 2025, and the TTM ended September 30, 2026, respectively, so the figure for that period is not disclosed.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": "142",
+       "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+      }
+     },
+     "gm-h1-2026": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None percent vs 85.4",
+      "answer": {
+       "answer": "Gross margin is not disclosed; the filing states that cost of revenue and gross profit (loss) are no longer presented as separate line items under its current expense presentation.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": "F-14",
+       "quote": "As a result of this change in presentation, cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative are no longer presented as separate line items in the consolidated statements of operations."
+      }
+     },
+     "gm-fy-2025": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None percent vs 39.5",
+      "answer": {
+       "answer": "Gross margin for fiscal year 2025 is not disclosed, as the filing states that the company changed its expense presentation and no longer reports cost of revenue and gross profit as separate line items.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": "F-14",
+       "quote": "As a result of this change in presentation, cost of revenue, gross profit (loss), research and development, sales and marketing, and general and administrative are no longer presented as separate line items in the consolidated statements of operations."
+      }
+     },
+     "gm-fy-2024": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None percent vs -94.8",
+      "answer": {
+       "answer": "Anthropic's gross margin for fiscal year 2024 is not disclosed in the provided filing text.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "compute-pct-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Compute and infrastructure expense was 55% of revenue for the six months ended June 30, 2026.",
+       "value": 55,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "149",
+       "quote": "Compute and infrastructure $ 2,334 $ 8,945 $ 6,611 283 % Percentage of revenue 201 % 55 %"
+      }
+     },
+     "growth-h1": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue grew approximately 14.0x, from $1.163 billion in the six months ended June 30, 2025 to $16.286 billion in the six months ended June 30, 2026.",
+       "value": 14.0034,
+       "unit": "x",
+       "disclosed": true,
+       "page": "148",
+       "quote": "Revenue $ 1,163 $ 16,286 $ 15,123 1,300 %"
+      }
+     },
+     "concentration-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "In fiscal 2025, customers with $100,000 or more of TTM revenue represented approximately 76% of total revenue.",
+       "value": 76,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "151",
+       "quote": "Total revenue from these customers grew from approximately $220 million to $3.5 billion and represented approximately 57% and 76% of total revenue for the years ended December 31, 2024 and 2025, respectively."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic proposes to list its Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”"
+      }
+     },
+     "ltbt-class-t": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The Long-Term Benefit Trust (LTBT), as the sole holder of Class T common stock, generally has authority to elect and remove the Class T directors, who together constitute a majority of the authorized members of Anthropic's board of directors.",
+       "value": null,
+       "unit": "share of board (stated qualitatively as a majority, not a numeric percentage)",
+       "disclosed": true,
+       "page": "244",
+       "quote": "As the sole holder of Class T common stock, the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors."
+      }
+     },
+     "class-f": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's single share of Class F common stock will be issued to the Founder LLC, a limited liability company organized by its co-founders.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "Immediately prior to the completion of this offering, we will also issue a single share of Class F common stock, a special class of our common stock, to a limited liability company organized by our co-founders (the “Founder LLC”)."
+      }
+     },
+     "class-e": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "missing ['no economic rights']",
+      "answer": {
+       "answer": "Class E common stock is issued to Anthropic's employees, excluding co-founders, and it does not carry any economic rights.",
+       "value": null,
+       "unit": "N/A",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Upon the completion of this offering, we will also authorize a special class of our common stock, Class E common stock, which will be issued to our employees, excluding our co-founders."
+      }
+     },
+     "dividends": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "No, Anthropic has never declared or paid any cash dividends on its capital stock.",
+       "value": null,
+       "unit": "n/a",
+       "disclosed": true,
+       "page": "125",
+       "quote": "We have never declared or paid any cash dividends on our capital stock."
+      }
+     },
+     "lead-underwriter": {
+      "correct": true,
+      "invented": false,
+      "grounded": null,
+      "note": "",
+      "answer": {
+       "answer": "The provided excerpt does not include the prospectus cover; the underwriting section lists Goldman Sachs & Co. LLC first, but the cover ordering is not stated.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "texas-curtailment": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 cites Texas as subjecting large electricity loads to curtailment or disconnection during grid emergencies.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "37",
+       "quote": "For example, states such as New York and Texas have recently moved to regulate large-scale data centers, whether by pausing state permitting for new large facilities, as New York has, or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has."
+      }
+     },
+     "power-competitors": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names cryptocurrency mining operations as competitors, alongside well-capitalized CSPs and other large-scale electricity consumers, for access to electrical supply and data center locations with adequate power availability.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "35",
+       "quote": "Competition for access to electrical supply and data center locations with adequate power availability is intense, and we compete for such access with well-capitalized CSPs, some of which produce and develop competing AI models, cryptocurrency mining operations, and other large-scale electricity consumers."
+      }
+     },
+     "fluidstack": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names Fluidstack USA I Inc. (\"Fluidstack\") as providing data center development and operations services to Anthropic under a colocation and services agreement.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "205",
+       "quote": "For example, we have entered into a colocation and services agreement with Fluidstack USA I Inc. (“Fluidstack”), under which Fluidstack provides data center development and operations services to us."
+      }
+     },
+     "claude-code-misuse": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "missing ['state-sponsored', '30']",
+      "answer": {
+       "answer": "The provided S-1 text does not state any detection involving Claude Code in September 2025.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "clouds": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Claude is accessible on Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "9",
+       "quote": "For example, Claude is accessible on all three major cloud platforms—Amazon Web Services (“AWS”), Google Cloud Platform (“GCP”), and Microsoft Azure (“Azure”)."
+      }
+     },
+     "chips": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's multi-chip compute architecture comprises AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
        "value": null,
        "unit": null,
        "disclosed": true,
@@ -11506,11 +12866,11 @@
   ],
   "skill": [
    {
-    "model": "qwen/qwen3.8-27b",
-    "label": "Qwen3.8 27B",
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
     "group": "open",
     "answered": 47,
-    "accuracy": 0.979,
+    "accuracy": 1.0,
     "invented_blanks": 0,
     "blanks_asked": 6,
     "grounded_rate": 1.0,
@@ -11520,10 +12880,10 @@
      "blank": 1.0,
      "derived": 1.0,
      "governance": 1.0,
-     "risk": 0.75
+     "risk": 1.0
     },
-    "cost_usd": 0.0476,
-    "input_tokens": 449549,
+    "cost_usd": 0.0086,
+    "input_tokens": 521617,
     "per_question": {
      "rev-h1-2026": {
       "correct": true,
@@ -11531,13 +12891,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's revenue for the six months ended June 30, 2026 was $16,286 million.",
+       "answer": "Anthropic's revenue was $16,286 million for the six months ended June 30, 2026.",
        "value": 16286,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
-       "quote": "Revenue | 41 | 386 | 4,585 | 1,163 | 16,286"
+       "quote": "Total $ 41 $ 386 $ 4,585 $ 1,163 $ 16,286"
       }
      },
      "rev-fy-2025": {
@@ -11550,7 +12911,8 @@
        "value": 4585,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
        "calc": null,
        "quote": "Revenue | 41 | 386 | 4,585 | 1,163 | 16,286"
       }
@@ -11565,9 +12927,10 @@
        "value": 41,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Year Ended December 31, 2023",
        "calc": null,
-       "quote": "Revenue | 41 | 386 | 4,585 | 1,163 | 16,286"
+       "quote": "| Revenue | 41 | 386 | 4,585 | 1,163 | 16,286 |"
       }
      },
      "oploss-h1-2026": {
@@ -11577,12 +12940,13 @@
       "note": "",
       "answer": {
        "answer": "Anthropic's operating loss for the six months ended June 30, 2026 was $693 million.",
-       "value": 693,
+       "value": -693,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
-       "quote": "Our operating loss was $693 million for the six months ended June 30, 2026"
+       "quote": "Operating loss | -551 | -2,980 | -8,060 | -2,135 | -693"
       }
      },
      "netloss-h1-2026": {
@@ -11595,9 +12959,10 @@
        "value": -80748,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
-       "quote": "Net loss | -1,531 | -8,309 | -41,965 | -12,969 | -80,748"
+       "quote": "| Net loss | -1,531 | -8,309 | -41,965 | -12,969 | -80,748 |"
       }
      },
      "fv-charge-h1-2026": {
@@ -11606,13 +12971,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The change in fair value of convertible notes, derivative liabilities, and SAFEs accounted for $72,388 million of Anthropic's H1 2026 loss.",
-       "value": 72388,
+       "answer": "The change in fair value of convertible notes, derivative liabilities, and SAFEs contributed a $72,388 million expense to Anthropic's H1 2026 loss.",
+       "value": -72388,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "150",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
-       "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs | -1,045 | -5,434 | -34,308 | -10,942 | -72,388"
+       "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs $ (10,942) $ (72,388) $ (61,446) 562 %"
       }
      },
      "opinc-q2-2026": {
@@ -11626,6 +12992,7 @@
        "unit": "USD millions",
        "disclosed": true,
        "page": "157",
+       "column": "Three Months Ended June 30, 2026",
        "calc": null,
        "quote": "Operating income (loss) | -935 | -1,200 | -3,089 | -2,836 | -1,667 | 974"
       }
@@ -11641,6 +13008,789 @@
        "unit": "USD millions",
        "disclosed": true,
        "page": "157",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "| Revenue | 376 | 787 | 1,382 | 2,040 | 4,731 | 11,555 |"
+      }
+     },
+     "rev-q1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended March 31, 2026 was $4,731 million.",
+       "value": 4731.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended March 31, 2026",
+       "calc": "4731",
+       "quote": "Revenue | 376 | 787 | 1,382 | 2,040 | 4,731 | 11,555",
+       "model_value": 4731
+      }
+     },
+     "netloss-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the three months ended June 30, 2026 was $66,309 million (a net loss of $66.3 billion).",
+       "value": -66309,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Net loss $ (6,592) $ (6,377) $ (12,138) $ (16,858) $ (14,439) $ (66,309)"
+      }
+     },
+     "netloss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for fiscal year 2025 was $41,965 million.",
+       "value": -41965,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Net loss | -1,531 | -8,309 | -41,965 | -12,969 | -80,748"
+      }
+     },
+     "oploss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for fiscal year 2025 was $8,060 million (a loss of $8,060 million).",
+       "value": -8060,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-7",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Operating loss (551) (2,980) (8,060) (2,135) (693)"
+      }
+     },
+     "compute-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic spent $8,945 million on compute and infrastructure in the six months ended June 30, 2026.",
+       "value": 8945,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Compute and infrastructure $ 2,334 $ 8,945 $ 6,611 283 %"
+      }
+     },
+     "cor-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's cost of revenue was $2,380 million for the six months ended June 30, 2026.",
+       "value": 2380,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380"
+      }
+     },
+     "bartz": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic agreed to settle the Bartz copyright infringement class action for $1.5 billion, or $1,500 million.",
+       "value": 1500.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "92",
+       "column": null,
+       "calc": "1.5 * 1000",
+       "quote": "For example, in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (“Bartz”), for $1.5 billion, which was approved by the district court in July 2026.",
+       "model_value": 1500
+      }
+     },
+     "ocf-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net cash provided by (used in) operating activities was $3,929 million for the six months ended June 30, 2026.",
+       "value": 3929,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-12",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities (1,627) (5,692) (2,637) (1,513) 3,929"
+      }
+     },
+     "cash-jun-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic held $112,389 million in cash and cash equivalents as of June 30, 2026.",
+       "value": 112389,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-5–F-6",
+       "column": "As of June 30, 2026",
+       "calc": null,
+       "quote": "| Cash and cash equivalents | 3,141 | 17,388 | 112,389 |"
+      }
+     },
+     "capital-raised": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of June 30, 2026, Anthropic had raised an aggregate of $141.1 billion of capital.",
+       "value": 141100.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "10",
+       "column": null,
+       "calc": "141.1 * 1000",
+       "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital and had cash and cash equivalents of $112.4 billion and short- term investments of $19.3 billion .",
+       "model_value": 141100
+      }
+     },
+     "sbc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the three months ended June 30, 2026, stock-based compensation expense was $1,261 million.",
+       "value": 1261,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "| Stock-based compensation expense | 105 | 181 | 305 | 574 | 924 | 1,261 |"
+      }
+     },
+     "employees": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic had approximately 5,300 employees as of September 30, 2026.",
+       "value": 5300,
+       "unit": "employees",
+       "disclosed": true,
+       "page": "63",
+       "column": null,
+       "calc": null,
+       "quote": "For example, the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026, and our revenue increased from $197 million for the three months ended December 31, 2024 to $ for the three months ended September 30, 2026 ."
+      }
+     },
+     "cust-100k": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of September 30, 2026, Anthropic had more than 11,900 customers with $100,000 or more of revenue on a TTM basis.",
+       "value": 11900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "134",
+       "column": null,
+       "calc": null,
+       "quote": "We had more than 11,900 customers with $100,000 or more of revenue on a TTM basis as of September 30, 2026, up from more than 950 as of September 30, 2025."
+      }
+     },
+     "cust-1m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of September 30, 2026, more than 1,900 customers contributed $1 million or more of revenue on a TTM basis.",
+       "value": 1900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "134",
+       "column": null,
+       "calc": null,
+       "quote": "As of September 30, 2026, we had more than 1,900 customers with $1 million or more of revenue on a TTM basis and approximately 250 customers with $10 million or more of reve nue on a TT M b asis ."
+      }
+     },
+     "cust-small": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Approximately 40 million customers each contributed less than $100,000 of TTM revenue as of September 30, 2026.",
+       "value": 40000000.0,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "142",
+       "column": null,
+       "calc": "40 * 1000000",
+       "quote": "The remaining % of total revenue for the trailing twelve months ended September 30, 2026 was generated by approximately 40 million customers, each with less than $100,000 of revenue on a TTM basis .",
+       "model_value": 40000000
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected IPO price range per share is not disclosed in this preliminary prospectus; the cover page leaves both the low and high ends of the estimated range blank.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price per share will be between $ and $ ."
+      }
+     },
+     "blank-commitments": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed; the figure for aggregate committed spend under purchase commitments and lease agreements as of September 30, 2026 is left blank in the preliminary prospectus.",
+       "value": null,
+       "unit": "millions",
+       "disclosed": false,
+       "page": "6",
+       "column": null,
+       "calc": null,
+       "quote": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
+      }
+     },
+     "blank-commitments-12m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed — the filing leaves the amount due in the next 12 months blank (\"Approximately $ of these commitments are due in the next 12 months.\").",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "6",
+       "column": null,
+       "calc": null,
+       "quote": "Approximately $ of these commitments are due in the next 12 months."
+      }
+     },
+     "blank-run-rate": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Run-Rate Revenue as of October 31, 2026 is not disclosed in this preliminary prospectus; the figure appears as \"$\" with no number.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "cover-193",
+       "column": null,
+       "calc": null,
+       "quote": "Additionally, o ur Run-Rate Revenue was $ as of October 31, 2026."
+      }
+     },
+     "blank-rev-q3-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended September 30, 2026 is not disclosed in this preliminary prospectus; the figure is left blank.",
+       "value": null,
+       "unit": "millions",
+       "disclosed": false,
+       "page": "5",
+       "column": "Three Months Ended September 30, 2026",
+       "calc": null,
+       "quote": "…in history, as demonstrated by revenue growing from $0 at commercial launch in the first quarter of 2023 to $ for the three months ended September 30, 2026."
+      }
+     },
+     "blank-ttm-concentration": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The percentage of revenue for the trailing twelve months ended September 30, 2026 from customers with $100,000 or more of TTM revenue is not disclosed in this preliminary prospectus; the figure appears blank.",
+       "value": null,
+       "unit": "%",
+       "disclosed": false,
+       "page": "142",
+       "column": null,
+       "calc": null,
+       "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+      }
+     },
+     "gm-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's gross margin for the six months ended June 30, 2026 was approximately 85.4%, calculated as (revenue of $16,286 million less cost of revenue of $2,380 million) divided by revenue.",
+       "value": 85.3862,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": "(16286 - 2380) / 16286 * 100",
+       "quote": "Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380",
+       "model_value": 85.3867
+      }
+     },
+     "gm-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's gross margin for fiscal year 2025 was 39.52%, calculated as revenue of $4,585 million less cost of revenue of $2,773 million, divided by revenue.",
+       "value": 39.5202,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Year Ended December 31, 2025",
+       "calc": "((4585 - 2773) / 4585) * 100",
+       "quote": "| Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380 |",
+       "model_value": 39.520174481
+      }
+     },
+     "gm-fy-2024": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's fiscal year 2024 gross margin was approximately -94.8%, calculated as (revenue of $386 million - cost of revenue of $752 million) / $386 million.",
+       "value": -94.8187,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Year Ended December 31, 2024",
+       "calc": "(386 - 752) / 386 * 100",
+       "quote": "| Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380 |",
+       "model_value": -94.81865284974094
+      }
+     },
+     "compute-pct-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Compute and infrastructure expense was 55% of revenue for the six months ended June 30, 2026.",
+       "value": 55,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "149",
+       "column": "2026",
+       "calc": null,
+       "quote": "Percentage of revenue 201 % 55 %"
+      }
+     },
+     "growth-h1": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue grew by approximately 14.0x from the six months ended June 30, 2025 to the six months ended June 30, 2026.",
+       "value": 14.0034,
+       "unit": "x",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2025; Six Months Ended June 30, 2026",
+       "calc": "16286 / 1163",
+       "quote": "| Revenue | 41 | 386 | 4,585 | 1,163 | 16,286 |",
+       "model_value": 14.003439381
+      }
+     },
+     "concentration-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Approximately 76% of Anthropic's fiscal 2025 revenue came from customers with $100,000 or more of TTM revenue.",
+       "value": 76,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "151",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Total revenue from these customers grew from approximately $220 million to $3.5 billion and represented approximately 57% and 76% of total revenue for the years ended December 31, 2024 and 2025, respectively."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic proposes to list its Class A common stock on the Nasdaq Global Select Market under the ticker symbol “ANT.”",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol “ANT.”"
+      }
+     },
+     "ltbt-class-t": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The Long-Term Benefit Trust, as the sole holder of Class T common stock, generally elects and removes the Class T directors, who constitute a majority of the authorized members of the board of directors.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "253",
+       "column": null,
+       "calc": null,
+       "quote": "Prior to the Class T Sunset Time, the LTBT, as the sole holder of Class T common stock, will generally have the authority to elect and remove the Class T directors, who constitute a majority of the authorized members of our board of directors."
+      }
+     },
+     "class-f": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The single share of Class F common stock will be issued to a limited liability company organized by Anthropic's seven co-founders, known as the Founder LLC.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "13",
+       "column": null,
+       "calc": null,
+       "quote": "Immediately prior to the completion of this offering, we will issue a single share of Class F common stock, a special class of our common stock, to a limited liability company of which our seven co-founders will initially be the sole members (the “Founder LLC”)."
+      }
+     },
+     "class-e": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's Class E common stock will be issued to its employees (excluding co-founders) and carries no economic rights.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Our Class E common stock will be entitled to vote only on certain limited matters and will not have any economic rights."
+      }
+     },
+     "dividends": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "No, Anthropic has never declared or paid any cash dividends on its capital stock.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "125",
+       "column": null,
+       "calc": null,
+       "quote": "We have never declared or paid any cash dividends on our capital stock."
+      }
+     },
+     "lead-underwriter": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC is listed first among the underwriters on the prospectus cover page.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC Morgan Stanley J.P. Morgan Citigroup Barclays Wells Fargo Securities BofA Securities Deutsche Bank Securities RBC Capital Markets UBS Investment Bank BMO Capital Markets BNP PARIBAS Credit Agricole CIB Jefferies Mizuho MUFG Societe Generale TD Securities BTIG Cantor Capital One Securities Macquarie Capital"
+      }
+     },
+     "texas-curtailment": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 cites Texas as subjecting large electricity loads to curtailment or disconnection during grid emergencies.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "37",
+       "column": null,
+       "calc": null,
+       "quote": "For example, states such as New York and Texas have recently moved to regulate large-scale data centers, whether by pausing state permitting for new large facilities, as New York has, or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has."
+      }
+     },
+     "power-competitors": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names cryptocurrency mining operations as competitors for electrical supply and powered data center locations, alongside well-capitalized CSPs and other large-scale electricity consumers.",
+       "value": null,
+       "unit": "not applicable",
+       "disclosed": true,
+       "page": "35",
+       "column": null,
+       "calc": null,
+       "quote": "Competition for access to electrical supply and data center locations with adequate power availability is intense, and we compete for such access with well-capitalized CSPs, some of which produce and develop competing AI models, cryptocurrency mining operations, and other large-scale electricity consumers."
+      }
+     },
+     "fluidstack": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names Fluidstack USA I Inc. (\"Fluidstack\") as providing data center development and operations services to Anthropic under a colocation and services agreement.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "205",
+       "column": null,
+       "calc": null,
+       "quote": "For example, we have entered into a colocation and services agreement with Fluidstack USA I Inc. (“Fluidstack”), under which Fluidstack provides data center development and operations services to us."
+      }
+     },
+     "claude-code-misuse": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "In September 2025, Anthropic detected and assessed with high confidence that a Chinese state-sponsored hacking group manipulated its Claude Code tool into attempting infiltration into roughly 30 global targets, resulting in a limited number of successful intrusions.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "45",
+       "column": null,
+       "calc": null,
+       "quote": "For example, in September 2025, we detected and assessed with high confidence that a Chinese state-sponsored hacking group manipulated our Claude Code tool into attempting infiltration into roughly 30 global targets, including large technology companies, financial institutions, chemical manufacturing companies, and government agencies, resulting in a limited number of successful intrusions."
+      }
+     },
+     "clouds": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Claude is accessible on all three major cloud platforms: Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure (Azure).",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "9",
+       "column": null,
+       "calc": null,
+       "quote": "For example, Claude is accessible on all three major cloud platforms—Amazon Web Services (“AWS”), Google Cloud Platform (“GCP”), and Microsoft Azure (“Azure”)."
+      }
+     },
+     "chips": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's multi-chip compute architecture spans AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "6",
+       "column": null,
+       "calc": null,
+       "quote": "We have achieved this through our research breakthroughs and our multi-chip compute architecture across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs, enabling us to orchestrate workloads to optimize for price and performance ."
+      }
+     }
+    }
+   },
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 47,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 6,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "derived": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0397,
+    "input_tokens": 617605,
+    "per_question": {
+     "rev-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the six months ended June 30, 2026 was $16,286 million.",
+       "value": 16286,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Revenue | 41 | 386 | 4,585 | 1,163 | 16,286 |"
+      }
+     },
+     "rev-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's total revenue for fiscal year 2025 was $4,585 million.",
+       "value": 4585,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Revenue | 41 | 386 | 4,585 | 1,163 | 16,286"
+      }
+     },
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for fiscal year 2023 was $41 million.",
+       "value": 41,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Year Ended December 31, 2023",
+       "calc": null,
+       "quote": "Revenue | 41 | 386 | 4,585 | 1,163 | 16,286"
+      }
+     },
+     "oploss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for the six months ended June 30, 2026 was $693 million.",
+       "value": -693,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Operating loss | -551 | -2,980 | -8,060 | -2,135 | -693 |"
+      }
+     },
+     "netloss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the six months ended June 30, 2026 was $80,748 million.",
+       "value": -80748,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Net loss | -1,531 | -8,309 | -41,965 | -12,969 | -80,748 |"
+      }
+     },
+     "fv-charge-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The change in fair value of convertible notes, derivative liabilities, and SAFEs accounted for a loss of $72,388 million in H1 2026.",
+       "value": -72388,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs | -1,045 | -5,434 | -34,308 | -10,942 | -72,388"
+      }
+     },
+     "opinc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating income for the three months ended June 30, 2026 was $974 million.",
+       "value": 974,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Operating income (loss) | -935 | -1,200 | -3,089 | -2,836 | -1,667 | 974"
+      }
+     },
+     "rev-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended June 30, 2026 was $11,555 million.",
+       "value": 11555,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended June 30, 2026",
        "calc": null,
        "quote": "Revenue | 376 | 787 | 1,382 | 2,040 | 4,731 | 11,555"
       }
@@ -11656,6 +13806,7 @@
        "unit": "USD millions",
        "disclosed": true,
        "page": "157",
+       "column": "Three Months Ended March 31, 2026",
        "calc": null,
        "quote": "Revenue | 376 | 787 | 1,382 | 2,040 | 4,731 | 11,555"
       }
@@ -11671,6 +13822,7 @@
        "unit": "USD millions",
        "disclosed": true,
        "page": "157",
+       "column": "Three Months Ended June 30, 2026",
        "calc": null,
        "quote": "Net loss $ (6,592) $ (6,377) $ (12,138) $ (16,858) $ (14,439) $ (66,309)"
       }
@@ -11685,7 +13837,8 @@
        "value": -41965,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
        "calc": null,
        "quote": "Net loss | -1,531 | -8,309 | -41,965 | -12,969 | -80,748"
       }
@@ -11700,7 +13853,8 @@
        "value": -8060,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
        "calc": null,
        "quote": "Operating loss | -551 | -2,980 | -8,060 | -2,135 | -693"
       }
@@ -11715,7 +13869,8 @@
        "value": 8945,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "147",
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
        "quote": "Compute and infrastructure | 433 | 2,522 | 7,326 | 2,334 | 8,945"
       }
@@ -11731,6 +13886,7 @@
        "unit": "USD millions",
        "disclosed": true,
        "page": "F-39",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
        "quote": "Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380"
       }
@@ -11741,13 +13897,15 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic agreed to settle the Bartz copyright infringement class action for $1.5 billion ($1,500 million).",
-       "value": 1500,
+       "answer": "Anthropic agreed to settle the Bartz copyright class action for $1.5 billion.",
+       "value": 1500.0,
        "unit": "USD millions",
        "disclosed": true,
        "page": "92",
-       "calc": null,
-       "quote": "in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (\"Bartz\"), for $1.5 billion, which was approved by the district court in July 2026."
+       "column": null,
+       "calc": "1.5 * 1000",
+       "quote": "in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (\"Bartz\"), for $1.5 billion, which was approved by the district court in July 2026.",
+       "model_value": 1500
       }
      },
      "ocf-h1-2026": {
@@ -11760,9 +13918,10 @@
        "value": 3929,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "168",
+       "page": "F-12",
+       "column": "Six Months Ended June 30, 2026",
        "calc": null,
-       "quote": "Cash provided by operating activities was $3.9 billion for the six months ended June 30, 2026 as compared to cash used in operating activities of $1.5 billion for the six months ended June 30, 2025."
+       "quote": "Net cash provided by (used in) operating activities (1,627) (5,692) (2,637) (1,513) 3,929"
       }
      },
      "cash-jun-2026": {
@@ -11775,7 +13934,8 @@
        "value": 112389,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "F-5",
+       "page": "F-5–F-6",
+       "column": "As of June 30, 2026",
        "calc": null,
        "quote": "Cash and cash equivalents | 3,141 | 17,388 | 112,389"
       }
@@ -11787,12 +13947,14 @@
       "note": "",
       "answer": {
        "answer": "As of June 30, 2026, Anthropic had raised an aggregate of $141.1 billion of capital.",
-       "value": 141100,
+       "value": 141100.0,
        "unit": "USD millions",
        "disclosed": true,
-       "page": "182",
-       "calc": null,
-       "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital"
+       "page": "10",
+       "column": null,
+       "calc": "141.1 * 1000",
+       "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital and had cash and cash equivalents of $112.4 billion and short- term investments of $19.3 billion.",
+       "model_value": 141100
       }
      },
      "sbc-q2-2026": {
@@ -11806,6 +13968,7 @@
        "unit": "USD millions",
        "disclosed": true,
        "page": "160",
+       "column": "Three Months Ended June 30, 2026",
        "calc": null,
        "quote": "Stock-based compensation expense 105 181 305 574 924 1,261"
       }
@@ -11821,8 +13984,9 @@
        "unit": "employees",
        "disclosed": true,
        "page": "63",
+       "column": null,
        "calc": null,
-       "quote": "For example, the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026, and our revenue increased from $197 million for the three months ended December 31, 2024 to $ for the three months ended September 30, 2026."
+       "quote": "the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026"
       }
      },
      "cust-100k": {
@@ -11831,11 +13995,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "As of September 30, 2026, Anthropic had more than 11,900 customers with $100,000 or more of revenue on a TTM basis.",
+       "answer": "More than 11,900 customers contributed $100,000 or more of revenue on a TTM basis as of September 30, 2026.",
        "value": 11900,
        "unit": "customers",
        "disclosed": true,
        "page": "134",
+       "column": null,
        "calc": null,
        "quote": "We had more than 11,900 customers with $100,000 or more of revenue on a TTM basis as of September 30, 2026, up from more than 950 as of September 30, 2025."
       }
@@ -11851,8 +14016,9 @@
        "unit": "customers",
        "disclosed": true,
        "page": "134",
+       "column": null,
        "calc": null,
-       "quote": "As of September 30, 2026, we had more than 1,900 customers with $1 million or more of revenue on a TTM basis"
+       "quote": "As of September 30, 2026, we had more than 1,900 customers with $1 million or more of revenue on a TTM basis and approximately 250 customers with $10 million or more of revenue on a TTM basis."
       }
      },
      "cust-small": {
@@ -11866,6 +14032,7 @@
        "unit": "customers",
        "disclosed": true,
        "page": "142",
+       "column": null,
        "calc": null,
        "quote": "The remaining % of total revenue for the trailing twelve months ended September 30, 2026 was generated by approximately 40 million customers, each with less than $100,000 of revenue on a TTM basis."
       }
@@ -11881,6 +14048,7 @@
        "unit": "USD per share",
        "disclosed": false,
        "page": "cover-2",
+       "column": null,
        "calc": null,
        "quote": "It is currently estimated that the initial public offering price per share will be between $ and $ ."
       }
@@ -11891,11 +14059,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The aggregate committed spend under Anthropic's purchase commitments and lease agreements as of September 30, 2026 is not disclosed in this preliminary S-1.",
+       "answer": "The aggregate committed spend under Anthropic's purchase commitments and lease agreements as of September 30, 2026 is not disclosed in this preliminary prospectus.",
        "value": null,
-       "unit": "USD",
+       "unit": "dollars",
        "disclosed": false,
-       "page": "32",
+       "page": "6",
+       "column": null,
        "calc": null,
        "quote": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
       }
@@ -11906,11 +14075,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The amount of purchase commitments due in the next 12 months is not disclosed in this preliminary S-1.",
+       "answer": "The amount of purchase commitments due in the next 12 months is not disclosed in this preliminary prospectus.",
        "value": null,
-       "unit": "USD millions",
+       "unit": "dollars",
        "disclosed": false,
-       "page": "32",
+       "page": "6",
+       "column": null,
        "calc": null,
        "quote": "Approximately $ of these commitments are due in the next 12 months."
       }
@@ -11921,11 +14091,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's Run-Rate Revenue as of October 31, 2026 is not disclosed in this preliminary S-1.",
+       "answer": "Anthropic's Run-Rate Revenue as of October 31, 2026 is not disclosed in this preliminary prospectus.",
        "value": null,
-       "unit": "USD millions",
+       "unit": "dollars",
        "disclosed": false,
-       "page": "cover-210",
+       "page": "cover-193",
+       "column": null,
        "calc": null,
        "quote": "Additionally, o ur Run-Rate Revenue was $ as of October 31, 2026."
       }
@@ -11936,13 +14107,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's revenue for the three months ended September 30, 2026 is not disclosed in this preliminary S-1.",
+       "answer": "Anthropic's revenue for the three months ended September 30, 2026 is not disclosed in this preliminary prospectus.",
        "value": null,
-       "unit": "USD millions",
+       "unit": "millions",
        "disclosed": false,
-       "page": "63",
+       "page": "5",
+       "column": null,
        "calc": null,
-       "quote": "our revenue increased from $197 million for the three months ended December 31, 2024 to $ for the three months ended September 30, 2026"
+       "quote": "…in history, as demonstrated by revenue growing from $0 at commercial launch in the first quarter of 2023 to $ for the three months ended September 30, 2026."
       }
      },
      "blank-ttm-concentration": {
@@ -11951,11 +14123,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The percentage of revenue from customers with $100,000 or more of TTM revenue for the trailing twelve months ended September 30, 2026 is not disclosed in this preliminary S-1.",
+       "answer": "The percentage of revenue from customers with $100,000 or more of TTM revenue for the trailing twelve months ended September 30, 2026 is not disclosed in this preliminary prospectus.",
        "value": null,
        "unit": "percent",
        "disclosed": false,
        "page": "142",
+       "column": null,
        "calc": null,
        "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
       }
@@ -11971,9 +14144,10 @@
        "unit": "percent",
        "disclosed": true,
        "page": "F-39",
+       "column": "Six Months Ended June 30, 2026",
        "calc": "(16286 - 2380) / 16286 * 100",
        "quote": "Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380",
-       "model_value": 85.4
+       "model_value": 85.39
       }
      },
      "gm-fy-2025": {
@@ -11987,9 +14161,10 @@
        "unit": "percent",
        "disclosed": true,
        "page": "F-39",
+       "column": "Year Ended December 31, 2025",
        "calc": "(4585 - 2773) / 4585 * 100",
        "quote": "Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380",
-       "model_value": 39.5
+       "model_value": 39.52
       }
      },
      "gm-fy-2024": {
@@ -11998,11 +14173,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's gross margin for fiscal year 2024 was approximately -94.8%, as cost of revenue of $752 million exceeded revenue of $386 million.",
+       "answer": "Anthropic's gross margin for fiscal year 2024 was approximately -94.82%.",
        "value": -94.8187,
        "unit": "percent",
        "disclosed": true,
        "page": "F-39",
+       "column": "Year Ended December 31, 2024",
        "calc": "(386 - 752) / 386 * 100",
        "quote": "Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380",
        "model_value": -94.82
@@ -12019,6 +14195,7 @@
        "unit": "percent",
        "disclosed": true,
        "page": "149",
+       "column": "Six Months Ended June 30, 2026",
        "calc": "8945 / 16286 * 100",
        "quote": "Percentage of revenue 201 % 55 %",
        "model_value": 55
@@ -12030,13 +14207,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's revenue grew approximately 14.0x from the six months ended June 30, 2025 to the six months ended June 30, 2026.",
+       "answer": "Anthropic's revenue grew approximately 14x from the six months ended June 30, 2025 to the six months ended June 30, 2026.",
        "value": 14.0034,
        "unit": "x",
        "disclosed": true,
-       "page": "148",
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026 / Six Months Ended June 30, 2025",
        "calc": "16286 / 1163",
-       "quote": "Revenue for the six months ended June 30, 2026 increased by $15.1 billion , or 1,300% , compared to the six months ended June 30, 2025 .",
+       "quote": "Revenue $ 1,163 $ 16,286 $ 15,123 1,300 %",
        "model_value": 14.0
       }
      },
@@ -12046,13 +14224,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "76% of Anthropic's fiscal 2025 revenue came from customers with $100,000 or more of TTM revenue.",
+       "answer": "Customers with $100,000 or more of TTM revenue represented approximately 76% of Anthropic's total revenue for the year ended December 31, 2025.",
        "value": 76,
        "unit": "percent",
        "disclosed": true,
-       "page": "142",
+       "page": "151",
+       "column": "Year Ended December 31, 2025",
        "calc": null,
-       "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+       "quote": "Total revenue from these customers grew from approximately $220 million to $3.5 billion and represented approximately 57% and 76% of total revenue for the years ended December 31, 2024 and 2025, respectively."
       }
      },
      "ticker": {
@@ -12066,6 +14245,7 @@
        "unit": null,
        "disclosed": true,
        "page": "cover-2",
+       "column": null,
        "calc": null,
        "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol \"ANT.\""
       }
@@ -12076,13 +14256,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The Long-Term Benefit Trust (LTBT), as the sole holder of Class T common stock, generally has the authority to elect and remove the Class T directors, who together constitute a majority of the authorized members of the board of directors.",
+       "answer": "The Long-Term Benefit Trust (LTBT) generally has the authority to elect and remove the Class T directors, who together constitute a majority of the authorized members of the board of directors.",
        "value": null,
        "unit": null,
        "disclosed": true,
-       "page": "244",
+       "page": "15",
+       "column": null,
        "calc": null,
-       "quote": "Through a special class of common stock, Class T common stock, the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors."
+       "quote": "the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors."
       }
      },
      "class-f": {
@@ -12091,11 +14272,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Anthropic's single share of Class F common stock will be issued to the Founder LLC, a limited liability company organized by its co-founders.",
+       "answer": "The single share of Class F common stock will be issued to a limited liability company organized by the co-founders, called the Founder LLC.",
        "value": null,
        "unit": null,
        "disclosed": true,
        "page": "cover-2",
+       "column": null,
        "calc": null,
        "quote": "Immediately prior to the completion of this offering, we will also issue a single share of Class F common stock, a special class of our common stock, to a limited liability company organized by our co-founders (the \"Founder LLC\")."
       }
@@ -12111,6 +14293,7 @@
        "unit": null,
        "disclosed": true,
        "page": "cover-2",
+       "column": null,
        "calc": null,
        "quote": "Upon the completion of this offering, we will also authorize a special class of our common stock, Class E common stock, which will be issued to our employees, excluding our co-founders. Our Class E common stock will be entitled to vote only on certain limited matters and will not have any economic rights."
       }
@@ -12126,6 +14309,7 @@
        "unit": null,
        "disclosed": true,
        "page": "125",
+       "column": null,
        "calc": null,
        "quote": "We have never declared or paid any cash dividends on our capital stock."
       }
@@ -12136,11 +14320,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Goldman Sachs & Co. LLC is listed first among the underwriters on the cover of Anthropic's prospectus.",
+       "answer": "Goldman Sachs & Co. LLC is listed first on the cover of Anthropic's prospectus.",
        "value": null,
        "unit": null,
        "disclosed": true,
        "page": "cover-2",
+       "column": null,
        "calc": null,
        "quote": "Goldman Sachs & Co. LLC Morgan Stanley J.P. Morgan Citigroup Barclays Wells Fargo Securities BofA Securities Deutsche Bank Securities RBC Capital Markets UBS Investment Bank BMO Capital Markets BNP PARIBAS Credit Agricole CIB Jefferies Mizuho MUFG Societe Generale TD Securities BTIG Cantor Capital One Securities Macquarie Capital"
       }
@@ -12151,11 +14336,12 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The S-1 cites Texas as the state that has moved to subject large electricity loads to curtailment or disconnection during grid emergencies.",
+       "answer": "The S-1 cites Texas as the state that subjects large electricity loads to curtailment or disconnection during grid emergencies.",
        "value": null,
        "unit": null,
        "disclosed": true,
        "page": "37",
+       "column": null,
        "calc": null,
        "quote": "For example, states such as New York and Texas have recently moved to regulate large-scale data centers, whether by pausing state permitting for new large facilities, as New York has, or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has."
       }
@@ -12166,11 +14352,795 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "The S-1 names cryptocurrency mining operations as a competitor for access to electrical supply and data center locations with adequate power availability, alongside well-capitalized CSPs and other large-scale electricity consumers.",
+       "answer": "Cryptocurrency mining operations are named as a competitor for electrical supply and powered data center locations.",
        "value": null,
        "unit": null,
        "disclosed": true,
        "page": "35",
+       "column": null,
+       "calc": null,
+       "quote": "Competition for access to electrical supply and data center locations with adequate power availability is intense, and we compete for such access with well-capitalized CSPs, some of which produce and develop competing AI models, cryptocurrency mining operations, and other large-scale electricity consumers."
+      }
+     },
+     "fluidstack": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Fluidstack USA I Inc. (\"Fluidstack\") is named as providing data center development and operations services to Anthropic under a colocation and services agreement.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "205",
+       "column": null,
+       "calc": null,
+       "quote": "For example, we have entered into a colocation and services agreement with Fluidstack USA I Inc. (\"Fluidstack\"), under which Fluidstack provides data center development and operations services to us."
+      }
+     },
+     "claude-code-misuse": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "In September 2025, Anthropic detected and assessed with high confidence that a Chinese state-sponsored hacking group manipulated Claude Code into attempting infiltration into roughly 30 global targets, including large technology companies, financial institutions, chemical manufacturing companies, and government agencies, resulting in a limited number of successful intrusions.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "45",
+       "column": null,
+       "calc": null,
+       "quote": "For example, in September 2025, we detected and assessed with high confidence that a Chinese state-sponsored hacking group manipulated our Claude Code tool into attempting infiltration into roughly 30 global targets, including large technology companies, financial institutions, chemical manufacturing companies, and government agencies, resulting in a limited number of successful intrusions."
+      }
+     },
+     "clouds": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Claude is accessible on all three major cloud platforms: Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure (Azure).",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "9",
+       "column": null,
+       "calc": null,
+       "quote": "Claude is accessible on all three major cloud platforms—Amazon Web Services (\"AWS\"), Google Cloud Platform (\"GCP\"), and Microsoft Azure (\"Azure\")."
+      }
+     },
+     "chips": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's multi-chip compute architecture is built across four major chip families: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "6",
+       "column": null,
+       "calc": null,
+       "quote": "We have achieved this through our research breakthroughs and our multi-chip compute architecture across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs, enabling us to orchestrate workloads to optimize for price and performance."
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 47,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 6,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "derived": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0467,
+    "input_tokens": 541411,
+    "per_question": {
+     "rev-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the six months ended June 30, 2026 was $16,286 million ($16.3 billion).",
+       "value": 16286,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "| Revenue | 41 | 386 | 4,585 | 1,163 | 16,286 |"
+      }
+     },
+     "rev-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's total revenue for fiscal year 2025 was $4,585 million.",
+       "value": 4585,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "| Revenue | 41 | 386 | 4,585 | 1,163 | 16,286 |"
+      }
+     },
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for fiscal year 2023 was $41 million.",
+       "value": 41,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Year Ended December 31, 2023",
+       "calc": null,
+       "quote": "| Revenue | 41 | 386 | 4,585 | 1,163 | 16,286 |"
+      }
+     },
+     "oploss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for the six months ended June 30, 2026 was $693 million.",
+       "value": -693,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Our operating loss was $693 million for the six months ended June 30, 2026"
+      }
+     },
+     "netloss-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the six months ended June 30, 2026 was $80,748 million (a loss of $80.7 billion).",
+       "value": -80748,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "| Net loss | -1,531 | -8,309 | -41,965 | -12,969 | -80,748 |"
+      }
+     },
+     "fv-charge-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2026, the change in fair value of convertible notes, derivative liabilities, and SAFEs was an expense of $72,388 million, the largest component of the $80,748 million net loss.",
+       "value": -72388,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Change in fair value of convertible notes, derivative liabilities, and SAFEs | -1,045 | -5,434 | -34,308 | -10,942 | -72,388"
+      }
+     },
+     "opinc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating income for the three months ended June 30, 2026 was $974 million (operating income, i.e., positive).",
+       "value": 974,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Operating income (loss) $ (935) $ (1,200) $ (3,089) $ (2,836) $ (1,667) $ 974"
+      }
+     },
+     "rev-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended June 30, 2026 was $11,555 million.",
+       "value": 11555,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "| Revenue | 376 | 787 | 1,382 | 2,040 | 4,731 | 11,555 |"
+      }
+     },
+     "rev-q1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's revenue for the three months ended March 31, 2026 was $4,731 million.",
+       "value": 4731,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended March 31, 2026",
+       "calc": null,
+       "quote": "Revenue $ 376 $ 787 $ 1,382 $ 2,040"
+      }
+     },
+     "netloss-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for the three months ended June 30, 2026 was $66,309 million (a loss of approximately $66.3 billion).",
+       "value": -66309,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "157",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Net loss $ (6,592) $ (6,377) $ (12,138) $ (16,858) $ (14,439) $ (66,309)"
+      }
+     },
+     "netloss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's net loss for fiscal year 2025 was $41,965 million.",
+       "value": -41965,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "p. 22 / p. F-7",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Net loss $ (1,531) $ (8,309) $ (41,965) $ (12,969) $ (80,748)"
+      }
+     },
+     "oploss-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's operating loss for the year ended December 31, 2025 was $8,060 million (a loss of $8.06 billion).",
+       "value": -8060,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Operating loss | -551 | -2,980 | -8,060 | -2,135 | -693"
+      }
+     },
+     "compute-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic spent $8,945 million on compute and infrastructure in the six months ended June 30, 2026.",
+       "value": 8945,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Compute and infrastructure | 433 | 2,522 | 7,326 | 2,334 | 8,945"
+      }
+     },
+     "cor-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's cost of revenue for the six months ended June 30, 2026 was $2,380 million.",
+       "value": 2380,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "| Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380 |"
+      }
+     },
+     "bartz": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic agreed to settle the Bartz copyright class action for $1.5 billion ($1,500 million).",
+       "value": 1500.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "92",
+       "column": "Year Ended December 31, 2025 (Bartz settlement line item, p. 22)",
+       "calc": "1500 * 1",
+       "quote": "For example, in September 2025, we reached an agreement to settle a copyright infringement class action, captioned Bartz, et al. v. Anthropic PBC (“Bartz”), for $1.5 billion, which was approved by the district court in July 2026.",
+       "model_value": 1500
+      }
+     },
+     "ocf-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Net cash provided by operating activities was $3,929 million for the six months ended June 30, 2026.",
+       "value": 3929,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-12",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities (1,627) (5,692) (2,637) (1,513) 3,929"
+      }
+     },
+     "cash-jun-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic held $112,389 million (approximately $112.4 billion) of cash and cash equivalents as of June 30, 2026.",
+       "value": 112389,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-5–F-6",
+       "column": "As of June 30, 2026",
+       "calc": null,
+       "quote": "Cash and cash equivalents | 3,141 | 17,388 | 112,389"
+      }
+     },
+     "capital-raised": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of June 30, 2026, Anthropic had raised an aggregate of $141.1 billion of capital, i.e. $141,100 million.",
+       "value": 141100.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "10",
+       "column": null,
+       "calc": "141.1 * 1000",
+       "quote": "As of June 30, 2026, we had raised an aggregate of $141.1 billion of capital and had cash and cash equivalents of $112.4 billion and short-term investments of $19.3 billion.",
+       "model_value": 141100
+      }
+     },
+     "sbc-q2-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Stock-based compensation expense included in personnel was $1,261 million for the three months ended June 30, 2026.",
+       "value": 1261,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "160",
+       "column": "Three Months Ended June 30, 2026",
+       "calc": null,
+       "quote": "Stock-based compensation expense 105 181 305 574 924 1,261"
+      }
+     },
+     "employees": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic had approximately 5,300 employees as of September 30, 2026.",
+       "value": 5300,
+       "unit": "employees",
+       "disclosed": true,
+       "page": "63",
+       "column": null,
+       "calc": null,
+       "quote": "the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026",
+       "source_quote": "the number of our employees increased from approximately 940 as of December 31, 2024 to approximately 5,300 as of September 30, 2026"
+      }
+     },
+     "cust-100k": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "More than 11,900 customers contributed $100,000 or more of revenue on a TTM basis as of September 30, 2026.",
+       "value": 11900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "cover-10",
+       "column": null,
+       "calc": null,
+       "quote": "More than 11,900 customers with $100,000 or more of revenue on a TTM basis;"
+      }
+     },
+     "cust-1m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of September 30, 2026, more than 1,900 customers contributed $1 million or more of revenue on a TTM basis.",
+       "value": 1900,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "cover-10",
+       "column": null,
+       "calc": null,
+       "quote": "• More than 1,900 customers with $1 million or more of revenue on a TTM basis;"
+      }
+     },
+     "cust-small": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Approximately 40 million customers each contributed less than $100,000 of TTM revenue as of September 30, 2026.",
+       "value": 40000000,
+       "unit": "customers",
+       "disclosed": true,
+       "page": "142",
+       "column": null,
+       "calc": null,
+       "quote": "The remaining % of total revenue for the trailing twelve months ended September 30, 2026 was generated by approximately 40 million customers, each with less than $100,000 of revenue on a TTM basis."
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the estimated IPO price range blank, so the expected price range per share is not disclosed.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price per share will be between $ and $ ."
+      }
+     },
+     "blank-commitments": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The aggregate committed spend as of September 30, 2026 is left blank in the preliminary prospectus and is not disclosed.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "6",
+       "column": null,
+       "calc": null,
+       "quote": "As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of more than $ , substantially all of which is related to compute and infrastructure."
+      }
+     },
+     "blank-commitments-12m": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed — the preliminary prospectus redacts the dollar amount of purchase commitments due in the next 12 months.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "6",
+       "column": null,
+       "calc": null,
+       "quote": "Approximately $ of these commitments are due in the next 12 months."
+      }
+     },
+     "blank-run-rate": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's Run-Rate Revenue as of October 31, 2026 is not disclosed in this preliminary prospectus (the dollar amount is left blank).",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "cover-193",
+       "column": null,
+       "calc": null,
+       "quote": "Additionally, our Run-Rate Revenue was $ as of October 31, 2026."
+      }
+     },
+     "blank-rev-q3-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed: the preliminary prospectus leaves Anthropic's revenue for the three months ended September 30, 2026 blank.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "63",
+       "column": null,
+       "calc": null,
+       "quote": "…our revenue increased from $197 million for the three months ended December 31, 2024 to $ for the three months ended September 30, 2026."
+      }
+     },
+     "blank-ttm-concentration": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The percentage of revenue from customers with $100,000 or more of TTM revenue for the trailing twelve months ended September 30, 2026 is not disclosed in the preliminary prospectus.",
+       "value": null,
+       "unit": "% of total revenue",
+       "disclosed": false,
+       "page": "142",
+       "column": null,
+       "calc": null,
+       "quote": "Total revenue from these customers grew from approximately $37 million to $220 million to $3.5 billion to $ and represented 90%, 57%, 76%, and % of total revenue for the years ended December 31, 2023, 2024, and 2025, and the trailing twelve months ended September 30, 2026, respectively."
+      }
+     },
+     "gm-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's gross margin was approximately 85% for the six months ended June 30, 2026.",
+       "value": 85.3862,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": "(16286 - 2380) / 16286 * 100",
+       "quote": "| Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380 |",
+       "quote_note": "Revenue of $16,286 million from Consolidated Statements of Operations Data (p. 22) and cost of revenue of $2,380 million from Supplemental Operating Expense Information (p. F-39), both for the Six Months Ended June 30, 2026.",
+       "model_value": 85.37859117720264
+      }
+     },
+     "gm-fy-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's gross margin for fiscal year 2025 was approximately 39.5%, based on revenue of $4,585 million and cost of revenue of $2,773 million.",
+       "value": 39.5202,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Year Ended December 31, 2025",
+       "calc": "(4585 - 2773) / 4585 * 100",
+       "quote": "| Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380 |",
+       "model_value": 39.518862
+      }
+     },
+     "gm-fy-2024": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's gross margin for fiscal year 2024 was approximately -95% (negative), as revenue of $386 million was less than cost of revenue of $752 million.",
+       "value": -94.8187,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-39",
+       "column": "Year Ended December 31, 2024",
+       "calc": "(386 - 752) / 386 * 100",
+       "quote": "| Cost of revenue | 26 | 752 | 2,773 | 1,019 | 2,380 |",
+       "model_value": -94.82
+      }
+     },
+     "compute-pct-h1-2026": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Compute and infrastructure expense was approximately 55% of revenue in the six months ended June 30, 2026.",
+       "value": 54.9245,
+       "unit": "%",
+       "disclosed": true,
+       "page": "149",
+       "column": "Six Months Ended June 30, 2026",
+       "calc": "8945 / 16286 * 100",
+       "quote": "Compute and infrastructure expenses for the six months ended June 30, 2026 increased by $6.6 billion , or 283% , compared to the six months ended June 30, 2025 .",
+       "model_value": 54.8857
+      }
+     },
+     "growth-h1": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Revenue grew approximately 14x, from $1,163 million to $16,286 million.",
+       "value": 14.0034,
+       "unit": "x",
+       "disclosed": true,
+       "page": "22",
+       "column": "Six Months Ended June 30, 2025 vs Six Months Ended June 30, 2026",
+       "calc": "16286 / 1163",
+       "quote": "Our revenue was $16.3 billion for the six months ended June 30, 2026, up from $1.2 billion for the six months ended June 30, 2025.",
+       "model_value": 14.02402408031083
+      }
+     },
+     "concentration-2025": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Approximately 76% of Anthropic's fiscal 2025 revenue came from customers with $100,000 or more of revenue on a TTM basis.",
+       "value": 76,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "151",
+       "column": "Year Ended December 31, 2025",
+       "calc": null,
+       "quote": "Total revenue from these customers grew from approximately $220 million to $3.5 billion and represented approximately 57% and 76% of total revenue for the years ended December 31, 2024 and 2025, respectively."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic proposes to list its Class A common stock on the Nasdaq Global Select Market under the ticker symbol \"ANT.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Class A common stock on the Nasdaq Global Select Market under the symbol \"ANT.\""
+      }
+     },
+     "ltbt-class-t": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The Long-Term Benefit Trust (LTBT), as the sole holder of Class T common stock, elects and removes the Class T directors, who together constitute a majority of the authorized members of Anthropic's board of directors.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Through a special class of common stock, Class T common stock, the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors."
+      }
+     },
+     "class-f": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Anthropic's single share of Class F common stock will be issued to the Founder LLC, a limited liability company of which its seven co-founders will initially be the sole members.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "13",
+       "column": null,
+       "calc": null,
+       "quote": "Immediately prior to the completion of this offering, we will issue a single share of Class F common stock, a special class of our common stock, to a limited liability company of which our seven co-founders will initially be the sole members (the “Founder LLC”)."
+      }
+     },
+     "class-e": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Class E common stock is issued to Anthropic's employees (excluding its co-founders) upon completion of the offering, and it carries no economic rights.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Upon the completion of this offering, we will also authorize a special class of our common stock, Class E common stock, which will be issued to our employees, excluding our co-founders. Our Class E common stock will be entitled to vote only on certain limited matters and will not have any economic rights."
+      }
+     },
+     "dividends": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "No, Anthropic has never declared or paid any cash dividends on its capital stock.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "125",
+       "column": null,
+       "calc": null,
+       "quote": "We have never declared or paid any cash dividends on our capital stock."
+      }
+     },
+     "lead-underwriter": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC is listed first among the underwriters on the cover of the prospectus.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC Morgan Stanley J.P. Morgan Citigroup Barclays Wells Fargo Securities BofA Securities Deutsche Bank Securities RBC Capital Markets UBS Investment Bank BMO Capital Markets BNP PARIBAS Credit Agricole CIB Jefferies Mizuho MUFG Societe Generale TD Securities BTIG Cantor Capital One Securities Macquarie Capital"
+      }
+     },
+     "texas-curtailment": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Texas is cited as a state that subjects large electricity loads to curtailment or disconnection during grid emergencies.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "37",
+       "column": null,
+       "calc": null,
+       "quote": "For example, states such as New York and Texas have recently moved to regulate large-scale data centers, whether by pausing state permitting for new large facilities, as New York has, or by subjecting large electricity loads to curtailment or disconnection during grid emergencies, as Texas has."
+      }
+     },
+     "power-competitors": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The S-1 names cryptocurrency mining operations as competitors (alongside well-capitalized CSPs and other large-scale electricity consumers) for access to electrical supply and data center locations with adequate power availability.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "35",
+       "column": null,
        "calc": null,
        "quote": "Competition for access to electrical supply and data center locations with adequate power availability is intense, and we compete for such access with well-capitalized CSPs, some of which produce and develop competing AI models, cryptocurrency mining operations, and other large-scale electricity consumers."
       }
@@ -12186,23 +15156,25 @@
        "unit": null,
        "disclosed": true,
        "page": "205",
+       "column": null,
        "calc": null,
        "quote": "For example, we have entered into a colocation and services agreement with Fluidstack USA I Inc. (\"Fluidstack\"), under which Fluidstack provides data center development and operations services to us."
       }
      },
      "claude-code-misuse": {
-      "correct": false,
+      "correct": true,
       "invented": false,
-      "grounded": null,
-      "note": "missing ['state-sponsored', '30']",
+      "grounded": true,
+      "note": "",
       "answer": {
-       "answer": "The provided fact sheet and passages do not contain information about what Anthropic detected in September 2025 involving Claude Code.",
-       "value": null,
-       "unit": null,
-       "disclosed": false,
-       "page": null,
+       "answer": "In September 2025, Anthropic detected and assessed with high confidence that a Chinese state-sponsored hacking group manipulated its Claude Code tool into attempting infiltration into roughly 30 global targets, resulting in a limited number of successful intrusions.",
+       "value": 30,
+       "unit": "global targets",
+       "disclosed": true,
+       "page": "45",
+       "column": null,
        "calc": null,
-       "quote": null
+       "quote": "For example, in September 2025, we detected and assessed with high confidence that a Chinese state-sponsored hacking group manipulated our Claude Code tool into attempting infiltration into roughly 30 global targets, including large technology companies, financial institutions, chemical manufacturing companies, and government agencies, resulting in a limited number of successful intrusions."
       }
      },
      "clouds": {
@@ -12211,13 +15183,14 @@
       "grounded": true,
       "note": "",
       "answer": {
-       "answer": "Claude is accessible on all three major cloud platforms: AWS, GCP, and Azure.",
+       "answer": "Claude is accessible on Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure.",
        "value": null,
        "unit": null,
        "disclosed": true,
-       "page": "140",
+       "page": "9",
+       "column": null,
        "calc": null,
-       "quote": "Claude is accessible on all three major cloud platforms, AWS, GCP, and Azure, allowing enterprises to deploy Claude within the infrastructure, security perimeters, and commitment structures they already operate."
+       "quote": "For example, Claude is accessible on all three major cloud platforms—Amazon Web Services (\"AWS\"), Google Cloud Platform (\"GCP\"), and Microsoft Azure (\"Azure\")."
       }
      },
      "chips": {
@@ -12227,10 +15200,11 @@
       "note": "",
       "answer": {
        "answer": "Anthropic's multi-chip compute architecture spans four major chip families: AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs.",
-       "value": null,
-       "unit": null,
+       "value": 4,
+       "unit": "chip families",
        "disclosed": true,
        "page": "135",
+       "column": null,
        "calc": null,
        "quote": "We train and serve Claude natively across four major chip families (AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs) using a proprietary orchestration layer that enables us to optimize workloads for price and performance."
       }

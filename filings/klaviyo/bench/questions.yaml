@@ -1,0 +1,210 @@
+# Held-out gold questions: Klaviyo, Inc. Form S-1 (preliminary prospectus, filed 2023-08-25)
+# All dollar figures from the financial tables are in thousands of USD unless the unit says otherwise.
+
+# ---------------------------------------------------------------- fact (8)
+
+- id: revenue-fy2022
+  category: fact
+  question: What was Klaviyo's total revenue for the year ended December 31, 2022?
+  kind: number
+  value: 472748
+  unit: USD thousands
+  trap: Giving the six-month 2023 revenue ($320,674 thousand) or the 2021 figure ($290,640 thousand).
+  quote: "Revenue $ 472,748 $ 290,640 $ 320,674 $ 208,345"
+
+- id: cost-of-revenue-h1-2023
+  category: fact
+  question: What was Klaviyo's cost of revenue for the six months ended June 30, 2023?
+  kind: number
+  value: 74050
+  unit: USD thousands
+  trap: Giving the three months ended June 30, 2023 figure ($37,476 thousand).
+  quote: "Cost of revenue 128,025 84,696 74,050 58,075"
+
+- id: gross-profit-fy2022
+  category: fact
+  question: What was Klaviyo's gross profit for the year ended December 31, 2022?
+  kind: number
+  value: 344723
+  unit: USD thousands
+  trap: Giving the six months ended June 30, 2023 gross profit ($246,624 thousand).
+  quote: "Gross profit 344,723 205,944 246,624 150,270"
+
+- id: operating-loss-fy2022
+  category: fact
+  question: What was Klaviyo's GAAP operating income (loss) for the year ended December 31, 2022?
+  kind: number
+  value: -55036
+  unit: USD thousands
+  trap: Giving the non-GAAP operating loss ($(26,194) thousand) or the 2021 loss ($(79,233) thousand).
+  quote: "Operating income (loss) (55,036) (79,233) 7,910 (25,296)"
+
+- id: net-income-h1-2023
+  category: fact
+  question: What was Klaviyo's net income (loss) for the six months ended June 30, 2023?
+  kind: number
+  value: 15165
+  unit: USD thousands
+  trap: Giving the three months ended June 30, 2023 net income ($10,887 thousand).
+  quote: "Net income (loss) (49,193) (79,393) 15,165 (24,565)"
+
+- id: cash-jun-2023
+  category: fact
+  question: How much cash and cash equivalents did Klaviyo have as of June 30, 2023?
+  kind: number
+  value: 438739
+  unit: USD thousands
+  trap: Giving cash, cash equivalents, and restricted cash ($439,803 thousand) from the summary balance sheet data.
+  quote: "Cash and cash equivalents $ 385,820 $ 327,913 $ 438,739"
+
+- id: total-assets-dec-2022
+  category: fact
+  question: What were Klaviyo's total assets as of December 31, 2022?
+  kind: number
+  value: 629079
+  unit: USD thousands
+  trap: Giving total assets as of June 30, 2023 ($690,584 thousand).
+  quote: "Total assets $ 629,079 $ 464,446 $ 690,584"
+
+- id: operating-cash-flow-fy2022
+  category: fact
+  question: What was Klaviyo's net cash provided by (used in) operating activities for the year ended December 31, 2022?
+  kind: number
+  value: -23552
+  unit: USD thousands
+  trap: Giving free cash flow ($(41,797) thousand) or the six-month 2023 inflow ($57,026 thousand).
+  quote: "Net cash provided by (used in) operating activities (23,552) (22,738) 57,026 (27,142)"
+
+# ---------------------------------------------------------------- period-trap (3)
+
+- id: revenue-q2-2023
+  category: period-trap
+  question: What was Klaviyo's revenue for the three months ended June 30, 2023?
+  kind: number
+  value: 164586
+  unit: USD thousands
+  trap: Giving the six months ended June 30, 2023 revenue ($320,674 thousand), roughly double the quarter.
+  quote: "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023"
+
+- id: net-loss-h1-2022
+  category: period-trap
+  question: What was Klaviyo's net income (loss) for the six months ended June 30, 2022?
+  kind: number
+  value: -24565
+  unit: USD thousands
+  trap: Giving the six months ended June 30, 2023 net income of $15,165 thousand (opposite sign) or the full-year 2022 loss of $(49,193) thousand.
+  quote: "Net income (loss) (49,193) (79,393) 15,165 (24,565)"
+
+- id: free-cash-flow-h1-2023
+  category: period-trap
+  question: What was Klaviyo's free cash flow for the six months ended June 30, 2023?
+  kind: number
+  value: 53421
+  unit: USD thousands
+  trap: Giving the three months ended June 30, 2023 free cash flow ($39,500 thousand) or the negative full-year 2022 figure ($(41,797) thousand).
+  quote: "Free cash flow $ (41,797) $ (36,748) $ 53,421 $ (38,048)"
+
+# ---------------------------------------------------------------- derived (4)
+
+- id: gross-margin-h1-2023
+  category: derived
+  question: What was Klaviyo's gross margin (gross profit as a percentage of revenue) for the six months ended June 30, 2023?
+  kind: number
+  value: 76.9
+  unit: percent
+  tol: 0.003
+  inputs: (320,674 - 74,050) / 320,674
+  trap: Giving the three months ended June 30, 2023 gross margin (77.2%) or the full-year 2022 margin (72.9%).
+  quote: "Gross profit 344,723 205,944 246,624 150,270"
+
+- id: revenue-growth-q2-2023-yoy
+  category: derived
+  question: By what percentage did Klaviyo's revenue for the three months ended June 30, 2023 grow compared with the three months ended June 30, 2022?
+  kind: number
+  value: 51.0
+  unit: percent
+  tol: 0.005
+  inputs: (164,586 - 109,023) / 109,023
+  trap: Giving the six-month year-over-year growth of 53.9% instead of the quarterly growth.
+  quote: "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023"
+
+- id: non-us-revenue-share-h1-2023
+  category: derived
+  question: What percentage of Klaviyo's revenue for the six months ended June 30, 2023 came from customers located outside the United States?
+  kind: number
+  value: 36.2
+  unit: percent
+  tol: 0.005
+  inputs: (320,674 - 204,744) / 320,674
+  trap: Giving the share from outside the Americas (30.7%), which also excludes Other Americas, or the full-year 2022 non-US share (35.0%).
+  quote: "Americas: United States $ 307,222 $ 197,263 $ 204,744 $ 136,191"
+
+- id: deferred-revenue-jun-2023-millions
+  category: derived
+  question: What was Klaviyo's deferred revenue as of June 30, 2023, in millions of dollars?
+  kind: number
+  value: 29.16
+  unit: USD millions
+  tol: 0.005
+  inputs: 29,160 / 1000
+  trap: Giving the December 31, 2022 balance ($25.1 million), or reporting 29,160 without converting from thousands.
+  quote: "Deferred revenue 25,109 15,092 29,160"
+
+# ---------------------------------------------------------------- blank (3)
+
+- id: blank-ipo-price-range
+  category: blank
+  question: What is the expected price range per share for Klaviyo's initial public offering?
+  kind: not_disclosed
+  quote: "initial public offering price will be between $ and $ per share"
+
+- id: blank-offering-expenses
+  category: blank
+  question: What does Klaviyo estimate its share of the total expenses of the offering will be, excluding underwriting discounts and commissions?
+  kind: not_disclosed
+  trap: Summing only the fixed fees shown in Part II (SEC registration fee $11,020 plus FINRA filing fee $15,500); the total is to be provided by amendment.
+  quote: "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+
+- id: blank-finra-reimbursement-cap
+  category: blank
+  question: Up to what dollar amount has Klaviyo agreed to reimburse the underwriters for FINRA-related expenses in connection with the IPO?
+  kind: not_disclosed
+  trap: Giving the $15,500 FINRA filing fee from Part II, which is a fee Klaviyo pays to FINRA, not the underwriter reimbursement cap.
+  quote: "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+
+# ---------------------------------------------------------------- governance / risk (4)
+
+- id: ticker-exchange
+  category: governance
+  question: On which exchange and under what ticker symbol has Klaviyo applied to list its Series A common stock?
+  kind: text
+  must_include: [KVYO, New York Stock Exchange]
+  accept_alias: {New York Stock Exchange: [NYSE]}
+  trap: Saying Nasdaq.
+  quote: "on the New York Stock Exchange under the symbol “KVYO”"
+
+- id: underwriter-representatives
+  category: governance
+  question: Which firms are acting as the representatives of the underwriters (lead underwriters) for Klaviyo's IPO?
+  kind: text
+  must_include: [Goldman Sachs, Morgan Stanley, Citigroup]
+  accept_alias: {Citigroup: [Citi], Goldman Sachs: [Goldman]}
+  trap: Listing the full underwriting syndicate, or omitting Citigroup.
+  quote: "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC and Citigroup Global Markets Inc. are the representatives of the underwriters"
+
+- id: nrr-jun-2023
+  category: governance
+  question: What was Klaviyo's dollar-based net revenue retention rate (NRR) as of June 30, 2023?
+  kind: number
+  value: 119
+  unit: percent
+  trap: Giving the gross revenue retention rate (88%) or the December 31, 2021 peak NRR (121%).
+  quote: "Our successful land-and-expand strategy is reflected in our strong NRR of 119% as of June 30, 2023"
+
+- id: shopify-arr-dependence
+  category: risk
+  question: As of December 31, 2022, roughly three-quarters of Klaviyo's ARR came from customers who also used one particular third-party eCommerce platform. Which platform is it, and what exact percentage of ARR did the filing report?
+  kind: text
+  must_include: [Shopify, "77.5"]
+  trap: Giving the 10.6% of new ARR that came through the Shopify App Store.
+  quote: "approximately 77.5% of our ARR was derived from customers who also use Shopify"

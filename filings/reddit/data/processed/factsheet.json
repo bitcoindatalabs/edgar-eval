@@ -1,0 +1,1724 @@
+{
+ "tables": [
+  {
+   "page": "18",
+   "pages": [
+    "18"
+   ],
+   "title": "The summary consolidated financial data in this section are not intended to replace, and are qualified in their entirety by, the consolidated financial statements and related notes.",
+   "caption": "ancial data in conjunction with \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations\u201d and our consolidated financial statements and related notes included elsewhere in this prospectus. The summary consolidated financial data in this section are not intended to replace, and are qualified in their entirety by, the consolidated financial statements and related notes.",
+   "unit": "(in thousands, except share and per share amounts)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "2023"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      "666,701",
+      "804,029"
+     ]
+    },
+    {
+     "label": "Cost of revenue",
+     "values": [
+      "104,799",
+      "111,011"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      "365,164",
+      "438,346"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "225,078",
+      "230,175"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "143,822",
+      "164,658"
+     ]
+    },
+    {
+     "label": "Total costs and expenses",
+     "values": [
+      "838,863",
+      "944,190"
+     ]
+    },
+    {
+     "label": "Income (loss) from operations",
+     "values": [
+      "-172,162",
+      "-140,161"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      "14,234",
+      "53,138"
+     ]
+    },
+    {
+     "label": "Income (loss) before income taxes",
+     "values": [
+      "-157,928",
+      "-87,023"
+     ]
+    },
+    {
+     "label": "Income tax expense (benefit)",
+     "values": [
+      "622",
+      "3,801"
+     ]
+    },
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-158,550",
+      "-90,824"
+     ]
+    },
+    {
+     "label": "Net income (loss) per share attributable to Class A and Class B common stock, basic and diluted",
+     "values": [
+      "-2.77",
+      "-1.54"
+     ]
+    },
+    {
+     "label": "Weighted-average shares of Class A and Class B common stock used to compute net income (loss) per share, basic and diluted",
+     "values": [
+      "57,251,112",
+      "59,138,086"
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA",
+     "values": [
+      "-108,393",
+      "-69,275"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) operating activities",
+     "values": [
+      "-94,021",
+      "-75,114"
+     ]
+    },
+    {
+     "label": "Free Cash Flow",
+     "values": [
+      "-100,254",
+      "-84,838"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "19",
+   "pages": [
+    "19"
+   ],
+   "title": "for a reconciliation of Free Cash Flow to net cash provided by (used in) operating activities, the most directly comparable financial measure calculated and presented in accordance with U.S. GAAP.",
+   "caption": "ost directly comparable financial measure calculated and presented in accordance with U.S. generally accepted accounting principles (\u201cU.S. GAAP\u201d). (3) See \u201c\u2014Free Cash Flow\u201d below for more information and for a reconciliation of Free Cash Flow to net cash provided by (used in) operating activities, the most directly comparable financial measure calculated and presented in accordance with U.S. GAAP.",
+   "unit": "(in thousands)",
+   "columns": [
+    "December 31, 2022",
+    "December 31, 2023 Actual",
+    "December 31, 2023 Pro forma (1)",
+    "December 31, 2023 Pro forma as adjusted (2)(3)"
+   ],
+   "rows": [
+    {
+     "label": "Cash, cash equivalents, and marketable securities",
+     "values": [
+      "1,266,544",
+      "1,213,122",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Working capital",
+     "values": [
+      "1,377,470",
+      "1,346,117",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Total assets",
+     "values": [
+      "1,599,711",
+      "1,596,467",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Total liabilities",
+     "values": [
+      "125,283",
+      "155,897",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Convertible preferred stock",
+     "values": [
+      "1,853,492",
+      "1,853,492",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Additional paid-in capital",
+     "values": [
+      "250,460",
+      "302,820",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Accumulated deficit",
+     "values": [
+      "-625,738",
+      "-716,562",
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Total stockholders\u2019 equity (deficit)",
+     "values": [
+      "-379,064",
+      "-412,922",
+      "\u2014",
+      "\u2014"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "20",
+   "pages": [
+    "20"
+   ],
+   "title": "The following table presents a reconciliation of our net income (loss), the most directly comparable financial measure presented in accordance with U.S. GAAP, to Adjusted EBITDA:",
+   "caption": " We consider the exclusion of certain non-recurring or non-cash items in calculating Adjusted EBITDA to provide a useful measure for investors and others to evaluate our operating results in the same manner as management. The following table presents a reconciliation of our net income (loss), the most directly comparable financial measure presented in accordance with U.S. GAAP, to Adjusted EBITDA:",
+   "unit": "(in thousands)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "2023"
+   ],
+   "rows": [
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-158,550",
+      "-90,824"
+     ]
+    },
+    {
+     "label": "Interest (income) expense, net",
+     "values": [
+      "-15,681",
+      "-53,281"
+     ]
+    },
+    {
+     "label": "Income tax expense (benefit)",
+     "values": [
+      "622",
+      "3,801"
+     ]
+    },
+    {
+     "label": "Depreciation and amortization",
+     "values": [
+      "8,000",
+      "13,702"
+     ]
+    },
+    {
+     "label": "Stock-based compensation expense and related taxes",
+     "values": [
+      "55,768",
+      "49,086"
+     ]
+    },
+    {
+     "label": "Restructuring costs",
+     "values": [
+      "\u2014",
+      "8,098"
+     ]
+    },
+    {
+     "label": "Other (income) expense, net",
+     "values": [
+      "1,448",
+      "143"
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA",
+     "values": [
+      "-108,393",
+      "-69,275"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "86",
+   "pages": [
+    "86"
+   ],
+   "title": "Table of Cash, cash equivalents, and marketable securities, Convertible preferred stock; par value $0.0001 per share; 86,864,781 shares authorized; 73,021,449 shares issued and outstanding, actual; no shares authorized, issued, or outstanding, pro forma, and pro forma as adjusted, Preferred stock, par value $0.0001 per share; no shares authorized, issued or outstanding, actual; shares authorized, no shares issued or outstanding, pro forma and pro forma as adjusted",
+   "caption": "",
+   "unit": "(in thousands, except share and per share amounts)",
+   "columns": [
+    "December 31, 2023 Actual",
+    "December 31, 2023 Pro forma",
+    "December 31, 2023 Pro forma as adjusted"
+   ],
+   "rows": [
+    {
+     "label": "Cash, cash equivalents, and marketable securities",
+     "values": [
+      "1,213,122",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Convertible preferred stock; par value $0.0001 per share; 86,864,781 shares authorized; 73,021,449 shares issued and outstanding, actual; no shares authorized, issued, or outstanding, pro forma, and pro forma as adjusted",
+     "values": [
+      "1,853,492",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Preferred stock, par value $0.0001 per share; no shares authorized, issued or outstanding, actual; shares authorized, no shares issued or outstanding, pro forma and pro forma as adjusted",
+     "values": [
+      "\u2014",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Class A common stock, par value $0.0001 per share; 189,000,000 shares authorized, 7,099,700 shares issued and outstanding, pro forma; shares authorized, shares issued and outstanding, pro forma; shares authorized, shares issued and outstanding, pro forma as adjusted",
+     "values": [
+      "\u2014",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Class B common stock, par value $0.0001 per share; 142,000,000 shares authorized, 53,904,204 shares issued and outstanding, pro forma; shares authorized, shares issued and outstanding, pro forma; shares authorized, shares issued and outstanding, pro forma as adjusted",
+     "values": [
+      "6",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Class C common stock, par value $0.0001 per share; no shares authorized, issued, or outstanding, actual; shares authorized, no shares issued and outstanding, pro forma, and pro forma as adjusted",
+     "values": [
+      "\u2014",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Additional paid-in capital",
+     "values": [
+      "302,820",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Accumulated other comprehensive income (loss)",
+     "values": [
+      "814",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Accumulated deficit",
+     "values": [
+      "-716,562",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Total stockholders\u2019 equity (deficit)",
+     "values": [
+      "-412,922",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Total capitalization",
+     "values": [
+      "1,440,570",
+      null,
+      null
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "93",
+   "pages": [
+    "93"
+   ],
+   "title": "for a reconciliation of Free Cash Flow to net cash provided by (used in) operating activities, the most directly comparable financial measure calculated and presented in accordance with U.S. GAAP.",
+   "caption": "(3) See \u201c\u2014Free Cash Flow\u201d below for more information and for a reconciliation of Free Cash Flow to net cash provided by (used in) operating activities, the most directly comparable financial measure calculated and presented in accordance with U.S. GAAP.",
+   "unit": "(in thousands)",
+   "columns": [
+    "December 31, 2022",
+    "December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Cash, cash equivalents, and marketable securities",
+     "values": [
+      "1,266,544",
+      "1,213,122"
+     ]
+    },
+    {
+     "label": "Working capital",
+     "values": [
+      "1,377,470",
+      "1,346,117"
+     ]
+    },
+    {
+     "label": "Total assets",
+     "values": [
+      "1,599,711",
+      "1,596,467"
+     ]
+    },
+    {
+     "label": "Total liabilities",
+     "values": [
+      "125,283",
+      "155,897"
+     ]
+    },
+    {
+     "label": "Convertible preferred stock",
+     "values": [
+      "1,853,492",
+      "1,853,492"
+     ]
+    },
+    {
+     "label": "Total stockholders\u2019 equity (deficit)",
+     "values": [
+      "-379,064",
+      "-412,922"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "109",
+   "pages": [
+    "109"
+   ],
+   "title": "The results of historical periods are not necessarily indicative of the results in any future period.",
+   "caption": "formation reflects all normal recurring adjustments necessary for the fair statement of the results of operations and cash flows for these periods. This information should be read in conjunction with our consolidated financial statements and the related notes included elsewhere in this prospectus. The results of historical periods are not necessarily indicative of the results in any future period.",
+   "unit": "(in thousands)",
+   "columns": [
+    "Three months ended March 31, 2021",
+    "Three months ended June 30, 2021",
+    "Three months ended September 30, 2021",
+    "Three months ended December 31, 2021",
+    "Three months ended March 31, 2022",
+    "Three months ended June 30, 2022",
+    "Three months ended September 30, 2022",
+    "Three months ended December 31, 2022",
+    "Three months ended March 31, 2023",
+    "Three months ended June 30, 2023",
+    "Three months ended September 30, 2023",
+    "Three months ended December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      "79,003",
+      "108,054",
+      "121,187",
+      "176,672",
+      "146,182",
+      "148,556",
+      "171,535",
+      "200,428",
+      "163,740",
+      "183,031",
+      "207,508",
+      "249,750"
+     ]
+    },
+    {
+     "label": "Cost of revenue",
+     "values": [
+      "13,587",
+      "16,164",
+      "20,049",
+      "22,765",
+      "22,362",
+      "25,841",
+      "28,182",
+      "28,414",
+      "26,863",
+      "28,836",
+      "26,395",
+      "28,917"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      "44,601",
+      "89,191",
+      "54,718",
+      "68,465",
+      "77,178",
+      "86,627",
+      "95,134",
+      "106,225",
+      "108,767",
+      "109,726",
+      "108,285",
+      "111,568"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "26,885",
+      "35,190",
+      "32,611",
+      "43,181",
+      "50,750",
+      "56,515",
+      "59,919",
+      "57,894",
+      "57,911",
+      "59,225",
+      "55,114",
+      "57,925"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "50,723",
+      "37,950",
+      "20,975",
+      "35,074",
+      "31,096",
+      "35,900",
+      "39,250",
+      "37,576",
+      "40,801",
+      "38,233",
+      "37,299",
+      "48,325"
+     ]
+    },
+    {
+     "label": "Total costs and expenses",
+     "values": [
+      "135,796",
+      "178,495",
+      "128,353",
+      "169,485",
+      "181,386",
+      "204,883",
+      "222,485",
+      "230,109",
+      "234,342",
+      "236,020",
+      "227,093",
+      "246,735"
+     ]
+    },
+    {
+     "label": "Income (loss) from operations",
+     "values": [
+      "-56,793",
+      "-70,441",
+      "-7,166",
+      "7,187",
+      "-35,204",
+      "-56,327",
+      "-50,950",
+      "-29,681",
+      "-70,602",
+      "-52,989",
+      "-19,585",
+      "3,015"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      "210",
+      "12",
+      "-153",
+      "-412",
+      "74",
+      "1,033",
+      "4,043",
+      "9,084",
+      "10,724",
+      "13,306",
+      "12,647",
+      "16,461"
+     ]
+    },
+    {
+     "label": "Income (loss) before income taxes",
+     "values": [
+      "-56,583",
+      "-70,429",
+      "-7,319",
+      "6,775",
+      "-35,130",
+      "-55,294",
+      "-46,907",
+      "-20,597",
+      "-59,878",
+      "-39,683",
+      "-6,938",
+      "19,476"
+     ]
+    },
+    {
+     "label": "Income tax expense (benefit)",
+     "values": [
+      "35",
+      "105",
+      "70",
+      "130",
+      "157",
+      "437",
+      "-1,602",
+      "1,630",
+      "988",
+      "1,426",
+      "445",
+      "942"
+     ]
+    },
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-56,618",
+      "-70,534",
+      "-7,389",
+      "6,645",
+      "-35,287",
+      "-55,731",
+      "-45,305",
+      "-22,227",
+      "-60,866",
+      "-41,109",
+      "-7,383",
+      "18,534"
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA",
+     "values": [
+      "-6,800",
+      "8,881",
+      "700",
+      "27,174",
+      "-24,047",
+      "-40,397",
+      "-32,880",
+      "-11,069",
+      "-50,183",
+      "-35,368",
+      "-6,874",
+      "23,150"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) operating activities",
+     "values": [
+      "-33,119",
+      "-59,211",
+      "-5,131",
+      "-32,726",
+      "4,901",
+      "-30,063",
+      "-33,123",
+      "-35,736",
+      "4,075",
+      "-54,053",
+      "-7,703",
+      "-17,433"
+     ]
+    },
+    {
+     "label": "Free Cash Flow",
+     "values": [
+      "-33,486",
+      "-59,682",
+      "-5,933",
+      "-33,385",
+      "3,622",
+      "-31,220",
+      "-35,592",
+      "-37,064",
+      "3,719",
+      "-54,883",
+      "-11,639",
+      "-22,035"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "110",
+   "pages": [
+    "110"
+   ],
+   "title": "________________ (b) Stock-based compensation expense and related taxes included in above line items:",
+   "caption": "________________ (b) Stock-based compensation expense and related taxes included in above line items:",
+   "unit": "(in thousands)",
+   "columns": [
+    "Three months ended March 31, 2021",
+    "Three months ended June 30, 2021",
+    "Three months ended September 30, 2021",
+    "Three months ended December 31, 2021",
+    "Three months ended March 31, 2022",
+    "Three months ended June 30, 2022",
+    "Three months ended September 30, 2022",
+    "Three months ended December 31, 2022",
+    "Three months ended March 31, 2023",
+    "Three months ended June 30, 2023",
+    "Three months ended September 30, 2023",
+    "Three months ended December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Cost of revenue",
+     "values": [
+      "11",
+      "14",
+      "29",
+      "9",
+      "29",
+      "28",
+      "35",
+      "41",
+      "38",
+      "25",
+      "19",
+      "19"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      "10,552",
+      "47,523",
+      "4,297",
+      "5,643",
+      "6,609",
+      "9,750",
+      "9,758",
+      "9,800",
+      "8,001",
+      "5,702",
+      "5,164",
+      "5,467"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "3,622",
+      "7,749",
+      "1,442",
+      "2,155",
+      "1,604",
+      "2,024",
+      "2,063",
+      "1,987",
+      "1,813",
+      "1,389",
+      "1,253",
+      "1,223"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "35,176",
+      "23,393",
+      "1,402",
+      "11,339",
+      "2,056",
+      "3,133",
+      "3,441",
+      "3,410",
+      "3,315",
+      "3,000",
+      "2,987",
+      "9,671"
+     ]
+    },
+    {
+     "label": "Stock-based compensation expense and related taxes",
+     "values": [
+      "49,361",
+      "78,679",
+      "7,170",
+      "19,146",
+      "10,298",
+      "14,935",
+      "15,297",
+      "15,238",
+      "13,167",
+      "10,116",
+      "9,423",
+      "16,380"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "113",
+   "pages": [
+    "113"
+   ],
+   "title": "The following table summarizes our cash flows for the periods presented:",
+   "caption": "s, though we may require additional capital resources in the future. Our future capital requirements will depend on many factors including our growth rate, headcount, sales and marketing activities, research and development activities, the introduction of new features and products, acquisitions, and continued user engagement. The following table summarizes our cash flows for the periods presented:",
+   "unit": "(in thousands)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "2023"
+   ],
+   "rows": [
+    {
+     "label": "Net cash provided by (used in) operating activities",
+     "values": [
+      "-94,021",
+      "-75,114"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) investing activities",
+     "values": [
+      "-804,183",
+      "41,291"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) financing activities",
+     "values": [
+      "-3,784",
+      "-811"
+     ]
+    },
+    {
+     "label": "Net increase (decrease) in cash, cash equivalents, and restricted cash",
+     "values": [
+      "-901,988",
+      "-34,634"
+     ]
+    },
+    {
+     "label": "Free Cash Flow",
+     "values": [
+      "-100,254",
+      "-84,838"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-3",
+   "pages": [
+    "F-3"
+   ],
+   "title": "Consolidated Balance Sheets (in thousands, except share and per share amounts)",
+   "caption": "Reddit, Inc. Consolidated Balance Sheets (in thousands, except share and per share amounts)",
+   "unit": "(in thousands, except share and per share amounts)",
+   "columns": [
+    "December 31, 2022",
+    "December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Cash and cash equivalents",
+     "values": [
+      "435,810",
+      "401,176"
+     ]
+    },
+    {
+     "label": "Marketable securities",
+     "values": [
+      "830,734",
+      "811,946"
+     ]
+    },
+    {
+     "label": "Accounts receivable, net",
+     "values": [
+      "191,987",
+      "245,279"
+     ]
+    },
+    {
+     "label": "Prepaid expenses and other current assets",
+     "values": [
+      "25,396",
+      "21,286"
+     ]
+    },
+    {
+     "label": "Total current assets",
+     "values": [
+      "1,483,927",
+      "1,479,687"
+     ]
+    },
+    {
+     "label": "Property and equipment, net",
+     "values": [
+      "7,192",
+      "14,946"
+     ]
+    },
+    {
+     "label": "Operating lease right-of-use assets, net",
+     "values": [
+      "23,352",
+      "24,008"
+     ]
+    },
+    {
+     "label": "Intangible assets, net",
+     "values": [
+      "41,237",
+      "32,147"
+     ]
+    },
+    {
+     "label": "Goodwill",
+     "values": [
+      "26,299",
+      "26,299"
+     ]
+    },
+    {
+     "label": "Other noncurrent assets",
+     "values": [
+      "17,704",
+      "19,380"
+     ]
+    },
+    {
+     "label": "Total assets",
+     "values": [
+      "1,599,711",
+      "1,596,467"
+     ]
+    },
+    {
+     "label": "Accounts payable",
+     "values": [
+      "32,944",
+      "46,514"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities",
+     "values": [
+      "7,802",
+      "3,707"
+     ]
+    },
+    {
+     "label": "Accrued expenses and other current liabilities",
+     "values": [
+      "65,711",
+      "83,349"
+     ]
+    },
+    {
+     "label": "Total current liabilities",
+     "values": [
+      "106,457",
+      "133,570"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities, noncurrent",
+     "values": [
+      "11,690",
+      "22,040"
+     ]
+    },
+    {
+     "label": "Other noncurrent liabilities",
+     "values": [
+      "7,136",
+      "287"
+     ]
+    },
+    {
+     "label": "Total liabilities",
+     "values": [
+      "125,283",
+      "155,897"
+     ]
+    },
+    {
+     "label": "Convertible preferred stock, par value $0.0001 per share; 86,864,781 and 86,864,781 shares authorized as of December 31, 2022 and December 31, 2023, respectively; 73,021,449 and 73,021,449 shares issued and outstanding as of December 31, 2022 and December 31, 2023, respectively; aggregate liquidation preference of $1,847,993 and $1,847,993 as of December 31, 2022 and December 31, 2023, respectively",
+     "values": [
+      "1,853,492",
+      "1,853,492"
+     ]
+    },
+    {
+     "label": "Class A common stock, par value $0.0001 per share; 189,000,000 and 189,000,000 shares authorized as of December 31, 2022 and December 31, 2023, respectively; 6,381,936 and 7,099,700 shares issued and outstanding as of December 31, 2022 and December 31, 2023, respectively",
+     "values": [
+      "\u2014",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Class B common stock, par value $0.0001 per share; 142,000,000 and 142,000,000 shares authorized as of December 31, 2022 and December 31, 2023, respectively; 51,410,111 and 53,904,204 shares issued and outstanding as of December 31, 2022 and December 31, 2023, respectively",
+     "values": [
+      "6",
+      "6"
+     ]
+    },
+    {
+     "label": "Additional paid-in capital",
+     "values": [
+      "250,460",
+      "302,820"
+     ]
+    },
+    {
+     "label": "Accumulated other comprehensive income (loss)",
+     "values": [
+      "-3,792",
+      "814"
+     ]
+    },
+    {
+     "label": "Accumulated deficit",
+     "values": [
+      "-625,738",
+      "-716,562"
+     ]
+    },
+    {
+     "label": "Total stockholders\u2019 deficit",
+     "values": [
+      "-379,064",
+      "-412,922"
+     ]
+    },
+    {
+     "label": "Total liabilities, convertible preferred stock, and stockholders\u2019 deficit",
+     "values": [
+      "1,599,711",
+      "1,596,467"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-4",
+   "pages": [
+    "F-4"
+   ],
+   "title": "Consolidated Statements of Operations (in thousands, except share and per share amounts)",
+   "caption": "Reddit, Inc. Consolidated Statements of Operations (in thousands, except share and per share amounts)",
+   "unit": "(in thousands, except share and per share amounts)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "Year ended December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      "666,701",
+      "804,029"
+     ]
+    },
+    {
+     "label": "Cost of revenue",
+     "values": [
+      "104,799",
+      "111,011"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      "365,164",
+      "438,346"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "225,078",
+      "230,175"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "143,822",
+      "164,658"
+     ]
+    },
+    {
+     "label": "Total costs and expenses",
+     "values": [
+      "838,863",
+      "944,190"
+     ]
+    },
+    {
+     "label": "Income (loss) from operations",
+     "values": [
+      "-172,162",
+      "-140,161"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      "14,234",
+      "53,138"
+     ]
+    },
+    {
+     "label": "Income (loss) before income taxes",
+     "values": [
+      "-157,928",
+      "-87,023"
+     ]
+    },
+    {
+     "label": "Income tax expense (benefit)",
+     "values": [
+      "622",
+      "3,801"
+     ]
+    },
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-158,550",
+      "-90,824"
+     ]
+    },
+    {
+     "label": "Net income (loss) per share attributable to Class A and Class B common stock, basic and diluted (Note 4)",
+     "values": [
+      "-2.77",
+      "-1.54"
+     ]
+    },
+    {
+     "label": "Weighted-average shares of Class A and Class B common stock used to compute net income (loss) per share attributable to common stockholders, basic and diluted",
+     "values": [
+      "57,251,112",
+      "59,138,086"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-7",
+   "pages": [
+    "F-7"
+   ],
+   "title": "Consolidated Statements of Cash Flows (in thousands)",
+   "caption": "Reddit, Inc. Consolidated Statements of Cash Flows (in thousands)",
+   "unit": "(in thousands)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "Year ended December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-158,550",
+      "-90,824"
+     ]
+    },
+    {
+     "label": "Depreciation and amortization",
+     "values": [
+      "8,000",
+      "13,702"
+     ]
+    },
+    {
+     "label": "Non-cash operating lease cost",
+     "values": [
+      "10,464",
+      "11,359"
+     ]
+    },
+    {
+     "label": "Amortization of premium (accretion of discount) on marketable securities, net",
+     "values": [
+      "-3,264",
+      "-27,442"
+     ]
+    },
+    {
+     "label": "Stock-based compensation",
+     "values": [
+      "55,310",
+      "47,598"
+     ]
+    },
+    {
+     "label": "Other adjustments",
+     "values": [
+      "4,099",
+      "484"
+     ]
+    },
+    {
+     "label": "Accounts receivable",
+     "values": [
+      "-30,230",
+      "-53,318"
+     ]
+    },
+    {
+     "label": "Prepaid expenses and other assets",
+     "values": [
+      "-1,911",
+      "3,878"
+     ]
+    },
+    {
+     "label": "Operating lease right-of-use assets and liabilities",
+     "values": [
+      "-10,325",
+      "-5,758"
+     ]
+    },
+    {
+     "label": "Accounts payable",
+     "values": [
+      "10,905",
+      "12,470"
+     ]
+    },
+    {
+     "label": "Accrued expenses and other liabilities",
+     "values": [
+      "21,481",
+      "12,737"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) operating activities",
+     "values": [
+      "-94,021",
+      "-75,114"
+     ]
+    },
+    {
+     "label": "Purchases of property and equipment",
+     "values": [
+      "-6,233",
+      "-9,724"
+     ]
+    },
+    {
+     "label": "Purchases of marketable securities",
+     "values": [
+      "-1,430,589",
+      "-1,259,854"
+     ]
+    },
+    {
+     "label": "Maturities of marketable securities",
+     "values": [
+      "674,399",
+      "1,273,159"
+     ]
+    },
+    {
+     "label": "Proceeds from sale of marketable securities",
+     "values": [
+      "500",
+      "37,538"
+     ]
+    },
+    {
+     "label": "Cash paid for acquisitions, net of cash acquired",
+     "values": [
+      "-42,196",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Other investing activities",
+     "values": [
+      "-64",
+      "172"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) investing activities",
+     "values": [
+      "-804,183",
+      "41,291"
+     ]
+    },
+    {
+     "label": "Proceeds from exercise of employee stock options",
+     "values": [
+      "7,034",
+      "8,428"
+     ]
+    },
+    {
+     "label": "Taxes paid related to net share settlement of restricted stock units",
+     "values": [
+      "\u2014",
+      "-4,320"
+     ]
+    },
+    {
+     "label": "Payments of deferred offering costs",
+     "values": [
+      "-9,796",
+      "-1,441"
+     ]
+    },
+    {
+     "label": "Other financing activities",
+     "values": [
+      "-1,022",
+      "-3,478"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) financing activities",
+     "values": [
+      "-3,784",
+      "-811"
+     ]
+    },
+    {
+     "label": "Net increase (decrease) in cash, cash equivalents, and restricted cash",
+     "values": [
+      "-901,988",
+      "-34,634"
+     ]
+    },
+    {
+     "label": "Cash, cash equivalents, and restricted cash at the beginning of the period",
+     "values": [
+      "1,337,848",
+      "435,860"
+     ]
+    },
+    {
+     "label": "Cash, cash equivalents, and restricted cash at the end of the period",
+     "values": [
+      "435,860",
+      "401,226"
+     ]
+    },
+    {
+     "label": "Cash and cash equivalents",
+     "values": [
+      "435,810",
+      "401,176"
+     ]
+    },
+    {
+     "label": "Restricted cash",
+     "values": [
+      "50",
+      "50"
+     ]
+    },
+    {
+     "label": "Total cash, cash equivalents, and restricted cash",
+     "values": [
+      "435,860",
+      "401,226"
+     ]
+    },
+    {
+     "label": "Value of equity consideration for acquisitions",
+     "values": [
+      "4,522",
+      "\u2014"
+     ]
+    },
+    {
+     "label": "Operating lease right-of-use assets recognized in exchange for lease liabilities",
+     "values": [
+      "16,357",
+      "12,014"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-15",
+   "pages": [
+    "F-15"
+   ],
+   "title": "Revenue The following table represents our revenue disaggregated by source:",
+   "caption": "res certain disaggregated disclosures related to income from continuing operations, income tax expense, and income taxes paid. The standard is effective for us beginning January 1, 2025, with early adoption permitted. We are currently evaluating the impact the adoption will have on our consolidated financial statements. 3. Revenue The following table represents our revenue disaggregated by source:",
+   "unit": "(in thousands)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "Year ended December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Advertising revenue",
+     "values": [
+      "652,562",
+      "788,782"
+     ]
+    },
+    {
+     "label": "Other revenue",
+     "values": [
+      "14,139",
+      "15,247"
+     ]
+    },
+    {
+     "label": "Total revenue",
+     "values": [
+      "666,701",
+      "804,029"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-15",
+   "pages": [
+    "F-15"
+   ],
+   "title": "The following table represents our revenue disaggregated by geography based on the billing address of the customer:",
+   "caption": "The following table represents our revenue disaggregated by geography based on the billing address of the customer:",
+   "unit": "(in thousands)",
+   "columns": [
+    "Year ended December 31, 2022",
+    "Year ended December 31, 2023"
+   ],
+   "rows": [
+    {
+     "label": "United States",
+     "values": [
+      "548,964",
+      "651,378"
+     ]
+    },
+    {
+     "label": "Rest of world",
+     "values": [
+      "117,737",
+      "152,651"
+     ]
+    },
+    {
+     "label": "Total revenue",
+     "values": [
+      "666,701",
+      "804,029"
+     ]
+    }
+   ],
+   "continued": false
+  }
+ ],
+ "blanks": [
+  {
+   "page": "cover-2",
+   "sentence": "We anticipate that the initial public offering price per share of our Class A common stock will be between $ and $ .",
+   "snippet": "We anticipate that the initial public offering price per share of our Class A common stock will be between $ and $ ."
+  },
+  {
+   "page": "cover-2",
+   "sentence": "The holders of our outstanding Class B common stock will hold approximately % of the voting power of our outstanding capital stock after the completion of this offering, with our directors and executive officers and their affiliates holding approximately %, after giving effect to the voting agreement to be entered into between Advance Magazine Publishers Inc., our principal stockholder, and Steven Huffman, our Chief Executive Officer and President and a member of our board of directors, and assuming no exercise of the underwriters\u2019 option to purchase additional shares to cover over-allotments.",
+   "snippet": "The holders of our outstanding Class B common stock will hold approximately % of the voting power of our outstanding capital stock after the\u2026"
+  },
+  {
+   "page": "cover-2",
+   "sentence": "PRICE $ A SHARE Price to Public Underwriting Discounts and Commissions (1) Proceeds to Reddit (2) Proceeds to Selling Stockholders (2) Per Share $ $ $ $ Total $ $ $ $ ________________ (1) See \u201cUnderwriters\u201d for a description of the compensation payable to the underwriters.",
+   "snippet": "PRICE $ A SHARE Price to Public Underwriting Discounts and Commissions (1)\u2026"
+  },
+  {
+   "page": "cover-2",
+   "sentence": "At our request, the underwriters have reserved up to shares of our Class A common stock, or % of the shares offered in this offering, for sale at the initial public offering price through a directed share program to (i) eligible users and moderators on our platform, (ii) certain members of our board of directors, and (iii) friends and family members of certain of our employees and directors.",
+   "snippet": "At our request, the underwriters have reserved up to shares of our Class A common stock, or % of the shares offered in this offering, for sale at the initial\u2026"
+  },
+  {
+   "page": "cover-2",
+   "sentence": "ROTH CAPITAL PARTNERS TELSEY ADVISORY GROUP ________________ * In alphabetical order Prospectus dated , 2024",
+   "snippet": "ROTH CAPITAL PARTNERS TELSEY ADVISORY GROUP ________________ * In alphabetical order Prospectus dated , 2024"
+  },
+  {
+   "page": "11",
+   "sentence": "\u2022 The multi-class structure of our common stock has the effect of concentrating voting control with those stockholders who held our capital stock prior to the listing of our Class A common stock on the NYSE, including our directors, executive officers, and 5% stockholders, and their respective affiliates, who will hold in the aggregate % of the voting power of our capital stock following the offering.",
+   "snippet": "\u2026executive officers, and 5% stockholders, and their respective affiliates, who will hold in the aggregate % of the voting power of our capital stock following the offering."
+  },
+  {
+   "page": "13",
+   "sentence": "We intend to use approximately $ of the net proceeds to satisfy tax withholding and remittance obligations related to the RSU Net Settlement (as defined below) and for certain other RSUs and PRSUs (each as defined below) that will begin to vest after the completion of this offering.",
+   "snippet": "We intend to use approximately $ of the net proceeds to satisfy tax withholding and remittance\u2026"
+  },
+  {
+   "page": "14",
+   "sentence": "At our request, and reflecting our desire to set aside a significant number of shares for certain of our users and moderators, the underwriters have reserved up to shares of our Class A common stock, or % of the shares offered in this offering, for sale at the initial public offering price through a directed share program to: \u2022 eligible Reddit users and moderators; \u2022 certain members of our board of directors; and \u2022 friends and family members of certain of our employees and directors.",
+   "snippet": "\u2026of our users and moderators, the underwriters have reserved up to shares of our Class A common stock, or % of the shares offered in this offering, for sale at the initial\u2026"
+  },
+  {
+   "page": "15",
+   "sentence": "The number of shares of our common stock to be outstanding after this offering does not include: \u2022 shares of our Class A common stock issuable upon the exercise of outstanding stock options as of December 31, 2023, having a weighted-average exercise price of $ per share (after giving effect to the Option Exercise); \u2022 shares of our Class B common stock issuable upon the exercise of outstanding stock options as of December 31, 2023, having a weighted-average",
+   "snippet": "\u2026exercise of outstanding stock options as of December 31, 2023, having a weighted-average exercise price of $ per share (after giving effect to the Option Exercise); \u2022 shares of\u2026"
+  },
+  {
+   "page": "19",
+   "sentence": "Similarly, each increase (decrease) of 1.0 million shares in the number of shares of Class A common stock offered by us would increase (decrease) each of our pro forma as adjusted cash, cash equivalents, and marketable securities, total stockholders\u2019 equity, and total capitalization by approximately $ , assuming the assumed initial public offering price of $ per share of our Class A common stock, which is the midpoint of the estimated price range set forth on the cover page of this prospectus, rema",
+   "snippet": "\u2026and marketable securities, total stockholders\u2019 equity, and total capitalization by approximately $ , assuming the assumed initial public offering price of $ per share\u2026"
+  },
+  {
+   "page": "66",
+   "sentence": "Immediately following this offering, based on the number of shares outstanding on December 31, 2023, and after giving effect to the Preferred Stock Conversion, the Class B Conversion, the Option Exercise, and the RSU Net Settlement, the holders of our outstanding Class B common stock will hold % of the voting power of our",
+   "snippet": "\u2026Option Exercise, and the RSU Net Settlement, the holders of our outstanding Class B common stock will hold % of the voting power of our"
+  },
+  {
+   "page": "67",
+   "sentence": "utstanding Class A and Class B common stock, with our directors, executive officers, and holders of more than 5% of our common stock, and their respective affiliates, holding in the aggregate % of the voting power of our Class A and Class B common stock, assuming no exercise by the underwriters of their option to purchase additional shares from us.",
+   "snippet": "\u2026and holders of more than 5% of our common stock, and their respective affiliates, holding in the aggregate % of the voting power of our Class A and Class B common stock,\u2026"
+  },
+  {
+   "page": "67",
+   "sentence": "Additionally, our principal stockholder, Advance, and certain of its affiliates beneficially own approximately shares of our Class B common stock, which will represent approximately % of the voting power of our outstanding Class A and Class B common stock immediately following this offering.",
+   "snippet": "\u2026beneficially own approximately shares of our Class B common stock, which will represent approximately % of the voting power of our outstanding Class A and Class B common\u2026"
+  },
+  {
+   "page": "68",
+   "sentence": "Immediately after this offering, based on the number of shares outstanding on December 31, 2023, and after giving effect to the Preferred Stock Conversion, the Class B Conversion, the Option Exercise, and the RSU Net Settlement, our principal stockholder, Advance and certain of its affiliates, will beneficially own shares of Class B common stock, which will represent approximately % of the voting power of our outstanding Class A and Class B common stock, assuming no exercise by the underwriters of their option to purchase additional shares from us.",
+   "snippet": "\u2026of its affiliates, will beneficially own shares of Class B common stock, which will represent approximately % of the voting power of our outstanding Class A and Class B common\u2026"
+  },
+  {
+   "page": "69",
+   "sentence": "In connection with this offering, we and all of our directors and executive officers, the selling stockholders, and certain other record holders that together represent approximately % of our outstanding Class A common stock and securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock are subject to lock-up agreements with the underwriters agreeing that, subject to certain exceptions, without the prior written consent of Morgan Stanley & Co.",
+   "snippet": "\u2026officers, the selling stockholders, and certain other record holders that together represent approximately % of our outstanding Class A common stock and securities directly or\u2026"
+  },
+  {
+   "page": "69",
+   "sentence": "Furthermore, (i) an additional approximately % of our outstanding Class A common stock and securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock are subject to the market standoff provision",
+   "snippet": "Furthermore, (i) an additional approximately % of our outstanding Class A common stock and securities directly or\u2026"
+  },
+  {
+   "page": "82",
+   "sentence": "SE OF PROCEEDS We estimate that we will receive net proceeds from this offering of $ (or approximately $ if the underwriters\u2019 over-allotment option is exercised in full) based on an assumed initial public offering price of $ per share of Class A common stock, which is the midpoint of the estimated price range set forth on the cover page of this prospectus, after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us.",
+   "snippet": "SE OF PROCEEDS We estimate that we will receive net proceeds from this offering of $ (or approximately $ if the underwriters\u2019 over-allotment option is exercised in full)\u2026"
+  },
+  {
+   "page": "82",
+   "sentence": "A $1.00 increase (decrease) in the assumed initial public offering price of $ per share of Class A common stock, the midpoint of the estimated price range set forth on the cover page of this prospectus, would increase (decrease) the net proceeds to us from this offering by approximately $ , assuming the number of shares of Class A common stock offered by us, as set forth on the cover page of this prospectus, remains the same, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us.",
+   "snippet": "A $1.00 increase (decrease) in the assumed initial public offering price of $ per share of Class A common stock, the midpoint of the estimated\u2026"
+  },
+  {
+   "page": "82",
+   "sentence": "Similarly, each increase (decrease) of 1.0 million shares in the number of shares of Class A common stock offered by us would increase (decrease) the net proceeds to us from this offering by approximately $ , assuming the initial public offering price of $ per share of Class A common stock, which is the midpoint of the estimated price range set forth on the cover page of this prospectus, remains the same, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us.",
+   "snippet": "\u2026stock offered by us would increase (decrease) the net proceeds to us from this offering by approximately $ , assuming the initial public offering price of $ per share of Class\u2026"
+  },
+  {
+   "page": "82",
+   "sentence": "Based on the assumed initial public offering price of $ per share of Class A common stock, which is the midpoint of the estimated price range set forth on the cover page of this prospectus, an estimated shares underlying RSUs vesting in connection with our initial public offering, and an assumed % tax withholding rate for certain of our employees from whom we will withhold taxes, we would use approximately $ to satisfy our tax withholding and remittance obligations related to the vesting of such RSUs that are expected to vest upon the completion of this offering.",
+   "snippet": "Based on the assumed initial public offering price of $ per share of Class A common stock, which is the midpoint of the\u2026"
+  },
+  {
+   "page": "82",
+   "sentence": "Assuming that the closing trading price of Class A common stock on the tenth day of the relevant ten-trading-day period is $ , and assuming a maximum tax withholding rate of 53%, then we would use approximately $ to satisfy our tax withholding and remittance obligations related to the vesting of such PRSUs.",
+   "snippet": "\u2026the closing trading price of Class A common stock on the tenth day of the relevant ten-trading-day period is $ , and assuming a maximum tax withholding rate of 53%, then we would\u2026"
+  },
+  {
+   "page": "82",
+   "sentence": "A $1.00 increase (decrease) in the assumed closing trading price of $ per share of Class A common stock would increase (decrease) the amount we would be required to pay to satisfy these tax withholding and remittance obligations by approximately $ .",
+   "snippet": "A $1.00 increase (decrease) in the assumed closing trading price of $ per share of Class A common stock would increase (decrease) the\u2026"
+  },
+  {
+   "page": "86",
+   "sentence": "If the underwriters\u2019 over-allotment option was exercised in full, pro forma as adjusted cash, cash equivalents, and marketable securities, additional paid-in capital, total stockholders\u2019 equity, total capitalization, and shares of Class A common stock outstanding as of December 31, 2023 would be $ , $ , $ , $ , and shares, respectively.",
+   "snippet": "\u2026total capitalization, and shares of Class A common stock outstanding as of December 31, 2023 would be $ , $ , $ , $ , and shares, respectively."
+  },
+  {
+   "page": "88",
+   "sentence": "Assuming that the closing trading price of Class A common stock on the tenth day of the relevant ten-trading-day period is $ , and based on an assumed maximum tax withholding rate of 53%, then we would use approximately $ to satisfy our tax withholding and remittance obligations related to the vesting of such PRSUs.",
+   "snippet": "\u2026the closing trading price of Class A common stock on the tenth day of the relevant ten-trading-day period is $ , and based on an assumed maximum tax withholding rate of 53%, then\u2026"
+  },
+  {
+   "page": "89",
+   "sentence": "Our pro forma net tangible book value as of December 31, 2023 was $ , or $ per share.",
+   "snippet": "Our pro forma net tangible book value as of December 31, 2023 was $ , or $ per share."
+  },
+  {
+   "page": "89",
+   "sentence": "This amount represents an immediate increase in pro forma as adjusted net tangible book value of $ per share to our existing stockholders and an immediate dilution in pro forma as adjusted net tangible book value of $ per share to new investors purchasing our Class A common stock in this offering.",
+   "snippet": "This amount represents an immediate increase in pro forma as adjusted net tangible book value of $ per share to our existing stockholders and an immediate dilution in\u2026"
+  },
+  {
+   "page": "89",
+   "sentence": "Similarly, each increase or decrease of 1.0 million shares in the number of shares of Class A common stock offered by us would increase (decrease) our pro forma as adjusted net tangible book value by approximately $ per share and decrease (increase) the dilution to new investors by approximately $ per share, in each case assuming the assumed initial public offering price of $ per share,",
+   "snippet": "\u2026offered by us would increase (decrease) our pro forma as adjusted net tangible book value by approximately $ per share and decrease (increase) the dilution to new investors by\u2026"
+  },
+  {
+   "page": "90",
+   "sentence": "If the underwriters exercise their over-allotment option in full, the pro forma net tangible book value per share, as adjusted to give effect to this offering, would be $ per share, and the dilution in pro forma net tangible book value per share to investors in this offering would be $ per share.",
+   "snippet": "\u2026full, the pro forma net tangible book value per share, as adjusted to give effect to this offering, would be $ per share, and the dilution in pro forma net tangible book value per\u2026"
+  },
+  {
+   "page": "90",
+   "sentence": "If the underwriters exercise in full their option to purchase additional shares, our existing stockholders would own % and our new investors would own % of the total number of shares of common stock outstanding upon the completion of this offering.",
+   "snippet": "\u2026underwriters exercise in full their option to purchase additional shares, our existing stockholders would own % and our new investors would own % of the total number of shares of\u2026"
+  },
+  {
+   "page": "116",
+   "sentence": "In the three months ending , 2024, we will record a cumulative one-time stock-based compensation expense of $ , determined using the grant date fair values of the RSUs, for which the service-based vesting condition was satisfied as of , 2024 and for which the liquidity-based vesting condition will be satisfied in connection with this offering.",
+   "snippet": "In the three months ending , 2024, we will record a cumulative one-time stock-based compensation expense of $ , determined using the grant date fair values of the RSUs, for which\u2026"
+  },
+  {
+   "page": "117",
+   "sentence": "After the completion of this offering, based on RSU awards outstanding as of , 2024, we expect that approximately and RSUs will vest on each of 20, 2024 and 20, 2024, respectively.",
+   "snippet": "After the completion of this offering, based on RSU awards outstanding as of , 2024, we expect that approximately and RSUs will vest on each of 20, 2024 and 20, 2024, respectively."
+  },
+  {
+   "page": "174",
+   "sentence": "ave assumed that the fair market value on such date was $ per share, which represents the midpoint of the estimated price range set forth on the cover page of this prospectus.",
+   "snippet": "ave assumed that the fair market value on such date was $ per share, which represents the midpoint of the estimated price range set forth on the cover page of this prospectus."
+  },
+  {
+   "page": "176",
+   "sentence": "In addition, the sum of the grant date fair value of all equity-based awards and the maximum that may become payable pursuant to a cash-based award to any individual for services as a non-employee director during any calendar year may not exceed $ .",
+   "snippet": "\u2026award to any individual for services as a non-employee director during any calendar year may not exceed $ ."
+  },
+  {
+   "page": "191",
+   "sentence": "Directed Share Program At our request, the underwriters have reserved up to shares of our Class A common stock, or % of the shares offered in this offering, for sale at the initial public offering price through a directed share program to (i) eligible users and moderators on our platform, (ii) certain members of our board of directors, and (iii) friends and family members of certain of our employees and directors.",
+   "snippet": "\u2026Share Program At our request, the underwriters have reserved up to shares of our Class A common stock, or % of the shares offered in this offering, for sale at the initial\u2026"
+  },
+  {
+   "page": "200",
+   "sentence": "In connection with the Option Exercise, and without giving effect to the Class B conversion, shares of our Class A common stock and shares of our Class B common stock will be cash exercised, with a weighted-average exercise price of $ and $ per share, respectively.",
+   "snippet": "\u2026and shares of our Class B common stock will be cash exercised, with a weighted-average exercise price of $ and $ per share, respectively."
+  },
+  {
+   "page": "201",
+   "sentence": "Huffman will be deemed to hold under certain circumstances an aggregate of % of the voting power of our outstanding capital stock immediately after this offering.",
+   "snippet": "Huffman will be deemed to hold under certain circumstances an aggregate of % of the voting power of our outstanding capital stock immediately after this offering."
+  },
+  {
+   "page": "210",
+   "sentence": "Lock-Up Agreements/Market Standoff Agreements In connection with this offering, we and all of our directors and executive officers, the selling stockholders, and certain other record holders that together represent approximately % of our outstanding Class A common stock and securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock are subject to lock-up agreements with the underwriters agreeing that, subject to certain exceptions, without the prior written consent of Morgan Stanley & Co.",
+   "snippet": "\u2026officers, the selling stockholders, and certain other record holders that together represent approximately % of our outstanding Class A common stock and securities directly or\u2026"
+  },
+  {
+   "page": "218",
+   "sentence": "The underwriters initially propose to offer part of the shares of Class A common stock directly to the public at the offering price listed on the cover page of this prospectus and part to certain dealers at a price that represents a concession not in excess of $ per share under the public offering price.",
+   "snippet": "\u2026page of this prospectus and part to certain dealers at a price that represents a concession not in excess of $ per share under the public offering price."
+  },
+  {
+   "page": "219",
+   "sentence": "Total Per Share No Exercise Full Exercise Public offering price $ $ $ Underwriting discounts and commissions to be paid by us $ $ $ Underwriting discounts and commissions to be paid by the selling stockholders $ $ $ Proceeds, before expenses, to us $ $ $ Proceeds, before expenses, to the selling stockholders $ $ $ The estimated offering expenses payable by us, exclusive of the underwriting discounts and commissions, are approximately $ .",
+   "snippet": "Total Per Share No Exercise Full Exercise Public offering price $ $ $ Underwriting discounts and commissions to be paid by us $ $ $\u2026"
+  },
+  {
+   "page": "219",
+   "sentence": "We will agree to reimburse the underwriters for expenses relating to clearance of this offering with the Financial Industry Regulatory Authority in an amount up to $ .",
+   "snippet": "We will agree to reimburse the underwriters for expenses relating to clearance of this offering with the Financial Industry Regulatory Authority in an amount up to $ ."
+  },
+  {
+   "page": "219",
+   "sentence": "We have applied to list our Class A common stock on the NYSE under the symbol \u201cRDDT.\u201d We and all of our directors and executive officers, the selling stockholders, and certain other record holders that together represent approximately % of our outstanding Class A common stock and securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock are subject to lock-up agreements with the underwriters agreeing that, subject to certain exceptions, without the prior written consent of Morgan Stanley & Co.",
+   "snippet": "\u2026officers, the selling stockholders, and certain other record holders that together represent approximately % of our outstanding Class A common stock and securities directly or\u2026"
+  },
+  {
+   "page": "220",
+   "sentence": "ii) an additional approximately % of our outstanding Class A common stock and securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock are subject to restrictions contained in market standoff agreements with us which include restrictions on the sale, transfer, or other disposition of shares.",
+   "snippet": "ii) an additional approximately % of our outstanding Class A common stock and securities directly or\u2026"
+  },
+  {
+   "page": "224",
+   "sentence": "Directed Share Program At our request, the underwriters have reserved up to shares of our Class A common stock, or approximately % of the shares offered in this offering, for sale at the initial public offering price through a directed share program to: \u2022 eligible Reddit users and moderators; \u2022 certain members of our board of directors; and \u2022 friends and family members of certain of our employees and directors.",
+   "snippet": "\u2026At our request, the underwriters have reserved up to shares of our Class A common stock, or approximately % of the shares offered in this offering, for sale at the initial\u2026"
+  },
+  {
+   "page": "II-1",
+   "sentence": "Amount to Be Paid SEC registration fee $ 14,760 FINRA filing fee 15,500 New York Stock Exchange listing fee 25,000 Transfer agent\u2019s fees and expenses * Printing and engraving expenses * Legal fees and expenses * Accounting fees and expenses * Blue Sky fees and expenses * Miscellaneous expenses * Total $ * ____________ * To be completed by amendment.",
+   "snippet": "\u2026and expenses * Accounting fees and expenses * Blue Sky fees and expenses * Miscellaneous expenses * Total $ * ____________ * To be completed by amendment."
+  }
+ ]
+}

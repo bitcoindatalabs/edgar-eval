@@ -2,10 +2,13 @@ cff-version: 1.2.0
 message: "If you use edgar-eval or S-1 Bench, please cite it as below."
 title: "edgar-eval: S-1 Bench and skills for verifiable AI analysis of SEC filings"
 abstract: >-
-  A self-validating benchmark of 47 quote-anchored questions over Anthropic, PBC's Form S-1,
-  and two agent skills: filing-factsheet, which builds a compact page-cited fact sheet so a
-  model that fits a 24GB GPU can answer filing questions, and filing-evals, which builds,
-  validates, and scores such benchmarks with code-based checks including quote grounding.
+  Two agent skills and a benchmark for verifiable AI analysis of SEC filings. filing-factsheet
+  builds a compact, page-cited fact sheet from a filing's HTML tables so a small open model can
+  answer financial questions, with arithmetic and answer checks done in code. filing-evals builds,
+  validates, and scores quote-anchored question sets with code-based checks including quote
+  grounding, and guards against circularity with ablations and held-out filings. S-1 Bench has 47
+  questions over Anthropic, PBC's Form S-1, plus a dev set (Reddit) and held-out sets (Klaviyo,
+  Instacart) written after the pipeline was frozen.
 type: software
 authors:
   - given-names: Saurabh
@@ -16,7 +19,7 @@ authors:
 repository-code: "https://github.com/bitcoindatalabs/edgar-eval"
 url: "https://bitcoindatalabs.github.io/edgar-eval/"
 license: Apache-2.0
-version: 0.1.0
+version: 0.2.0
 date-released: "2026-10-30"
 keywords:
   - evaluation

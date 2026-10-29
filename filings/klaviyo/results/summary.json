@@ -1,0 +1,2123 @@
+{
+ "questions": 22,
+ "modes": {
+  "rag": [
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0206,
+    "input_tokens": 149415,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total revenue for the year ended December 31, 2022 was $472,748 thousand.",
+       "value": 472748,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "87",
+       "quote": "Revenue $ 472,748 $ 290,640 $ 182,108 62.7 %"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's cost of revenue for the six months ended June 30, 2023 was $74,050 thousand.",
+       "value": 74050,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "85",
+       "quote": "Cost of revenue $ 74,050 $ 58,075 $ 15,975 27.5 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross profit for the year ended December 31, 2022 was $344,723 thousand.",
+       "value": 344723,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Gross profit 344,723 205,944 246,624 150,270"
+      }
+     },
+     "operating-loss-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's GAAP operating loss for the year ended December 31, 2022 was $(55,036) thousand.",
+       "value": -55036,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "quote": "Operating income (loss) $ (55,036) $ (79,233) $ 7,910 $ (25,296)"
+      }
+     },
+     "net-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income attributable to common stockholder for the six months ended June 30, 2023 was $15,165 thousand.",
+       "value": 15165,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-37",
+       "quote": "Net income (loss) attributable to common stockholder $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo had $438,739 thousand in cash and cash equivalents as of June 30, 2023.",
+       "value": 438739,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "quote": "Cash and cash equivalents $ 385,820 $ 327,913 $ 438,739"
+      }
+     },
+     "total-assets-dec-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total assets as of December 31, 2022 were $629,079 thousand.",
+       "value": 629079,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "quote": "Total assets $ 629,079 $ 464,446 $ 690,584"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net cash used in operating activities for the year ended December 31, 2022 was $(23,552) thousand.",
+       "value": -23552,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-7",
+       "quote": "Net cash provided by (used in) operating activities (23,552) (22,738) 57,026 (27,142)"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 was $164,586 thousand.",
+       "value": 164586,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net loss for the six months ended June 30, 2022 was $24,565 thousand.",
+       "value": -24565,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-37",
+       "quote": "Net income (loss) attributable to common stockholder $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "free-cash-flow-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's free cash flow for the six months ended June 30, 2023 was $53,421 thousand.",
+       "value": 53421,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "quote": "Free cash flow (3) $ (41,797) $ (36,748) $ 53,421 $ (38,048)"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross margin for the six months ended June 30, 2023 was 76.9%.",
+       "value": 76.9,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "84",
+       "quote": "Gross profit 72.9 70.9 76.9 72.1"
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 grew approximately 51.0% compared with the three months ended June 30, 2022.",
+       "value": 51.0,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "90",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "non-us-revenue-share-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2023, Klaviyo derived 36.2% of its revenue from customer accounts located outside the United States.",
+       "value": 36.2,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "31",
+       "quote": "For the years ended December 31, 2022 and 2021, and the six months ended June 30, 2023, we derived 35.0%, 32.1% and 36.2% of our revenue, respectively, from customer accounts located outside the United States."
+      }
+     },
+     "deferred-revenue-jun-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's deferred revenue as of June 30, 2023 was $29.2 million.",
+       "value": 29.16,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-21",
+       "quote": "Balance at end of the period $ 25,109 $ 15,092 $ 29,160 $ 18,273"
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share for Klaviyo's IPO is not disclosed in the provided text, as the preliminary prospectus leaves the price range blank, referencing only 'the midpoint of the estimated offering price range set forth on the cover page of this prospectus' without stating the actual figures.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "17",
+       "quote": "based on the assumed initial public offering price of $ per share, which is the midpoint of the price range set forth on the cover page of this prospectus"
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo estimates its share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately an undisclosed amount (left blank in the preliminary prospectus).",
+       "value": null,
+       "unit": "dollars",
+       "disclosed": false,
+       "page": "184",
+       "quote": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-finra-reimbursement-cap": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing states Klaviyo agreed to reimburse the underwriters for certain FINRA-related expenses in an amount up to a blank figure, so the specific dollar amount is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "quote": "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo has applied to list its Series A common stock on the New York Stock Exchange under the symbol \"KVYO\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol \"KVYO\"."
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC, and Citigroup Global Markets Inc. are the representatives of the underwriters for Klaviyo's IPO.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "182",
+       "quote": "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC and Citigroup Global Markets Inc. are the representatives of the underwriters."
+      }
+     },
+     "nrr-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's dollar-based net revenue retention rate (NRR) was 119% as of June 30, 2023.",
+       "value": 119,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "79",
+       "quote": "The success of our land-and-expand strategy is evidenced by our attractive NRR of 119% as of June 30, 2023"
+      }
+     },
+     "shopify-arr-dependence": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of December 31, 2022, approximately 77.5% of Klaviyo's ARR was derived from customers who also use Shopify's platform.",
+       "value": 77.5,
+       "unit": "%",
+       "disclosed": true,
+       "page": "24",
+       "quote": "As of December 31, 2022, approximately 77.5% of our ARR was derived from customers who also use Shopify's platform, while only approximately 10.6% of our new ARR was derived from customers that came to us through the Shopify app store."
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0129,
+    "input_tokens": 134471,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total revenue for the year ended December 31, 2022 was $472.7 million ($472,748 thousand).",
+       "value": 472748,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "Page 87",
+       "quote": "Revenue $ 472,748 $ 290,640 $ 182,108 62.7 %"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Cost of revenue for the six months ended June 30, 2023 was $74,050 thousand.",
+       "value": 74050,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "85",
+       "quote": "Cost of revenue $ 74,050 $ 58,075 $ 15,975 27.5 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross profit for the year ended December 31, 2022 was $344.7 million ($344,723 thousand), up 67.4% from $205,944 thousand in 2021.",
+       "value": 344723,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Gross profit $ 344,723 $ 205,944 $ 246,624 $ 150,270"
+      }
+     },
+     "operating-loss-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's GAAP operating loss for the year ended December 31, 2022 was $55.0 million.",
+       "value": -55036,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "quote": "Operating income (loss) $ (55,036) $ (79,233) $ 7,910 $ (25,296)"
+      }
+     },
+     "net-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income for the six months ended June 30, 2023 was $15,165 thousand.",
+       "value": 15165,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-37",
+       "quote": "Net income (loss) attributable to common stockholder $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo had cash and cash equivalents of $438,739 thousand as of June 30, 2023.",
+       "value": 438739,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "quote": "Cash and cash equivalents $ 385,820 $ 327,913 $ 438,739"
+      }
+     },
+     "total-assets-dec-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total assets as of December 31, 2022 were $629,079 thousand.",
+       "value": 629079,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "quote": "Total assets $ 629,079 $ 464,446 $ 690,584"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net cash used in operating activities for the year ended December 31, 2022 was $(23,552) thousand.",
+       "value": -23552,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "quote": "Net cash provided by (used in) operating activities $ (23,552) $ (22,738) $ 57,026 $ (27,142)"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 was $164.6 million.",
+       "value": 164586,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net loss attributable to common stockholders for the six months ended June 30, 2022 was $24,565 thousand.",
+       "value": -24565,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-37",
+       "quote": "Net income (loss) attributable to common stockholder $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "free-cash-flow-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's free cash flow for the six months ended June 30, 2023 was $53,421 thousand.",
+       "value": 53421,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "quote": "Year Ended December 31, Six Months Ended June 30, 2022 2021 2023 2022 ... Free cash flow (3) $ (41,797) $ (36,748) $ 53,421 $ (38,048)"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross margin for the six months ended June 30, 2023 was 76.9%.",
+       "value": 76.9,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "84",
+       "quote": "Gross profit 72.9 70.9 76.9 72.1"
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 of $164.6 million grew approximately 51.0% compared with $109.0 million for the three months ended June 30, 2022.",
+       "value": 51.0,
+       "unit": "percent",
+       "disclosed": false,
+       "page": "90",
+       "quote": "Revenue $ 164,586 ... $ 109,023"
+      }
+     },
+     "non-us-revenue-share-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "36.2% of revenue for the six months ended June 30, 2023 came from customer accounts located outside the United States.",
+       "value": 36.2,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "31",
+       "quote": "For the years ended December 31, 2022 and 2021, and the six months ended June 30, 2023, we derived 35.0%, 32.1% and 36.2% of our revenue, respectively, from customer accounts located outside the United States."
+      }
+     },
+     "deferred-revenue-jun-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's deferred revenue as of June 30, 2023 was $29.2 million.",
+       "value": 29.2,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-21",
+       "quote": "Balance at end of the period $ 25,109 $ 15,092 $ 29,160 $ 18,273"
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the estimated initial public offering price range blank, so the expected price range per share is not disclosed.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "17-18",
+       "quote": "the assumed initial public offering price of $ per share, which is the midpoint of the price range set forth on the cover page of this prospectus"
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the estimated share of total offering expenses blank.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "quote": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-finra-reimbursement-cap": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The prospectus states a reimbursement amount 'up to $' but the dollar figure is left blank, so the amount is not disclosed.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "quote": "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo has applied to list its Series A common stock on the New York Stock Exchange under the symbol \"KVYO\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol \"KVYO\"."
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC and Citigroup Global Markets Inc. are the representatives of the underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "182",
+       "quote": "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC and Citigroup Global Markets Inc. are the representatives of the underwriters."
+      }
+     },
+     "nrr-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's dollar-based net revenue retention rate (NRR) as of June 30, 2023 was 119%.",
+       "value": 119,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our NRR was 111%, 115%, 119%, 121%, 121%, 120%, 119%, 119%, 119%, and 119% as of March 31, 2021, June 30, 2021, September 30, 2021, December 31, 2021, March 31, 2022, June 30, 2022, September 30, 2022, December 31, 2022, March 31, 2023, and June 30, 2023, respectively."
+      }
+     },
+     "shopify-arr-dependence": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The platform is Shopify, which accounted for approximately 77.5% of Klaviyo's ARR as of December 31, 2022.",
+       "value": 77.5,
+       "unit": "% of ARR",
+       "disclosed": true,
+       "page": "24",
+       "quote": "As of December 31, 2022, approximately 77.5% of our ARR was derived from customers who also use Shopify’s platform, while only approximately 10.6% of our new ARR was derived from customers that came to us through the Shopify app store."
+      }
+     }
+    }
+   },
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 0.955,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 0.667,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0048,
+    "input_tokens": 132039,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total revenue for the year ended December 31, 2022 was $472,748 thousand.",
+       "value": 472748,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "87",
+       "quote": "Revenue $ 472,748 $ 290,640 $ 182,108 62.7 %"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's cost of revenue for the six months ended June 30, 2023 was $74,050 thousand.",
+       "value": 74050,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "85",
+       "quote": "Cost of revenue $ 74,050 $ 58,075 $ 15,975 27.5 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross profit for the year ended December 31, 2022 was $344,723 thousand.",
+       "value": 344723,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "88",
+       "quote": "Gross profit $ 344,723 $ 205,944 $ 138,779 67.4 %"
+      }
+     },
+     "operating-loss-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's GAAP operating income (loss) for the year ended December 31, 2022 was $(55,036) thousand.",
+       "value": -55036,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "quote": "Operating income (loss) $ (55,036) $ (79,233) $ 7,910 $ (25,296)"
+      }
+     },
+     "net-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income for the six months ended June 30, 2023 was $15,165 thousand.",
+       "value": 15165,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-37",
+       "quote": "Net income (loss) attributable to common stockholder $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo had $438,739 thousand in cash and cash equivalents as of June 30, 2023.",
+       "value": 438739,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "quote": "Cash and cash equivalents $ 385,820 $ 327,913 $ 438,739"
+      }
+     },
+     "total-assets-dec-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total assets were $629,079 thousand as of December 31, 2022.",
+       "value": 629079,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "quote": "Total assets $ 629,079 $ 464,446 $ 690,584"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net cash used in operating activities for the year ended December 31, 2022 was $23,552 thousand.",
+       "value": -23552,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "quote": "Net cash provided by (used in) operating activities $ (23,552) $ (22,738) $ 57,026 $ (27,142)"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 was $164,586 thousand.",
+       "value": 164586,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net loss attributable to common stockholders for the six months ended June 30, 2022 was $24,565 thousand.",
+       "value": -24565,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-37",
+       "quote": "Net income (loss) attributable to common stockholder $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "free-cash-flow-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's free cash flow for the six months ended June 30, 2023 was $53,421 thousand.",
+       "value": 53421,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "quote": "Free cash flow $ (41,797) $ (36,748) $ 53,421 $ (38,048)"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross margin for the six months ended June 30, 2023 was 76.9%.",
+       "value": 76.9,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "84",
+       "quote": "Gross profit 72.9 70.9 76.9 72.1"
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 grew approximately 50.96% compared with the three months ended June 30, 2022.",
+       "value": 50.96,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "90",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "non-us-revenue-share-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2023, 36.2% of Klaviyo's revenue came from customer accounts located outside the United States.",
+       "value": 36.2,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "31",
+       "quote": "For the years ended December 31, 2022 and 2021, and the six months ended June 30, 2023, we derived 35.0%, 32.1% and 36.2% of our revenue, respectively, from customer accounts located outside the United States."
+      }
+     },
+     "deferred-revenue-jun-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's deferred revenue as of June 30, 2023 was $29.16 million.",
+       "value": 29.16,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-21",
+       "quote": "Balance at end of the period $ 25,109 $ 15,092 $ 29,160 $ 18,273"
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "unparseable",
+      "answer": null
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo states that it estimates its share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ million, but the amount is left blank in this preliminary prospectus.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "quote": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-finra-reimbursement-cap": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The prospectus states that Klaviyo agreed to reimburse the underwriters for certain FINRA-related expenses in an amount up to a dollar figure that is left blank, so the amount is not disclosed.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "quote": "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo has applied to list its Series A common stock on the New York Stock Exchange under the symbol “KVYO.”",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol “KVYO”."
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC, and Citigroup Global Markets Inc. are the representatives of the underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "182",
+       "quote": "Goldman Sachs & Co. LLC, Morgan Stanley & Co. LLC and Citigroup Global Markets Inc. are the representatives of the underwriters."
+      }
+     },
+     "nrr-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's dollar-based net revenue retention rate (NRR) was 119% as of June 30, 2023.",
+       "value": 119,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "79",
+       "quote": "The success of our land-and-expand strategy is evidenced by our attractive NRR of 119% as of June 30, 2023, and is further illustrated in the chart below showing ARR contribution by annual customer cohort."
+      }
+     },
+     "shopify-arr-dependence": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of December 31, 2022, approximately 77.5% of Klaviyo's ARR was derived from customers who also used Shopify's platform.",
+       "value": 77.5,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "24",
+       "quote": "As of December 31, 2022, approximately 77.5% of our ARR was derived from customers who also use Shopify’s platform, while only approximately 10.6% of our new ARR was derived from customers that came to us through the Shopify app store."
+      }
+     }
+    }
+   }
+  ],
+  "skill": [
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0052,
+    "input_tokens": 268934,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total revenue for the year ended December 31, 2022 was $472,748 thousand.",
+       "value": 472748,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "83",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "| Revenue | 472,748 | 290,640 | 320,674 | 208,345 |"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's cost of revenue for the six months ended June 30, 2023 was $74,050 thousand.",
+       "value": 74050,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "85",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Cost of revenue $ 74,050 $ 58,075 $ 15,975 27.5 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross profit was $344,723 thousand for the year ended December 31, 2022.",
+       "value": 344723,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "83",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "| Gross profit | 344,723 | 205,944 | 246,624 | 150,270 |"
+      }
+     },
+     "operating-loss-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's GAAP operating loss for the year ended December 31, 2022 was $(55,036) thousand.",
+       "value": -55036,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Operating income (loss) $ (55,036) $ (79,233) $ 7,910 $ (25,296)"
+      }
+     },
+     "net-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income for the six months ended June 30, 2023 was $15,165 thousand.",
+       "value": 15165,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Net income (loss) (49,193) (79,393) 15,165 (24,565)"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of June 30, 2023, Klaviyo had $438,739 thousand in cash and cash equivalents.",
+       "value": 438739,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of June 30, 2023",
+       "calc": null,
+       "quote": "| Cash and cash equivalents | 385,820 | 327,913 | 438,739 |"
+      }
+     },
+     "total-assets-dec-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total assets as of December 31, 2022 were $629,079 thousand.",
+       "value": 629079,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of December 31, 2022",
+       "calc": null,
+       "quote": "Total assets $ 629,079 $ 464,446 $ 690,584"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net cash used in operating activities for the year ended December 31, 2022 was $(23,552) thousand.",
+       "value": -23552,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities $ (23,552) $ (22,738) $ 57,026 $ (27,142)"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 was $164,586 thousand.",
+       "value": 164586,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "90",
+       "column": "Three Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "| Revenue | 164,586 | 156,088 | 145,235 | 119,168 | 109,023 | 99,322 | 89,544 | 75,876 | 66,949 | 58,271 |"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income (loss) for the six months ended June 30, 2022 was $(24,565) thousand.",
+       "value": -24565,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2022",
+       "calc": null,
+       "quote": "Net income (loss) (49,193) (79,393) 15,165 (24,565)"
+      }
+     },
+     "free-cash-flow-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's free cash flow for the six months ended June 30, 2023 was $53,421 thousand.",
+       "value": 53421,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Free cash flow $ (41,797) $ (36,748) $ 53,421 $ (38,048)"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross margin for the six months ended June 30, 2023 was 76.9%, calculated as gross profit of $246,624 thousand divided by revenue of $320,674 thousand.",
+       "value": 76.908,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "83",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": "246624 / 320674 * 100",
+       "quote": "Gross profit 344,723 205,944 246,624 150,270",
+       "model_value": 76.908
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Revenue for the three months ended June 30, 2023 grew approximately 51.0% compared with the three months ended June 30, 2022.",
+       "value": 50.9645,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "90",
+       "column": "Three Months Ended June 30, 2023",
+       "calc": "(164586 - 109023) / 109023 * 100",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271",
+       "model_value": 50.9645
+      }
+     },
+     "non-us-revenue-share-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2023, 36.2% of Klaviyo's revenue came from customer accounts located outside the United States.",
+       "value": 36.2,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "31",
+       "column": null,
+       "calc": null,
+       "quote": "For the years ended December 31, 2022 and 2021, and the six months ended June 30, 2023, we derived 35.0%, 32.1% and 36.2% of our revenue, respectively, from customer accounts located outside the United States."
+      }
+     },
+     "deferred-revenue-jun-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's deferred revenue was $29.16 million as of June 30, 2023.",
+       "value": 29.16,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of June 30, 2023",
+       "calc": "29160 / 1000",
+       "quote": "| Deferred revenue | 25,109 | 15,092 | 29,160 |",
+       "model_value": 29.16
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share is not disclosed; the preliminary prospectus leaves the estimated initial public offering price range blank.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price will be between $ and $ per share."
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo estimates that its share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ [blank], which is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "184",
+       "column": null,
+       "calc": null,
+       "quote": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-finra-reimbursement-cap": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing leaves the FINRA-related expense reimbursement amount blank, so it is not disclosed.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "column": null,
+       "calc": null,
+       "quote": "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo has applied to list its Series A common stock on the New York Stock Exchange under the ticker symbol KVYO.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "173",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol “KVYO”."
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The provided fact sheet and passages list the underwriters but do not identify which firms act as representatives/lead underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC Morgan Stanley Citigroup Barclays Mizuho William Blair Piper Sandler Truist Securities Baird Canaccord Genuity Needham & Company TD Cowen"
+      }
+     },
+     "nrr-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's dollar-based net revenue retention rate (NRR) was 119% as of June 30, 2023.",
+       "value": 119,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "79",
+       "column": null,
+       "calc": null,
+       "quote": "The success of our land-and-expand strategy is evidenced by our attractive NRR of 119% as of June 30, 2023, and is further illustrated in the chart below showing ARR contribution by annual customer cohort."
+      }
+     },
+     "shopify-arr-dependence": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of December 31, 2022, approximately 77.5% of Klaviyo's ARR was derived from customers who also use Shopify's platform.",
+       "value": 77.5,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "24",
+       "column": null,
+       "calc": null,
+       "quote": "As of December 31, 2022, approximately 77.5% of our ARR was derived from customers who also use Shopify’s platform, while only approximately 10.6% of our new ARR was derived from customers that came to us through the Shopify app store."
+      }
+     }
+    }
+   },
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0311,
+    "input_tokens": 348381,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total revenue for the year ended December 31, 2022 was $472,748 thousand.",
+       "value": 472748,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Revenue | 472,748 | 290,640 | 320,674 | 208,345"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's cost of revenue for the six months ended June 30, 2023 was $74,050 thousand.",
+       "value": 74050,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Cost of revenue | 128,025 | 84,696 | 74,050 | 58,075"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross profit for the year ended December 31, 2022 was $344,723 thousand.",
+       "value": 344723,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Gross profit | 344,723 | 205,944 | 246,624 | 150,270"
+      }
+     },
+     "operating-loss-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's GAAP operating loss for the year ended December 31, 2022 was $55,036 thousand.",
+       "value": -55036,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Operating income (loss) | -55,036 | -79,233 | 7,910 | -25,296"
+      }
+     },
+     "net-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income for the six months ended June 30, 2023 was $15,165 thousand.",
+       "value": 15165,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Net income (loss) $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo had $438,739 thousand in cash and cash equivalents as of June 30, 2023.",
+       "value": 438739,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of June 30, 2023",
+       "calc": null,
+       "quote": "Cash and cash equivalents | 385,820 | 327,913 | 438,739"
+      }
+     },
+     "total-assets-dec-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total assets as of December 31, 2022 were $629,079 thousand.",
+       "value": 629079,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of December 31, 2022",
+       "calc": null,
+       "quote": "Total assets $ 629,079 $ 464,446 $ 690,584"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net cash provided by (used in) operating activities for the year ended December 31, 2022 was negative $23,552 thousand, indicating a net cash outflow.",
+       "value": -23552,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-7",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities | -23,552 | -22,738 | 57,026 | -27,142"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 was $164,586 thousand.",
+       "value": 164586,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "90",
+       "column": "Three Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net loss for the six months ended June 30, 2022 was $24,565 thousand.",
+       "value": -24565,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2022",
+       "calc": null,
+       "quote": "Net income (loss) $ (49,193) $ (79,393) $ 15,165 $ (24,565)"
+      }
+     },
+     "free-cash-flow-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's free cash flow for the six months ended June 30, 2023 was $53,421 thousand.",
+       "value": 53421,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "19",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Free cash flow | -41,797 | -36,748 | 53,421 | -38,048"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross margin for the six months ended June 30, 2023 was 76.9%.",
+       "value": 76.908,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "84",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": "246624 / 320674 * 100",
+       "quote": "Gross profit 72.9 70.9 76.9 72.1",
+       "model_value": 76.9
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 grew approximately 51.0% compared with the three months ended June 30, 2022.",
+       "value": 50.9645,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "90",
+       "column": "Three Months Ended June 30, 2023 / Three Months Ended June 30, 2022",
+       "calc": "(164586 - 109023) / 109023 * 100",
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271",
+       "model_value": 51.0
+      }
+     },
+     "non-us-revenue-share-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2023, Klaviyo derived 36.2% of its revenue from customer accounts located outside the United States.",
+       "value": 36.2,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "31",
+       "column": null,
+       "calc": null,
+       "quote": "For the years ended December 31, 2022 and 2021, and the six months ended June 30, 2023, we derived 35.0%, 32.1% and 36.2% of our revenue, respectively, from customer accounts located outside the United States."
+      }
+     },
+     "deferred-revenue-jun-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's deferred revenue as of June 30, 2023 was $29.16 million.",
+       "value": 29.16,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of June 30, 2023",
+       "calc": "29160 / 1000",
+       "quote": "Deferred revenue | 25,109 | 15,092 | 29,160",
+       "model_value": 29.16
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share for Klaviyo's initial public offering is not disclosed in this preliminary prospectus, as the dollar amounts were left blank.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price will be between $ and $ per share."
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's estimate of its share of the total expenses of the offering, excluding underwriting discounts and commissions, is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "dollars",
+       "disclosed": false,
+       "page": "184",
+       "column": null,
+       "calc": null,
+       "quote": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-finra-reimbursement-cap": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing does not disclose the specific dollar amount Klaviyo agreed to reimburse the underwriters for FINRA-related expenses.",
+       "value": null,
+       "unit": "dollars",
+       "disclosed": false,
+       "page": "184",
+       "column": null,
+       "calc": null,
+       "quote": "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo has applied to list its Series A common stock on the New York Stock Exchange under the ticker symbol \"KVYO\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol \"KVYO\"."
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The underwriters listed on the cover page of the prospectus are Goldman Sachs & Co. LLC, Morgan Stanley, Citigroup, Barclays, Mizuho, William Blair, Piper Sandler, Truist Securities, Baird, Canaccord Genuity, Needham & Company, and TD Cowen, though the specific firms designated as representatives (lead underwriters) are not explicitly identified in the provided text.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC Morgan Stanley Citigroup Barclays Mizuho William Blair Piper Sandler Truist Securities Baird Canaccord Genuity Needham & Company TD Cowen"
+      }
+     },
+     "nrr-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's dollar-based net revenue retention rate (NRR) was 119% as of June 30, 2023.",
+       "value": 119,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "column": null,
+       "calc": null,
+       "quote": "Our NRR was 111%, 115%, 119%, 121%, 121%, 120%, 119%, 119%, 119%, and 119% as of March 31, 2021, June 30, 2021, September 30, 2021, December 31, 2021, March 31, 2022, June 30, 2022, September 30, 2022, December 31, 2022, March 31, 2023, and June 30, 2023, respectively."
+      }
+     },
+     "shopify-arr-dependence": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of December 31, 2022, approximately 77.5% of Klaviyo's ARR was derived from customers who also used Shopify's platform.",
+       "value": 77.5,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "24",
+       "column": null,
+       "calc": null,
+       "quote": "As of December 31, 2022, approximately 77.5% of our ARR was derived from customers who also use Shopify's platform, while only approximately 10.6% of our new ARR was derived from customers that came to us through the Shopify app store."
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0239,
+    "input_tokens": 284287,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total revenue for the year ended December 31, 2022 was $472,748 thousand.",
+       "value": 472748,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-21",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "United States $ 307,222 $ 197,263 $ 204,744 $ 136,191 Other Americas (1) 26,790 15,758 17,638 12,116 APAC (1)(2) 47,905 27,574 33,296 20,822 EMEA (1)(3) 90,831 50,045 64,996 39,216 Total Revenue $ 472,748 $ 290,640 $ 320,674 $ 208,345"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Cost of revenue for the six months ended June 30, 2023 was $74,050 thousand.",
+       "value": 74050,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "p. 83 (also p. 85)",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Cost of revenue $ 74,050 $ 58,075 $ 15,975 27.5 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross profit for the year ended December 31, 2022 was $344,723 thousand.",
+       "value": 344723,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Gross profit | 344,723 | 205,944 | 246,624 | 150,270"
+      }
+     },
+     "operating-loss-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's GAAP operating income (loss) for the year ended December 31, 2022 was a loss of $55,036 thousand.",
+       "value": -55036,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Operating income (loss) | -55,036 | -79,233 | 7,910 | -25,296"
+      }
+     },
+     "net-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net income (loss) for the six months ended June 30, 2023 was net income of $15,165 thousand.",
+       "value": 15165,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Net income (loss) (49,193) (79,393) 15,165 (24,565)"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "As of June 30, 2023, Klaviyo had cash and cash equivalents of $438,739 thousand (excluding restricted cash).",
+       "value": 438739,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of June 30, 2023",
+       "calc": null,
+       "quote": "Cash and cash equivalents | 385,820 | 327,913 | 438,739"
+      }
+     },
+     "total-assets-dec-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's total assets as of December 31, 2022 were $629,079 thousand.",
+       "value": 629079,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of December 31, 2022",
+       "calc": null,
+       "quote": "Total assets $ 629,079 $ 464,446 $ 690,584"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net cash used in operating activities for the year ended December 31, 2022 was $23,552 thousand (an outflow).",
+       "value": -23552,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-7",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities $ (23,552) $ (22,738) $ 57,026 $ (27,142)"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 was $164,586 thousand.",
+       "value": 164586,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "90",
+       "column": "Three Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's net loss for the six months ended June 30, 2022 was $24,565 thousand.",
+       "value": -24565,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Six Months Ended June 30, 2022",
+       "calc": null,
+       "quote": "Net income (loss) (49,193) (79,393) 15,165 (24,565)"
+      }
+     },
+     "free-cash-flow-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's free cash flow for the six months ended June 30, 2023 was $53,421 thousand.",
+       "value": 53421,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Free cash flow $ (41,797) $ (36,748) $ 53,421 $ (38,048)"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's gross margin for the six months ended June 30, 2023 was 76.9%.",
+       "value": 76.908,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "83",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": "(246624 / 320674) * 100",
+       "quote": "Gross profit 344,723 205,944 246,624 150,270",
+       "model_value": 76.89795
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's revenue for the three months ended June 30, 2023 grew approximately 51.0% compared with the three months ended June 30, 2022.",
+       "value": 50.9645,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "90",
+       "column": "Three Months Ended June 30, 2023 vs Three Months Ended June 30, 2022 (Revenue)",
+       "calc": "(164586 - 109023) / 109023 * 100",
+       "quote": "Three Months Ended (in thousands) June 30, 2023 March 31, 2023 December 31, 2022 September 30, 2022 June 30, 2022 March 31, 2022 December 31, 2021 September 30, 2021 June 30, 2021 March 31, 2021 Revenue $ 164,586 $ 156,088 $ 145,235 $ 119,168 $ 109,023 $ 99,322 $ 89,544 $ 75,876 $ 66,949 $ 58,271",
+       "model_value": 50.96668386385493
+      }
+     },
+     "non-us-revenue-share-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2023, 36.2% of Klaviyo's revenue came from customer accounts located outside the United States.",
+       "value": 36.2,
+       "unit": "%",
+       "disclosed": true,
+       "page": "31",
+       "column": null,
+       "calc": null,
+       "quote": "For the years ended December 31, 2022 and 2021, and the six months ended June 30, 2023, we derived 35.0%, 32.1% and 36.2% of our revenue, respectively, from customer accounts located outside the United States."
+      }
+     },
+     "deferred-revenue-jun-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's deferred revenue as of June 30, 2023 was $29.2 million.",
+       "value": 29.16,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-3",
+       "column": "As of June 30, 2023",
+       "calc": "29160 / 1000",
+       "quote": "Deferred revenue | 25,109 | 15,092 | 29,160",
+       "model_value": 29.16
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus does not disclose the expected initial public offering price range per share.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price will be between $ and $ per share."
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed: the preliminary prospectus leaves the estimated offering expense amount blank.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "p. 184",
+       "column": null,
+       "calc": null,
+       "quote": "We estimate that our share of the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-finra-reimbursement-cap": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo agreed to reimburse the underwriters for certain FINRA-related expenses up to an amount not disclosed in this preliminary prospectus (left blank).",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "184",
+       "column": null,
+       "calc": null,
+       "quote": "We have agreed to reimburse the underwriters for certain FINRA-related expenses incurred by them in connection with the offering in an amount up to $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo has applied to list its Series A common stock on the New York Stock Exchange under the symbol \"KVYO\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol \"KVYO\"."
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC and Morgan Stanley are named as the representatives of the underwriters, with Citigroup, Barclays, Mizuho, William Blair, Piper Sandler, Truist Securities, Baird, Canaccord Genuity, Needham & Company, and TD Cowen also serving as underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Series A common stock on the New York Stock Exchange under the symbol “KVYO”."
+      }
+     },
+     "nrr-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Klaviyo's dollar-based net revenue retention rate was 119% as of June 30, 2023.",
+       "value": 119,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "79",
+       "column": null,
+       "calc": null,
+       "quote": "The success of our land-and-expand strategy is evidenced by our attractive NRR of 119% as of June 30, 2023, and is further illustrated in the chart below showing ARR contribution by annual customer cohort."
+      }
+     },
+     "shopify-arr-dependence": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The platform is Shopify, which accounted for approximately 77.5% of Klaviyo's ARR as of December 31, 2022.",
+       "value": 77.5,
+       "unit": "% of ARR",
+       "disclosed": true,
+       "page": "24",
+       "column": null,
+       "calc": null,
+       "quote": "As of December 31, 2022, approximately 77.5% of our ARR was derived from customers who also use Shopify's platform, while only approximately 10.6% of our new ARR was derived from customers that came to us through the Shopify app store."
+      }
+     }
+    }
+   }
+  ]
+ }
+}

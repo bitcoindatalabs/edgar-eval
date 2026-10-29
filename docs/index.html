@@ -139,7 +139,7 @@ footer { color: var(--text-muted); font-size: 13px; margin-top: 32px; }
   <footer>
     Source: <a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">Anthropic, PBC Form S-1</a>, filed 2026-10-26 ·
     Code, skills &amp; gold set: <a href="https://github.com/bitcoindatalabs/edgar-eval">bitcoindatalabs/edgar-eval</a> ·
-    Soru Kumar · <a href="https://bitcoindatalabs.org">Bitcoin Data Labs</a> / OrangeMetrics
+    Saurabh (Soru) Kumar · <a href="https://bitcoindatalabs.org">Bitcoin Data Labs</a> / OrangeMetrics
   </footer>
 </main>
 <div class="tip" id="tip"></div>
@@ -148,15 +148,15 @@ footer { color: var(--text-muted); font-size: 13px; margin-top: 32px; }
 const GROUPS = { frontier: ["Frontier", "--series-1"], fast: ["Fast / cheap", "--series-2"], open: ["Open-weight (fits 24GB)", "--series-3"] };
 const MODE_LABEL = { full: "Full filing", rag: "Naive retrieval", skill: "With skill" };
 const STORY = [
-  { mode: "full", model: "anthropic/claude-opus-5.5", label: "Frontier · full filing", sub: "Claude Opus 5.5 · 310k-token context", color: "--series-1" },
+  { mode: "full", model: "anthropic/claude-opus-5.5", label: "Frontier · full filing", sub: "Claude Opus 5.5 · whole filing, 300k-460k tokens", color: "--series-1" },
   { mode: "rag", model: "qwen/qwen3.8-27b", label: "Local 27B · naive retrieval", sub: "Qwen3.8 27B · top 8 pages, ~7k tokens", color: "--series-2" },
-  { mode: "skill", model: "qwen/qwen3.8-27b", label: "Local 27B · with skill", sub: "Qwen3.8 27B · fact sheet + passages, ~8k tokens", color: "--series-3" },
+  { mode: "skill", model: "qwen/qwen3.8-27b", label: "Local 27B · with skill", sub: "Qwen3.8 27B · fact sheet + passages, ~14k tokens", color: "--series-3" },
 ];
 const MODE_NOTE = {
   full: "Each model gets all 420 pages plus every question in one call.",
   closed: "No document at all. What does the model know, and what does it invent?",
   rag: "Keyword search picks 8 pages per question. Misses here are often retrieval, not reasoning.",
-  skill: "Fact sheet (tables + 32 blank figures, each cited) plus 12 short passages. Arithmetic is done by code.",
+  skill: "Fact sheet (7 tables chosen by standard line items + 57 blank figures, each cited) plus 12 short passages. Code does the arithmetic and checks each answer; a failed check gets one retry.",
 };
 const CAT_LABEL = { fact: "Facts", "period-trap": "Period traps", blank: "Blanks", derived: "Derived", governance: "Governance", risk: "Risk" };
 const pct = v => v == null ? "–" : Math.round(v * 100) + "%";

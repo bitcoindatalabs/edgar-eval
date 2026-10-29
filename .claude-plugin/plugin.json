@@ -1,7 +1,7 @@
 {
   "name": "filing-evals",
-  "version": "0.1.0",
-  "description": "Make small or local models answer questions over long financial filings with citations, and prove it with a self-validating eval set. Built on Anthropic's S-1.",
+  "version": "0.2.0",
+  "description": "Make small open models answer questions about SEC filings with page citations and code-checked arithmetic, and prove it with quote-anchored evals and held-out filings. Tested on four S-1s.",
   "author": {
     "name": "Soru Kumar (Bitcoin Data Labs)"
   },
@@ -9,11 +9,13 @@
   "repository": "https://github.com/bitcoindatalabs/edgar-eval",
   "keywords": [
     "evals",
-    "sec-filings",
-    "s-1",
+    "financial-analysis",
+    "held-out-evaluation",
     "local-llm",
+    "open-weights",
     "rag",
-    "financial-analysis"
+    "s-1",
+    "sec-filings"
   ],
   "license": "Apache-2.0"
 }

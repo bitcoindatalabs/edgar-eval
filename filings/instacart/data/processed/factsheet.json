@@ -1,0 +1,1967 @@
+{
+ "tables": [
+  {
+   "page": "25",
+   "pages": [
+    "25"
+   ],
+   "title": "Table of Cash, cash equivalents, and marketable securities, Working capital, Total assets",
+   "caption": "",
+   "unit": "(in millions)",
+   "columns": [
+    "As of June 30, 2023 Actual",
+    "As of June 30, 2023 Pro Forma (1)",
+    "As of June 30, 2023 Pro Forma As Adjusted (2)(3)"
+   ],
+   "rows": [
+    {
+     "label": "Cash, cash equivalents, and marketable securities",
+     "values": [
+      "1,967",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Working capital",
+     "values": [
+      "2,214",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Total assets",
+     "values": [
+      "3,787",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Redeemable convertible preferred stock",
+     "values": [
+      "2,822",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Additional paid-in capital",
+     "values": [
+      "928",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Accumulated deficit",
+     "values": [
+      "-735",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Total stockholders\u0092 equity",
+     "values": [
+      "191",
+      null,
+      null
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "95",
+   "pages": [
+    "95"
+   ],
+   "title": "included in this prospectus, the section titled \u0093Management\u0092s Discussion and Analysis of Financial Condition and Results of Operations,\u0094 and other financial information contained in this prospectus.",
+   "caption": "You should read this information together with our consolidated financial statements and the related notes included in this prospectus, the section titled \u0093Management\u0092s Discussion and Analysis of Financial Condition and Results of Operations,\u0094 and other financial information contained in this prospectus.",
+   "unit": "(in millions, except share amounts, which are reflected in thousands, and per share amounts)",
+   "columns": [
+    "As of June 30, 2023 Actual",
+    "As of June 30, 2023 Pro Forma",
+    "As of June 30, 2023 Pro Forma As Adjusted ( 1)"
+   ],
+   "rows": [
+    {
+     "label": "Cash, cash equivalents, and marketable securities",
+     "values": [
+      "1,967",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Redeemable convertible preferred stock, $0.0001 par value per share; 178,319 shares authorized, 167,302 shares issued and outstanding, actual; no shares authorized, issued, and outstanding, pro forma and pro forma as adjusted",
+     "values": [
+      "2,822",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Additional paid-in capital",
+     "values": [
+      "928",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Accumulated other comprehensive loss",
+     "values": [
+      "-2",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Accumulated deficit",
+     "values": [
+      "-735",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Total stockholders\u0092 equity",
+     "values": [
+      "191",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Total capitalization",
+     "values": [
+      "3,013",
+      null,
+      null
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "125",
+   "pages": [
+    "125"
+   ],
+   "title": "The following table presents a reconciliation of Adjusted EBITDA to net income (loss), the most directly comparable financial measure calculated in accordance with GAAP:",
+   "caption": "The following table presents a reconciliation of Adjusted EBITDA to net income (loss), the most directly comparable financial measure calculated in accordance with GAAP:",
+   "unit": "(in millions, except percentages)",
+   "columns": [
+    "Year Ended December 31, 2019",
+    "Year Ended December 31, 2020",
+    "Year Ended December 31, 2021",
+    "Year Ended December 31, 2022",
+    "Six Months Ended June 30, 2022",
+    "Six Months Ended June 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-531",
+      "-70",
+      "-73",
+      "428",
+      "-74",
+      "242"
+     ]
+    },
+    {
+     "label": "Provision for (benefit from) income taxes",
+     "values": [
+      null,
+      null,
+      "1",
+      "-357",
+      "1",
+      "64"
+     ]
+    },
+    {
+     "label": "Interest income",
+     "values": [
+      "-25",
+      "-5",
+      "-2",
+      "-17",
+      "-2",
+      "-34"
+     ]
+    },
+    {
+     "label": "Other (income) expense, net",
+     "values": [
+      null,
+      null,
+      "-12",
+      "8",
+      "2",
+      "-3"
+     ]
+    },
+    {
+     "label": "Depreciation and amortization expense",
+     "values": [
+      "7",
+      "10",
+      "16",
+      "34",
+      "15",
+      "22"
+     ]
+    },
+    {
+     "label": "Stock-based compensation expense",
+     "values": [
+      "43",
+      "64",
+      "22",
+      "33",
+      "13",
+      "9"
+     ]
+    },
+    {
+     "label": "Certain legal and regulatory accruals and settlements, net",
+     "values": [
+      "42",
+      "76",
+      "46",
+      "50",
+      "19",
+      "-6"
+     ]
+    },
+    {
+     "label": "Reserves for sales and other indirect taxes",
+     "values": [
+      "10",
+      "44",
+      "13",
+      "-1",
+      null,
+      "-11"
+     ]
+    },
+    {
+     "label": "COVID-19 response initiatives",
+     "values": [
+      null,
+      "7",
+      "3",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Acquisition-related expenses",
+     "values": [
+      null,
+      "1",
+      "10",
+      "4",
+      "1",
+      "-4"
+     ]
+    },
+    {
+     "label": "Add (deduct): Other",
+     "values": [
+      null,
+      "7",
+      "10",
+      "5",
+      "5",
+      null
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA",
+     "values": [
+      "-454",
+      "134",
+      "34",
+      "187",
+      "-20",
+      "279"
+     ]
+    },
+    {
+     "label": "GTV",
+     "values": [
+      "5,144",
+      "20,736",
+      "24,909",
+      "28,826",
+      "14,356",
+      "14,937"
+     ]
+    },
+    {
+     "label": "Net income (loss) as a percent of GTV",
+     "values": [
+      "-10.3%",
+      "-0.3%",
+      "-0.3%",
+      "1.5%",
+      "-0.5%",
+      "1.6%"
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA as a percent of GTV",
+     "values": [
+      "-8.8%",
+      "0.6%",
+      "0.1%",
+      "0.6%",
+      "-0.1%",
+      "1.9%"
+     ]
+    },
+    {
+     "label": "Revenue",
+     "values": [
+      "214",
+      "1,477",
+      "1,834",
+      "2,551",
+      "1,126",
+      "1,475"
+     ]
+    },
+    {
+     "label": "Net income (loss) as a percent of revenue",
+     "values": [
+      "-248%",
+      "-5%",
+      "-4%",
+      "17%",
+      "-7%",
+      "16%"
+     ]
+    },
+    {
+     "label": "Adjusted EBITDA margin",
+     "values": [
+      "-212%",
+      "9%",
+      "2%",
+      "7%",
+      "-2%",
+      "19%"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "141",
+   "pages": [
+    "141"
+   ],
+   "title": "Results of Operations The following table sets forth our results of operations for the periods indicated:",
+   "caption": "Results of Operations The following table sets forth our results of operations for the periods indicated:",
+   "unit": "(in millions)",
+   "columns": [
+    "Year Ended December 31, 2020",
+    "Year Ended December 31, 2021",
+    "Year Ended December 31, 2022",
+    "Six Months Ended June 30, 2022",
+    "Six Months Ended June 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      "1,477",
+      "1,834",
+      "2,551",
+      "1,126",
+      "1,475"
+     ]
+    },
+    {
+     "label": "Cost of revenue",
+     "values": [
+      "598",
+      "608",
+      "720",
+      "357",
+      "366"
+     ]
+    },
+    {
+     "label": "Gross profit",
+     "values": [
+      "879",
+      "1,226",
+      "1,831",
+      "769",
+      "1,109"
+     ]
+    },
+    {
+     "label": "Operations and support",
+     "values": [
+      "324",
+      "262",
+      "252",
+      "130",
+      "128"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      "194",
+      "368",
+      "518",
+      "243",
+      "257"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "158",
+      "394",
+      "660",
+      "316",
+      "327"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "278",
+      "288",
+      "339",
+      "153",
+      "128"
+     ]
+    },
+    {
+     "label": "Total operating expenses",
+     "values": [
+      "954",
+      "1,312",
+      "1,769",
+      "842",
+      "840"
+     ]
+    },
+    {
+     "label": "Income (loss) from operations",
+     "values": [
+      "-75",
+      "-86",
+      "62",
+      "-73",
+      "269"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      null,
+      "12",
+      "-8",
+      "-2",
+      "3"
+     ]
+    },
+    {
+     "label": "Interest income",
+     "values": [
+      "5",
+      "2",
+      "17",
+      "2",
+      "34"
+     ]
+    },
+    {
+     "label": "Income (loss) before provision for (benefit from) income taxes",
+     "values": [
+      "-70",
+      "-72",
+      "71",
+      "-73",
+      "306"
+     ]
+    },
+    {
+     "label": "Provision for (benefit from) income taxes",
+     "values": [
+      null,
+      "1",
+      "-357",
+      "1",
+      "64"
+     ]
+    },
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-70",
+      "-73",
+      "428",
+      "-74",
+      "242"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "151",
+   "pages": [
+    "151"
+   ],
+   "title": "Consolidated Statements of Operations Data",
+   "caption": "tments of a normal, recurring nature that are necessary for the fair statement of the results of operations for these periods. This data should be read in conjunction with our audited consolidated financial statements included elsewhere in this prospectus. Historical results are not necessarily indicative of the results that may be expected in the future. Consolidated Statements of Operations Data",
+   "unit": "(in millions)",
+   "columns": [
+    "Three Months Ended Mar. 31, 2019",
+    "Three Months Ended Jun. 30, 2019",
+    "Three Months Ended Sept. 30, 2019",
+    "Three Months Ended Dec. 31, 2019",
+    "Three Months Ended Mar. 31, 2020",
+    "Three Months Ended Jun. 30, 2020",
+    "Three Months Ended Sept. 30, 2020",
+    "Three Months Ended Dec. 31, 2020",
+    "Three Months Ended Mar. 31, 2021",
+    "Three Months Ended Jun. 30, 2021",
+    "Three Months Ended Sept. 30, 2021",
+    "Three Months Ended Dec. 31, 2021",
+    "Three Months Ended Mar. 31, 2022",
+    "Three Months Ended Jun. 30, 2022",
+    "Three Months Ended Sept. 30, 2022",
+    "Three Months Ended Dec. 31, 2022",
+    "Three Months Ended Mar. 31, 2023",
+    "Three Months Ended Jun. 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Revenue",
+     "values": [
+      "41",
+      "46",
+      "59",
+      "68",
+      "147",
+      "476",
+      "397",
+      "457",
+      "440",
+      "444",
+      "473",
+      "477",
+      "505",
+      "621",
+      "668",
+      "757",
+      "759",
+      "716"
+     ]
+    },
+    {
+     "label": "Cost of revenue",
+     "values": [
+      "46",
+      "57",
+      "61",
+      "68",
+      "89",
+      "198",
+      "155",
+      "156",
+      "164",
+      "141",
+      "145",
+      "158",
+      "176",
+      "181",
+      "183",
+      "180",
+      "177",
+      "189"
+     ]
+    },
+    {
+     "label": "Gross profit (loss)",
+     "values": [
+      "-5",
+      "-11",
+      "-2",
+      null,
+      "58",
+      "278",
+      "242",
+      "301",
+      "276",
+      "303",
+      "328",
+      "319",
+      "329",
+      "440",
+      "485",
+      "577",
+      "582",
+      "527"
+     ]
+    },
+    {
+     "label": "Operations and support",
+     "values": [
+      "47",
+      "47",
+      "44",
+      "51",
+      "57",
+      "145",
+      "60",
+      "62",
+      "73",
+      "62",
+      "63",
+      "64",
+      "71",
+      "59",
+      "57",
+      "65",
+      "67",
+      "61"
+     ]
+    },
+    {
+     "label": "Research and development",
+     "values": [
+      "26",
+      "30",
+      "33",
+      "38",
+      "38",
+      "44",
+      "59",
+      "53",
+      "64",
+      "87",
+      "101",
+      "116",
+      "114",
+      "129",
+      "127",
+      "148",
+      "127",
+      "130"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "23",
+      "22",
+      "22",
+      "23",
+      "22",
+      "18",
+      "43",
+      "75",
+      "91",
+      "69",
+      "86",
+      "148",
+      "149",
+      "167",
+      "172",
+      "172",
+      "161",
+      "166"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "20",
+      "38",
+      "25",
+      "49",
+      "37",
+      "74",
+      "97",
+      "70",
+      "67",
+      "56",
+      "63",
+      "102",
+      "76",
+      "77",
+      "96",
+      "90",
+      "77",
+      "51"
+     ]
+    },
+    {
+     "label": "Total operating expenses",
+     "values": [
+      "116",
+      "137",
+      "124",
+      "161",
+      "154",
+      "281",
+      "259",
+      "260",
+      "295",
+      "274",
+      "313",
+      "430",
+      "410",
+      "432",
+      "452",
+      "475",
+      "432",
+      "408"
+     ]
+    },
+    {
+     "label": "Income (loss) from operations",
+     "values": [
+      "-121",
+      "-148",
+      "-126",
+      "-161",
+      "-96",
+      "-3",
+      "-17",
+      "41",
+      "-19",
+      "29",
+      "15",
+      "-111",
+      "-81",
+      "8",
+      "33",
+      "102",
+      "150",
+      "119"
+     ]
+    },
+    {
+     "label": "Other income (expense), net",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "12",
+      null,
+      "-2",
+      "-5",
+      "-1",
+      null,
+      "3"
+     ]
+    },
+    {
+     "label": "Interest income",
+     "values": [
+      "8",
+      "7",
+      "6",
+      "4",
+      "2",
+      "1",
+      "1",
+      "1",
+      "1",
+      null,
+      "1",
+      null,
+      null,
+      "2",
+      "5",
+      "10",
+      "14",
+      "20"
+     ]
+    },
+    {
+     "label": "Income (loss) before provision for (benefit from) income taxes",
+     "values": [
+      "-113",
+      "-141",
+      "-120",
+      "-157",
+      "-94",
+      "-2",
+      "-16",
+      "42",
+      "-18",
+      "29",
+      "16",
+      "-99",
+      "-81",
+      "8",
+      "33",
+      "111",
+      "164",
+      "142"
+     ]
+    },
+    {
+     "label": "Provision for (benefit from) income taxes",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      "1",
+      "1",
+      "-2",
+      null,
+      "1",
+      null,
+      null,
+      "1",
+      null,
+      "-3",
+      "-355",
+      "36",
+      "28"
+     ]
+    },
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-113",
+      "-141",
+      "-120",
+      "-157",
+      "-94",
+      "-3",
+      "-17",
+      "44",
+      "-18",
+      "28",
+      "16",
+      "-99",
+      "-82",
+      "8",
+      "36",
+      "466",
+      "128",
+      "114"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "159",
+   "pages": [
+    "159"
+   ],
+   "title": "sales and marketing expense to adjusted sales and marketing expense for each of the quarterly periods for the years ended December 2019, 2020, 2021, and 2022 and the six months ended June 30, 2023:",
+   "caption": "Adjusted Sales and Marketing The following table provides a reconciliation of sales and marketing expense to adjusted sales and marketing expense for each of the quarterly periods for the years ended December 2019, 2020, 2021, and 2022 and the six months ended June 30, 2023:",
+   "unit": "(in millions)",
+   "columns": [
+    "Three Months Ended Mar. 31, 2019",
+    "Three Months Ended Jun. 30, 2019",
+    "Three Months Ended Sept. 30, 2019",
+    "Three Months Ended Dec. 31, 2019",
+    "Three Months Ended Mar. 31, 2020",
+    "Three Months Ended Jun. 30, 2020",
+    "Three Months Ended Sept. 30, 2020",
+    "Three Months Ended Dec. 31, 2020",
+    "Three Months Ended Mar. 31, 2021",
+    "Three Months Ended Jun. 30, 2021",
+    "Three Months Ended Sept. 30, 2021",
+    "Three Months Ended Dec. 31, 2021",
+    "Three Months Ended Mar. 31, 2022",
+    "Three Months Ended Jun. 30, 2022",
+    "Three Months Ended Sept. 30, 2022",
+    "Three Months Ended Dec. 31, 2022",
+    "Three Months Ended Mar. 31, 2023",
+    "Three Months Ended Jun. 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "23",
+      "22",
+      "22",
+      "23",
+      "22",
+      "18",
+      "43",
+      "75",
+      "91",
+      "69",
+      "86",
+      "148",
+      "149",
+      "167",
+      "172",
+      "172",
+      "161",
+      "166"
+     ]
+    },
+    {
+     "label": "Depreciation and amortization expense",
+     "values": [
+      null,
+      null,
+      "-1",
+      null,
+      null,
+      null,
+      null,
+      "-1",
+      null,
+      "-1",
+      null,
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "-2",
+      "-2",
+      "-2"
+     ]
+    },
+    {
+     "label": "Stock-based compensation expense",
+     "values": [
+      "-1",
+      "-1",
+      "-1",
+      "-2",
+      "-1",
+      "-1",
+      "-2",
+      "-1",
+      "-1",
+      null,
+      null,
+      "-2",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "-1"
+     ]
+    },
+    {
+     "label": "Acquisition-related expenses",
+     "values": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "-1",
+      null,
+      null,
+      "-1",
+      "3",
+      "-1",
+      "5"
+     ]
+    },
+    {
+     "label": "Adjusted sales and marketing",
+     "values": [
+      "22",
+      "21",
+      "20",
+      "21",
+      "21",
+      "17",
+      "41",
+      "73",
+      "90",
+      "68",
+      "86",
+      "144",
+      "147",
+      "165",
+      "169",
+      "172",
+      "157",
+      "168"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "161",
+   "pages": [
+    "161"
+   ],
+   "title": "Cash Flows The following table summarizes our cash flows for the periods presented:",
+   "caption": "r liquidity in the future. If we are unable to raise additional capital when required, or if we cannot expand our operations or otherwise capitalize on our business opportunities because we lack sufficient capital, our business, results of operations, financial condition, and cash flows would be adversely affected. Cash Flows The following table summarizes our cash flows for the periods presented:",
+   "unit": "(in millions)",
+   "columns": [
+    "Year Ended December 31, 2020",
+    "Year Ended December 31, 2021",
+    "Year Ended December 31, 2022",
+    "Six Months Ended June 30, 2022",
+    "Six Months Ended June 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Net cash provided by (used in) operating activities",
+     "values": [
+      "-91",
+      "-204",
+      "277",
+      "99",
+      "242"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) investing activities",
+     "values": [
+      "301",
+      "-330",
+      "117",
+      "68",
+      "89"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) financing activities",
+     "values": [
+      "671",
+      "464",
+      "46",
+      "93",
+      "-1"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-4",
+   "pages": [
+    "F-4"
+   ],
+   "title": "DBA INSTACART CONSOLIDATED BALANCE SHEETS (in millions, except share amounts, which are reflected in thousands, and per share amounts)",
+   "caption": "MAPLEBEAR INC. DBA INSTACART CONSOLIDATED BALANCE SHEETS (in millions, except share amounts, which are reflected in thousands, and per share amounts)",
+   "unit": "(in millions, except share amounts, which are reflected in thousands, and per share amounts)",
+   "columns": [
+    "As of December 31, 2021",
+    "As of December 31, 2022",
+    "As of June 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Cash and cash equivalents",
+     "values": [
+      "1,146",
+      "1,505",
+      "1,838"
+     ]
+    },
+    {
+     "label": "Short-term marketable securities",
+     "values": [
+      "348",
+      "209",
+      "125"
+     ]
+    },
+    {
+     "label": "Accounts receivable, net of allowance of $2, $2, and $3 (unaudited), respectively",
+     "values": [
+      "832",
+      "842",
+      "765"
+     ]
+    },
+    {
+     "label": "Restricted cash and cash equivalents, current",
+     "values": [
+      "1",
+      "75",
+      "75"
+     ]
+    },
+    {
+     "label": "Prepaid expenses and other current assets",
+     "values": [
+      "68",
+      "109",
+      "93"
+     ]
+    },
+    {
+     "label": "Total current assets",
+     "values": [
+      "2,395",
+      "2,740",
+      "2,896"
+     ]
+    },
+    {
+     "label": "Long-term marketable securities",
+     "values": [
+      "128",
+      "28",
+      "4"
+     ]
+    },
+    {
+     "label": "Restricted cash and cash equivalents, noncurrent",
+     "values": [
+      "18",
+      "19",
+      "19"
+     ]
+    },
+    {
+     "label": "Property and equipment, net",
+     "values": [
+      "28",
+      "38",
+      "59"
+     ]
+    },
+    {
+     "label": "Operating lease right-of-use assets",
+     "values": [
+      "45",
+      "41",
+      "33"
+     ]
+    },
+    {
+     "label": "Intangible assets, net",
+     "values": [
+      "68",
+      "103",
+      "88"
+     ]
+    },
+    {
+     "label": "Goodwill",
+     "values": [
+      "263",
+      "317",
+      "318"
+     ]
+    },
+    {
+     "label": "Deferred tax assets, net",
+     "values": [
+      null,
+      "371",
+      "352"
+     ]
+    },
+    {
+     "label": "Other assets",
+     "values": [
+      "16",
+      "12",
+      "18"
+     ]
+    },
+    {
+     "label": "Total assets",
+     "values": [
+      "2,961",
+      "3,669",
+      "3,787"
+     ]
+    },
+    {
+     "label": "Accounts payable",
+     "values": [
+      "60",
+      "88",
+      "47"
+     ]
+    },
+    {
+     "label": "Accrued and other current liabilities",
+     "values": [
+      "373",
+      "515",
+      "424"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities, current",
+     "values": [
+      "11",
+      "13",
+      "13"
+     ]
+    },
+    {
+     "label": "Deferred revenue",
+     "values": [
+      "148",
+      "179",
+      "198"
+     ]
+    },
+    {
+     "label": "Total current liabilities",
+     "values": [
+      "592",
+      "795",
+      "682"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities, noncurrent",
+     "values": [
+      "43",
+      "36",
+      "30"
+     ]
+    },
+    {
+     "label": "Other long-term liabilities",
+     "values": [
+      "77",
+      "80",
+      "62"
+     ]
+    },
+    {
+     "label": "Total liabilities",
+     "values": [
+      "712",
+      "911",
+      "774"
+     ]
+    },
+    {
+     "label": "Redeemable convertible preferred stock, $0.0001 par value per share; 178,319 shares authorized as of December 31, 2021 and 2022 and June 30, 2023 (unaudited); 167,302 shares issued and outstanding as of December 31, 2021 and 2022 and June 30, 2023 (unaudited); liquidation preference of $2,828 as of December 31, 2021 and 2022 and June 30, 2023 (unaudited)",
+     "values": [
+      "2,822",
+      "2,822",
+      "2,822"
+     ]
+    },
+    {
+     "label": "Additional paid-in capital",
+     "values": [
+      "833",
+      "918",
+      "928"
+     ]
+    },
+    {
+     "label": "Accumulated other comprehensive loss",
+     "values": [
+      "-1",
+      "-5",
+      "-2"
+     ]
+    },
+    {
+     "label": "Accumulated deficit",
+     "values": [
+      "-1,405",
+      "-977",
+      "-735"
+     ]
+    },
+    {
+     "label": "Total stockholders\u0092 equity (deficit)",
+     "values": [
+      "-573",
+      "-64",
+      "191"
+     ]
+    },
+    {
+     "label": "Total liabilities, redeemable convertible preferred stock, and stockholders\u0092 equity (deficit)",
+     "values": [
+      "2,961",
+      "3,669",
+      "3,787"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-12",
+   "pages": [
+    "F-12"
+   ],
+   "title": "DBA INSTACART CONSOLIDATED STATEMENTS OF CASH FLOWS (in millions)",
+   "caption": "MAPLEBEAR INC. DBA INSTACART CONSOLIDATED STATEMENTS OF CASH FLOWS (in millions)",
+   "unit": "(in millions)",
+   "columns": [
+    "Year Ended December 31, 2020",
+    "Year Ended December 31, 2021",
+    "Year Ended December 31, 2022",
+    "Six Months Ended June 30, 2022",
+    "Six Months Ended June 30, 2023"
+   ],
+   "rows": [
+    {
+     "label": "Net income (loss)",
+     "values": [
+      "-70",
+      "-73",
+      "428",
+      "-74",
+      "242"
+     ]
+    },
+    {
+     "label": "Depreciation and amortization expense",
+     "values": [
+      "10",
+      "16",
+      "34",
+      "15",
+      "22"
+     ]
+    },
+    {
+     "label": "Stock-based compensation expense",
+     "values": [
+      "64",
+      "22",
+      "33",
+      "13",
+      "9"
+     ]
+    },
+    {
+     "label": "Amortization of non-voting common stock warrants",
+     "values": [
+      "21",
+      "3",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Amortization and remeasurement of non-voting common stock issuable pursuant to subscription agreement",
+     "values": [
+      "5",
+      "2",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Provision for bad debts",
+     "values": [
+      "9",
+      "7",
+      "10",
+      "4",
+      "9"
+     ]
+    },
+    {
+     "label": "Amortization of operating lease right-of-use assets",
+     "values": [
+      "10",
+      "11",
+      "13",
+      "6",
+      "7"
+     ]
+    },
+    {
+     "label": "Deferred income taxes",
+     "values": [
+      null,
+      "-2",
+      "-373",
+      null,
+      "18"
+     ]
+    },
+    {
+     "label": "Adjustments to reconcile net income (loss) to net cash provided by (used in) operating activities: Other",
+     "values": [
+      "1",
+      "2",
+      "8",
+      null,
+      "-7"
+     ]
+    },
+    {
+     "label": "Accounts receivable",
+     "values": [
+      "-405",
+      "-318",
+      "-21",
+      "122",
+      "69"
+     ]
+    },
+    {
+     "label": "Prepaid expenses and other assets",
+     "values": [
+      "13",
+      "-60",
+      "-31",
+      "-20",
+      "11"
+     ]
+    },
+    {
+     "label": "Accounts payable",
+     "values": [
+      "8",
+      "36",
+      "25",
+      "-9",
+      "-41"
+     ]
+    },
+    {
+     "label": "Accrued and other current liabilities",
+     "values": [
+      "148",
+      "102",
+      "141",
+      "10",
+      "-97"
+     ]
+    },
+    {
+     "label": "Deferred revenue",
+     "values": [
+      "57",
+      "47",
+      "24",
+      "39",
+      "20"
+     ]
+    },
+    {
+     "label": "Operating lease liabilities",
+     "values": [
+      "-7",
+      "-13",
+      "-13",
+      "-6",
+      "-7"
+     ]
+    },
+    {
+     "label": "Other long-term liabilities",
+     "values": [
+      "45",
+      "14",
+      "-1",
+      "-1",
+      "-13"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) operating activities",
+     "values": [
+      "-91",
+      "-204",
+      "277",
+      "99",
+      "242"
+     ]
+    },
+    {
+     "label": "Purchases of marketable securities",
+     "values": [
+      "-310",
+      "-623",
+      "-158",
+      "-152",
+      "-80"
+     ]
+    },
+    {
+     "label": "Maturities of marketable securities",
+     "values": [
+      "618",
+      "369",
+      "394",
+      "235",
+      "191"
+     ]
+    },
+    {
+     "label": "Purchases of property and equipment, including capitalized internal-use software",
+     "values": [
+      "-7",
+      "-13",
+      "-24",
+      "-13",
+      "-22"
+     ]
+    },
+    {
+     "label": "Purchases of patents",
+     "values": [
+      null,
+      "-9",
+      "-2",
+      "-2",
+      null
+     ]
+    },
+    {
+     "label": "Acquisitions of businesses, net of cash acquired",
+     "values": [
+      null,
+      "-54",
+      "-93",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) investing activities",
+     "values": [
+      "301",
+      "-330",
+      "117",
+      "68",
+      "89"
+     ]
+    },
+    {
+     "label": "Proceeds from exercise of stock options",
+     "values": [
+      "12",
+      "6",
+      "1",
+      "1",
+      null
+     ]
+    },
+    {
+     "label": "Proceeds from the issuance of redeemable convertible preferred stock, net of issuance cost",
+     "values": [
+      "625",
+      "265",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Proceeds from exercise of non-voting common stock warrants",
+     "values": [
+      "34",
+      "68",
+      "34",
+      "34",
+      null
+     ]
+    },
+    {
+     "label": "Proceeds from modification of non-voting common stock warrants",
+     "values": [
+      null,
+      null,
+      "14",
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Proceeds from the issuance of non-voting common stock",
+     "values": [
+      null,
+      "125",
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "label": "Changes in advances from payment card issuer",
+     "values": [
+      null,
+      null,
+      null,
+      "58",
+      null
+     ]
+    },
+    {
+     "label": "Other financing activities",
+     "values": [
+      null,
+      null,
+      "-3",
+      null,
+      "-1"
+     ]
+    },
+    {
+     "label": "Net cash provided by (used in) financing activities",
+     "values": [
+      "671",
+      "464",
+      "46",
+      "93",
+      "-1"
+     ]
+    },
+    {
+     "label": "Effect of foreign exchange on cash, cash equivalents, and restricted cash and cash equivalents",
+     "values": [
+      "1",
+      "-1",
+      "-6",
+      null,
+      "3"
+     ]
+    },
+    {
+     "label": "Net increase (decrease) in cash, cash equivalents, and restricted cash and cash equivalents",
+     "values": [
+      "882",
+      "-71",
+      "434",
+      "260",
+      "333"
+     ]
+    },
+    {
+     "label": "Cash, cash equivalents, and restricted cash and cash equivalents\u0097beginning of period",
+     "values": [
+      "354",
+      "1,236",
+      "1,165",
+      "1,165",
+      "1,599"
+     ]
+    },
+    {
+     "label": "Cash, cash equivalents, and restricted cash and cash equivalents\u0097end of period",
+     "values": [
+      "1,236",
+      "1,165",
+      "1,599",
+      "1,425",
+      "1,932"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-28",
+   "pages": [
+    "F-28"
+   ],
+   "title": "The Company believes this depicts how the nature, amount, timing and uncertainty of revenue and cash flows are affected by economic factors.",
+   "caption": "ave a material impact on the consolidated financial statements. 3. Revenue Disaggregation of Revenue The following table depicts the disaggregation of revenue according to type of revenue and is consistent with how the Company evaluates financial performance. The Company believes this depicts how the nature, amount, timing and uncertainty of revenue and cash flows are affected by economic factors.",
+   "unit": "(in millions)",
+   "columns": [
+    "Six Months Ended June 30, 2022 (unaudited, in millions)"
+   ],
+   "rows": [
+    {
+     "label": "Transaction",
+     "values": [
+      "799"
+     ]
+    },
+    {
+     "label": "Advertising and other",
+     "values": [
+      "327"
+     ]
+    },
+    {
+     "label": "Total revenue",
+     "values": [
+      "1,126"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-29",
+   "pages": [
+    "F-29"
+   ],
+   "title": "DBA INSTACART NOTES TO CONSOLIDATED FINANCIAL STATEMENTS Revenue by geographic areas based on bill-to location was as follows:",
+   "caption": "MAPLEBEAR INC. DBA INSTACART NOTES TO CONSOLIDATED FINANCIAL STATEMENTS Revenue by geographic areas based on bill-to location was as follows:",
+   "unit": "(in millions)",
+   "columns": [
+    "Six Months Ended June 30, 2022 (unaudited, in millions)"
+   ],
+   "rows": [
+    {
+     "label": "United States",
+     "values": [
+      "1,093"
+     ]
+    },
+    {
+     "label": "International",
+     "values": [
+      "33"
+     ]
+    },
+    {
+     "label": "Total revenue",
+     "values": [
+      "1,126"
+     ]
+    }
+   ],
+   "continued": false
+  },
+  {
+   "page": "F-58",
+   "pages": [
+    "F-58"
+   ],
+   "title": "Stock-Based Compensation Expense Summary The classification of stock-based compensation expense by line item in the consolidated statements of operations is as follows:",
+   "caption": "Although legally issued and outstanding, the exchangeable shares are only deemed outstanding for basic net income (loss) per share computation purposes upon vesting. Stock-Based Compensation Expense Summary The classification of stock-based compensation expense by line item in the consolidated statements of operations is as follows:",
+   "unit": "(in millions)",
+   "columns": [
+    "Six Months Ended June 30, 2022 (unaudited, in millions)"
+   ],
+   "rows": [
+    {
+     "label": "Research and development",
+     "values": [
+      "7"
+     ]
+    },
+    {
+     "label": "Sales and marketing",
+     "values": [
+      "2"
+     ]
+    },
+    {
+     "label": "General and administrative",
+     "values": [
+      "4"
+     ]
+    },
+    {
+     "label": "Total stock-based compensation expense",
+     "values": [
+      "13"
+     ]
+    }
+   ],
+   "continued": false
+  }
+ ],
+ "blanks": [
+  {
+   "page": "cover-2",
+   "sentence": "It is currently estimated that the initial public offering price for our common stock will be between $ and $ per share.",
+   "snippet": "It is currently estimated that the initial public offering price for our common stock will be between $ and $ per share."
+  },
+  {
+   "page": "cover-2",
+   "sentence": "Per Share Total Initial public offering price $ $ Underwriting discounts and commissions (1) $ $ Proceeds, before expenses, to us $ $ Proceeds, before expenses, to the selling stockholders $ $ (1) See the section titled \u201cUnderwriting\u201d for additional information regarding compensation payable to the underwriters.",
+   "snippet": "Per Share Total Initial public offering price $ $ Underwriting discounts and commissions (1) $ $ Proceeds, before\u2026"
+  },
+  {
+   "page": "cover-2",
+   "sentence": "Stern Tigress Financial Partners Prospectus dated , 2023.",
+   "snippet": "Stern Tigress Financial Partners Prospectus dated , 2023."
+  },
+  {
+   "page": "25",
+   "sentence": "As of June 30, 2023 Actual Pro Forma (1) Pro Forma As Adjusted (2)(3) (in millions) Consolidated Balance Sheet Data: Cash, cash equivalents, and marketable securities $ 1,967 $ $ Working capital (4) 2,214 Total assets 3,787 Redeemable convertible preferred stock 2,822 Series A redeemable convertible preferred stock \u2014 Additional paid-in capital 928 Accumulated deficit (735 )",
+   "snippet": "\u2026(in millions) Consolidated Balance Sheet Data: Cash, cash equivalents, and marketable securities $ 1,967 $ $ Working capital (4) 2,214 Total assets 3,787 Redeemable convertible\u2026"
+  },
+  {
+   "page": "31",
+   "sentence": "In particular, we will recognize approximately $ of stock-based compensation expense associated with the satisfaction of the liquidity event-based vesting condition for outstanding RSUs and shares of outstanding restricted stock in the quarter in which this offering is completed.",
+   "snippet": "In particular, we will recognize approximately $ of stock-based compensation expense associated with the satisfaction\u2026"
+  },
+  {
+   "page": "81",
+   "sentence": "Further, holders of approximately 178.6 million shares as of June 30, 2023, or approximately % of our capital stock after the closing of this offering, will have rights, subject to some conditions and the lock-up agreements and market stand-off provisions described above, to require us to file registration statements covering the sale of their shares or to include their shares in registration statements that we may file for ourselves or other stockholders.",
+   "snippet": "Further, holders of approximately 178.6 million shares as of June 30, 2023, or approximately % of our capital stock after the closing of this offering, will have\u2026"
+  },
+  {
+   "page": "81",
+   "sentence": "Following the completion of this offering, our executive officers, directors, and greater than 5% stockholders, in the aggregate, will beneficially own approximately % of our outstanding common stock.",
+   "snippet": "Following the completion of this offering, our executive officers, directors, and greater than 5% stockholders, in the aggregate, will beneficially own approximately % of our outstanding common stock."
+  },
+  {
+   "page": "83",
+   "sentence": "If you purchase shares of our common stock in this offering, you will suffer immediate dilution of $ per share, representing the difference between our pro forma as adjusted net tangible book value per share after giving effect to the sale of common stock in this offering, the Exchangeable Share Conversion, the Preferred Stock Conversion, the RSU Net Settlement, the RSA Cancellation, the Option Net Exercise, the Warrant Net Exercise, the concurrent private placement, and the assumed initial public offering price of $ per share.",
+   "snippet": "If you purchase shares of our common stock in this offering, you will suffer immediate dilution of $ per share, representing the difference between our pro forma as\u2026"
+  },
+  {
+   "page": "91",
+   "sentence": "Each $1.00 increase (decrease) in the assumed initial public offering price of $ per share of common stock would increase (decrease) the net proceeds to us from this offering by approximately $ , assuming the number of shares offered by us, as set forth on the cover page of this prospectus, remains the same, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us in connection with this offering and the placement agent fee and estimated issuance costs in connection with the concurrent private placement.",
+   "snippet": "Each $1.00 increase (decrease) in the assumed initial public offering price of $ per share of common stock would increase (decrease) the net proceeds\u2026"
+  },
+  {
+   "page": "91",
+   "sentence": "Similarly, each increase (decrease) of 1,000,000 shares of common stock offered by us would increase (decrease) the net proceeds to us from this offering by approximately $ , assuming the assumed initial public offering price per share remains the same, and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us in connection with this offering and the placement agent fee and estimated issuance costs in connection with the concurrent private placement.",
+   "snippet": "\u2026stock offered by us would increase (decrease) the net proceeds to us from this offering by approximately $ , assuming the assumed initial public offering price per share\u2026"
+  },
+  {
+   "page": "91",
+   "sentence": "Each $1.00 increase or decrease in the assumed initial public offering price per share of $ , which is the midpoint of the price range set forth on the cover page of this prospectus, assuming no change in the assumed settlement date, vesting date, or exercise date, as applicable, or applicable tax withholding rate, would increase or decrease, respectively, the amount we would be required to pay to satisfy our tax withholding and remittance obligations related to the RSU settlement, the restricted stock vesting and the options net exercise by approximately $ .",
+   "snippet": "Each $1.00 increase or decrease in the assumed initial public offering price per share of $ , which is the midpoint of the price range set forth on the cover\u2026"
+  },
+  {
+   "page": "91",
+   "sentence": "In addition, a 1% increase or decrease in the tax withholding rate would increase or decrease, respectively, the amount of tax withholding and remittance obligations related to the RSU settlement, the restricted stock vesting, and the options net exercise by approximately $ .",
+   "snippet": "\u2026related to the RSU settlement, the restricted stock vesting, and the options net exercise by approximately $ ."
+  },
+  {
+   "page": "96",
+   "sentence": "aid-in capital, total stockholders\u2019 equity, and total capitalization by approximately $ million, assuming the assumed initial public offering price per share, the midpoint of the price range set forth on the cover page of this prospectus, remains the same and after deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us in connection with this offering and the placement agent fee and estimated issuance costs in connection with the concurrent private placement.",
+   "snippet": "aid-in capital, total stockholders\u2019 equity, and total capitalization by approximately $ million, assuming the assumed initial public offering price per\u2026"
+  },
+  {
+   "page": "97",
+   "sentence": "Our historical net tangible book deficit as of June 30, 2023 was $ million, or $ per share.",
+   "snippet": "Our historical net tangible book deficit as of June 30, 2023 was $ million, or $ per share."
+  },
+  {
+   "page": "97",
+   "sentence": "Our pro forma net tangible book value as of June 30, 2023 was $ million, or $ per share.",
+   "snippet": "Our pro forma net tangible book value as of June 30, 2023 was $ million, or $ per share."
+  },
+  {
+   "page": "98",
+   "sentence": "This amount represents an immediate increase in pro forma net tangible book value of $ per share to our existing stockholders and immediate dilution in pro forma as adjusted net tangible book value of $ per share to investors purchasing shares of common stock in this offering.",
+   "snippet": "This amount represents an immediate increase in pro forma net tangible book value of $ per share to our existing stockholders and immediate dilution in pro\u2026"
+  },
+  {
+   "page": "98",
+   "sentence": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value per share to investors purchasing shares of common stock in this offering would be $ .",
+   "snippet": "\u2026from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value\u2026"
+  },
+  {
+   "page": "99",
+   "sentence": "ssumed initial public offering price of $ per share, the midpoint of the estimated price range set forth on the cover page of this prospectus, before deducting estimated underwriting discounts and commissions and estimated offering expenses payable by us.",
+   "snippet": "ssumed initial public offering price of $ per share, the midpoint of the estimated price range set forth on the\u2026"
+  },
+  {
+   "page": "99",
+   "sentence": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our existing stockholders would own %, and new investors purchasing shares of our common stock in this offering would own %, of the total number of shares of our common stock outstanding immediately after the completion of this offering.",
+   "snippet": "\u2026option to purchase additional shares of common stock from us in full, our existing stockholders would own %, and new investors purchasing shares of our common stock in this\u2026"
+  },
+  {
+   "page": "100",
+   "sentence": "If all outstanding options and RSUs issued under our 2013 Equity Incentive Plan or 2018 Plan as of December 31, 2022 were exercised or settled, assuming no net settlement of RSUs or net or cashless exercise of stock options, then our existing stockholders, including the holders of these options and RSUs would own % and our new investors would own % of the total number of shares of our common stock outstanding on the closing of this offering.",
+   "snippet": "\u2026of stock options, then our existing stockholders, including the holders of these options and RSUs would own % and our new investors would own % of the total number of shares of\u2026"
+  },
+  {
+   "page": "140",
+   "sentence": "In connection with this offering, we will recognize approximately $ of stock-based compensation expense associated with the satisfaction of the liquidity event-based vesting condition for outstanding RSUs and shares of outstanding restricted stock in the quarter and year in which this offering is completed.",
+   "snippet": "In connection with this offering, we will recognize approximately $ of stock-based compensation expense associated with the satisfaction\u2026"
+  },
+  {
+   "page": "271",
+   "sentence": "In addition, the number of shares of our common stock reserved for issuance under our 2023 Plan will automatically increase on January 1 of each calendar year, starting on January 1, 2024 through January 1, 2033, in an amount equal to (1) % of the total number of shares of our common stock outstanding on December 31 of the year before the date of each automatic increase or (2) a lesser number of shares determined by our board of directors prior to the applicable January 1.",
+   "snippet": "\u20261 of each calendar year, starting on January 1, 2024 through January 1, 2033, in an amount equal to (1) % of the total number of shares of our common stock outstanding on\u2026"
+  },
+  {
+   "page": "273",
+   "sentence": "The aggregate value of all compensation granted or paid to any non-employee director with respect to any period commencing on the date of our annual meeting of stockholders for a particular year and ending on the day immediately prior to the date of the meeting for the next subsequent year, including stock awards granted and cash fees paid by us to such non-employee director, will not exceed $ in total value, or with respect to such period in which a non-employee director is first appointed or elected to our board, $ in total value (in each case, calculating the value of any such stock awar",
+   "snippet": "\u2026year, including stock awards granted and cash fees paid by us to such non-employee director, will not exceed $ in total value, or with respect to such period in which a\u2026"
+  },
+  {
+   "page": "276",
+   "sentence": "The number of shares of our common stock reserved for issuance will automatically increase on January 1 of each calendar year, beginning on January 1, 2024 through January 1, 2033, by the lesser of (1) % of the total number of shares of our common stock outstanding on the last day of the year before the date of the automatic increase and (2) shares; provided that before the date of any such increase, our board of directors may determine that such increase will be less than the amount set forth in clauses (1) and (2).",
+   "snippet": "\u2026January 1 of each calendar year, beginning on January 1, 2024 through January 1, 2033, by the lesser of (1) % of the total number of shares of our common stock outstanding on the\u2026"
+  },
+  {
+   "page": "276",
+   "sentence": "Generally, all regular employees, including executive officers, employed by us or by any of our designated affiliates, will be eligible to participate in the ESPP and may contribute, normally through payroll deductions, up to % of their earnings (as defined in the ESPP) for the purchase of our common stock under the ESPP.",
+   "snippet": "\u2026will be eligible to participate in the ESPP and may contribute, normally through payroll deductions, up to % of their earnings (as defined in the ESPP) for the purchase of our\u2026"
+  },
+  {
+   "page": "290",
+   "sentence": "Options to purchase shares of our common stock will be net exercised immediately after the pricing of this offering, which will result in the net issuance of shares of common stock (based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover page of this prospectus, and an assumed % tax withholding rate).",
+   "snippet": "\u2026result in the net issuance of shares of common stock (based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover\u2026"
+  },
+  {
+   "page": "290",
+   "sentence": "This warrant, which would otherwise expire in November 2023, will be net exercised in full immediately after the pricing of this offering, which will result in the net issuance of shares of common stock (based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover page of this prospectus).",
+   "snippet": "\u2026result in the net issuance of shares of common stock (based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover\u2026"
+  },
+  {
+   "page": "304",
+   "sentence": "Paid by Us No Exercise Full Exercise Per Share $ $ Total $ $",
+   "snippet": "Paid by Us No Exercise Full Exercise Per Share $ $ Total $ $"
+  },
+  {
+   "page": "305",
+   "sentence": "aid by the Selling Stockholders No Exercise Full Exercise Per Share $ $ Total $ $ Shares sold by the underwriters to the public will initially be offered at the initial public offering price set forth on the cover of this prospectus.",
+   "snippet": "aid by the Selling Stockholders No Exercise Full Exercise Per Share $ $ Total $ $ Shares sold by the underwriters to the public will\u2026"
+  },
+  {
+   "page": "305",
+   "sentence": "Any shares sold by the underwriters to securities dealers may be sold at a discount of up to $ per share from the initial public offering price.",
+   "snippet": "Any shares sold by the underwriters to securities dealers may be sold at a discount of up to $ per share from the initial public offering price."
+  },
+  {
+   "page": "307",
+   "sentence": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ .",
+   "snippet": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+  },
+  {
+   "page": "307",
+   "sentence": "We have agreed to reimburse the underwriters for certain of their expenses relating to the clearance of this offering with the Financial Industry Regulatory Authority in an amount up to $ .",
+   "snippet": "We have agreed to reimburse the underwriters for certain of their expenses relating to the clearance of this offering with the Financial Industry Regulatory Authority in an amount up to $ ."
+  },
+  {
+   "page": "II-1",
+   "sentence": "Amount SEC registration fee $ 11,020 FINRA filing fee 15,500 Exchange listing fee * Printing fees and expenses * Legal fees and expenses * Accounting fees and expenses * Custodian, transfer agent, and registrar fees * Miscellaneous fees and expenses * Total $ * * To be provided by amendment.",
+   "snippet": "\u2026fees and expenses * Custodian, transfer agent, and registrar fees * Miscellaneous fees and expenses * Total $ * * To be provided by amendment."
+  }
+ ]
+}

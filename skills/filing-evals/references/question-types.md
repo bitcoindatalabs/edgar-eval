@@ -10,7 +10,8 @@ Each item in `bench/questions.yaml`:
   value: 85.4
   unit: percent
   tol: 0.02                     # relative tolerance; default 0.01
-  inputs: (16,286 - 2,380) / 16,286   # derived only: recomputed by the validator
+  inputs: (16,286 - 2,380) / 16,286   # derived only: recomputed by the validator; for percent
+                                      # values give the fraction (no * 100), it scales it
   trap: Using compute and infrastructure ($8,945M) as cost of revenue, giving ~45%.
   quote: "Cost of revenue (1) $ 26 $ 752 $ 2,773 $ 1,019 $ 2,380"
 ```
@@ -34,6 +35,10 @@ Each item in `bench/questions.yaml`:
 ```
 
 ## Writing good items
+
+- **Use the filing's units.** If the table says "in thousands", the value is in thousands
+  (`unit: USD thousands`). To test unit conversion, make it a `derived` item with `inputs: 804,029 / 1000`.
+- **Name the period exactly**: "for the six months ended June 30, 2023", "as of December 31, 2022".
 
 - **Quote the table row, not the narrative.** Narrative rounds ("$1.3 billion"); tables are exact.
 - **Period traps** pair a quarter with the half-year or year that has the opposite sign or a very different value.

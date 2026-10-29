@@ -1,0 +1,9 @@
+# Pipeline frozen before held-out questions were written. Any change to these files after this point
+# must be disclosed with held-out results. sha256, 2026-10-29T21:16:14Z
+0f7c15c6539ee6be70ec61b3011b44a29d141fb19dc4b437cd8728e95aca0b7a  skills/filing-factsheet/scripts/build_factsheet.py
+cf11a3c8fdc472142c5ca9e61e5026ae20edba0c1d32f8ef6ebf6257146614df  skills/filing-factsheet/scripts/build_pages.py
+bf3fcb5ade96729bbb6f357e7caf980f26ba03a2490fce60c2661c29e2c38e79  skills/filing-factsheet/scripts/grep_filing.py
+d8a094256a8399f969ead8c51b5370559d77fb25208e2d795fbadd42b42f112a  skills/filing-evals/scripts/run_bench.py
+440d074e84882810880e78ee1ac678bfa1e877a0b297f4b8ac9d0a5de2af8045  skills/filing-evals/scripts/score.py
+3a0fbedf567fd7b923ec430ac10c4b341b3ef52de9aec0919cb101d7a149f644  skills/filing-evals/scripts/validate_bench.py
+58df03ad2c2bafd89b1c84d075c573d46545448e4c74371df339a9e8b98d9be9  skills/filing-factsheet/references/prompt.md

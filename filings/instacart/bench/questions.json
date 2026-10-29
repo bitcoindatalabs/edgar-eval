@@ -1,0 +1,263 @@
+[
+ {
+  "id": "revenue-fy2022",
+  "category": "fact",
+  "question": "What was Instacart's total revenue for the year ended December 31, 2022?",
+  "kind": "number",
+  "value": 2551,
+  "unit": "USD millions",
+  "trap": "Quoting GTV ($28,826 million) or transaction revenue only ($1,811 million) instead of total revenue.",
+  "quote": "Revenue $ 1,477 $ 1,834 $ 2,551 $ 1,126 $ 1,475 Cost of revenue 598 608 720 357 366",
+  "page": "F-5"
+ },
+ {
+  "id": "revenue-h1-2023",
+  "category": "fact",
+  "question": "What was Instacart's total revenue for the six months ended June 30, 2023?",
+  "kind": "number",
+  "value": 1475,
+  "unit": "USD millions",
+  "trap": "Giving the second-quarter 2023 figure ($716 million) or the six months ended June 30, 2022 ($1,126 million).",
+  "quote": "Revenue $ 1,477 $ 1,834 $ 2,551 $ 1,126 $ 1,475 Cost of revenue 598 608 720 357 366",
+  "page": "F-5"
+ },
+ {
+  "id": "cost-of-revenue-h1-2023",
+  "category": "fact",
+  "question": "What was Instacart's cost of revenue for the six months ended June 30, 2023?",
+  "kind": "number",
+  "value": 366,
+  "unit": "USD millions",
+  "trap": "Using the non-GAAP adjusted cost of revenue ($354 million) or the prior-year six months ($357 million).",
+  "quote": "Cost of revenue 598 608 720 357 366 Gross profit 879 1,226 1,831 769 1,109",
+  "page": "F-5"
+ },
+ {
+  "id": "gross-profit-fy2022",
+  "category": "fact",
+  "question": "What was Instacart's gross profit for the year ended December 31, 2022?",
+  "kind": "number",
+  "value": 1831,
+  "unit": "USD millions",
+  "trap": "Giving the six months ended June 30, 2023 gross profit ($1,109 million) or the $2.2 billion trailing-twelve-month headline.",
+  "quote": "Gross profit 879 1,226 1,831 769 1,109",
+  "page": "23"
+ },
+ {
+  "id": "operating-income-h1-2023",
+  "category": "fact",
+  "question": "What was Instacart's income (loss) from operations for the six months ended June 30, 2023?",
+  "kind": "number",
+  "value": 269,
+  "unit": "USD millions",
+  "trap": "Giving Adjusted EBITDA ($279 million) or income before income taxes ($306 million).",
+  "quote": "Income (loss) from operations (75 ) (86 ) 62 (73 ) 269",
+  "page": "23"
+ },
+ {
+  "id": "net-income-fy2022",
+  "category": "fact",
+  "question": "What was Instacart's net income (loss) for the year ended December 31, 2022?",
+  "kind": "number",
+  "value": 428,
+  "unit": "USD millions",
+  "trap": "Giving the $744 million trailing-twelve-month net income to June 30, 2023, or net income attributable to common stockholders ($77 million).",
+  "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242",
+  "page": "23"
+ },
+ {
+  "id": "cash-jun-2023",
+  "category": "fact",
+  "question": "What were Instacart's cash and cash equivalents as of June 30, 2023?",
+  "kind": "number",
+  "value": 1838,
+  "unit": "USD millions",
+  "trap": "Giving cash, cash equivalents, and marketable securities ($1,967 million) or the total including restricted cash ($1,932 million).",
+  "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838",
+  "page": "F-4"
+ },
+ {
+  "id": "operating-cash-flow-fy2022",
+  "category": "fact",
+  "question": "What was Instacart's net cash provided by (used in) operating activities for the year ended December 31, 2022?",
+  "kind": "number",
+  "value": 277,
+  "unit": "USD millions",
+  "trap": "Giving the six months ended June 30, 2023 figure ($242 million) or 2021's cash used in operations (-$204 million).",
+  "quote": "Net cash provided by (used in) operating activities (91 ) (204 ) 277 99 242",
+  "page": "F-12"
+ },
+ {
+  "id": "revenue-q2-2023",
+  "category": "period-trap",
+  "question": "What was Instacart's revenue for the three months ended June 30, 2023 (the second quarter of 2023)?",
+  "kind": "number",
+  "value": 716,
+  "unit": "USD millions",
+  "trap": "Giving the six months ended June 30, 2023 revenue ($1,475 million) or the first quarter of 2023 ($759 million).",
+  "quote": "$ 505 $ 621 $ 668 $ 757 $ 759 $ 716 Cost of revenue (2)",
+  "page": "151"
+ },
+ {
+  "id": "net-loss-h1-2022",
+  "category": "period-trap",
+  "question": "What was Instacart's net income (loss) for the six months ended June 30, 2022?",
+  "kind": "number",
+  "value": -74,
+  "unit": "USD millions",
+  "trap": "Giving full-year 2022 net income of $428 million (opposite sign) or the six months ended June 30, 2023 ($242 million).",
+  "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242",
+  "page": "23"
+ },
+ {
+  "id": "net-income-q4-2022",
+  "category": "period-trap",
+  "question": "What was Instacart's net income for the three months ended December 31, 2022 (the fourth quarter of 2022)?",
+  "kind": "number",
+  "value": 466,
+  "unit": "USD millions",
+  "trap": "Giving full-year 2022 net income ($428 million), which is smaller than the fourth quarter alone because of losses earlier in the year.",
+  "quote": "$ (82 ) $ 8 $ 36 $ 466 $ 128 $ 114",
+  "page": "151"
+ },
+ {
+  "id": "gross-margin-h1-2023",
+  "category": "derived",
+  "question": "What was Instacart's gross margin (gross profit as a percent of revenue) for the six months ended June 30, 2023?",
+  "kind": "number",
+  "value": 75.19,
+  "unit": "percent",
+  "tol": 0.01,
+  "inputs": "(1,475 - 366) / 1,475",
+  "trap": "Using adjusted cost of revenue ($354 million, about 76%) or second-quarter-only figures (about 74%).",
+  "quote": "Revenue $ 1,477 $ 1,834 $ 2,551 $ 1,126 $ 1,475 Cost of revenue 598 608 720 357 366",
+  "page": "F-5"
+ },
+ {
+  "id": "revenue-growth-q2-2023-yoy",
+  "category": "derived",
+  "question": "By what percentage did Instacart's revenue grow in the three months ended June 30, 2023 compared with the three months ended June 30, 2022?",
+  "kind": "number",
+  "value": 15.3,
+  "unit": "percent",
+  "tol": 0.01,
+  "inputs": "(716 - 621) / 621",
+  "trap": "Giving the six-month growth rate (31%) or the sequential change from the first quarter of 2023 (about -6%).",
+  "quote": "$ 505 $ 621 $ 668 $ 757 $ 759 $ 716 Cost of revenue (2)",
+  "page": "151"
+ },
+ {
+  "id": "sales-marketing-pct-revenue-fy2022",
+  "category": "derived",
+  "question": "What was Instacart's sales and marketing expense as a percent of revenue for the year ended December 31, 2022?",
+  "kind": "number",
+  "value": 25.87,
+  "unit": "percent",
+  "tol": 0.01,
+  "inputs": "660 / 2,551",
+  "trap": "Using the six months ended June 30, 2023 ratio (22%) or dividing by GTV instead of revenue (about 2.3%).",
+  "quote": "Sales and marketing 158 394 660 316 327",
+  "page": "F-5"
+ },
+ {
+  "id": "total-assets-jun-2023-billions",
+  "category": "derived",
+  "question": "What were Instacart's total assets as of June 30, 2023, expressed in billions of dollars?",
+  "kind": "number",
+  "value": 3.787,
+  "unit": "USD billions",
+  "tol": 0.01,
+  "inputs": "3,787 / 1000",
+  "trap": "Giving the December 31, 2022 balance ($3.669 billion) or misplacing the decimal (3,787 billion).",
+  "quote": "Total assets $ 2,961 $ 3,669 $ 3,787",
+  "page": "F-4"
+ },
+ {
+  "id": "blank-ipo-price-range",
+  "category": "blank",
+  "question": "What is the expected price range per share for Instacart's initial public offering?",
+  "kind": "not_disclosed",
+  "quote": "initial public offering price for our common stock will be between $ and $ per share",
+  "page": "#2"
+ },
+ {
+  "id": "blank-offering-expenses",
+  "category": "blank",
+  "question": "What are the estimated total expenses of Instacart's IPO, excluding underwriting discounts and commissions?",
+  "kind": "not_disclosed",
+  "quote": "the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ .",
+  "page": "307"
+ },
+ {
+  "id": "blank-dilution-full-exercise",
+  "category": "blank",
+  "question": "If the underwriters exercise their option to purchase additional shares in full, what will be the dilution per share to new investors buying Instacart common stock in this offering?",
+  "kind": "not_disclosed",
+  "quote": "the dilution in pro forma as adjusted net tangible book value per share to investors purchasing shares of common stock in this offering would be $ .",
+  "page": "98"
+ },
+ {
+  "id": "ticker-exchange",
+  "category": "governance",
+  "question": "Under what ticker symbol and on which exchange has Instacart applied to list its common stock?",
+  "kind": "text",
+  "must_include": [
+   "CART",
+   "Nasdaq"
+  ],
+  "accept_alias": {
+   "Nasdaq": [
+    "NASDAQ"
+   ]
+  },
+  "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol “CART.”",
+  "page": "#2"
+ },
+ {
+  "id": "underwriter-representatives",
+  "category": "governance",
+  "question": "Which firms are acting as the representatives of the underwriters for Instacart's IPO?",
+  "kind": "text",
+  "must_include": [
+   "Goldman Sachs",
+   "J.P. Morgan"
+  ],
+  "accept_alias": {
+   "J.P. Morgan": [
+    "JPMorgan",
+    "JP Morgan",
+    "J.P.Morgan"
+   ]
+  },
+  "quote": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are the representatives of the underwriters",
+  "page": "304"
+ },
+ {
+  "id": "gtv-fy2022",
+  "category": "governance",
+  "question": "What was Instacart's gross transaction value (GTV) for the year ended December 31, 2022?",
+  "kind": "number",
+  "value": 28826,
+  "unit": "USD millions",
+  "trap": "Giving the $29.4 billion GTV for the twelve months ended June 30, 2023 shown on the \"At a glance\" page.",
+  "quote": "GTV $ 20,736 $ 24,909 $ 28,826 $ 14,356 $ 14,937",
+  "page": "26"
+ },
+ {
+  "id": "risk-california-worker-classification",
+  "category": "risk",
+  "question": "Which California ballot initiative does Instacart cite as the framework governing whether shoppers in California can be classified as independent contractors?",
+  "kind": "text",
+  "must_include": [
+   "Proposition 22"
+  ],
+  "accept_alias": {
+   "Proposition 22": [
+    "Prop 22",
+    "Prop. 22"
+   ]
+  },
+  "quote": "the California state ballot initiative, Proposition 22,",
+  "page": "59"
+ }
+]

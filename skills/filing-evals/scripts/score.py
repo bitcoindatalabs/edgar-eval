@@ -18,7 +18,10 @@ import yaml
 ROOT = Path.cwd()  # run from the project folder
 QUESTIONS = {q["id"]: q for q in json.loads((ROOT / "bench/questions.json").read_text())}
 MODELS = {m["id"]: m for m in yaml.safe_load((ROOT / "models.yaml").read_text())}
-FILING = " ".join(json.loads(l)["text"] for l in (ROOT / "data/processed/pages.jsonl").open())
+# Each page's text starts with its running header ("64 Table of Contents"). Drop it, or a quote
+# that runs across a page break would have the header in the middle and fail to match.
+HEADER = re.compile(r"^\s*(?:(?:F-\d+|II-\d+|\d{1,3}|[ivx]{1,6})\s+)?T\s?able of Contents\s*")
+FILING = " ".join(HEADER.sub("", json.loads(l)["text"]) for l in (ROOT / "data/processed/pages.jsonl").open())
 
 
 def norm(s: str) -> str:

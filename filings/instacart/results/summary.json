@@ -1,0 +1,2132 @@
+{
+ "questions": 22,
+ "modes": {
+  "rag": [
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 0.864,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 0.333,
+     "derived": 0.75,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0048,
+    "input_tokens": 130160,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the year ended December 31, 2022 was $2,551 million.",
+       "value": 2551,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "145",
+       "quote": "Total revenue $ 1,834 $ 2,551 $ 717 39 %"
+      }
+     },
+     "revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the six months ended June 30, 2023 was $1,475 million.",
+       "value": 1475,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "142",
+       "quote": "Total revenue $ 1,126 $ 1,475 $ 349 31 %"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cost of revenue for the six months ended June 30, 2023 was $366 million.",
+       "value": 366,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "143",
+       "quote": "Cost of revenue $ 357 $ 366 $ 9 3 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross profit for the year ended December 31, 2022 was $1,831 million.",
+       "value": 1831,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Gross profit 879 1,226 1,831 769 1,109"
+      }
+     },
+     "operating-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's income (loss) from operations for the six months ended June 30, 2023 was $269 million.",
+       "value": 269,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Income (loss) from operations (75 ) (86 ) 62 (73 ) 269"
+      }
+     },
+     "net-income-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the year ended December 31, 2022 was $428 million.",
+       "value": 428,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-6",
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cash and cash equivalents were $1,838 million as of June 30, 2023.",
+       "value": 1838,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net cash provided by operating activities for the year ended December 31, 2022 was $277 million.",
+       "value": 277,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "162",
+       "quote": "In 2022, net cash provided by operating activities was $277 million, which consisted of net income of $428 million, adjusted for certain non-cash items of $275 million, and net cash inflows from changes in operating assets and liabilities of $124 million."
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said None USD millions vs 716",
+      "answer": {
+       "answer": "Instacart's revenue for the three months ended June 30, 2023 is not separately disclosed in the provided text; only six-month total revenue of $1,475 million is stated.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": "4",
+       "quote": "Total revenue grew from $1,834 million in 2021 to $2,551 million in 2022, an increase of 39%, and from $1,126 million for the six months ended June 30, 2022 to $1,475 million for the six months ended June 30, 2023, an increase of 31%;"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net loss for the six months ended June 30, 2022 was $74 million.",
+       "value": -74,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "net-income-q4-2022": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD millions vs 466",
+      "answer": {
+       "answer": "The filing does not state Instacart's net income for the three months ended December 31, 2022.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross margin was 75% of revenue for the six months ended June 30, 2023.",
+       "value": 75,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "143",
+       "quote": "Gross margin 68 % 75 %"
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None percent vs 15.3",
+      "answer": {
+       "answer": "The filing does not disclose revenue growth for the three months ended June 30, 2023 compared with the three months ended June 30, 2022; it only reports six-month revenue growth of 31%.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "sales-marketing-pct-revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the year ended December 31, 2022, sales and marketing expense was 26% of revenue.",
+       "value": 26,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "142",
+       "quote": "Sales and marketing 11 21 26 28 22"
+      }
+     },
+     "total-assets-jun-2023-billions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total assets as of June 30, 2023 were $3,787 million, or $3.787 billion.",
+       "value": 3.787,
+       "unit": "USD billions",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Total assets $ 2,961 $ 3,669 $ 3,787"
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share is not disclosed because the preliminary prospectus leaves the assumed initial public offering price blank as '$ per share'.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "22",
+       "quote": "based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover page of this prospectus"
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The estimated total expenses of the offering, excluding underwriting discounts and commissions, are stated only as approximately $ with the amount left blank, so they are not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "307",
+       "quote": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-dilution-full-exercise": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The prospectus does not state the full-exercise dilution per share because the figure is left blank.",
+       "value": null,
+       "unit": "per share",
+       "disclosed": false,
+       "page": "98",
+       "quote": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value per share to investors purchasing shares of common stock in this offering would be $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Maplebear Inc. has applied to list its common stock on the Nasdaq Global Select Market under the ticker symbol \"CART.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol “CART.”"
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are the representatives of the underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "304",
+       "quote": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are the representatives of the underwriters."
+      }
+     },
+     "gtv-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's GTV for the year ended December 31, 2022 was $28,826 million.",
+       "value": 28826,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "4",
+       "quote": "GTV grew from $24,909 million in 2021 to $28,826 million in 2022, an increase of 16%"
+      }
+     },
+     "risk-california-worker-classification": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart cites Proposition 22, the California ballot initiative that became effective on December 16, 2020, as the framework governing independent contractor classification for shoppers in California.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "59",
+       "quote": "On December 16, 2020, the California state ballot initiative, Proposition 22, which provides a framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work, among other things, became effective."
+      }
+     }
+    }
+   },
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 0.864,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 0.947,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 0.333,
+     "derived": 0.75,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0235,
+    "input_tokens": 143378,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the year ended December 31, 2022 was $2,551 million.",
+       "value": 2551,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "145",
+       "quote": "Total revenue $ 1,834 $ 2,551 $ 717 39 %"
+      }
+     },
+     "revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the six months ended June 30, 2023 was $1,475 million.",
+       "value": 1475,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "4",
+       "quote": "Total revenue grew from $1,834 million in 2021 to $2,551 million in 2022, an increase of 39%, and from $1,126 million for the six months ended June 30, 2022 to $1,475 million for the six months ended June 30, 2023, an increase of 31%"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cost of revenue for the six months ended June 30, 2023 was $366 million.",
+       "value": 366,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "143",
+       "quote": "Cost of revenue $ 357 $ 366 $ 9 3 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross profit for the year ended December 31, 2022 was $1,831 million.",
+       "value": 1831,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Gross profit 879 1,226 1,831 769 1,109"
+      }
+     },
+     "operating-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's income from operations for the six months ended June 30, 2023 was $269 million.",
+       "value": 269,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Income (loss) from operations (75 ) (86 ) 62 (73 ) 269"
+      }
+     },
+     "net-income-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the year ended December 31, 2022 was $428 million.",
+       "value": 428,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-6",
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cash and cash equivalents as of June 30, 2023 were $1,838 million.",
+       "value": 1838,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net cash provided by operating activities for the year ended December 31, 2022 was $277 million.",
+       "value": 277,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "161",
+       "quote": "Net cash provided by (used in) operating activities $ (91 ) $ (204 ) $ 277 $ 99 $ 242"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD millions vs 716",
+      "answer": {
+       "answer": "The specific revenue figure for the three months ended June 30, 2023 is not explicitly stated in the provided filing text; only the six-month total of $1,475 million is disclosed.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net loss for the six months ended June 30, 2022 was $74 million.",
+       "value": -74,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "net-income-q4-2022": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD millions vs 466",
+      "answer": {
+       "answer": "The provided filing text does not disclose Instacart's net income for the three months ended December 31, 2022.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross margin (gross profit as a percent of revenue) for the six months ended June 30, 2023 was 75%.",
+       "value": 75,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "143",
+       "quote": "Gross margin 68 % 75 %"
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None percent vs 15.3",
+      "answer": {
+       "answer": "The filing does not disclose revenue for the three months ended June 30, 2023 compared with the three months ended June 30, 2022; it only provides six-month and full-year revenue figures.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "sales-marketing-pct-revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's sales and marketing expense as a percent of revenue for the year ended December 31, 2022 was 26%.",
+       "value": 26,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "146",
+       "quote": "Sales and marketing $ 394 $ 660 $ 266 68 % Percent of revenue 21 % 26 %"
+      }
+     },
+     "total-assets-jun-2023-billions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total assets as of June 30, 2023 were $3.787 billion.",
+       "value": 3.787,
+       "unit": "USD billions",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Total assets $ 2,961 $ 3,669 $ 3,787"
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The price range per share for the initial public offering is not disclosed in the provided text; the filing repeatedly references 'the midpoint of the price range set forth on the cover page of this prospectus' but the actual figures are left blank.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "22",
+       "quote": "based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover page of this prospectus"
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The estimated total expenses of the offering, excluding underwriting discounts and commissions, are not disclosed in this preliminary prospectus; the figure is left blank and the total in the Item 13 table is marked as 'to be provided by amendment.'",
+       "value": null,
+       "unit": "dollars",
+       "disclosed": false,
+       "page": "307",
+       "quote": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-dilution-full-exercise": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "The dilution per share to new investors if the underwriters exercise their option in full is not disclosed in this preliminary prospectus, as the figure is left blank pending the final IPO price.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "98",
+       "quote": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in the pro forma as adjusted net tangible book value per share to investors purchasing shares of common stock in this offering would be $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Maplebear Inc. (Instacart) has applied to list its common stock on the Nasdaq Global Select Market under the symbol \"CART.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol \"CART.\""
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are the representatives of the underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "304",
+       "quote": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are the representatives of the underwriters."
+      }
+     },
+     "gtv-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross transaction value (GTV) for the year ended December 31, 2022 was $28,826 million.",
+       "value": 28826,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "4",
+       "quote": "GTV grew from $24,909 million in 2021 to $28,826 million in 2022, an increase of 16%"
+      }
+     },
+     "risk-california-worker-classification": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart cites California's Proposition 22 as the framework governing whether shoppers in California can be classified as independent contractors.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "59",
+       "quote": "On December 16, 2020, the California state ballot initiative, Proposition 22, which provides a framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work, among other things, became effective."
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 0.864,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 0.85,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 0.333,
+     "derived": 0.75,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0126,
+    "input_tokens": 130860,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the year ended December 31, 2022 was $2,551 million.",
+       "value": 2551,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "145",
+       "quote": "Total revenue $ 1,834 $ 2,551 $ 717 39 %"
+      }
+     },
+     "revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Total revenue for the six months ended June 30, 2023 was $1,475 million, an increase of 31% from $1,126 million in the prior-year period.",
+       "value": 1475,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "Page 4",
+       "quote": "Total revenue grew from $1,834 million in 2021 to $2,551 million in 2022, an increase of 39%, and from $1,126 million for the six months ended June 30, 2022 to $1,475 million for the six months ended June 30, 2023, an increase of 31%"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cost of revenue for the six months ended June 30, 2023 was $366 million, up 3% from $357 million in the prior-year period.",
+       "value": 366,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "143",
+       "quote": "Six Months Ended June 30, 2022 2023 $ Change % Change ... Cost of revenue $ 357 $ 366 $ 9 3 %"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross profit for the year ended December 31, 2022 was $1,831 million.",
+       "value": 1831,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Gross profit 879 1,226 1,831 769 1,109"
+      }
+     },
+     "operating-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's income from operations for the six months ended June 30, 2023 was $269 million.",
+       "value": 269,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Income (loss) from operations (75) (86) 62 (73) 269"
+      }
+     },
+     "net-income-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the year ended December 31, 2022 was $428 million.",
+       "value": 428,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-6",
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Cash and cash equivalents were $1,838 million as of June 30, 2023.",
+       "value": 1838,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net cash provided by operating activities for the year ended December 31, 2022 was $277 million.",
+       "value": 277,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-12",
+       "quote": "Net cash provided by (used in) operating activities $ (91 ) $ (204 ) $ 277 $ 99 $ 242"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": false,
+      "note": "said None USD millions vs 716",
+      "answer": {
+       "answer": "The filing does not separately disclose total revenue for the three months ended June 30, 2023; it only discloses revenue for the six months ended June 30, 2023 of $1,475 million.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": "F-29",
+       "quote": "Total revenue $ 1,477 $ 1,834 $ 2,551 $ 1,126 $ 1,475 (Year Ended December 31 / Six Months Ended June 30 columns)"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart reported a net loss of $74 million for the six months ended June 30, 2022.",
+       "value": -74,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "net-income-q4-2022": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD millions vs 466",
+      "answer": {
+       "answer": "The filing text provided does not disclose Instacart's net income for the three months ended December 31, 2022; only a full-year 2022 tax benefit and twelve-months-ended-June-30-2023 net income of $744 million are given.",
+       "value": null,
+       "unit": "USD millions",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross margin was 75% of revenue for the six months ended June 30, 2023.",
+       "value": 75,
+       "unit": "%",
+       "disclosed": true,
+       "page": "143",
+       "quote": "Gross margin 68 % 75 % (Six Months Ended June 30, 2022 and 2023)"
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None percent vs 15.3",
+      "answer": {
+       "answer": "The filing only discloses revenue growth for the six months ended June 30 (31%, from $1,126 million to $1,475 million), not for the three months ended June 30, so the quarterly figure is not disclosed.",
+       "value": null,
+       "unit": "percent",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "sales-marketing-pct-revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's sales and marketing expense was 26% of revenue for the year ended December 31, 2022.",
+       "value": 26,
+       "unit": "percent of revenue",
+       "disclosed": true,
+       "page": "142",
+       "quote": "Sales and marketing 11 21 26 28 22"
+      }
+     },
+     "total-assets-jun-2023-billions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total assets as of June 30, 2023 were $3,787 million, or about $3.787 billion.",
+       "value": 3.787,
+       "unit": "USD billions",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Total assets $ 2,961 $ 3,669 $ 3,787"
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the assumed initial public offering price blank (\"the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover page\"), so no price range is disclosed in this filing.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "22",
+       "quote": "based on the assumed initial public offering price of $ per share, the midpoint of the price range set forth on the cover page of this prospectus"
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the estimated total offering expenses (excluding underwriting discounts and commissions) blank, so the amount is not disclosed.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "307",
+       "quote": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-dilution-full-exercise": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves this figure blank, so the dilution per share if the underwriters exercise their option in full is not disclosed.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "98",
+       "quote": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value per share to investors purchasing shares of our common stock in this offering would be $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Maplebear Inc. (Instacart) has applied to list its common stock on the Nasdaq Global Select Market under the symbol \"CART\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol \"CART.\""
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are acting as the representatives of the underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "304",
+       "quote": "Goldman Sachs & Co. LLC and J.P. Morgan Securities LLC are the representatives of the underwriters."
+      }
+     },
+     "gtv-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's GTV for the year ended December 31, 2022 was $28,826 million.",
+       "value": 28826,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "4",
+       "quote": "GTV grew from $24,909 million in 2021 to $28,826 million in 2022, an increase of 16%"
+      }
+     },
+     "risk-california-worker-classification": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart cites California Proposition 22, the state ballot initiative that became effective on December 16, 2020, as the framework governing the classification of shoppers in California as independent contractors.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "59",
+       "quote": "On December 16, 2020, the California state ballot initiative, Proposition 22, which provides a framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work, among other things, became effective."
+      }
+     }
+    }
+   }
+  ],
+  "skill": [
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 0.955,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0056,
+    "input_tokens": 253778,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the year ended December 31, 2022 was $2,551 million.",
+       "value": 2551,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "| Revenue | 1,477 | 1,834 | 2,551 | 1,126 | 1,475 |"
+      }
+     },
+     "revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the six months ended June 30, 2023 was $1,475 million.",
+       "value": 1475,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Revenue | 1,477 | 1,834 | 2,551 | 1,126 | 1,475"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cost of revenue for the six months ended June 30, 2023 was $366 million.",
+       "value": 366,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "| Cost of revenue | 598 | 608 | 720 | 357 | 366 |"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross profit for the year ended December 31, 2022 was $1,831 million.",
+       "value": 1831,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "| Gross profit | 879 | 1,226 | 1,831 | 769 | 1,109 |"
+      }
+     },
+     "operating-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's income (loss) from operations for the six months ended June 30, 2023 was $269 million.",
+       "value": 269,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "| Income (loss) from operations | -75 | -86 | 62 | -73 | 269 |"
+      }
+     },
+     "net-income-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the year ended December 31, 2022 was $428 million.",
+       "value": 428,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart had cash and cash equivalents of $1,838 million as of June 30, 2023.",
+       "value": 1838,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "As of June 30, 2023",
+       "calc": null,
+       "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Net cash provided by operating activities for the year ended December 31, 2022 was $277 million.",
+       "value": 277,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "161",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities $ (91 ) $ (204 ) $ 277 $ 99 $ 242"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's revenue for the three months ended June 30, 2023 was $716 million.",
+       "value": 716,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Jun. 30, 2023",
+       "calc": null,
+       "quote": "Revenue | 41 | 46 | 59 | 68 | 147 | 476 | 397 | 457 | 440 | 444 | 473 | 477 | 505 | 621 | 668 | 757 | 759 | 716"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income (loss) for the six months ended June 30, 2022 was $(74) million.",
+       "value": -74,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2022",
+       "calc": null,
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "net-income-q4-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the three months ended December 31, 2022 was $466 million.",
+       "value": 466,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Dec. 31, 2022",
+       "calc": null,
+       "quote": "| Net income (loss) | -113 | -141 | -120 | -157 | -94 | -3 | -17 | 44 | -18 | 28 | 16 | -99 | -82 | 8 | 36 | 466 | 128 | 114 |"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "For the six months ended June 30, 2023, gross margin was approximately 75.2%, reported as 75%.",
+       "value": 75.1864,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "143",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": "1109 / 1475 * 100",
+       "quote": "Gross margin 68 % 75 %",
+       "model_value": 75.1864406779661
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Revenue grew by approximately 15.3% in the three months ended June 30, 2023 compared with the three months ended June 30, 2022.",
+       "value": 15.2979,
+       "unit": "%",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Jun. 30, 2023 vs Three Months Ended Jun. 30, 2022",
+       "calc": "(716 - 621) / 621 * 100",
+       "quote": "| Revenue | 41 | 46 | 59 | 68 | 147 | 476 | 397 | 457 | 440 | 444 | 473 | 477 | 505 | 621 | 668 | 757 | 759 | 716 |",
+       "model_value": 15.297906602254429
+      }
+     },
+     "sales-marketing-pct-revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's sales and marketing expense was 26% of revenue for the year ended December 31, 2022.",
+       "value": 26,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "142",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Sales and marketing 11 21 26 28 22"
+      }
+     },
+     "total-assets-jun-2023-billions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total assets as of June 30, 2023 were $3.787 billion.",
+       "value": 3.787,
+       "unit": "USD billions",
+       "disclosed": true,
+       "page": "25",
+       "column": "As of June 30, 2023 Actual",
+       "calc": "3787 / 1000",
+       "quote": "| Total assets | 3,787 |  |  |",
+       "model_value": 3.787
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share for the initial public offering is not disclosed; the cover page leaves the price blank (\"It is currently estimated that the initial public offering price for our common stock will be between $ and $ per share.\").",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price for our common stock will be between $ and $ per share."
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The estimated total expenses of the offering, excluding underwriting discounts and commissions, are not disclosed — the amount is left blank in this preliminary prospectus.",
+       "value": null,
+       "unit": "USD",
+       "disclosed": false,
+       "page": "307",
+       "column": null,
+       "calc": null,
+       "quote": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-dilution-full-exercise": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed: the dilution per share figure in the full-exercise scenario appears as \"$\" with no number in the preliminary prospectus.",
+       "value": null,
+       "unit": "per share",
+       "disclosed": false,
+       "page": "98",
+       "column": null,
+       "calc": null,
+       "quote": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value per share to investors purchasing shares of common stock in this offering would be $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart has applied to list its common stock on the Nasdaq Global Select Market under the symbol “CART.”",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol “CART.”"
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": false,
+      "note": "",
+      "answer": {
+       "answer": "The underwriting syndicate listed on the cover page is Goldman Sachs & Co. LLC, J.P. Morgan, BofA Securities, Barclays, Citigroup, Baird, JMP Securities, LionTree, Oppenheimer & Co., Piper Sandler, SoFi, Stifel, Blaylock Van, LLC, Drexel Hamilton, Loop Capital Markets, R. Seelaus & Co., Inc., and Stern Tigress Financial Partners; Goldman Sachs & Co. LLC is also identified as acting as placement agent for the concurrent private placement.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC J.P. Morgan BofA Securities Barclays Citigroup Baird JMP Securities A CITIZENS COMPANY LionTree Oppenheimer & Co. Piper Sandler SoFi Stifel Blaylock Van, LLC Drexel Hamilton Loop Capital Markets R. Seelaus & Co., Inc. Stern Tigress Financial Partners"
+      }
+     },
+     "gtv-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's GTV for the year ended December 31, 2022 was $28,826 million.",
+       "value": 28826,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "125",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "GTV | 5,144 | 20,736 | 24,909 | 28,826 | 14,356 | 14,937"
+      }
+     },
+     "risk-california-worker-classification": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart cites Proposition 22, the California state ballot initiative that became effective on December 16, 2020.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "59",
+       "column": null,
+       "calc": null,
+       "quote": "On December 16, 2020, the California state ballot initiative, Proposition 22, which provides a framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work, among other things, became effective."
+      }
+     }
+    }
+   },
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0308,
+    "input_tokens": 298208,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the year ended December 31, 2022 was $2,551 million.",
+       "value": 2551,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Revenue | 1,477 | 1,834 | 2,551 | 1,126 | 1,475 |"
+      }
+     },
+     "revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the six months ended June 30, 2023 was $1,475 million.",
+       "value": 1475,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Revenue | 1,477 | 1,834 | 2,551 | 1,126 | 1,475"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cost of revenue for the six months ended June 30, 2023 was $366 million.",
+       "value": 366,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Cost of revenue | 598 | 608 | 720 | 357 | 366"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross profit for the year ended December 31, 2022 was $1,831 million.",
+       "value": 1831,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Gross profit | 879 | 1,226 | 1,831 | 769 | 1,109"
+      }
+     },
+     "operating-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's income from operations for the six months ended June 30, 2023 was $269 million.",
+       "value": 269,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Income (loss) from operations | -75 | -86 | 62 | -73 | 269"
+      }
+     },
+     "net-income-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the year ended December 31, 2022 was $428 million.",
+       "value": 428,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net income (loss) | -70 | -73 | 428 | -74 | 242"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cash and cash equivalents as of June 30, 2023 were $1,838 million.",
+       "value": 1838,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "As of June 30, 2023",
+       "calc": null,
+       "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net cash provided by operating activities for the year ended December 31, 2022 was $277 million.",
+       "value": 277,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "161",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities | -91 | -204 | 277 | 99 | 242"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's revenue for the three months ended June 30, 2023 was $716 million.",
+       "value": 716,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Jun. 30, 2023",
+       "calc": null,
+       "quote": "Revenue | 41 | 46 | 59 | 68 | 147 | 476 | 397 | 457 | 440 | 444 | 473 | 477 | 505 | 621 | 668 | 757 | 759 | 716"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net loss for the six months ended June 30, 2022 was $74 million.",
+       "value": -74,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2022",
+       "calc": null,
+       "quote": "Net income (loss) | -70 | -73 | 428 | -74 | 242"
+      }
+     },
+     "net-income-q4-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the three months ended December 31, 2022 was $466 million.",
+       "value": 466,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Dec. 31, 2022",
+       "calc": null,
+       "quote": "Net income (loss) | -113 | -141 | -120 | -157 | -94 | -3 | -17 | 44 | -18 | 28 | 16 | -99 | -82 | 8 | 36 | 466 | 128 | 114"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross margin for the six months ended June 30, 2023 was 75%.",
+       "value": 75.1864,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "143",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": "1109 / 1475 * 100",
+       "quote": "Gross margin 68 % 75 %",
+       "model_value": 75
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's revenue grew approximately 15.3% in the three months ended June 30, 2023 compared with the three months ended June 30, 2022.",
+       "value": 15.2979,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Jun. 30, 2023 / Three Months Ended Jun. 30, 2022",
+       "calc": "(716 - 621) / 621 * 100",
+       "quote": "Revenue | 41 | 46 | 59 | 68 | 147 | 476 | 397 | 457 | 440 | 444 | 473 | 477 | 505 | 621 | 668 | 757 | 759 | 716",
+       "model_value": 15.3
+      }
+     },
+     "sales-marketing-pct-revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's sales and marketing expense was 26% of revenue for the year ended December 31, 2022.",
+       "value": 25.8722,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "142",
+       "column": "Year Ended December 31, 2022",
+       "calc": "660 / 2551 * 100",
+       "quote": "Sales and marketing 11 21 26 28 22",
+       "model_value": 26
+      }
+     },
+     "total-assets-jun-2023-billions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total assets as of June 30, 2023 were $3.787 billion.",
+       "value": 3.787,
+       "unit": "USD billions",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "As of June 30, 2023",
+       "calc": "3787 / 1000",
+       "quote": "Total assets $ 2,961 $ 3,669 $ 3,787",
+       "model_value": 3.787
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share for Instacart's initial public offering is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price for our common stock will be between $ and $ per share."
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The estimated total expenses of the offering, excluding underwriting discounts and commissions, are not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "dollars",
+       "disclosed": false,
+       "page": "307",
+       "column": null,
+       "calc": null,
+       "quote": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-dilution-full-exercise": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The dilution per share to new investors if the underwriters exercise their option in full is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "98",
+       "column": null,
+       "calc": null,
+       "quote": "If the underwriters exercise their option to purchase additional shares of common stock from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value per share to investors purchasing shares of common stock in this offering would be $ ."
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Maplebear Inc. (Instacart) has applied to list its common stock on the Nasdaq Global Select Market under the ticker symbol CART.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol “CART.”"
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing does not explicitly name which firm is acting as the representative of the underwriters; the cover page lists the underwriters as Goldman Sachs & Co. LLC, J.P. Morgan, BofA Securities, Barclays, Citigroup, Baird, JMP Securities A CITIZENS COMPANY, LionTree, Oppenheimer & Co., Piper Sandler, SoFi, Stifel, Blaylock Van, LLC, Drexel Hamilton, Loop Capital Markets, R. Seelaus & Co., LLC, Ramirez & Co., Inc., and Stern Tigress Financial Partners, but the specific representative designation is not stated in the provided text.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC J.P. Morgan BofA Securities Barclays Citigroup Baird JMP Securities A CITIZENS COMPANY LionTree Oppenheimer & Co. Piper Sandler SoFi Stifel Blaylock Van, LLC Drexel Hamilton Loop Capital Markets R. Seelaus & Co., LLC Ramirez & Co., Inc. Stern Tigress Financial Partners"
+      }
+     },
+     "gtv-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross transaction value (GTV) for the year ended December 31, 2022 was $28,826 million.",
+       "value": 28826,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "125",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "GTV | 5,144 | 20,736 | 24,909 | 28,826 | 14,356 | 14,937"
+      }
+     },
+     "risk-california-worker-classification": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart cites Proposition 22, the California state ballot initiative that became effective on December 16, 2020, as the framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "59",
+       "column": null,
+       "calc": null,
+       "quote": "On December 16, 2020, the California state ballot initiative, Proposition 22, which provides a framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work, among other things, became effective."
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 22,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 3,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "period-trap": 1.0,
+     "derived": 1.0,
+     "blank": 1.0,
+     "governance": 1.0,
+     "risk": 1.0
+    },
+    "cost_usd": 0.0222,
+    "input_tokens": 260530,
+    "per_question": {
+     "revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the year ended December 31, 2022 was $2,551 million.",
+       "value": 2551,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "| Revenue | 1,477 | 1,834 | 2,551 | 1,126 | 1,475 |"
+      }
+     },
+     "revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total revenue for the six months ended June 30, 2023 was $1,475 million.",
+       "value": 1475,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "| Revenue | 1,477 | 1,834 | 2,551 | 1,126 | 1,475 |"
+      }
+     },
+     "cost-of-revenue-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Cost of revenue was $366 million for the six months ended June 30, 2023.",
+       "value": 366,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "| Cost of revenue | 598 | 608 | 720 | 357 | 366 |"
+      }
+     },
+     "gross-profit-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross profit for the year ended December 31, 2022 was $1,831 million.",
+       "value": 1831,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "| Gross profit | 879 | 1,226 | 1,831 | 769 | 1,109 |"
+      }
+     },
+     "operating-income-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's income from operations for the six months ended June 30, 2023 was $269 million.",
+       "value": 269,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": null,
+       "quote": "Income (loss) from operations -75 -86 62 -73 269"
+      }
+     },
+     "net-income-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the year ended December 31, 2022 was $428 million (including a $358 million tax benefit from the release of its valuation allowance).",
+       "value": 428,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net income (loss) $ (70 ) $ (73 ) $ 428 $ (74 ) $ 242"
+      }
+     },
+     "cash-jun-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's cash and cash equivalents as of June 30, 2023 were $1,838 million.",
+       "value": 1838,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "As of June 30, 2023 (unaudited)",
+       "calc": null,
+       "quote": "Cash and cash equivalents $ 1,146 $ 1,505 $ 1,838"
+      }
+     },
+     "operating-cash-flow-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net cash provided by operating activities for the year ended December 31, 2022 was $277 million.",
+       "value": 277,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "161",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "Net cash provided by (used in) operating activities $ (91 ) $ (204 ) $ 277 $ 99 $ 242"
+      }
+     },
+     "revenue-q2-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's revenue for the three months ended June 30, 2023 was $716 million.",
+       "value": 716,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Jun. 30, 2023",
+       "calc": null,
+       "quote": "Revenue | 41 | 46 | 59 | 68 | 147 | 476 | 397 | 457 | 440 | 444 | 473 | 477 | 505 | 621 | 668 | 757 | 759 | 716"
+      }
+     },
+     "net-loss-h1-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net loss for the six months ended June 30, 2022 was $74 million.",
+       "value": -74,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "141",
+       "column": "Six Months Ended June 30, 2022",
+       "calc": null,
+       "quote": "| Net income (loss) | -70 | -73 | 428 | -74 | 242 |"
+      }
+     },
+     "net-income-q4-2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's net income for the three months ended December 31, 2022 was $466 million.",
+       "value": 466,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Dec. 31, 2022",
+       "calc": null,
+       "quote": "Net income (loss) | ... | 36 | 466 | 128 | 114"
+      }
+     },
+     "gross-margin-h1-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's gross margin for the six months ended June 30, 2023 was 75% of revenue.",
+       "value": 75.1864,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "143",
+       "column": "Six Months Ended June 30, 2023",
+       "calc": "(1109 / 1475) * 100",
+       "quote": "Gross margin 68 % 75 %",
+       "model_value": 75.18
+      }
+     },
+     "revenue-growth-q2-2023-yoy": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's revenue grew approximately 15.3% in the three months ended June 30, 2023 compared with the three months ended June 30, 2022.",
+       "value": 15.2979,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "151",
+       "column": "Three Months Ended Jun. 30, 2023 vs Three Months Ended Jun. 30, 2022",
+       "calc": "(716 - 621) / 621 * 100",
+       "quote": "| Revenue | 41 | 46 | 59 | 68 | 147 | 476 | 397 | 457 | 440 | 444 | 473 | 477 | 505 | 621 | 668 | 757 | 759 | 716 |",
+       "model_value": 15.2979067641
+      }
+     },
+     "sales-marketing-pct-revenue-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's sales and marketing expense was 26% of revenue for the year ended December 31, 2022.",
+       "value": 25.8722,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "142",
+       "column": "Year Ended December 31, 2022",
+       "calc": "660 / 2551 * 100",
+       "quote": "Sales and marketing 11 21 26 28 22",
+       "model_value": 25.87
+      }
+     },
+     "total-assets-jun-2023-billions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's total assets as of June 30, 2023 were $3,787 million, or approximately $3.787 billion.",
+       "value": 3.787,
+       "unit": "USD billions",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "As of June 30, 2023",
+       "calc": "3787 / 1000",
+       "quote": "Total assets $ 2,961 $ 3,669 $ 3,787",
+       "model_value": 3.787
+      }
+     },
+     "blank-ipo-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the estimated initial public offering price range per share blank, so it is not disclosed.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "It is currently estimated that the initial public offering price for our common stock will be between $ and $ per share."
+      }
+     },
+     "blank-offering-expenses": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Not disclosed — the filing leaves blank the estimated total expenses of the offering excluding underwriting discounts and commissions.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": "307",
+       "column": null,
+       "calc": null,
+       "quote": "We and the selling stockholders estimate that the total expenses of the offering, excluding underwriting discounts and commissions, will be approximately $ ."
+      }
+     },
+     "blank-dilution-full-exercise": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The dilution per share to new investors if the underwriters exercise their option in full is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "$ per share",
+       "disclosed": false,
+       "page": "98",
+       "column": null,
+       "calc": null,
+       "quote": "…from us in full, our pro forma as adjusted net tangible book value per share after this offering would be $ , and the dilution in pro forma as adjusted net tangible book value…"
+      }
+     },
+     "ticker-exchange": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart (Maplebear Inc.) has applied to list its common stock on the Nasdaq Global Select Market under the symbol \"CART\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our common stock on the Nasdaq Global Select Market under the symbol \"CART.\""
+      }
+     },
+     "underwriter-representatives": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The filing materials provided do not identify which firms are acting as the representatives of the underwriters.",
+       "value": null,
+       "unit": null,
+       "disclosed": false,
+       "page": null,
+       "column": null,
+       "calc": null,
+       "quote": "Goldman Sachs & Co. LLC J.P. Morgan BofA Securities Barclays Citigroup Baird JMP Securities A CITIZENS COMPANY LionTree Oppenheimer & Co. Piper Sandler SoFi Stifel Blaylock Van, LLC Drexel Hamilton Loop Capital Markets R. Seelaus & Co., LLC Ramirez & Co., Inc. Stern Tigress Financial Partners Prospectus dated , 2023."
+      }
+     },
+     "gtv-fy2022": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart's GTV for the year ended December 31, 2022 was $28,826 million.",
+       "value": 28826,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "125",
+       "column": "Year Ended December 31, 2022",
+       "calc": null,
+       "quote": "GTV | 5,144 | 20,736 | 24,909 | 28,826 | 14,356 | 14,937"
+      }
+     },
+     "risk-california-worker-classification": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Instacart cites California Proposition 22, the state ballot initiative effective December 16, 2020, as the framework governing whether shoppers in California can be classified as independent contractors.",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "59",
+       "column": null,
+       "calc": null,
+       "quote": "on December 16, 2020, the California state ballot initiative, Proposition 22, which provides a framework that offers legal certainty regarding the status of independent work and protects worker flexibility and the quality of on-demand work, among other things, became effective."
+      }
+     }
+    }
+   }
+  ]
+ }
+}

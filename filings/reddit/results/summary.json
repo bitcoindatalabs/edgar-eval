@@ -1,0 +1,1039 @@
+{
+ "questions": 10,
+ "modes": {
+  "rag": [
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 10,
+    "accuracy": 0.8,
+    "invented_blanks": 0,
+    "blanks_asked": 1,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "derived": 0.667,
+     "period-trap": 0.0,
+     "blank": 1.0,
+     "governance": 1.0
+    },
+    "cost_usd": 0.0023,
+    "input_tokens": 62409,
+    "per_question": {
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804,029 thousand.",
+       "value": 804029,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "106",
+       "quote": "Revenue $ 666,701 $ 804,029 $ 137,328 21 %"
+      }
+     },
+     "rev-fy-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our revenue for the years ended December 31, 2022 and 2023 was $666.7 million and $804.0 million, respectively, representing growth of 21%."
+      }
+     },
+     "netloss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's net loss for the year ended December 31, 2023 was $90,824 thousand.",
+       "value": -90824,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "94",
+       "quote": "Net income (loss) $ (158,550) $ (90,824)"
+      }
+     },
+     "oploss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's loss from operations for the year ended December 31, 2023 was $140,161 thousand.",
+       "value": -140161,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "18",
+       "quote": "Income (loss) from operations (172,162) (140,161)"
+      }
+     },
+     "rev-q4-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD thousands vs 249750",
+      "answer": {
+       "answer": "Revenue for the three months ended December 31, 2023 is not disclosed in the provided filing excerpt.",
+       "value": null,
+       "unit": "USD thousands",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "gm-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's gross margin for the year ended December 31, 2023 was 86%.",
+       "value": 86,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our gross margin for the years ended December 31, 2022 and 2023 was 84% and 86%, respectively."
+      }
+     },
+     "growth-fy-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said 21 percent vs 20.6",
+      "answer": {
+       "answer": "Reddit's revenue grew 21% from 2022 to 2023.",
+       "value": 21,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our revenue for the years ended December 31, 2022 and 2023 was $666.7 million and $804.0 million, respectively, representing growth of 21%."
+      }
+     },
+     "dauq-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's average DAUq for the three months ended December 31, 2023 was 73.1 million.",
+       "value": 73.1,
+       "unit": "million users",
+       "disclosed": true,
+       "page": "1",
+       "quote": "In December 2023, more than 500 million visitors (1) , and in the three months ended December 31, 2023, an average of 73.1 million daily active uniques (“DAUq”), around the world came together on Reddit"
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The provided text does not disclose the expected price range per share; the assumed IPO price and price range are left blank.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "82",
+       "quote": "based on an assumed initial public offering price of $ per share of Class A common stock, which is the midpoint of the estimated price range set forth on the cover page of this prospectus"
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit proposes to list its Class A common stock on the New York Stock Exchange under the ticker symbol \"RDDT.\"",
+       "value": null,
+       "unit": "",
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Class A common stock on the New York Stock Exchange under the symbol “RDDT.”"
+      }
+     }
+    }
+   },
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 10,
+    "accuracy": 0.8,
+    "invented_blanks": 0,
+    "blanks_asked": 1,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "derived": 0.667,
+     "period-trap": 0.0,
+     "blank": 1.0,
+     "governance": 1.0
+    },
+    "cost_usd": 0.0096,
+    "input_tokens": 67603,
+    "per_question": {
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804,029 thousand.",
+       "value": 804029,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "106",
+       "quote": "Revenue $ 666,701 $ 804,029 $ 137,328 21 %"
+      }
+     },
+     "rev-fy-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our revenue for the years ended December 31, 2022 and 2023 was $666.7 million and $804.0 million, respectively, representing growth of 21%."
+      }
+     },
+     "netloss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's net loss for the year ended December 31, 2023 was $(90,824) thousand.",
+       "value": -90824,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-5",
+       "quote": "Net income (loss) $ (158,550) $ (90,824)"
+      }
+     },
+     "oploss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's income (loss) from operations for the year ended December 31, 2023 was $(140,161) thousand.",
+       "value": -140161,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "quote": "Income (loss) from operations (172,162) (140,161)"
+      }
+     },
+     "rev-q4-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD thousands vs 249750",
+      "answer": {
+       "answer": "The specific revenue figure for the three months ended December 31, 2023 is not stated in the provided filing text.",
+       "value": null,
+       "unit": "USD thousands",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "gm-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's gross margin for the year ended December 31, 2023 was 86%.",
+       "value": 86,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our gross margin for the years ended December 31, 2022 and 2023 was 84% and 86%, respectively."
+      }
+     },
+     "growth-fy-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said 21 percent vs 20.6",
+      "answer": {
+       "answer": "Reddit's revenue grew 21% from 2022 to 2023, increasing from $666.7 million to $804.0 million.",
+       "value": 21,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our revenue for the years ended December 31, 2022 and 2023 was $666.7 million and $804.0 million, respectively, representing growth of 21%."
+      }
+     },
+     "dauq-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's average daily active uniques (DAUq) in the three months ended December 31, 2023 was 73.1 million.",
+       "value": 73.1,
+       "unit": "million",
+       "disclosed": true,
+       "page": "1",
+       "quote": "in the three months ended December 31, 2023, an average of 73.1 million daily active uniques (\"DAUq\"), around the world came together on Reddit"
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The specific price range per share for Reddit's IPO is not disclosed in the provided text, as all dollar figures for the assumed initial public offering price are left blank in this preliminary prospectus.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "82",
+       "quote": "We estimate that we will receive net proceeds from this offering of $ (or approximately $ if the underwriters' over-allotment option is exercised in full) based on an assumed initial public offering price of $ per share of Class A common stock, which is the midpoint of the estimated price range set forth on the cover page of this prospectus"
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit proposes to list its Class A common stock on the New York Stock Exchange under the ticker symbol \"RDDT.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "2",
+       "quote": "We have applied to list our Class A common stock on the New York Stock Exchange under the symbol \"RDDT.\""
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 10,
+    "accuracy": 0.7,
+    "invented_blanks": 0,
+    "blanks_asked": 1,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "derived": 0.667,
+     "period-trap": 0.0,
+     "blank": 0.0,
+     "governance": 1.0
+    },
+    "cost_usd": 0.0083,
+    "input_tokens": 62594,
+    "per_question": {
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804029,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "106",
+       "quote": "Revenue $ 666,701 $ 804,029 $ 137,328 21 %"
+      }
+     },
+     "rev-fy-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804.0,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our revenue for the years ended December 31, 2022 and 2023 was $666.7 million and $804.0 million, respectively, representing growth of 21%."
+      }
+     },
+     "netloss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's net income (loss) for the year ended December 31, 2023 was a net loss of $90,824 thousand (approximately $(90.8) million).",
+       "value": -90824,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-5",
+       "quote": "Net income (loss) $ (158,550) $ (90,824)"
+      }
+     },
+     "oploss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's income (loss) from operations for the year ended December 31, 2023 was a loss of $140,161 thousand (i.e., $(140.2) million).",
+       "value": -140161,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "Page F-4 (also Page 18)",
+       "quote": "Income (loss) from operations (172,162) (140,161)"
+      }
+     },
+     "rev-q4-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "said None USD thousands vs 249750",
+      "answer": {
+       "answer": "The filing text provided does not disclose Reddit's revenue for the three months ended December 31, 2023; it only states full-year 2023 revenue of $804.0 million.",
+       "value": null,
+       "unit": "USD thousands",
+       "disclosed": false,
+       "page": null,
+       "quote": null
+      }
+     },
+     "gm-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's gross margin for the year ended December 31, 2023 was 86%.",
+       "value": 86,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "quote": "Our gross margin for the years ended December 31, 2022 and 2023 was 84% and 86%, respectively."
+      }
+     },
+     "growth-fy-2023": {
+      "correct": false,
+      "invented": false,
+      "grounded": true,
+      "note": "said 21 percent vs 20.6",
+      "answer": {
+       "answer": "Reddit's revenue grew 21% from $666.7 million in 2022 to $804.0 million in 2023, an increase of $137.3 million.",
+       "value": 21,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "106",
+       "quote": "Revenue increased $137.3 million, or 21%, compared to the prior year."
+      }
+     },
+     "dauq-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's average DAUq for the three months ended December 31, 2023 was 73.1 million.",
+       "value": 73.1,
+       "unit": "million daily active uniques",
+       "disclosed": true,
+       "page": "1",
+       "quote": "In December 2023, more than 500 million visitors (1), and in the three months ended December 31, 2023, an average of 73.1 million daily active uniques (\"DAUq\"), around the world came together on Reddit"
+      }
+     },
+     "blank-price-range": {
+      "correct": false,
+      "invented": false,
+      "grounded": null,
+      "note": "unparseable",
+      "answer": null
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit proposes to list its Class A common stock on the New York Stock Exchange under the ticker symbol \"RDDT\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "Page #2",
+       "quote": "We have applied to list our Class A common stock on the New York Stock Exchange under the symbol \"RDDT.\""
+      }
+     }
+    }
+   }
+  ],
+  "skill": [
+   {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "label": "DeepSeek V4.1 Flash",
+    "group": "open",
+    "answered": 10,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 1,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "derived": 1.0,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "governance": 1.0
+    },
+    "cost_usd": 0.0032,
+    "input_tokens": 115097,
+    "per_question": {
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804,029 thousand.",
+       "value": 804029,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "18",
+       "column": "2023",
+       "calc": null,
+       "quote": "| Revenue | 666,701 | 804,029 |"
+      }
+     },
+     "rev-fy-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804.029,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "18",
+       "column": "Year ended December 31, 2023",
+       "calc": "804029 / 1000",
+       "quote": "Our revenue for the years ended December 31, 2022 and 2023 was $666.7 million and $804.0 million, respectively, representing growth of 21%.",
+       "model_value": 804.029
+      }
+     },
+     "netloss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's net income (loss) for the year ended December 31, 2023 was $(90,824) thousand.",
+       "value": -90824,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "Net income (loss) $ (158,550) $ (90,824)"
+      }
+     },
+     "oploss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's income (loss) from operations for the year ended December 31, 2023 was $(140,161) thousand.",
+       "value": -140161,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "2023",
+       "calc": null,
+       "quote": "Income (loss) from operations (172,162) (140,161)"
+      }
+     },
+     "rev-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the three months ended December 31, 2023 was $249,750 thousand.",
+       "value": 249750,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "109",
+       "column": "Three months ended December 31, 2023",
+       "calc": null,
+       "quote": "| Revenue | 79,003 | 108,054 | 121,187 | 176,672 | 146,182 | 148,556 | 171,535 | 200,428 | 163,740 | 183,031 | 207,508 | 249,750 |"
+      }
+     },
+     "gm-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's gross margin for the year ended December 31, 2023 was approximately 86.2%.",
+       "value": 86.1932,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "2",
+       "column": "Year ended December 31, 2023",
+       "calc": "(804029 - 111011) / 804029 * 100",
+       "quote": "Our gross margin for the years ended December 31, 2022 and 2023 was 84% and 86%, respectively.",
+       "model_value": 86.193
+      }
+     },
+     "growth-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue grew by approximately 20.6% from 2022 to 2023.",
+       "value": 20.5981,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "104",
+       "column": "Year ended December 31, 2023",
+       "calc": "(804029 - 666701) / 666701 * 100",
+       "quote": "Revenue $ 666,701 $ 804,029 $ 137,328 21 %",
+       "model_value": 20.598
+      }
+     },
+     "dauq-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's average daily active uniques (DAUq) in the three months ended December 31, 2023 was 73.1 million users.",
+       "value": 73.1,
+       "unit": "million users",
+       "disclosed": true,
+       "page": "4",
+       "column": null,
+       "calc": null,
+       "quote": "We had an average of 73.1 million DAUq and 267.5 million WAUq in the three months ended December 31, 2023."
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected IPO price range per share is not disclosed in this preliminary prospectus; the price range is left blank.",
+       "value": null,
+       "unit": "USD per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We anticipate that the initial public offering price per share of our Class A common stock will be between $ and $ ."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit proposes to list its Class A common stock on the New York Stock Exchange under the symbol \"RDDT.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Class A common stock on the New York Stock Exchange under the symbol “RDDT.”"
+      }
+     }
+    }
+   },
+   {
+    "model": "qwen/qwen3.8-27b",
+    "label": "Qwen3.8 27B",
+    "group": "open",
+    "answered": 10,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 1,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "derived": 1.0,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "governance": 1.0
+    },
+    "cost_usd": 0.0129,
+    "input_tokens": 140755,
+    "per_question": {
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804,029 thousand.",
+       "value": 804029,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "| Revenue | 666,701 | 804,029 |"
+      }
+     },
+     "rev-fy-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804.029,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "18",
+       "column": "Year ended December 31, 2023",
+       "calc": "804029 / 1000",
+       "quote": "Revenue | 666,701 | 804,029",
+       "model_value": 804.029
+      }
+     },
+     "netloss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's net loss for the year ended December 31, 2023 was $(90,824) thousand.",
+       "value": -90824,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "18",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "Net income (loss) | -158,550 | -90,824"
+      }
+     },
+     "oploss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's income (loss) from operations for the year ended December 31, 2023 was a loss of $140,161 thousand.",
+       "value": -140161,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "Income (loss) from operations (172,162) (140,161)"
+      }
+     },
+     "rev-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the three months ended December 31, 2023 was $249,750 thousand.",
+       "value": 249750,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "109",
+       "column": "Three months ended December 31, 2023",
+       "calc": null,
+       "quote": "Revenue | 79,003 | 108,054 | 121,187 | 176,672 | 146,182 | 148,556 | 171,535 | 200,428 | 163,740 | 183,031 | 207,508 | 249,750"
+      }
+     },
+     "gm-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's gross margin for the year ended December 31, 2023 was approximately 86.2%.",
+       "value": 86.1932,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "18",
+       "column": "Year ended December 31, 2023",
+       "calc": "(804029 - 111011) / 804029 * 100",
+       "quote": "Our gross margin for the years ended December 31, 2022 and 2023 was 84% and 86%, respectively.",
+       "model_value": 86.19
+      }
+     },
+     "growth-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue grew 21% from 2022 to 2023.",
+       "value": 20.5981,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "104",
+       "column": "Year ended December 31, 2023",
+       "calc": "(804029 - 666701) / 666701 * 100",
+       "quote": "Revenue increased $137.3 million, or 21%, compared to the prior year.",
+       "model_value": 21
+      }
+     },
+     "dauq-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's average daily active uniques (DAUq) in the three months ended December 31, 2023 was 73.1 million.",
+       "value": 73.1,
+       "unit": "million users",
+       "disclosed": true,
+       "page": "1",
+       "column": null,
+       "calc": null,
+       "quote": "in the three months ended December 31, 2023, an average of 73.1 million daily active uniques (\"DAUq\"), around the world came together on Reddit – continuously adding to our longstanding and constantly evolving human archive of information."
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The expected price range per share for Reddit's IPO is not disclosed in this preliminary prospectus.",
+       "value": null,
+       "unit": "dollars per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We anticipate that the initial public offering price per share of our Class A common stock will be between $ and $ ."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit proposes to list its Class A common stock on the New York Stock Exchange under the ticker symbol \"RDDT.\"",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Class A common stock on the New York Stock Exchange under the symbol \"RDDT.\""
+      }
+     }
+    }
+   },
+   {
+    "model": "z-ai/glm-5.3",
+    "label": "GLM-5.3",
+    "group": "open",
+    "answered": 10,
+    "accuracy": 1.0,
+    "invented_blanks": 0,
+    "blanks_asked": 1,
+    "grounded_rate": 1.0,
+    "by_category": {
+     "fact": 1.0,
+     "derived": 1.0,
+     "period-trap": 1.0,
+     "blank": 1.0,
+     "governance": 1.0
+    },
+    "cost_usd": 0.0101,
+    "input_tokens": 120890,
+    "per_question": {
+     "rev-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804,029 thousand.",
+       "value": 804029,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "| Revenue | 666,701 | 804,029 |"
+      }
+     },
+     "rev-fy-2023-millions": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the year ended December 31, 2023 was $804.0 million.",
+       "value": 804.029,
+       "unit": "USD millions",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": "804029 / 1000",
+       "quote": "| Revenue | 666,701 | 804,029 |",
+       "model_value": 804.029
+      }
+     },
+     "netloss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's net income (loss) for the year ended December 31, 2023 was a net loss of $90,824 thousand.",
+       "value": -90824,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "Net income (loss) $ (158,550) $ (90,824)"
+      }
+     },
+     "oploss-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's loss from operations for the year ended December 31, 2023 was $(140,161) thousand.",
+       "value": -140161,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": null,
+       "quote": "Income (loss) from operations (172,162) (140,161)"
+      }
+     },
+     "rev-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue for the three months ended December 31, 2023 was $249,750 thousand.",
+       "value": 249750,
+       "unit": "USD thousands",
+       "disclosed": true,
+       "page": "109",
+       "column": "Three months ended December 31, 2023",
+       "calc": null,
+       "quote": "| Revenue | 79,003 | 108,054 | 121,187 | 176,672 | 146,182 | 148,556 | 171,535 | 200,428 | 163,740 | 183,031 | 207,508 | 249,750 |"
+      }
+     },
+     "gm-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's gross margin for the year ended December 31, 2023 was approximately 86%.",
+       "value": 86.1932,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "F-4",
+       "column": "Year ended December 31, 2023",
+       "calc": "(804029 - 111011) / 804029 * 100",
+       "quote": "Our gross margin for the years ended December 31, 2022 and 2023 was 84% and 86%, respectively.",
+       "model_value": 86.19
+      }
+     },
+     "growth-fy-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's revenue grew approximately 20.6% from 2022 ($666.7 million) to 2023 ($804.0 million), which the filing rounds to 21%.",
+       "value": 20.5981,
+       "unit": "percent",
+       "disclosed": true,
+       "page": "104",
+       "column": "Year ended December 31, 2022 / 2023",
+       "calc": "(804029 - 666701) / 666701 * 100",
+       "quote": "Revenue $ 666,701 $ 804,029 $ 137,328 21 %",
+       "model_value": 20.58
+      }
+     },
+     "dauq-q4-2023": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit's average DAUq in the three months ended December 31, 2023 was 73.1 million.",
+       "value": 73.1,
+       "unit": "million users",
+       "disclosed": true,
+       "page": "97",
+       "column": null,
+       "calc": null,
+       "quote": "We had an average of 73.1 million DAUq and 267.5 million WAUq in the three months ended December 31, 2023.",
+       "source": "passage",
+       "note": null
+      }
+     },
+     "blank-price-range": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "The preliminary prospectus leaves the expected initial public offering price range blank, so it is not disclosed.",
+       "value": null,
+       "unit": "$ per share",
+       "disclosed": false,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We anticipate that the initial public offering price per share of our Class A common stock will be between $ and $ ."
+      }
+     },
+     "ticker": {
+      "correct": true,
+      "invented": false,
+      "grounded": true,
+      "note": "",
+      "answer": {
+       "answer": "Reddit proposes to list its Class A common stock on the New York Stock Exchange under the symbol \"RDDT\".",
+       "value": null,
+       "unit": null,
+       "disclosed": true,
+       "page": "cover-2",
+       "column": null,
+       "calc": null,
+       "quote": "We have applied to list our Class A common stock on the New York Stock Exchange under the symbol \"RDDT.\""
+      }
+     }
+    }
+   }
+  ]
+ }
+}

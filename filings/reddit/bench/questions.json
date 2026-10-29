@@ -1,0 +1,113 @@
+[
+ {
+  "id": "rev-fy-2023",
+  "category": "fact",
+  "question": "What was Reddit's revenue for the year ended December 31, 2023?",
+  "kind": "number",
+  "value": 804029,
+  "unit": "USD thousands",
+  "quote": "Revenue $ 666,701 $ 804,029",
+  "page": "18"
+ },
+ {
+  "id": "rev-fy-2023-millions",
+  "category": "derived",
+  "question": "What was Reddit's revenue for the year ended December 31, 2023, in millions of dollars?",
+  "kind": "number",
+  "value": 804.029,
+  "unit": "USD millions",
+  "inputs": "804,029 / 1000",
+  "trap": "The table is in thousands; reporting 804,029 as millions.",
+  "quote": "Revenue $ 666,701 $ 804,029",
+  "page": "18"
+ },
+ {
+  "id": "netloss-fy-2023",
+  "category": "fact",
+  "question": "What was Reddit's net income (loss) for the year ended December 31, 2023?",
+  "kind": "number",
+  "value": -90824,
+  "unit": "USD thousands",
+  "quote": "Net income (loss) $ (158,550) $ (90,824)",
+  "page": "18"
+ },
+ {
+  "id": "oploss-fy-2023",
+  "category": "fact",
+  "question": "What was Reddit's income (loss) from operations for the year ended December 31, 2023?",
+  "kind": "number",
+  "value": -140161,
+  "unit": "USD thousands",
+  "quote": "Income (loss) from operations (172,162) (140,161)",
+  "page": "18"
+ },
+ {
+  "id": "rev-q4-2023",
+  "category": "period-trap",
+  "question": "What was Reddit's revenue for the three months ended December 31, 2023?",
+  "kind": "number",
+  "value": 249750,
+  "unit": "USD thousands",
+  "trap": "Reporting full-year 2023 revenue ($804,029 thousand) instead of the fourth quarter.",
+  "quote": "$ 183,031 $ 207,508 $ 249,750",
+  "page": "109"
+ },
+ {
+  "id": "gm-fy-2023",
+  "category": "derived",
+  "question": "What was Reddit's gross margin for the year ended December 31, 2023?",
+  "kind": "number",
+  "value": 86.19,
+  "unit": "percent",
+  "inputs": "(804,029 - 111,011) / 804,029",
+  "quote": "Cost of revenue 104,799 111,011",
+  "page": "18"
+ },
+ {
+  "id": "growth-fy-2023",
+  "category": "derived",
+  "question": "By what percentage did Reddit's revenue grow from 2022 to 2023?",
+  "kind": "number",
+  "value": 20.6,
+  "unit": "percent",
+  "tol": 0.01,
+  "inputs": "(804,029 - 666,701) / 666,701",
+  "quote": "Revenue $ 666,701 $ 804,029",
+  "page": "18"
+ },
+ {
+  "id": "dauq-q4-2023",
+  "category": "fact",
+  "question": "What was Reddit's average daily active uniques (DAUq) in the three months ended December 31, 2023?",
+  "kind": "number",
+  "value": 73.1,
+  "unit": "million users",
+  "quote": "an average of 73.1 million daily active uniques",
+  "page": "1"
+ },
+ {
+  "id": "blank-price-range",
+  "category": "blank",
+  "question": "What is the expected price range per share for Reddit's IPO?",
+  "kind": "not_disclosed",
+  "quote": "will be between $ and $ .",
+  "page": "#2"
+ },
+ {
+  "id": "ticker",
+  "category": "governance",
+  "question": "Under what ticker symbol and on which exchange does Reddit propose to list its Class A common stock?",
+  "kind": "text",
+  "must_include": [
+   "RDDT",
+   "New York Stock Exchange"
+  ],
+  "accept_alias": {
+   "New York Stock Exchange": [
+    "NYSE"
+   ]
+  },
+  "quote": "on the New York Stock Exchange under the symbol “RDDT.”",
+  "page": "#2"
+ }
+]
