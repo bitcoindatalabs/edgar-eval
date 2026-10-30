@@ -20,7 +20,7 @@
 <style>
 :root {
   --bg: #FAF8F5; --bg2: #F3EFEA; --surface: #FFFFFF;
-  --ink: #242D38; --ink2: #5E6977; --ink3: #8893A0; --line: #E5DFD5;
+  --ink: #242D38; --ink2: #5E6977; --ink3: #6B7684; --line: #E5DFD5;
   --accent: #D47355; --accent-d: #A95137; --accent-l: #FBF2ED; --accent-b: #ECCDC1;
   --sage: #2E7559; --sage-l: #EDF5F0; --madder: #A93E3B; --madder-l: #FBEFEF;
   --grey: #C3BBB0;
@@ -167,6 +167,7 @@ body.black.presenter #pblack { display: block; }
 .tbl td b { color: var(--ink); }
 .tbl .r { text-align: right; font-variant-numeric: tabular-nums; }
 .tbl tr.hot td { background: var(--accent-l); }
+.tbl td.miss { color: var(--madder); font-weight: 600; }
 .card.bad .num { color: var(--madder); } .card.good .num { color: var(--sage); }
 .tricks .card { padding: 24px 28px; }
 .tricks .card h3 { display: flex; align-items: center; gap: 14px; font-size: 30px; }
@@ -192,6 +193,7 @@ body.black.presenter #pblack { display: block; }
   <aside class="notes">
     <p>One breath: "I'm Saurabh, most people call me Soru. Ten-plus years leading data at PayPal. Now I run Bitcoin Data Labs."</p>
     <p>"The program says 'Inside Anthropic's IPO filing', and we'll go inside it. But the filing is the test. The real question: can a model you run yourself, on one GPU, read 422 pages as well as the frontier models? Anthropic filed on Monday, so it is too new to be in any model's training data."</p>
+    <p>If asked "isn't it in the training data?": with no document, the best models got 10 of 47: six blanks, where "not disclosed" is a safe guess, plus general facts like which clouds sell Claude. None got a single revenue, margin or cash figure.</p>
   </aside>
 </section>
 
@@ -243,7 +245,7 @@ body.black.presenter #pblack { display: block; }
   </div>
   <div class="hbars step">
     <div class="hb hot"><div class="lab">Claude Opus 5.5</div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
-    <div class="hb hot"><div class="lab">Sonnet 5.5 · GPT-6.1 Sol · Grok 4.7<small>each</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
+    <div class="hb hot"><div class="lab">Sonnet&nbsp;5.5 · GPT-6.1&nbsp;Sol · Grok&nbsp;4.7<small>each</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
     <div class="hb"><div class="lab">Claude Haiku 5.5<small>fast tier</small></div><div class="track"><div class="fill" style="--w:93.6%"></div><span class="val">44</span></div></div>
   </div>
   <p class="src">Filing in one prompt: 300k–460k tokens · $1.00–1.99 per 47-question run</p>
@@ -257,7 +259,7 @@ body.black.presenter #pblack { display: block; }
 <!-- 6 · Quiz 2 teaser -->
 <section class="slide center" data-title="Quiz 2 (vote only)" data-min="0.5">
   <p class="kicker">Quiz 2 · answer at the end</p>
-  <h2>Our local 27B model gets to 100%. Which change mattered most?</h2>
+  <h2>With plain keyword search, our local 27B model falls short. We got it to 100%. Which change mattered most?</h2>
   <p class="vote">vote now, I’ll tell you at the end</p>
   <div class="quiz two">
     <div class="opt"><b>A</b>A bigger model</div>
@@ -267,6 +269,7 @@ body.black.presenter #pblack { display: block; }
   </div>
   <aside class="notes">
     <p>Quick vote, no reveal. "Remember your answer." Most rooms pick B or C.</p>
+    <p>Don't say the starting score here: that's Quiz 3.</p>
   </aside>
 </section>
 
@@ -276,12 +279,14 @@ body.black.presenter #pblack { display: block; }
   <h2>Same 47 questions, three ways to read the filing</h2>
   <div class="cards">
     <div class="card"><h3>Frontier: read it all</h3><p>Claude, GPT and Grok get the S-1 in one prompt: <b style="color:var(--ink)">300k–460k tokens.</b></p></div>
-    <div class="card"><h3>Local 27B: keyword search</h3><p>Qwen3.8 27B, small enough for one GPU, gets the 8 pages that best match the question: <b style="color:var(--ink)">~7k tokens.</b></p></div>
+    <div class="card"><h3>Local 27B: keyword search</h3><p>Qwen3.8 27B, small enough for one GPU, gets the 8 pages that best match the question (BM25): <b style="color:var(--ink)">~7k tokens.</b></p><p style="margin-top:12px">Control: Claude Opus with the same 8 pages.</p></div>
     <div class="card good step"><h3>Local 27B + our skills</h3><p>Same model. Parsed tables with page citations, short passages, and code that does the math and checks: <b style="color:var(--ink)">~13k tokens.</b></p></div>
   </div>
+  <p class="src">“Local” means open weights that fit on one GPU · for these numbers we ran them through an API</p>
   <aside class="notes">
-    <p>"Keyword search is the simplest kind of retrieval: find the pages whose words match the question, and hope the answer is there. Most production RAG uses embedding search, which we haven't tested yet." Click for the third.</p>
+    <p>"Keyword search is the simplest kind of retrieval: find the pages whose words match the question, and hope the answer is there. Most production RAG uses embedding search, which we haven't tested yet." Point at the control line: "We also gave Claude Opus the same keyword search, to see whether a bigger model fixes it. You'll see." Click for the third.</p>
     <p>"Skills are packaged instructions plus scripts an agent can run. Ours are open source."</p>
+    <p>If asked what the keyword search is: BM25 (k1 1.4, b 0.75) over whole pages, plain words, top 8. The skill uses BM25 too, but over ~180-word passages with stemming and question words dropped, top 12, next to the parsed tables. So the skill didn't win by swapping in a fancier retriever: the tables did most of the work.</p>
   </aside>
 </section>
 
@@ -308,7 +313,7 @@ body.black.presenter #pblack { display: block; }
 </section>
 
 <!-- 9 · Quiz 3 + result -->
-<section class="slide" data-title="Quiz: local score + result" data-min="1.25">
+<section class="slide" data-title="Quiz: local score + result" data-min="1.5">
   <p class="kicker">Quiz 3</p>
   <h2>A 27B open model with keyword search. <span class="hl">How many of the 47?</span></h2>
   <div class="quiz key" style="margin-bottom:34px">
@@ -322,10 +327,12 @@ body.black.presenter #pblack { display: block; }
     <div class="hb step"><div class="lab">Local 27B, keyword search<small>Qwen3.8 27B</small></div><div class="track"><div class="fill" style="--w:89.4%"></div><span class="val">42</span></div></div>
     <div class="hb hot step"><div class="lab">Local 27B + our skills<small>Qwen3.8 27B · ~$0.04 · parity</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
   </div>
+  <p class="say step" style="margin-top:26px;font-size:30px">Control: Opus with the same keyword search scored what the 27B scored, <b>19 of 23 questions, same 4 misses.</b></p>
   <p class="src">Across all four S-1s and three open models: keyword search 88–90%, with skills 100%</p>
   <aside class="notes">
     <p>Vote, click to reveal: <b>42 of 47, about 90%.</b> "Not bad! But 5 wrong answers in a financial filing is 5 too many."</p>
-    <p>Click through the bars. Last click: "Same model, with our skills: 47 of 47. Parity with the frontier, at about a fiftieth of the cost."</p>
+    <p>Click through the bars. Third bar: "Same model, with our skills: 47 of 47. Parity with the frontier, for about 4 cents a run instead of one to two dollars."</p>
+    <p>Final click, the control: "We gave Claude Opus the same keyword search on 23 of the questions. It scored exactly what the 27B scored on those, 19, and missed the same four. The search was the ceiling, not the model." If asked about cost: Opus with keyword search cost about as much per question as reading the whole filing ($0.046 vs $0.042), because the whole filing is cached between questions.</p>
     <p>Cost: the skill sends about twice the tokens of keyword search, yet in our runs the two cost about the same, a few cents per run. The comparison that matters is against the frontier: $1.99 (Opus) or $1.00 (Sonnet) vs about $0.04. The $0.04 is the API price for the open weights.</p>
   </aside>
 </section>
@@ -336,7 +343,7 @@ body.black.presenter #pblack { display: block; }
   <h2>Gross margin, H1 2026: three answers</h2>
   <div class="cards">
     <div class="card bad"><div class="num">45%</div><h3>Haiku, whole filing</h3><p>Used “compute and infrastructure” as cost of revenue. Confident, cites a real row, wrong.</p></div>
-    <div class="card bad"><div class="num" style="font-size:52px;line-height:1.35">“Not disclosed”</div><h3>Local 27B, keyword search</h3><p>Found the sentence saying cost of revenue is no longer on the income statement, and stopped.</p></div>
+    <div class="card bad"><div class="num" style="font-size:52px;line-height:1.35">“Not disclosed”</div><h3>Keyword search: local 27B <em>and</em> Opus</h3><p>Both found the line saying cost of revenue is no longer on the income statement, and stopped.</p></div>
     <div class="card good step"><div class="num">85.4%</div><h3>Local 27B + our skills</h3><p>Read cost of revenue from the note on p. F-39. Code did the division.</p></div>
   </div>
   <p class="say step" style="margin-top:34px">Four of keyword search’s five misses came from one note table. The filing never says “gross margin”, so search never finds that page.</p>
@@ -345,6 +352,7 @@ body.black.presenter #pblack { display: block; }
     <p>The strongest example. Read the question, then left to right.</p>
     <p>Haiku, with the WHOLE filing: 45%. It used the compute line ($8,945M), which includes training compute, not just serving customers. "Having the document isn't the same as reading it right."</p>
     <p>Keyword search: "not disclosed". It found a real sentence (p. F-14) and gave up. The number IS in the filing, in a note.</p>
+    <p>"And this isn't a small-model problem. We gave Claude Opus the same 8 pages and it said the same thing: Anthropic 'no longer reports cost of revenue or gross profit as line items.' Same search, same miss." (Opus keyword-search run: 23 of the 47 questions. Backup slide 20 has all four shared misses.)</p>
     <p>Click: the skill reads the F-39 row; the model writes the expression; code computes 85.4%.</p>
   </aside>
 </section>
@@ -381,7 +389,7 @@ body.black.presenter #pblack { display: block; }
   <div class="cards tricks step" style="margin-top:24px">
     <div class="card"><h3><span class="tn c">4</span>Code does the math</h3><p>The model writes (1250 − 400) / 1250 × 100; code computes it.</p></div>
     <div class="card"><h3><span class="tn c">5</span>Code checks the answer</h3><p>Inputs and quote must be in the context, the period must match. Else one retry.</p></div>
-    <div class="card"><h3><span class="tn s">6</span>Search prose smarter</h3><p>Short passages and stemmed keywords for risk and governance facts.</p></div>
+    <div class="card"><h3><span class="tn s">6</span>Search prose smarter</h3><p>BM25 over short passages, stemmed keywords, for risk and governance facts.</p></div>
   </div>
   <p class="src">~13k tokens per question instead of 300k–460k</p>
   <aside class="notes">
@@ -490,10 +498,13 @@ body.black.presenter #pblack { display: block; }
     <div class="opt"><b>C</b>Letting code do the math</div>
     <div class="opt ok"><b>D</b>Handing it the right table</div>
   </div>
-  <p class="say step">Most misses were tables keyword search never found: the gross-margin note, quarterly results. Code doing the math mattered too. A bigger model didn’t.</p>
+  <p class="say step">Most misses were tables keyword search never found: the gross-margin note, quarterly results. Code doing the math mattered too.</p>
+  <p class="say step" style="margin-top:18px"><b>A bigger model didn’t.</b> Claude Opus with the same keyword search missed the same gross-margin questions.</p>
+  <p class="src">Claude Opus 5.5 with keyword search, 23 of the 47 questions: 19 right · 4 misses, all “not disclosed”</p>
   <aside class="notes">
     <p>"Who voted D?" Reveal. "Four of the five misses on Anthropic and every quarterly miss on Instacart were tables keyword search never retrieved."</p>
-    <p>"C helped too: it fixed rounding. And A: same 27B model throughout."</p>
+    <p>"C helped too: it fixed rounding." Click. "And A: we kept the same 27B model throughout. When we gave Claude Opus the same keyword search, it said 'not disclosed' on the same three gross-margin questions and on the Claude Code incident."</p>
+    <p>If asked: the Opus run covered 23 of the 47 questions, to keep the cost down. It got 19 right. Type 2 then 0 for the backup table of the four questions both missed.</p>
   </aside>
 </section>
 
@@ -502,11 +513,12 @@ body.black.presenter #pblack { display: block; }
   <p class="kicker">Three things to take home</p>
   <div class="take">
     <div class="step"><span class="n">1</span><div><h3>Small models fail by omission</h3><p>With keyword search, 9 of the 27B model’s 10 misses were “not in the filing”. Give it the right table and it answers.</p></div></div>
-    <div class="step"><span class="n">2</span><div><h3>Workflow beats size on narrow tasks</h3><p>Code prepares, the model decides, code checks: a 27B model matched the frontier at 1/50th of the cost.</p></div></div>
-    <div class="step"><span class="n">3</span><div><h3>Prove it on documents you didn’t tune on</h3><p>Freeze the code, then test held-out. That’s what makes 100% believable.</p></div></div>
+    <div class="step"><span class="n">2</span><div><h3>A bigger model doesn’t fix weak search</h3><p>With the same keyword search, Claude Opus scored what the 27B scored on our questions: 19&nbsp;of&nbsp;23, the same four misses.</p></div></div>
+    <div class="step"><span class="n">3</span><div><h3>Workflow beats size on narrow tasks</h3><p>Code prepares, the model decides, code checks: a 27B model matched the frontier for about&nbsp;4&nbsp;cents a run, not&nbsp;$1–2.</p></div></div>
   </div>
   <aside class="notes">
     <p>Slow down. One sentence per point, then pause. If time allows: "Which of these will you try on your own documents?"</p>
+    <p>They build on each other: small models fail by omission; a bigger model with the same search fails the same way; so fix the workflow, not the model size.</p>
   </aside>
 </section>
 
@@ -528,7 +540,26 @@ body.black.presenter #pblack { display: block; }
   </div>
   <aside class="notes">
     <p>Don't end on "any questions?" Ask the slide's question: "What should a local model read next?" Seed it if quiet: "10-Qs? Earnings call transcripts? Your own contracts?"</p>
-    <p>Use digit keys to jump back to a slide during Q&amp;A (e.g. 1 then 3 for slide 13, the held-out table).</p>
+    <p>Use digit keys to jump back to a slide during Q&amp;A (e.g. 1 then 3 for slide 13, the held-out table). 2 then 0 opens the backup: Opus vs the 27B with keyword search, question by question.</p>
+  </aside>
+</section>
+
+<!-- Backup · same search, same misses (not in the slide count; reach it with digits 2 0) -->
+<section class="slide" data-title="Backup: same search, same misses" data-min="0" data-backup>
+  <p class="kicker">Backup · a bigger model, same search</p>
+  <h2>Given the same 8 pages, Opus missed what the 27B missed</h2>
+  <table class="tbl">
+    <tr><th style="width:30%">Question</th><th style="width:34%">In the filing</th><th style="width:18%">Qwen3.8 27B</th><th>Claude Opus 5.5</th></tr>
+    <tr><td><b>Gross margin, H1 2026</b></td><td>85.4% · p. F-39</td><td class="miss">Not disclosed</td><td class="miss">Not disclosed</td></tr>
+    <tr><td><b>Gross margin, FY 2025</b></td><td>39.5% · p. F-39</td><td class="miss">Not disclosed</td><td class="miss">Not disclosed</td></tr>
+    <tr><td><b>Gross margin, FY 2024</b></td><td>−94.8% · p. F-39</td><td class="miss">Not disclosed</td><td class="miss">Not disclosed</td></tr>
+    <tr><td><b>Claude Code, Sep 2025</b></td><td>State-sponsored group, ~30 targets · p. 45</td><td class="miss">Not in filing</td><td class="miss">Not in filing</td></tr>
+  </table>
+  <p class="say" style="margin-top:28px;font-size:30px">Same wrong reason on gross margin: cost of revenue is no longer a line item. It’s in a note on p.&nbsp;F-39.</p>
+  <p class="src">BM25 keyword search, top 8 pages per question · Opus run: 23 of the 47 questions, 19 right; these are its 4 misses</p>
+  <aside class="notes">
+    <p>"Same retrieval, same misses, even the same excuse. Retrieval was the bottleneck, not model size."</p>
+    <p>Qwen's fifth miss (cost of revenue, H1 2026) wasn't in the Opus run.</p>
   </aside>
 </section>
 
@@ -558,6 +589,8 @@ P: presenter window (notes, timer, pace) &nbsp;·&nbsp; N: notes here &nbsp;·&n
   // ── deck engine ──
   const slides = [...document.querySelectorAll(".slide")];
   const N = slides.length;
+  // backup slides sit after the last main slide: left out of the count, reached only by digits
+  const NMAIN = slides.filter(s => !("backup" in s.dataset)).length;
   const presenter = new URLSearchParams(location.search).has("presenter");
   const stage = document.getElementById("stage"), viewport = document.getElementById("viewport");
   const stepsOf = s => [...s.querySelectorAll(".step, .key")];
@@ -574,8 +607,8 @@ P: presenter window (notes, timer, pace) &nbsp;·&nbsp; N: notes here &nbsp;·&n
     const s = slides[cur];
     stepsOf(s).forEach((e, i) => e.classList.toggle("in", i < k));
     s.dataset.k = k;
-    document.getElementById("snum").textContent = `${cur + 1} / ${N}`;
-    document.getElementById("prog").style.width = `${(cur + 1) / N * 100}%`;
+    document.getElementById("snum").textContent = cur < NMAIN ? `${cur + 1} / ${NMAIN}` : "backup";
+    document.getElementById("prog").style.width = `${Math.min(cur + 1, NMAIN) / NMAIN * 100}%`;
     document.getElementById("notesbar").innerHTML = notesOf(s);
     try { history.replaceState(null, "", location.pathname + location.search + "#" + (cur + 1)); } catch (e) {}
     if (presenter) panel();
@@ -590,7 +623,7 @@ P: presenter window (notes, timer, pace) &nbsp;·&nbsp; N: notes here &nbsp;·&n
   }
   function next() {
     if (k < stepsOf(slides[cur]).length) { k++; render(); send(); }
-    else if (cur < N - 1) go(cur + 1, 0);
+    else if (cur < N - 1 && cur !== NMAIN - 1) go(cur + 1, 0);
   }
   function prev() {
     if (k > 0) { k--; render(); send(); }
@@ -628,7 +661,7 @@ P: presenter window (notes, timer, pace) &nbsp;·&nbsp; N: notes here &nbsp;·&n
     }
     else if (["ArrowLeft", "ArrowUp", "PageUp", "Backspace"].includes(key)) { e.preventDefault(); prev(); }
     else if (key === "Home") go(0, 0);
-    else if (key === "End") go(N - 1, "end");
+    else if (key === "End") go(NMAIN - 1, "end");
     else if (key === "f" || key === "F") toggleFS();
     else if (key === "p" || key === "P") openPresenter();
     else if (key === "b" || key === "B" || key === ".") toggleBlack();
