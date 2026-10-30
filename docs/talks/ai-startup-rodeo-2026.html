@@ -195,22 +195,6 @@ body.black.presenter #pblack { display: block; }
   </aside>
 </section>
 
-<!-- 2 · Bitcoin Data Labs -->
-<section class="slide" data-title="Bitcoin Data Labs" data-min="0.6">
-  <p class="kicker">Bitcoin Data Labs</p>
-  <h2 style="margin-bottom:30px">Understanding Bitcoin through data</h2>
-  <div class="cards">
-    <div class="card"><h3>⚡ Lightning operations</h3><p>Measured from our own nodes: the public map every day and every channel close on-chain. Clients, hubs, fees.</p></div>
-    <div class="card"><h3>🧑‍💻 Bitcoin open source</h3><p><b style="color:var(--ink)">~1,000 repos, 55,000 developers.</b> Who builds what, how code gets reviewed, which libraries and wallets get used.</p></div>
-    <div class="card step"><h3>🧪 Open by default</h3><p>Free reports and data, open code, and benchmarks you can rerun. Today’s work is on GitHub.</p></div>
-  </div>
-  <p class="say step" style="margin-top:40px">Free reports and data: <b>bitcoindatalabs.org</b>. <span class="muted">Today: the same measurement habit, pointed at AI reading a financial filing.</span></p>
-  <aside class="notes">
-    <p>30–40 seconds. "Bitcoin Data Labs tries to understand the Bitcoin ecosystem through data, not opinions."</p>
-    <p>Click: "Everything is open: reports, code, data." Click: "Today, the same habit: measure before you believe, pointed at AI reading an IPO filing."</p>
-  </aside>
-</section>
-
 <!-- 3 · Hands up -->
 <section class="slide center" data-title="Hands up" data-min="0.6">
   <p class="kicker">Before we start</p>
@@ -228,19 +212,21 @@ body.black.presenter #pblack { display: block; }
 </section>
 
 <!-- 4 · Hook -->
-<section class="slide" data-title="Same filing, both true" data-min="1">
+<section class="slide" data-title="Lost $80.7B, made money" data-min="1.25">
   <p class="kicker">Anthropic’s S-1 · filed Oct 26, 2026</p>
-  <h2>Same filing. Both true.</h2>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:10px">
-    <div class="stat"><div class="v" style="font-size:96px;color:var(--madder)">−$80.7B</div><div class="k">Net loss, six months ended June 30, 2026 (p. 147)</div></div>
-    <div class="stat step" style="border-left-color:var(--sage)"><div class="v" style="font-size:96px;color:var(--sage)">+$974M</div><div class="k">Operating income, three months ended June 30, 2026 (p. 157)</div></div>
+  <h2>Anthropic lost $80.7B in six months. <span class="hl">Its business made money last quarter.</span></h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:6px">
+    <div class="stat"><div class="v" style="font-size:88px;color:var(--madder)">−$80.7B</div><div class="k">Net loss, six months ended June 30, 2026 (p. 147). <b>$72.4B</b> of it is on paper: convertible notes revalued as Anthropic’s valuation rose.</div></div>
+    <div class="stat step" style="border-left-color:var(--sage)"><div class="v" style="font-size:88px;color:var(--sage)">+$974M</div><div class="k">Operating income, three months ended June 30, 2026 (p. 157). The only operating profit in any period the filing reports.</div></div>
   </div>
-  <p class="say step" style="margin-top:60px">Read the wrong column and you get the <b>sign</b> wrong. That’s the job: 422 pages, no mixing up a quarter and a half-year.</p>
-  <p class="src">$72.4B of the six-month loss is a non-cash change in the fair value of convertible notes (pp. 64, 147)</p>
+  <p class="say step" style="margin-top:50px">Both numbers are right. Mix up the period or the line and you report the wrong sign. <b>That’s the test for AI.</b></p>
+  <p class="src">Operating loss for the six months: −$693M · quarterly revenue went from $4.7B (Q1) to $11.6B (Q2) · pp. 64, 147, 157</p>
   <aside class="notes">
-    <p>Let the first number land. "Anthropic lost 80.7 billion dollars in six months." Click. "Last quarter it made 974 million in operating income. Same filing. Both true."</p>
-    <p>Why: $72.4B of the half-year loss is a non-cash charge, the change in fair value of convertible notes, driven by the rising valuation. Operating loss for the half was $693M; Q2 alone was +$974M.</p>
-    <p>Click: "That's what makes filings hard for AI: the right number sits next to a plausible wrong one." Don't editorialize on the IPO. Not investment advice.</p>
+    <p>The hook has two layers; land the money story first.</p>
+    <p>"Anthropic lost 80.7 billion dollars in six months." Pause. "But 72.4 billion of that is on paper: they owe convertible notes, and as the company's valuation shot up, so did what those notes are worth. That's an accounting loss, not cash out the door."</p>
+    <p>Click. "Meanwhile the business itself made 974 million dollars in operating income last quarter. Revenue went from 4.7 billion in Q1 to 11.6 billion in Q2. It's the only operating profit anywhere in the filing."</p>
+    <p>Click. "Both numbers are right. Ask 'Is Anthropic profitable?' and the answer depends on which period and which line you read. Pick the six-month column instead of the quarter and you flip the sign. That's exactly the kind of mistake I tested AI for."</p>
+    <p>Don't editorialize on the IPO or valuation. Not investment advice.</p>
   </aside>
 </section>
 
@@ -333,14 +319,14 @@ body.black.presenter #pblack { display: block; }
   </div>
   <div class="hbars">
     <div class="hb step"><div class="lab">Frontier, whole filing<small>Opus · $1.99 per run</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
-    <div class="hb step"><div class="lab">Local 27B, keyword search<small>Qwen3.8 27B · $0.05</small></div><div class="track"><div class="fill" style="--w:89.4%"></div><span class="val">42</span></div></div>
-    <div class="hb hot step"><div class="lab">Local 27B + our skills<small>Qwen3.8 27B · $0.04 · parity</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
+    <div class="hb step"><div class="lab">Local 27B, keyword search<small>Qwen3.8 27B</small></div><div class="track"><div class="fill" style="--w:89.4%"></div><span class="val">42</span></div></div>
+    <div class="hb hot step"><div class="lab">Local 27B + our skills<small>Qwen3.8 27B · ~$0.04 · parity</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
   </div>
   <p class="src">Across all four S-1s and three open models: keyword search 89–90%, with skills 100%</p>
   <aside class="notes">
     <p>Vote, click to reveal: <b>42 of 47, about 90%.</b> "Not bad! But 5 wrong answers in a financial filing is 5 too many."</p>
     <p>Click through the bars. Last click: "Same model, with our skills: 47 of 47. Parity with the frontier, at about a fiftieth of the cost."</p>
-    <p>If asked: against Sonnet ($1.00, also 47/47) it's ~25×, not 50×. The $0.04 is the API price for the open weights.</p>
+    <p>Cost: the skill sends about twice the tokens of keyword search, so the two cost about the same, a few cents per run. The comparison that matters is against the frontier: $1.99 (Opus) or $1.00 (Sonnet) vs about $0.04. The $0.04 is the API price for the open weights.</p>
   </aside>
 </section>
 
@@ -383,8 +369,8 @@ body.black.presenter #pblack { display: block; }
   </aside>
 </section>
 
-<!-- 12 · Tricks -->
-<section class="slide" data-title="The tricks" data-min="1.5">
+<!-- 12 · Techniques -->
+<section class="slide" data-title="The techniques" data-min="1.5">
   <p class="kicker">How we closed the gap</p>
   <h2 style="margin-bottom:28px">The model decides. Code does the rest.</h2>
   <div class="cards tricks">
@@ -400,8 +386,8 @@ body.black.presenter #pblack { display: block; }
   <p class="src">~13k tokens per question instead of 300k–460k</p>
   <aside class="notes">
     <p>"None of these is clever alone. Together they turn 'read 400 pages' into 'look up a cited row'."</p>
-    <p>Row 1 (tricks 1–3) shrinks the filing to what questions need. Tables are chosen by a fixed list of standard line items, so nothing is tuned to my questions.</p>
-    <p>Click. Row 2: the model writes the arithmetic, code computes it. Code checks every input and the quote appear in the context and the period matches; a failed answer goes back once with the reason. Trick 6 handles prose questions.</p>
+    <p>Row 1 (techniques 1–3) shrinks the filing to what questions need. Tables are chosen by a fixed list of standard line items, so nothing is tuned to my questions.</p>
+    <p>Click. Row 2: the model writes the arithmetic, code computes it. Code checks every input and the quote appear in the context and the period matches; a failed answer goes back once with the reason. Technique 6 handles prose questions.</p>
     <p>What each bought us: 1–2 fixed the gross-margin misses; 4 removes rounding; 5's retry fixed four malformed answers on new filings; 6 found the Claude Code incident on p. 45.</p>
   </aside>
 </section>
@@ -439,7 +425,7 @@ body.black.presenter #pblack { display: block; }
     <p>"Fair worry: did I just tune this to Anthropic? So I froze the code, recorded a hash of every script, and only then had questions written for two S-1s I had never opened, by agents that never saw my code."</p>
     <p>Why these two: different filing agents, different HTML. The frozen parser handled both unseen.</p>
     <p>Read the Instacart row: keyword search missed quarterly figures it couldn't find. The skill got them from tables it parsed and cited.</p>
-    <p>Honest: these questions were easier (keyword search 91–93%), 44 questions, one run each. Frontier wasn't run on them, but can't beat 22/22.</p>
+    <p>Honest: these questions were easier (keyword search 91–93%), 44 questions, one run each. Frontier wasn't run on them, but can't beat 22/22.</p><p>If asked "did the models just remember these 2023 filings?": with no document, Qwen answered 1 of 22 (Klaviyo) and 3 of 22 (Instacart), two of them blanks. Its 22/22 came from the filing, not memory. DeepSeek remembered more about Instacart (11/22 with no document).</p>
   </aside>
 </section>
 
@@ -462,29 +448,29 @@ body.black.presenter #pblack { display: block; }
   <p class="kicker">Limits</p>
   <h2>Where this stops working</h2>
   <div class="cards" style="grid-template-columns:1fr 1fr">
-    <div class="card"><h3>Each document type needs its own extraction</h3><p>Page breaks, tables and blanks differ by filing agent. 10-Ks carry XBRL; transcripts and contracts need other tricks.</p></div>
+    <div class="card"><h3>Extraction depends on document layout</h3><p>Page splitting worked on all 24 S-1s we sampled from the 8 largest filing agents. Tables still need work on some small-company layouts; transcripts and contracts need new extractors.</p></div>
     <div class="card"><h3>Parity on factual, cited questions</h3><p>Not open-ended analysis or judgment calls.</p></div>
-    <div class="card"><h3>Four S-1s; easier held-out questions</h3><p>Keyword search scored 91–93% there. Harder sets, 10-Qs and 10-Ks come next.</p></div>
+    <div class="card"><h3>Four S-1s; easier held-out questions</h3><p>Keyword search scored 91–93% there, and we haven’t tried embedding search yet. Harder sets and 10-Ks next.</p></div>
     <div class="card"><h3>“Local” ran through an API</h3><p>Same open weights; not yet measured on a 24GB card.</p></div>
   </div>
   <aside class="notes">
-    <p>30 seconds; it makes the parity claim stronger. The real limitation is the first card: tricks 1–3 depend on document layout. Tricks 4–6 (code does math, code checks, retry) carry over to anything.</p>
+    <p>30 seconds; it makes the parity claim stronger. The real limitation is the first card: techniques 1–3 depend on document layout, techniques 4–6 (code does the math, code checks, retry) carry over to anything.</p><p>If asked about coverage: by count, most 2024–25 S-1s come from small-company filing services, not Workiva or Donnelley. The page splitter handled all 24 sampled S-1s across the 8 largest agents. On the 12 where it found statement tables, every value checked out on 7 and the built-in check flagged the other 5. The remaining 12 had no full financial statements to parse, mostly SPACs and resale registrations.</p>
   </aside>
 </section>
 
 <!-- 17 · Automate -->
-<section class="slide" data-title="Can an LLM find the tricks?" data-min="0.75">
+<section class="slide" data-title="Can an LLM design the scaffolding?" data-min="0.75">
   <p class="kicker">What’s next</p>
-  <h2>Can an LLM find the tricks for us?</h2>
+  <h2>Can an LLM design the scaffolding for us?</h2>
   <div class="loop">
     <div>Measure on a benchmark</div><span>→</span>
     <div>Read every failure</div><span>→</span>
-    <div>Propose a trick, in code</div><span>→</span>
+    <div>Propose a technique, in code</div><span>→</span>
     <div>Re-test on dev documents</div><span>→</span>
     <div class="last">Freeze, test held-out</div>
   </div>
   <div class="cards step" style="grid-template-columns:1fr 1fr;margin-top:34px">
-    <div class="card"><h3>A frontier model designs the workflow</h3><p>Reads the failures, proposes a trick, writes it as code. Once per task.</p></div>
+    <div class="card"><h3>A frontier model designs the workflow</h3><p>Reads the failures, proposes a technique, writes it as code. Once per task.</p></div>
     <div class="card good"><h3>A local model runs it</h3><p>On every new document, at local cost, with code checking each answer.</p></div>
   </div>
   <p class="say step" style="margin-top:30px"><b>The goal isn’t a smarter small model. It’s parity on a task, by design.</b></p>
@@ -542,7 +528,7 @@ body.black.presenter #pblack { display: block; }
   </div>
   <aside class="notes">
     <p>Don't end on "any questions?" Ask the slide's question: "What should a local model read next?" Seed it if quiet: "10-Qs? Earnings call transcripts? Your own contracts?"</p>
-    <p>Use digit keys to jump back to a slide during Q&amp;A (e.g. 1 then 4 for slide 14, the held-out table).</p>
+    <p>Use digit keys to jump back to a slide during Q&amp;A (e.g. 1 then 3 for slide 13, the held-out table).</p>
   </aside>
 </section>
 

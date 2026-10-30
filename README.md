@@ -115,7 +115,9 @@ filing agents (Workiva and Donnelley), so the frozen parser was tested on both l
 [`filings/README.md`](filings/README.md) has the details.
 
 On the held-out filings the one-retry rule mattered: 4 skill answers first came back malformed and
-were fixed on retry. The held-out questions were easier than Anthropic's (naive retrieval scored
+were fixed on retry. The 2023 filings could be in the models' training data, so we checked: with no
+document, Qwen answered 1 of 22 Klaviyo and 3 of 22 Instacart questions (two of them blanks), so
+its 22/22 came from the filing. DeepSeek remembered more about Instacart (11 of 22). The held-out questions were easier than Anthropic's (naive retrieval scored
 91-93%), so they show the skill transfers without breaking, more than they show a large margin.
 
 ## How the setups failed
