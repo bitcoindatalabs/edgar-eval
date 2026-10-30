@@ -191,7 +191,7 @@ body.black.presenter #pblack { display: block; }
   <p class="lead" style="margin-top:8px;font-size:24px">10+ years leading data at PayPal. Now measuring Bitcoin, and AI.</p>
   <aside class="notes">
     <p>One breath: "I'm Saurabh, most people call me Soru. Ten-plus years leading data at PayPal. Now I run Bitcoin Data Labs."</p>
-    <p>"The program says 'Inside Anthropic's IPO filing', and we'll go inside it. But the filing is the test. The real question: can a model you run yourself, on one GPU, read 422 pages as well as the frontier models? Anthropic filed on Monday, so no model has seen it before."</p>
+    <p>"The program says 'Inside Anthropic's IPO filing', and we'll go inside it. But the filing is the test. The real question: can a model you run yourself, on one GPU, read 422 pages as well as the frontier models? Anthropic filed on Monday, so it is too new to be in any model's training data."</p>
   </aside>
 </section>
 
@@ -217,14 +217,14 @@ body.black.presenter #pblack { display: block; }
   <h2>Anthropic lost $80.7B in six months. <span class="hl">Its business made money last quarter.</span></h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:6px">
     <div class="stat"><div class="v" style="font-size:88px;color:var(--madder)">−$80.7B</div><div class="k">Net loss, six months ended June 30, 2026 (p. 147). <b>$72.4B</b> of it is on paper: convertible notes revalued as Anthropic’s valuation rose.</div></div>
-    <div class="stat step" style="border-left-color:var(--sage)"><div class="v" style="font-size:88px;color:var(--sage)">+$974M</div><div class="k">Operating income, three months ended June 30, 2026 (p. 157). The only operating profit in any period the filing reports.</div></div>
+    <div class="stat step" style="border-left-color:var(--sage)"><div class="v" style="font-size:88px;color:var(--sage)">+$974M</div><div class="k">Operating income, three months ended June 30, 2026 (p. 157). The only GAAP operating profit in any period the filing reports.</div></div>
   </div>
   <p class="say step" style="margin-top:50px">Both numbers are right. Mix up the period or the line and you report the wrong sign. <b>That’s the test for AI.</b></p>
   <p class="src">Operating loss for the six months: −$693M · quarterly revenue went from $4.7B (Q1) to $11.6B (Q2) · pp. 64, 147, 157</p>
   <aside class="notes">
     <p>The hook has two layers; land the money story first.</p>
     <p>"Anthropic lost 80.7 billion dollars in six months." Pause. "But 72.4 billion of that is on paper: they owe convertible notes, and as the company's valuation shot up, so did what those notes are worth. That's an accounting loss, not cash out the door."</p>
-    <p>Click. "Meanwhile the business itself made 974 million dollars in operating income last quarter. Revenue went from 4.7 billion in Q1 to 11.6 billion in Q2. It's the only operating profit anywhere in the filing."</p>
+    <p>Click. "Meanwhile the business itself made 974 million dollars in operating income last quarter. Revenue went from 4.7 billion in Q1 to 11.6 billion in Q2. It's the only GAAP operating profit in the filing."</p><p>If someone says "adjusted operating income was positive too": yes, the non-GAAP figure was +$2,235M for Q2 and +$1,618M for the half. The GAAP number is the one that flips sign.</p>
     <p>Click. "Both numbers are right. Ask 'Is Anthropic profitable?' and the answer depends on which period and which line you read. Pick the six-month column instead of the quarter and you flip the sign. That's exactly the kind of mistake I tested AI for."</p>
     <p>Don't editorialize on the IPO or valuation. Not investment advice.</p>
   </aside>
@@ -233,7 +233,7 @@ body.black.presenter #pblack { display: block; }
 <!-- 5 · Quiz 1: frontier -->
 <section class="slide" data-title="Quiz: frontier score" data-min="1">
   <p class="kicker">Quiz 1</p>
-  <h2>Frontier models read all 422 pages and answer 47 questions. <span class="hl">How many right?</span></h2>
+  <h2>Frontier models read the S-1 in one prompt and answer 47 questions. <span class="hl">How many right?</span></h2>
   <p class="vote">vote with your hands</p>
   <div class="quiz key">
     <div class="opt"><b>A</b>35</div>
@@ -246,11 +246,11 @@ body.black.presenter #pblack { display: block; }
     <div class="hb hot"><div class="lab">Sonnet 5.5 · GPT-6.1 Sol · Grok 4.7<small>each</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
     <div class="hb"><div class="lab">Claude Haiku 5.5<small>fast tier</small></div><div class="track"><div class="fill" style="--w:93.6%"></div><span class="val">44</span></div></div>
   </div>
-  <p class="src">Whole filing in one prompt: 300k–460k tokens · $1.00–1.99 per 47-question run</p>
+  <p class="src">Filing in one prompt: 300k–460k tokens · $1.00–1.99 per 47-question run</p>
   <aside class="notes">
     <p>"Hands up for A… B… C… D." Click to reveal: <b>47 of 47.</b> Opus, Sonnet, GPT-6.1 and Grok all perfect.</p>
     <p>"So the frontier is solved on this task. The interesting questions are cost, privacy, and whether you can do it yourself."</p>
-    <p>Haiku, the fast tier, missed 3: all gross margin. Hold that thought; we'll see why.</p>
+    <p>Haiku, the fast tier, missed 3: all gross margin. Hold that thought; we'll see why.</p><p>Precise if asked: these benchmark runs used our first page extraction, which left out 21 summary pages (about 4% of the text). Those pages repeat facts found later in the filing. The live demo uses the full text.</p>
   </aside>
 </section>
 
@@ -275,12 +275,12 @@ body.black.presenter #pblack { display: block; }
   <p class="kicker">The setup</p>
   <h2>Same 47 questions, three ways to read the filing</h2>
   <div class="cards">
-    <div class="card"><h3>Frontier: read it all</h3><p>Claude, GPT and Grok get the whole S-1 in one prompt: <b style="color:var(--ink)">300k–460k tokens.</b></p></div>
+    <div class="card"><h3>Frontier: read it all</h3><p>Claude, GPT and Grok get the S-1 in one prompt: <b style="color:var(--ink)">300k–460k tokens.</b></p></div>
     <div class="card"><h3>Local 27B: keyword search</h3><p>Qwen3.8 27B, small enough for one GPU, gets the 8 pages that best match the question: <b style="color:var(--ink)">~7k tokens.</b></p></div>
     <div class="card good step"><h3>Local 27B + our skills</h3><p>Same model. Parsed tables with page citations, short passages, and code that does the math and checks: <b style="color:var(--ink)">~13k tokens.</b></p></div>
   </div>
   <aside class="notes">
-    <p>"Keyword search is what most RAG demos do: find the pages that look relevant and hope the answer is there." Click for the third.</p>
+    <p>"Keyword search is the simplest kind of retrieval: find the pages whose words match the question, and hope the answer is there. Most production RAG uses embedding search, which we haven't tested yet." Click for the third.</p>
     <p>"Skills are packaged instructions plus scripts an agent can run. Ours are open source."</p>
   </aside>
 </section>
@@ -322,11 +322,11 @@ body.black.presenter #pblack { display: block; }
     <div class="hb step"><div class="lab">Local 27B, keyword search<small>Qwen3.8 27B</small></div><div class="track"><div class="fill" style="--w:89.4%"></div><span class="val">42</span></div></div>
     <div class="hb hot step"><div class="lab">Local 27B + our skills<small>Qwen3.8 27B · ~$0.04 · parity</small></div><div class="track"><div class="fill" style="--w:100%"></div><span class="val">47</span></div></div>
   </div>
-  <p class="src">Across all four S-1s and three open models: keyword search 89–90%, with skills 100%</p>
+  <p class="src">Across all four S-1s and three open models: keyword search 88–90%, with skills 100%</p>
   <aside class="notes">
     <p>Vote, click to reveal: <b>42 of 47, about 90%.</b> "Not bad! But 5 wrong answers in a financial filing is 5 too many."</p>
     <p>Click through the bars. Last click: "Same model, with our skills: 47 of 47. Parity with the frontier, at about a fiftieth of the cost."</p>
-    <p>Cost: the skill sends about twice the tokens of keyword search, so the two cost about the same, a few cents per run. The comparison that matters is against the frontier: $1.99 (Opus) or $1.00 (Sonnet) vs about $0.04. The $0.04 is the API price for the open weights.</p>
+    <p>Cost: the skill sends about twice the tokens of keyword search, yet in our runs the two cost about the same, a few cents per run. The comparison that matters is against the frontier: $1.99 (Opus) or $1.00 (Sonnet) vs about $0.04. The $0.04 is the API price for the open weights.</p>
   </aside>
 </section>
 
@@ -359,12 +359,12 @@ body.black.presenter #pblack { display: block; }
     <div class="opt"><b>C</b>Used the wrong period</div>
     <div class="opt"><b>D</b>Returned garbage</div>
   </div>
-  <p class="say step"><b>27 of 33 misses:</b> “not disclosed”, when the answer was right there. It never invented a blank figure.</p>
+  <p class="say step"><b>9 of its 10 misses:</b> “not in the filing”, when the answer was right there. It never invented a blank figure.</p>
   <p class="say step" style="margin-top:18px">Small models fail by <b>omission</b>. The confident wrong answer came from a fast model reading everything.</p>
-  <p class="src">Keyword-search misses, 4 S-1s × 3 open models: 27 not in filing · 3 rounding · 2 malformed · 1 scoring false negative</p>
+  <p class="src">Qwen3.8 27B with keyword search, 4 S-1s: 9 not in filing · 1 rounding. All three open models: 27 of 33 misses were “not in the filing”</p>
   <aside class="notes">
     <p>Remind them of the hands-up: "Many of you caught an LLM making up a number. Here, the small model almost never did."</p>
-    <p>Reveal B. "27 of its 33 misses were 'not in the filing'. The other 6: 3 growth rates rounded in its head (21% for 20.6%), 2 malformed answers, and 1 correct answer our keyword scorer marked wrong."</p>
+    <p>Reveal B. "9 of its 10 misses were 'not in the filing'. The tenth was a growth rate rounded in its head: 21% for 20.6%." Across all three open models it's the same pattern: 27 of 33 misses; the rest were 3 roundings, 2 malformed answers, and 1 correct answer our keyword scorer marked wrong.</p>
     <p>"So the fix isn't 'stop it hallucinating'. It's 'put the right table in front of it'." That sets up the next slide.</p>
   </aside>
 </section>
@@ -386,9 +386,9 @@ body.black.presenter #pblack { display: block; }
   <p class="src">~13k tokens per question instead of 300k–460k</p>
   <aside class="notes">
     <p>"None of these is clever alone. Together they turn 'read 400 pages' into 'look up a cited row'."</p>
-    <p>Row 1 (techniques 1–3) shrinks the filing to what questions need. Tables are chosen by a fixed list of standard line items, so nothing is tuned to my questions.</p>
+    <p>Row 1 (techniques 1–3) shrinks the filing to what questions need. Tables are chosen by a fixed list of standard line items, the same for every filing, not picked per question.</p>
     <p>Click. Row 2: the model writes the arithmetic, code computes it. Code checks every input and the quote appear in the context and the period matches; a failed answer goes back once with the reason. Technique 6 handles prose questions.</p>
-    <p>What each bought us: 1–2 fixed the gross-margin misses; 4 removes rounding; 5's retry fixed four malformed answers on new filings; 6 found the Claude Code incident on p. 45.</p>
+    <p>What each bought us: 1–2 fixed the gross-margin misses; 4 removes rounding; 5's retry fixed four answers on the held-out filings (two malformed, two quotes not copied word for word); 6 found the Claude Code incident on p. 45, which plain keyword search missed.</p>
   </aside>
 </section>
 
@@ -398,7 +398,7 @@ body.black.presenter #pblack { display: block; }
   <h2>“Isn’t this just tool calling?”</h2>
   <div class="cards" style="grid-template-columns:1fr 1fr">
     <div class="card"><h3>A frontier agent with tools</h3><p>The model decides when to search, what to compute, whether to check. Every step is a judgment call, at frontier prices.</p></div>
-    <div class="card good step"><h3>Our workflow</h3><p>The steps are fixed in code: extract, look up, compute, verify. The model fills narrow slots in one call. A 27B model can do that reliably.</p></div>
+    <div class="card good step"><h3>Our workflow</h3><p>The steps are fixed in code: extract, look up, compute, verify. The model fills narrow slots in a single call, with one retry if a check fails. A 27B model can do that reliably.</p></div>
   </div>
   <p class="say step" style="margin-top:34px">Same ingredients. The difference is <b>who owns the workflow</b>, and that we measured it on filings we never tuned on.</p>
   <aside class="notes">
@@ -501,7 +501,7 @@ body.black.presenter #pblack { display: block; }
 <section class="slide" data-title="Takeaways" data-min="0.75">
   <p class="kicker">Three things to take home</p>
   <div class="take">
-    <div class="step"><span class="n">1</span><div><h3>Small models fail by omission</h3><p>Keyword search said “not in the filing” 27 of 33 times. Give the model the right table and it answers.</p></div></div>
+    <div class="step"><span class="n">1</span><div><h3>Small models fail by omission</h3><p>With keyword search, 9 of the 27B model’s 10 misses were “not in the filing”. Give it the right table and it answers.</p></div></div>
     <div class="step"><span class="n">2</span><div><h3>Workflow beats size on narrow tasks</h3><p>Code prepares, the model decides, code checks: a 27B model matched the frontier at 1/50th of the cost.</p></div></div>
     <div class="step"><span class="n">3</span><div><h3>Prove it on documents you didn’t tune on</h3><p>Freeze the code, then test held-out. That’s what makes 100% believable.</p></div></div>
   </div>
